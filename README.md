@@ -156,7 +156,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 Every sound maps to exactly one symbol and every symbol to exactly one sound. No ambiguity, no exceptions.
 
 **2. No numerals — ever.**
-The numeral `3` for ع and `7` for ح are not Masri. They break text search, they exclude non-Arabic readers, and they are a historical accident, not a system.
+The numeral `3` for ع and `7` for ح are not Masri. They break text search, they exclude non-Arabic readers, and they are a historical workaround, not a system.
 
 **3. Keyboard-first.**
 Every Tier 1 symbol is typeable on any standard Latin keyboard with no special software. The backtick `` ` `` for ع is always available — it's the top-left key on your keyboard.
