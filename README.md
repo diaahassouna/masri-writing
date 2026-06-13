@@ -78,7 +78,7 @@ Designed for texting, social media, informal writing. Uses only characters avail
 | KH sound | خ | `kh` | **kh**afeef (خفيف) |
 | GH sound | غ | `gh` | **gh**areeb (غريب) |
 | Ayin ع | ع | `` ` `` (backtick) | ba**\`**deen (بعدين) |
-| Glottal stop | ء / ق | `'` | **'**aal (قال) |
+| Glottal stop | ء / ق | `'` | Ma**'**aam (مقام) |
 
 ### Tier 2 — Academic / Cultural
 
@@ -92,7 +92,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 | GH sound | غ | `ɣ` | U+0263 | Greek Gamma |
 | Emphatic S | ص | `ṣ` | U+1E63 | IPA diacritic |
 
-> **Why Coptic?** Because Coptic *is* the Egyptian language — it's what ancient Egyptians spoke and wrote before Arabic arrived. These letters are not foreign borrowings. They are a homecoming.
+> **Why Coptic?** Because Coptic *is* the latest written stage of the indigenous Egyptian language — it's what ancient Egyptians spoke and wrote before Arabic arrived. These letters are not foreign borrowings. They are a homecoming.
 
 ---
 
@@ -135,11 +135,11 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 | 28 | H | h | ه | Heh | /h/ | Hawa هوا |
 | 29 | O | o | و | Oh | /o/ | Ɣobaar غبار |
 | 30 | U | u | و | Ū | /u/ | Ⲵumaan عمان |
-| 31 | W | w | و | Dablew | /w/ | WalaaⲴ والاء |
+| 31 | W | w | و | Dablew | /w/ | WalaaⱯ ولاء |
 | 32 | E | e | ي | Ee | /e/ | Estanna إستنى |
 | 33 | I | i | ي | Ai | /i/ | Waϩeϣni واحشني |
 | 34 | Y | y | ي | Wye | /j/ | Ya يا |
-| 35 | Ɐ | Ɐ | ء | Hamza | /ʔ/ | MasⲴooleya مسئولية |
+| 35 | Ɐ | Ɐ | ء | Hamza | /ʔ/ | MasⱯooleya مسئولية |
 
 **Borrowed orthography** (code-switched words kept in original spelling):
 
@@ -186,6 +186,13 @@ The backtick is on every keyboard. It is visually distinct from the apostrophe u
 
 **In Masri Tier 2:** ع is written as `Ⲵ` (Old Coptic Ain, U+2CB4)
 
+```
+❌  aref        →   ✅  Ⲵaref       (عارف — knowing)
+❌  ashan       →   ✅  Ⲵaϣan       (عشان — because)
+❌  ala         →   ✅  Ⲵala         (على — on)
+❌  3aref       →   ✅  Ⲵaref       (never use numerals)
+```
+
 ---
 
 ## Numbers — El Arqaam
@@ -208,7 +215,7 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | 1,000,000 | مليون | Melyoon |
 | 1,000,000,000 | مليار | Melyar |
 
-> See [`numbers/`](numbers/) for the full table from 0 to 1,000,000,000.
+> See [`numbers/`]([numbers/](https://github.com/diaahassouna/masri-writing/blob/072850678ad8510e99167b250e632936ca3ecf36/El_Arqaam_El_Masreyya.pdf)) for the full table from 0 to 1,000,000,000.
 
 ---
 
@@ -220,7 +227,7 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | **Definite article** | Always `el` — never assimilate: الشارع → `el shaarei` |
 | **Glottal stop** | Silent at word start; apostrophe mid-word: بياع → `bayya'` |
 | **Digraphs** | `sh`, `kh`, `gh` are indivisible units — never split across syllables |
-| **Cairene ق** | Word-initial: silent (أهوة → `ahwa`). Mid-word: apostrophe |
+| **Cairene ق** | Word-initial: silent (قهوة → `ahwa`). Mid-word: apostrophe |
 | **P vs B** | `p ≠ b` — both exist as distinct phonemes. بيتزا → `pizza`, not `bizza` |
 
 ---
