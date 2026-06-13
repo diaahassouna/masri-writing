@@ -215,7 +215,7 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | 1,000,000 | مليون | Melyoon |
 | 1,000,000,000 | مليار | Melyar |
 
-> See [`numbers/`]([numbers/](https://github.com/diaahassouna/masri-writing/blob/072850678ad8510e99167b250e632936ca3ecf36/El_Arqaam_El_Masreyya.pdf)) for the full table from 0 to 1,000,000,000.
+> See [`numbers`](https://github.com/diaahassouna/masri-writing/blob/cb14dfe8e40a8f8db7f8709f7d5e1a004ffd914b/El_Arqaam_El_Masreyya.pdf) for the full table from 0 to 1,000,000,000.
 
 ---
 
@@ -224,8 +224,8 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | Rule | Tier 1 |
 |---|---|
 | **Gemination** (doubled consonants) | Write doubled: حب → `hobb`, جداً → `geddan` |
-| **Definite article** | Always `el` — never assimilate: الشارع → `el shaarei` |
-| **Glottal stop** | Silent at word start; apostrophe mid-word: بياع → `bayya'` |
+| **Definite article** | Always `el` — never assimilate: الشارع → `el shaareⲴ` |
+| **Glottal stop** | Silent at word start; apostrophe mid-word: سؤال → `so'aal` |
 | **Digraphs** | `sh`, `kh`, `gh` are indivisible units — never split across syllables |
 | **Cairene ق** | Word-initial: silent (قهوة → `ahwa`). Mid-word: apostrophe |
 | **P vs B** | `p ≠ b` — both exist as distinct phonemes. بيتزا → `pizza`, not `bizza` |
