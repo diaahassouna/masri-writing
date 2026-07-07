@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28912334/README.md)
 <div align="center">
 
 <img src="https://github.com/diaahassouna/masri-writing/blob/30e5ece2975892126f90f3e0c9d72f733700ecb3/Masri%20Gold%20logo.png" alt="Masri Logo" width="160"/>
