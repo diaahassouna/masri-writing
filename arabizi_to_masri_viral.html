@@ -1,0 +1,1157 @@
+<div id="masri-app">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"/>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"/>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"/>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"/>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <a class="gh-link" href="https://github.com/diaahassouna/masri-writing" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span data-i18n="github_label">GitHub</span>
+    </a>
+    <div class="lang-switch" id="langSwitch">
+      <button type="button" class="lang-btn active" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="ar">EG-AR</button>
+    </div>
+  </div>
+
+  <div class="mode-switch-row">
+    <div class="mode-switch" id="modeSwitch">
+      <button type="button" class="mode-btn active" data-mode="everyday">
+        <span class="mode-emoji">✨</span> <span data-i18n="mode_everyday">Masri — Everyday Writing</span>
+      </button>
+      <button type="button" class="mode-btn" data-mode="academic">
+        <span class="mode-emoji">🎓</span> <span data-i18n="mode_academic">Masri — Academic (Tier 2)</span>
+      </button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <svg class="hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <div class="eyebrow" data-i18n="eyebrow">أبجدية &nbsp;·&nbsp; El Abgadeyya El Maṣreyya</div>
+    <h1 data-i18n="hero_title">Turn Franco into <span class="flame">Masri 🔥</span></h1>
+    <p class="sub" data-i18n="hero_sub">You type <em>3ashan</em> and <em>7abibi</em>… Now see it in Masri — how it was meant to look 👀</p>
+
+    <section class="pane pane-main">
+      <div class="pane-head">
+        <label for="inputBox" data-i18n="input_label">Type it like you normally would</label>
+        <div class="presets">
+          <button class="preset-btn" data-text="3ashan keda ana 7abeit el mashroo3 da, bass el 5otta t2eela sha2wa.">example 1</button>
+          <button class="preset-btn" data-text="el 3ott el adeem 3ash fel share3 3ashan mesh la2y beit, we da wa77shny 2awy.">example 2</button>
+          <button class="preset-btn" data-text="inshallah bokra nshoof, elhamdolillah 3andena wa2t. wallahi da kalam gamed.">example 3</button>
+        </div>
+      </div>
+      <textarea id="inputBox" spellcheck="false" placeholder="Type Franco here… like 3ashan / 7abibi 😏" data-i18n-ph="input_placeholder"></textarea>
+
+      <div class="live-tag" data-i18n="live_tag">👇 LIVE OUTPUT (instant)</div>
+      <div class="pane-head">
+        <label data-i18n="output_label">Masri ✨</label>
+        <span class="tier-badge academic-only" data-i18n="tier_badge">Tier 2</span>
+        <button id="copyBtn" class="copy-btn" data-i18n="copy_btn">Copy</button>
+      </div>
+      <div id="outputBox" class="output-box" aria-live="polite"></div>
+
+      <div class="cta-row">
+        <button class="cta-btn cta-primary" id="copySendBtn"><svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg><span data-i18n="copy_send_btn">🔥 Copy &amp; Send</span></button>
+        <button class="cta-btn cta-secondary" id="shareBtn" data-i18n="share_btn">📲 Share with friends</button>
+        <button class="cta-btn cta-secondary" id="tryNameBtn" data-i18n="try_name_btn">😏 Try your name</button>
+      </div>
+    </section>
+  </header>
+
+  <section class="viral-hook" id="nameSection">
+    <h2 data-i18n="name_hook_title">See your name in Masri 👇</h2>
+    <textarea id="nameInputBox" class="name-input" spellcheck="false" rows="1" placeholder="Type your name… e.g. 3ali, 7oda, Yasmin" data-i18n-ph="name_placeholder"></textarea>
+    <div class="name-reveal">
+      <div class="name-reveal-label" data-i18n="name_reveal_label">This is your name in Masri</div>
+      <div id="nameOutputBox" class="name-output" aria-live="polite">Ⲵali</div>
+    </div>
+    <button class="cta-btn cta-primary cta-wide" id="nameCopyBtn"><svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg><span data-i18n="name_copy_btn">🔥 Copy it &amp; send it</span></button>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="before-after">
+    <h2 data-i18n="ba_title">Look at the difference 😳</h2>
+    <div class="ba-grid">
+      <div class="ba-row">
+        <span class="ba-before">3ashan</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-after"><span class="origin-coptic">Ⲵ</span>ashan</span>
+      </div>
+      <div class="ba-row">
+        <span class="ba-before">7abibi</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-after"><span class="origin-coptic">Ϩ</span>abibi</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="identity">
+    <p data-i18n="identity_line1">This is inspired by how Egyptian writing evolved — long before keyboards.</p>
+    <p class="identity-sub" data-i18n="identity_line2">You're just picking it back up.</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="features">
+    <h2 data-i18n="features_title">Keep it simple</h2>
+    <div class="features-grid">
+      <div class="feature-card"><span class="feature-icon">😎</span><span data-i18n="feature_1">Works with the Franco you already type</span></div>
+      <div class="feature-card"><span class="feature-icon">⚡</span><span data-i18n="feature_2">Instant conversion</span></div>
+      <div class="feature-card"><span class="feature-icon">🔥</span><span data-i18n="feature_3">Ready to copy &amp; share</span></div>
+      <div class="feature-card"><span class="feature-icon">👁️</span><span data-i18n="feature_4">Shows where letters come from</span></div>
+    </div>
+  </section>
+
+  <div class="divider academic-only"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <div class="controls academic-only">
+    <div class="toggle-group">
+      <span class="toggle-group-label" data-i18n="style_label">Style</span>
+      <div class="segmented" id="formalSegmented">
+        <button type="button" class="seg-btn" data-formal="0" data-i18n="seg_casual">😎 Casual Egyptian</button>
+        <button type="button" class="seg-btn active" data-formal="1" data-i18n="seg_formal">🧠 More formal</button>
+      </div>
+    </div>
+    <label class="toggle">
+      <input type="checkbox" id="highlightToggle" checked>
+      <span data-i18n="origins_label">👁️ Show letter origins</span>
+    </label>
+    <input type="checkbox" id="formalToggle" checked hidden>
+  </div>
+
+  <div class="legend academic-only" id="legend">
+    <span class="legend-item"><i class="dot dot-coptic"></i> <span data-i18n="legend_coptic">Coptic — Ϩ ϣ Ⲵ</span></span>
+    <span class="legend-item"><i class="dot dot-greek"></i> <span data-i18n="legend_greek">Greek — θ ɣ</span></span>
+    <span class="legend-item"><i class="dot dot-latin"></i> <span data-i18n="legend_latin">Latin extended — ð ṣ ḍ ṭ ẓ Ɐ</span></span>
+  </div>
+
+  <p class="framework-teaser academic-only" id="frameworkTeaser" data-i18n="framework_teaser">This system is built on a full 35-letter framework — click to explore.</p>
+
+  <details class="rules academic-only">
+    <summary data-i18n="rules_summary">Conversion rules applied (numeral &amp; digraph mapping)</summary>
+    <div class="rules-grid">
+      <div>
+        <h3>Numeral letters</h3>
+        <table>
+          <tr><td>2</td><td>ء / ق (Cairene)</td><td>Ɐ&nbsp;<span class="note">(silent word-initially — Rule 3)</span></td></tr>
+          <tr><td>3</td><td>ع</td><td>Ⲵ</td></tr>
+          <tr><td>3'</td><td>غ</td><td>ɣ</td></tr>
+          <tr><td>5</td><td>خ</td><td>x</td></tr>
+          <tr><td>6</td><td>ط</td><td>ṭ</td></tr>
+          <tr><td>6'</td><td>ظ</td><td>ẓ</td></tr>
+          <tr><td>7</td><td>ح</td><td>ϩ</td></tr>
+          <tr><td>8</td><td>غ&nbsp;<span class="note">(alt.)</span></td><td>ɣ</td></tr>
+          <tr><td>9</td><td>ص</td><td>ṣ</td></tr>
+          <tr><td>9'</td><td>ض</td><td>ḍ</td></tr>
+          <tr><td>'</td><td>ء (mid/final)</td><td>Ɐ</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Digraphs → single Tier 2 letters</h3>
+        <table>
+          <tr><td>kh</td><td>خ</td><td>x</td></tr>
+          <tr><td>sh</td><td>ش</td><td>ϣ</td></tr>
+          <tr><td>gh</td><td>غ</td><td>ɣ</td></tr>
+          <tr><td>th</td><td>ث</td><td>θ&nbsp;<span class="note">/ s if merger on</span></td></tr>
+          <tr><td>dh</td><td>ذ</td><td>ð&nbsp;<span class="note">/ z if merger on</span></td></tr>
+        </table>
+        <p class="note"><strong>Spelling Rule 4 (Digraph Integrity)</strong> only applies to Tier 1. In Tier 2 these become single characters (ϣ, x, ɣ), so digraph integrity is superseded by direct single-character mapping — handled above.</p>
+      </div>
+    </div>
+  </details>
+
+  <details class="rules academic-only" id="frameworkDetails">
+    <summary data-i18n="framework_summary">Full Framework reference (loaded from the Tier 2 rules JSON)</summary>
+    <div id="frameworkRules"></div>
+  </details>
+
+  <p class="disclaimer academic-only" id="disclaimerText" data-i18n="disclaimer">Rule-based, not a language model — ambiguous cases (gemination, vowel length, formal/merger consonants) may need manual review against the Framework's standardised word list.</p>
+</div>
+
+<style>
+#masri-app {
+  --bg: #0d1826;
+  --panel: #142338;
+  --panel-2: #0f1e30;
+  --border: #24374f;
+  --ink: #eef2f7;
+  --ink-dim: #93a5bd;
+  --gold: #c9a04a;
+  --burgundy: #8a2a3a;
+  --coptic: #4fc4b0;
+  --greek: #d9a441;
+  --latin-ext: #9a7fd1;
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  padding: 28px 24px 36px;
+  border-radius: 14px;
+  max-width: 880px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#masri-app * { box-sizing: border-box; }
+
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.gh-link { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-dim); text-decoration: none; font-size: 12px; font-family: var(--font-ui); border: 1px solid var(--border); border-radius: 7px; padding: 5px 10px; transition: border-color .15s, color .15s; }
+.gh-link:hover { border-color: var(--gold); color: var(--gold); }
+.lang-switch { display: inline-flex; background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 3px; gap: 3px; }
+.lang-btn { border: none; background: transparent; color: var(--ink-dim); font-size: 11px; font-weight: 600; letter-spacing: .03em; padding: 5px 10px; border-radius: 6px; cursor: pointer; font-family: var(--font-ui); }
+.lang-btn.active { background: var(--gold); color: #241a06; }
+
+#masri-app[dir="rtl"] { direction: rtl; }
+#masri-app[dir="rtl"] .sub em,
+#masri-app[dir="rtl"] .ba-before,
+#masri-app[dir="rtl"] .ba-after,
+#masri-app[dir="rtl"] #inputBox,
+#masri-app[dir="rtl"] #outputBox,
+#masri-app[dir="rtl"] .name-input,
+#masri-app[dir="rtl"] .name-output { direction: ltr; unicode-bidi: isolate; }
+#masri-app[dir="rtl"] h1,
+#masri-app[dir="rtl"] h2,
+#masri-app[dir="rtl"] .sub,
+#masri-app[dir="rtl"] .identity p,
+#masri-app[dir="rtl"] .feature-card,
+#masri-app[dir="rtl"] .toggle-group-label,
+#masri-app[dir="rtl"] .seg-btn,
+#masri-app[dir="rtl"] .lang-btn,
+#masri-app[dir="rtl"] label,
+#masri-app[dir="rtl"] .cta-btn,
+#masri-app[dir="rtl"] .legend { font-family: var(--font-ui); }
+#masri-app[dir="rtl"] .eyebrow { direction: rtl; text-align: center; }
+
+/* ---- Mode switch: Everyday vs Academic (Tier 2) ---- */
+.mode-switch-row { display: flex; justify-content: center; margin-bottom: 20px; }
+.mode-switch { display: inline-flex; background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 4px; gap: 4px; }
+.mode-btn { display: flex; align-items: center; gap: 6px; border: none; background: transparent; color: var(--ink-dim); font-size: 12px; font-weight: 600; padding: 8px 14px; border-radius: 7px; cursor: pointer; font-family: var(--font-ui); transition: background .15s, color .15s; }
+.mode-btn.active { background: var(--gold); color: #241a06; }
+.mode-emoji { font-size: 13px; }
+
+/* ---- Academic-only chrome, hidden by default (Everyday mode) ---- */
+.academic-only { display: none; }
+#masri-app.mode-academic .academic-only { display: block; }
+#masri-app.mode-academic .controls.academic-only { display: flex; }
+#masri-app.mode-academic .legend.academic-only { display: flex; }
+#masri-app.mode-academic .divider.academic-only { display: flex; }
+#masri-app.mode-academic .tier-badge.academic-only { display: inline-block; }
+
+.tier-badge { background: var(--panel-2); border: 1px solid var(--coptic); color: var(--coptic); font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; margin-right: auto; margin-left: 8px; }
+
+.framework-teaser { text-align: center; font-size: 13px; color: var(--gold); margin: 0 0 10px; font-style: italic; }
+
+/* ---- Lotus motif: brand signature ---- */
+#lotus-motif { fill: var(--gold); }
+.hero-lotus-bg { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 320px; height: auto; opacity: .06; pointer-events: none; z-index: 0; }
+.hero { position: relative; overflow: hidden; }
+.hero > *:not(.hero-lotus-bg) { position: relative; z-index: 1; }
+
+.divider { display: flex; justify-content: center; margin: 4px 0 20px; opacity: .55; }
+.divider-lotus { width: 34px; height: auto; fill: var(--gold); }
+
+.lotus-icon { width: 16px; height: auto; fill: currentColor; margin-right: 4px; vertical-align: -2px; transition: transform .4s ease; }
+.cta-btn:active .lotus-icon { transform: scale(1.35) rotate(8deg); }
+@keyframes lotus-bloom {
+  0% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 0 rgba(201,160,74,0)); }
+  40% { transform: scale(1.5) rotate(10deg); filter: drop-shadow(0 0 6px rgba(201,160,74,.8)); }
+  100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 0 0 rgba(201,160,74,0)); }
+}
+.lotus-icon.bloom { animation: lotus-bloom .6s ease; }
+
+
+.hero { border-bottom: 1px solid var(--border); padding-bottom: 26px; margin-bottom: 24px; text-align: center; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; color: var(--gold); margin-bottom: 10px; direction: rtl; text-align: center; }
+.hero h1 { font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1.2; margin: 0 0 10px; color: var(--ink); }
+.hero h1 .flame { color: var(--gold); text-shadow: 0 0 22px rgba(201,160,74,.45); }
+.sub { color: var(--ink-dim); font-size: 15px; line-height: 1.55; margin: 0 auto 22px; max-width: 480px; }
+.sub em { color: var(--coptic); font-style: normal; font-family: var(--font-mono); }
+
+.pane-main { text-align: left; max-width: 640px; margin: 0 auto; }
+.live-tag { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); margin: 14px 0 8px; text-align: center; }
+
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.cta-btn { flex: 1; min-width: 140px; border: none; border-radius: 10px; padding: 12px 14px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: var(--font-ui); transition: transform .12s, filter .12s; }
+.cta-btn:active { transform: scale(.97); }
+.cta-primary { background: linear-gradient(135deg, var(--gold), #e0b95c); color: #241a06; }
+.cta-primary:hover { filter: brightness(1.08); }
+.cta-secondary { background: var(--panel-2); color: var(--ink); border: 1px solid var(--border); }
+.cta-secondary:hover { border-color: var(--gold); }
+.cta-wide { width: 100%; }
+
+.viral-hook { background: var(--panel); border: 1px solid var(--gold); border-radius: 12px; padding: 20px; margin-bottom: 20px; text-align: center; }
+.viral-hook h2 { font-family: var(--font-display); font-size: 19px; margin: 0 0 14px; color: var(--ink); }
+.name-input { width: 100%; max-width: 360px; background: var(--panel-2); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-family: var(--font-mono); font-size: 15px; text-align: center; outline: none; resize: none; }
+.name-input:focus { border-color: var(--gold); }
+.name-reveal { margin: 16px 0; }
+.name-reveal-label { font-size: 12px; color: var(--ink-dim); margin-bottom: 6px; }
+.name-output { font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--coptic); }
+
+.before-after { text-align: center; margin-bottom: 20px; }
+.before-after h2 { font-family: var(--font-display); font-size: 19px; margin: 0 0 14px; }
+.ba-grid { display: flex; flex-direction: column; gap: 10px; max-width: 360px; margin: 0 auto; }
+.ba-row { display: flex; align-items: center; justify-content: center; gap: 12px; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; font-family: var(--font-mono); font-size: 18px; }
+.ba-before { color: var(--ink-dim); }
+.ba-arrow { color: var(--gold); }
+.ba-after { color: var(--ink); font-weight: 600; }
+
+.identity { text-align: center; padding: 22px 10px; margin-bottom: 20px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.identity p { font-family: var(--font-display); font-size: 18px; line-height: 1.5; margin: 0 0 6px; color: var(--ink); }
+.identity-sub { color: var(--gold) !important; font-size: 15px !important; }
+
+.features { margin-bottom: 20px; }
+.features h2 { text-align: center; font-family: var(--font-display); font-size: 17px; margin: 0 0 14px; color: var(--ink-dim); font-weight: 600; }
+.features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 480px) { .features-grid { grid-template-columns: 1fr; } }
+.feature-card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; font-size: 13px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
+.feature-icon { font-size: 18px; }
+
+.toggle-group { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.toggle-group-label { font-size: 13px; color: var(--ink-dim); }
+.segmented { display: inline-flex; background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 3px; gap: 3px; }
+.seg-btn { border: none; background: transparent; color: var(--ink-dim); font-size: 12px; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-family: var(--font-ui); }
+.seg-btn.active { background: var(--gold); color: #241a06; font-weight: 600; }
+
+.panes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+@media (max-width: 680px) { .panes { grid-template-columns: 1fr; } }
+
+.pane { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; }
+.pane-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 8px; flex-wrap: wrap; }
+.pane-head label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-dim); font-weight: 600; }
+
+.presets { display: flex; gap: 6px; flex-wrap: wrap; }
+.preset-btn {
+  background: transparent; border: 1px solid var(--border); color: var(--ink-dim);
+  font-size: 11px; padding: 4px 8px; border-radius: 6px; cursor: pointer; font-family: var(--font-ui);
+  transition: border-color .15s, color .15s;
+}
+.preset-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+#inputBox {
+  flex: 1; min-height: 180px; resize: vertical; background: var(--panel-2); color: var(--ink);
+  border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-family: var(--font-mono);
+  font-size: 15px; line-height: 1.6; outline: none;
+}
+#inputBox:focus { border-color: var(--gold); }
+
+.output-box {
+  flex: 1; min-height: 180px; background: var(--panel-2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 12px; font-family: var(--font-mono); font-size: 15px; line-height: 1.6;
+  white-space: pre-wrap; word-break: break-word; direction: ltr;
+}
+.output-box:empty::before { content: "Converted text will appear here…"; color: var(--ink-dim); }
+
+.copy-btn {
+  background: var(--burgundy); color: #fff; border: none; padding: 5px 12px; border-radius: 6px;
+  font-size: 12px; cursor: pointer; font-family: var(--font-ui); transition: background .15s;
+}
+.copy-btn:hover { background: #a3313f; }
+.copy-btn.copied { background: var(--coptic); }
+
+.controls { display: flex; flex-wrap: wrap; gap: 18px; margin-bottom: 16px; }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-dim); cursor: pointer; }
+.toggle input { accent-color: var(--gold); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 16px; padding: 10px 14px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 14px; font-size: 12px; color: var(--ink-dim); }
+.legend-item { display: flex; align-items: center; gap: 6px; }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.dot-coptic { background: var(--coptic); }
+.dot-greek { background: var(--greek); }
+.dot-latin { background: var(--latin-ext); }
+
+.rules { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin-bottom: 12px; }
+.rules summary { cursor: pointer; font-size: 13px; color: var(--gold); font-weight: 600; }
+.rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 12px; }
+@media (max-width: 680px) { .rules-grid { grid-template-columns: 1fr; } }
+.rules h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-dim); margin: 0 0 6px; }
+.rules table { border-collapse: collapse; font-family: var(--font-mono); font-size: 13px; width: 100%; margin-bottom: 10px; }
+.rules td, .rules th { padding: 3px 8px 3px 0; color: var(--ink); border-bottom: 1px solid var(--border); text-align: left; }
+.rules td:first-child { color: var(--gold); }
+.note { color: var(--ink-dim); font-size: 11px; }
+
+.disclaimer { font-size: 11px; color: var(--ink-dim); margin: 0; }
+
+.origin-coptic { color: var(--coptic); font-weight: 600; }
+.origin-greek { color: var(--greek); font-weight: 600; }
+.origin-latin { color: var(--latin-ext); font-weight: 600; }
+
+.fw-block { margin-top: 12px; }
+.fw-block h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-dim); margin: 0 0 6px; }
+.fw-rule { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.fw-rule:last-child { border-bottom: none; }
+.fw-rule .fw-name { color: var(--gold); font-weight: 600; font-size: 13px; }
+.fw-rule .fw-text { color: var(--ink); font-size: 13px; line-height: 1.5; margin: 4px 0; }
+.fw-rule .fw-ex { color: var(--ink-dim); font-size: 12px; font-family: var(--font-mono); }
+.fw-ayin { background: var(--panel-2); border: 1px solid var(--gold); border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; }
+.fw-ayin .fw-name { color: var(--coptic); }
+.fw-alpha-table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 12px; margin-top: 8px; }
+.fw-alpha-table th { text-align: left; color: var(--ink-dim); text-transform: uppercase; font-size: 10px; letter-spacing: .04em; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+.fw-alpha-table td { padding: 4px 6px; border-bottom: 1px solid var(--border); color: var(--ink); }
+.fw-credit { font-size: 11px; color: var(--ink-dim); margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--border); }
+</style>
+
+<script type="application/json" id="masriTier2Data">
+{
+  "meta": {
+    "system": "El Abgadeyya El Maṣreyya (Masri Writing System)",
+    "tier": "Tier 2 — Academic / Cultural",
+    "author": "Diaa Hassouna",
+    "year": 2026,
+    "license": "CC BY 4.0",
+    "reference_dialect": "Urban Cairene Egyptian Arabic",
+    "description": "Academic tier uses Greek and Coptic letters plus diacritics for sounds Latin cannot represent precisely. Intended for linguistic study and formal documentation.",
+    "source_files": [
+      "Masri_Alphabet_Reference.pdf",
+      "Masri_Writing_System_Framework_v1_0.pdf"
+    ]
+  },
+
+  "alphabet": [
+    { "no": 1,  "letter_upper": "A", "letter_lower": "a", "arabic": "ا", "name": "Alef",  "ipa": "/ʔ/, /aː/", "unicode_upper": "U+0041", "unicode_lower": "U+0061", "origin": "ASCII", "notes": "Open vowel; /aː/ as in 'father'" },
+    { "no": 2,  "letter_upper": "B", "letter_lower": "b", "arabic": "ب", "name": "Beh",   "ipa": "/b/",        "unicode_upper": "U+0042", "unicode_lower": "U+0062", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 3,  "letter_upper": "P", "letter_lower": "p", "arabic": "پ", "name": "Pee",   "ipa": "/p/",        "unicode_upper": "U+0050", "unicode_lower": "U+0070", "origin": "ASCII", "notes": "Foreign loanwords only; p ≠ b" },
+    { "no": 4,  "letter_upper": "T", "letter_lower": "t", "arabic": "ت", "name": "Teh",   "ipa": "/t/",        "unicode_upper": "U+0054", "unicode_lower": "U+0074", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 5,  "letter_upper": "Θ", "letter_lower": "θ", "arabic": "ث", "name": "Ṯeh",   "ipa": "/θ/ → /s/",  "unicode_upper": "U+0398", "unicode_lower": "U+03B8", "origin": "Greek",  "notes": "Greek theta; Cairene merger → /s/ (Tier 1 uses s or t)" },
+    { "no": 6,  "letter_upper": "G", "letter_lower": "g", "arabic": "ج", "name": "Geem",  "ipa": "/g/",        "unicode_upper": "U+0047", "unicode_lower": "U+0067", "origin": "ASCII", "notes": "Hard G; never /dʒ/ in Cairo" },
+    { "no": 7,  "letter_upper": "Ϩ", "letter_lower": "ϩ", "arabic": "ح", "name": "Ḥa",    "ipa": "/ħ/",        "unicode_upper": "U+03E8", "unicode_lower": "U+03E9", "origin": "Coptic", "notes": "Coptic Hori; mirrors shape of ح; never numeral 7" },
+    { "no": 8,  "letter_upper": "X", "letter_lower": "x", "arabic": "خ", "name": "Ḵa",    "ipa": "/x/",        "unicode_upper": "U+0058", "unicode_lower": "U+0078", "origin": "ASCII", "notes": "Pan-European /x/" },
+    { "no": 9,  "letter_upper": "D", "letter_lower": "d", "arabic": "د", "name": "Daal",  "ipa": "/d/",        "unicode_upper": "U+0044", "unicode_lower": "U+0064", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 10, "letter_upper": "Ð", "letter_lower": "ð", "arabic": "ذ", "name": "Ḏaal",  "ipa": "/ð/ → /z/",  "unicode_upper": "U+00D0", "unicode_lower": "U+00F0", "origin": "Latin ext.", "notes": "Eth; Cairene merger /ð/→/z/, Masri reflects phonetic reality" },
+    { "no": 11, "letter_upper": "R", "letter_lower": "r", "arabic": "ر", "name": "Reh",   "ipa": "/r/",        "unicode_upper": "U+0052", "unicode_lower": "U+0072", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 12, "letter_upper": "Z", "letter_lower": "z", "arabic": "ز", "name": "Zeen",  "ipa": "/z/",        "unicode_upper": "U+005A", "unicode_lower": "U+007A", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 13, "letter_upper": "S", "letter_lower": "s", "arabic": "س", "name": "Seen",  "ipa": "/s/",        "unicode_upper": "U+0053", "unicode_lower": "U+0073", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 14, "letter_upper": "Ϣ", "letter_lower": "ϣ", "arabic": "ش", "name": "Sheen", "ipa": "/ʃ/",        "unicode_upper": "U+03E2", "unicode_lower": "U+03E3", "origin": "Coptic", "notes": "Coptic Shai; dotless ش skeleton; replaces sh digraph" },
+    { "no": 15, "letter_upper": "Ṣ", "letter_lower": "ṣ", "arabic": "ص", "name": "Ṣaad",  "ipa": "/sˤ/",       "unicode_upper": "U+1E62", "unicode_lower": "U+1E63", "origin": "Latin ext.", "notes": "Emphatic; dot-below rule applies to Ṣ Ḍ Ṭ Ẓ" },
+    { "no": 16, "letter_upper": "Ḍ", "letter_lower": "ḍ", "arabic": "ض", "name": "Ḍaad",  "ipa": "/dˤ/",       "unicode_upper": "U+1E0C", "unicode_lower": "U+1E0D", "origin": "Latin ext.", "notes": "Emphatic D" },
+    { "no": 17, "letter_upper": "Ṭ", "letter_lower": "ṭ", "arabic": "ط", "name": "Ṭah",   "ipa": "/tˤ/",       "unicode_upper": "U+1E6C", "unicode_lower": "U+1E6D", "origin": "Latin ext.", "notes": "Emphatic T" },
+    { "no": 18, "letter_upper": "Ẓ", "letter_lower": "ẓ", "arabic": "ظ", "name": "Ẓah",   "ipa": "/ðˤ/",       "unicode_upper": "U+1E92", "unicode_lower": "U+1E93", "origin": "Latin ext.", "notes": "Merges with Ḍ in most Cairene contexts" },
+    { "no": 19, "letter_upper": "Ⲵ", "letter_lower": "Ⲵ", "arabic": "ع", "name": "ʿAin",  "ipa": "/ʕ/",        "unicode_upper": "U+2CB4", "unicode_lower": "U+2CB4", "origin": "Coptic", "notes": "Coptic Old Ain; uppercase = lowercase for visual consistency; descends from hieroglyph for 'eye'" },
+    { "no": 20, "letter_upper": "Ɣ", "letter_lower": "ɣ", "arabic": "غ", "name": "Gheen", "ipa": "/ɣ/",        "unicode_upper": "U+0194", "unicode_lower": "U+0263", "origin": "Greek",  "notes": "IPA voiced velar fricative; Greek gamma" },
+    { "no": 21, "letter_upper": "F", "letter_lower": "f", "arabic": "ف", "name": "Feh",   "ipa": "/f/",        "unicode_upper": "U+0046", "unicode_lower": "U+0066", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 22, "letter_upper": "V", "letter_lower": "v", "arabic": "ڤ", "name": "Vee",   "ipa": "/v/",        "unicode_upper": "U+0056", "unicode_lower": "U+0076", "origin": "ASCII", "notes": "Foreign loanwords only; v ≠ f, both original phonemes" },
+    { "no": 23, "letter_upper": "Q", "letter_lower": "q", "arabic": "ق", "name": "Qaaf",  "ipa": "/q/",        "unicode_upper": "U+0051", "unicode_lower": "U+0071", "origin": "ASCII", "notes": "Full /q/ for MSA/formal registers; colloquial Cairene → glottal Ɐ" },
+    { "no": 24, "letter_upper": "K", "letter_lower": "k", "arabic": "ك", "name": "Kaaf",  "ipa": "/k/",        "unicode_upper": "U+004B", "unicode_lower": "U+006B", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 25, "letter_upper": "L", "letter_lower": "l", "arabic": "ل", "name": "Laam",  "ipa": "/l/",        "unicode_upper": "U+004C", "unicode_lower": "U+006C", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 26, "letter_upper": "M", "letter_lower": "m", "arabic": "م", "name": "Meem",  "ipa": "/m/",        "unicode_upper": "U+004D", "unicode_lower": "U+006D", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 27, "letter_upper": "N", "letter_lower": "n", "arabic": "ن", "name": "Noon",  "ipa": "/n/",        "unicode_upper": "U+004E", "unicode_lower": "U+006E", "origin": "ASCII", "notes": "Identical in all systems" },
+    { "no": 28, "letter_upper": "H", "letter_lower": "h", "arabic": "ه", "name": "Heh",   "ipa": "/h/",        "unicode_upper": "U+0048", "unicode_lower": "U+0068", "origin": "ASCII", "notes": "Soft H as in 'hat'; distinct from pharyngeal Ϩ" },
+    { "no": 29, "letter_upper": "O", "letter_lower": "o", "arabic": "و", "name": "Oh",    "ipa": "/ʔo/, /o/",  "unicode_upper": "U+004F", "unicode_lower": "U+006F", "origin": "Vowel/semivowel", "notes": "Waw as long vowel /oː/" },
+    { "no": 30, "letter_upper": "U", "letter_lower": "u", "arabic": "و", "name": "Ū",     "ipa": "/ʔu/, /u/",  "unicode_upper": "U+0055", "unicode_lower": "U+0075", "origin": "Vowel/semivowel", "notes": "Waw as long vowel /uː/" },
+    { "no": 31, "letter_upper": "W", "letter_lower": "w", "arabic": "و", "name": "Dablew","ipa": "/ʔw/, /w/",  "unicode_upper": "U+0057", "unicode_lower": "U+0077", "origin": "Vowel/semivowel", "notes": "Waw as consonant /w/" },
+    { "no": 32, "letter_upper": "E", "letter_lower": "e", "arabic": "ي", "name": "Ee",    "ipa": "/ʔe/, /e/",  "unicode_upper": "U+0045", "unicode_lower": "U+0065", "origin": "Vowel/semivowel", "notes": "Ya as long vowel /eː/" },
+    { "no": 33, "letter_upper": "I", "letter_lower": "i", "arabic": "ي", "name": "Ai",    "ipa": "/ʔi/, /i/",  "unicode_upper": "U+0049", "unicode_lower": "U+0069", "origin": "Vowel/semivowel", "notes": "Ya as long vowel /iː/" },
+    { "no": 34, "letter_upper": "Y", "letter_lower": "y", "arabic": "ي", "name": "Wye",   "ipa": "/ʔj/, /j/",  "unicode_upper": "U+0059", "unicode_lower": "U+0079", "origin": "Vowel/semivowel", "notes": "Ya as consonant /j/ (as in 'yes')" },
+    { "no": 35, "letter_upper": "Ɐ", "letter_lower": "ɐ", "arabic": "ء", "name": "Hamza", "ipa": "/ʔ/",        "unicode_upper": "U+2C6F", "unicode_lower": "U+2C6F", "origin": "Latin ext.", "notes": "Upside-down A; glottal stop; mirror of Alef (open ↔ closed); represents ء, ق-Cairene, and all hamza forms (أ ؤ ئ) uniformly; always silent word-initially" }
+  ],
+
+  "borrowed_orthography": [
+    { "letter_upper": "C", "letter_lower": "c", "arabic": "—", "name": "See",  "ipa": "/s/, /k/", "unicode_upper": "U+0043", "unicode_lower": "U+0063", "notes": "Restricted to code-switched words kept in original spelling" },
+    { "letter_upper": "J", "letter_lower": "j", "arabic": "چ", "name": "Jéh",  "ipa": "/d͜ʒ/",     "unicode_upper": "U+004A", "unicode_lower": "U+006A", "notes": "Restricted to code-switched words kept in original spelling" }
+  ],
+
+  "vowel_system": {
+    "short_vowels": [
+      { "arabic": "فتحة", "sound": "a (short)", "tier2": "a" },
+      { "arabic": "ضمة",  "sound": "u (short)", "tier2": "u" },
+      { "arabic": "كسرة", "sound": "i (short)", "tier2": "i" },
+      { "arabic": "schwa/unstressed", "sound": "ə (often omitted)", "tier2": "ə (often omitted)", "example": "mⲴleϣϣ vs məttəⲴ" }
+    ],
+    "long_vowels": [
+      { "arabic": "ا / آ", "sound": "ā (long a)", "tier2": "ā" },
+      { "arabic": "و",     "sound": "ū (long u)", "tier2": "ū" },
+      { "arabic": "ي",     "sound": "ī (long i)", "tier2": "ī" }
+    ],
+    "diphthongs": [
+      { "arabic": "ـَي", "sound": "ay/ei", "spelling": "ay" },
+      { "arabic": "ـَو", "sound": "aw/ou", "spelling": "aw" }
+    ],
+    "rule": "Short vowels are optional in fluent writing but required in ambiguous contexts and learning materials."
+  },
+
+  "ayin_rule": {
+    "title": "The ع Problem — Most Critical Rule",
+    "tier1_symbol": "` (backtick)",
+    "tier2_symbol": "Ⲵ (Coptic Old Ain, U+2CB4)",
+    "note": "In Tier 2, ع is always represented by Ⲵ (uppercase = lowercase for visual consistency).",
+    "examples": [
+      { "arabic": "عارف",  "wrong_vowel_only": "aref",   "tier1": "`aref",   "tier2": "Ⲵaref",   "meaning": "knowing" },
+      { "arabic": "بعدين", "wrong_vowel_only": "badeen", "tier1": "ba`deen", "tier2": "baⲴdeen", "meaning": "afterwards" },
+      { "arabic": "عشان",  "wrong_vowel_only": "ashan",  "tier1": "`ashan",  "tier2": "Ⲵaϣan",   "meaning": "because/for" },
+      { "arabic": "على",   "wrong_vowel_only": "ala",    "tier1": "`ala",    "tier2": "Ⲵala",    "meaning": "on/upon" },
+      { "arabic": "معاك",  "wrong_vowel_only": "maak",   "tier1": "ma`ak",   "tier2": "maⲴak",   "meaning": "with you" }
+    ]
+  },
+
+  "spelling_rules": [
+    {
+      "id": 1,
+      "name": "Gemination (Doubled consonants)",
+      "rule": "Doubled consonants are written doubled.",
+      "examples": ["حُبّ → hobb / Ϩobb", "جدا → geddan"]
+    },
+    {
+      "id": 2,
+      "name": "Definite Article",
+      "rule": "Always written 'el' regardless of sun/moon-letter assimilation in speech. Spelling consistency is prioritized over phonetic transcription to reduce writer decision load.",
+      "examples": ["البيت → el beet", "الشارع → el ϣaareⲴ"]
+    },
+    {
+      "id": 3,
+      "name": "Glottal Stop",
+      "rule": "Written only mid-word and word-finally, using Ɐ in Tier 2 (apostrophe ' in Tier 1). Word-initial glottal stop — whether etymological ء or Cairene ق — is always silent in spelling and encoded.",
+      "examples": ["أنا → ana (not Ɐana)", "مسئولية → masⱯooleya"]
+    },
+    {
+      "id": 4,
+      "name": "Digraph Integrity",
+      "rule": "Applies to Tier 1 only (sh/kh/gh as inseparable two-letter units). In Tier 2 these are single letters (ϣ, x, ɣ) so this rule is not applicable.",
+      "tier2_note": "Superseded by single-character mapping: sh→ϣ, kh→x, gh→ɣ"
+    },
+    {
+      "id": 5,
+      "name": "Cairene ق and Hamza Merger",
+      "rule": "Ɐ represents the glottal phoneme regardless of etymological origin. Cairene ق and hamza are treated as a single phoneme (glottal stop) because they are phonetically identical in the Cairene dialect; q is reserved for formal/MSA pronunciation.",
+      "examples": ["قال → Ɐaal (everyday: 'aal)", "قرآن → Qur'an (formal, retains q)"]
+    },
+    {
+      "id": 6,
+      "name": "The Letters P and V",
+      "rule": "P and V are full, independent letters, not interchangeable with B or F. p is used mainly in loanwords/modern vocabulary; v is an original, coexisting phoneme.",
+      "examples": ["بيانو → piano (not biano)", "بنك → bank", "أوفر → over"]
+    }
+  ],
+
+  "standardized_word_list": [
+    { "arabic": "إن شاء الله", "tier1": "inshala / insha'allah", "tier2": "inϣāⱯallāh", "notes": "Written as one word" },
+    { "arabic": "قهوة", "tier1": "ahwa", "tier2": "ahwa", "notes": "Cairo drops initial hamza" },
+    { "arabic": "أيوة", "tier1": "aywa", "tier2": "aywa", "notes": "—" },
+    { "arabic": "مش", "tier1": "mesh", "tier2": "miϣ", "notes": "—" },
+    { "arabic": "يعني", "tier1": "yaani / ya`ni", "tier2": "yaⲴni", "notes": "—" },
+    { "arabic": "كده / كدة", "tier1": "kida", "tier2": "keda", "notes": "—" },
+    { "arabic": "عشان", "tier1": "ashan / `ashan", "tier2": "Ⲵaϣan", "notes": "—" },
+    { "arabic": "بس", "tier1": "bass", "tier2": "bass", "notes": "—" },
+    { "arabic": "زي", "tier1": "zay", "tier2": "zay", "notes": "—" },
+    { "arabic": "والله", "tier1": "walla / wallahi", "tier2": "wallāh / wallāhi", "notes": "—" },
+    { "arabic": "الحمدلله", "tier1": "elhamdolilla / hamdilla", "tier2": "elϨamdolillāh", "notes": "One word, everyday" },
+    { "arabic": "بسم الله", "tier1": "besmella", "tier2": "besmellāh", "notes": "—" },
+    { "arabic": "ماشاء الله", "tier1": "mashalla / masha'alla", "tier2": "māϣāⱯallāh", "notes": "—" },
+    { "arabic": "يارب", "tier1": "ya rab", "tier2": "yā rabb", "notes": "—" }
+  ],
+
+  "loanword_examples": [
+    { "arabic": "تليفزيون", "tier1": "televezyon", "source": "English — television" },
+    { "arabic": "كمبيوتر",  "tier1": "kombyoter",  "source": "English — computer" },
+    { "arabic": "موبايل",   "tier1": "mobayl",     "source": "English — mobile" },
+    { "arabic": "أوتوبيس",  "tier1": "otobees",    "source": "French — autobus" },
+    { "arabic": "بيانو",    "tier1": "piano",  "wrong": "biano",  "notes": "Musical instrument" },
+    { "arabic": "بيتزا",    "tier1": "pizza / pitza", "wrong": "bizza", "notes": "Food loanword" },
+    { "arabic": "باركينج",  "tier1": "parking", "wrong": "barking", "notes": "Ambiguous without p" },
+    { "arabic": "بلاستيك",  "tier1": "plastic", "wrong": "blastic", "notes": "—" },
+    { "arabic": "برينتر",   "tier1": "printer", "wrong": "brinter", "notes": "Tech vocabulary" },
+    { "arabic": "بروجكت",   "tier1": "project",  "wrong": "broject", "notes": "Professional context" },
+    { "arabic": "باسبور",   "tier1": "passport / passpour", "wrong": "bassport / basboor", "notes": "Official documents" },
+    { "arabic": "بامب",     "tier1": "pump", "wrong": "bumb", "notes": "Engineering term" }
+  ],
+
+  "sample_texts": {
+    "tier2_academic": "Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya. Keda miϣ ra'y, dah ϨaⱯiⱯa.",
+    "tier1_everyday": "Ana baheb Masr. El ahwa el masreya ahesan ahwa fi el donya. Keda mesh ra'y, dah ha'i'a (haqiqa).",
+    "arabic_script": "أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا. كدة مش رأي. دة حقيقة.",
+    "stress_test_sentences_tier2": [
+      "Ana Ⲵarif inno el loɣa el maṣreya aϨsan loɣa fi el donya, we da elli xallāni aϣtaɣal feha koll yoom.",
+      "El ott el adeem baⲴdeen ge el beet we Ϩabbeto geddan — howa el waϨeed elli miϣ meⲴaⱯadni.",
+      "Bass lamma Ϩawwelt aṭbaⲴ el awraaⱯ el mohemma kanet el printer miϣ ϣaɣɣala lel asaf Ⲵaϣan el power cable miϣ mawgood.",
+      "El ḍabⲴ da ẓahar ṭabⲴan we el mawḍooⲴ da etⲴaⱯad xalaaṣ.",
+      "Inϣāllāh bokra nϣūf, elϨamdillāh Ⲵandena waⱯt.",
+      "El moϣkela en el ϣaɣɣāla el xeϣna el ɣaϣeema el over ɣalaṭatha ziyāda fe el θamarāt.",
+      "We ewⲴa el ouda elli goowa el beet el beeⱯa elli fi el ϣaariⲴ el mahgoor laϨsan hatexsar keteer.",
+      "ForⱯoⲴlowz raⱯaṣ Ⲵa el sellem we bass keda ya sidi we el meⲴallem Sardeena dafaⲴ feloos keteer lel ṣowaan we el farsha Ⲵa el ard.",
+      "Oom oⱯaf we enta betkallemni, Oom oⱯaf boṣṣeli we fahhemni.",
+      "EϨna benⱯool aaxer madena heyya madenet el Salaam ya abo el Ⲵorréf, matlaɣweϣϣi Ⲵalayya we balaaϣ avwara ya over enta."
+    ]
+  },
+
+  "design_principles": [
+    "One symbol per sound: each sound maps to exactly one symbol and vice versa.",
+    "Simplicity prioritized over aesthetics: speed and ease over formal elegance.",
+    "Cairene reference dialect: urban Cairo Egyptian Arabic is the normative standard.",
+    "No numerals: no Arabic or Western numeral substitutes a letter.",
+    "Keyboard accessibility (Tier 1): everyday symbols typeable on standard Latin keyboards; Tier 2 requires supplementary Greek/Coptic input."
+  ],
+
+  "origin_legend": {
+    "ASCII": "Standard ASCII characters, no special input needed",
+    "Coptic": "Ϩ (U+03E8), Ϣ (U+03E2), Ⲵ (U+2CB4)",
+    "Greek": "Θ (U+0398), Ɣ (U+0194)",
+    "Latin_ext": "Ð (U+00D0); emphatics Ṣ Ḍ Ṭ Ẓ (dot-below rule); Ɐ (U+2C6F)",
+    "Vowel_semivowel": "Three Waws (O/U/W) and three Yaas (E/I/Y)",
+    "Borrowed": "C and J — restricted to code-switched words in original spelling only"
+  }
+}
+
+</script>
+
+<script>
+(function () {
+  const RULES = JSON.parse(document.getElementById('masriTier2Data').textContent);
+
+  // ---- Capitalization map, built from the JSON alphabet itself ----
+  // Every letter pair (Greek, Coptic, Latin-ext, ASCII) where upper/lower differ
+  // is included automatically, so word-initial capitalization is guaranteed to
+  // cover the full Tier 2 character set rather than a hand-picked subset.
+  // Letters where the Framework defines upper === lower (e.g. Ⲵ ain, Ɐ hamza)
+  // are correctly left out, matching the JSON's "uppercase = lowercase" notes.
+  function buildUpperMap(rules) {
+    const map = {};
+    const sources = [...rules.alphabet, ...(rules.borrowed_orthography || [])];
+    for (const l of sources) {
+      if (l.letter_lower && l.letter_upper && l.letter_lower !== l.letter_upper) {
+        map[l.letter_lower] = l.letter_upper;
+      }
+    }
+    return map;
+  }
+  const UPPER_MAP = buildUpperMap(RULES);
+
+  // ---- Dictionary is built live from RULES.standardized_word_list (Tier 2 JSON) ----
+  // A small set of additional everyday Franco spellings (numerals for hamza/ain, etc.)
+  // is layered on top so more real-world typing is recognised, all still resolving
+  // to the exact canonical Tier 2 forms defined in the JSON.
+  const EXTRA_INPUT_VARIANTS = {
+    "inϣāⱯallāh": ["insha2allah", "inshallah", "in2shallah", "inshaallah"],
+    "miϣ": ["mish"],
+    "yaⲴni": ["ya3ni", "ya2ni"],
+    "Ⲵaϣan": ["3ashan", "2ashan", "'ashan"],
+    "wallāh": ["wallah"],
+    "elϨamdolillāh": ["elhamdolillah", "hamdilla", "elhamdilla", "elhamdolilla"],
+    "besmellāh": ["bismillah", "besmella", "besmellaa", "besmillah", "besmellah"],
+    "māϣāⱯallāh": ["mashallah", "masha2allah", "masha'allah"]
+  };
+
+  function splitSlash(s) { return s.split('/').map(x => x.trim()); }
+  function cleanVariant(s) { return s.replace(/`/g, '').replace(/\(.*?\)/g, '').trim().toLowerCase(); }
+
+  function buildDictionary(rules) {
+    const dict = [];
+    for (const entry of rules.standardized_word_list) {
+      const normTier1 = entry.tier1.replace(/\s*\/\s*/g, '/'); // collapse " / " so slash-separated forms aren't mistaken for phrases
+      if (normTier1.includes(' ')) continue; // genuine multi-word phrases (e.g. "ya rab") handled by PHRASES below
+      const t1parts = splitSlash(entry.tier1).map(cleanVariant).filter(Boolean);
+      const t2parts = splitSlash(entry.tier2);
+      if (t1parts.length === t2parts.length && t1parts.length > 1) {
+        // one-to-one pairing, e.g. walla -> wallāh, wallahi -> wallāhi
+        t1parts.forEach((v, i) => dict.push({ variants: [v], out: t2parts[i] }));
+      } else {
+        const out = t2parts[0];
+        const extra = EXTRA_INPUT_VARIANTS[out] || [];
+        dict.push({ variants: [...new Set([...t1parts, ...extra])], out });
+      }
+    }
+    // standalone everyday spelling not tied one-to-one to a JSON row
+    dict.push({ variants: ["wallah"], out: "wallāh" });
+    return dict;
+  }
+
+  const DICTIONARY = buildDictionary(RULES);
+
+  // "يارب" / ya rab -> yā rabb, from standardized_word_list (multi-word, handled as phrase)
+  const PHRASES = [{ re: /\bya\s*rab\b/gi, out: "yā rabb" }];
+
+  // ---- Academic (Tier 2) enrichment: long-vowel macrons for a curated set of
+  // very common words. Vowel length isn't recoverable from Franco spelling
+  // alone (e.g. "3ashan" and "7abibi" both use single letters for long
+  // vowels), so this is a small hand-checked list rather than a blind rule —
+  // everything else still falls through to the plain letter-substitution
+  // pass used in Everyday mode. Only applied when Academic mode + the
+  // "More formal" consonant setting are both on.
+  const FORMAL_OVERRIDES = {
+    "3ashan": "Ⲵaϣān", "ashan": "Ⲵaϣān", "2ashan": "Ⲵaϣān",
+    "7abibi": "ϩabībī", "habibi": "ϩabībī",
+    "7abibti": "ϩabībtī", "habibti": "ϩabībtī"
+  };
+
+  function isAllCapsWord(s) { const letters = s.replace(/[^A-Za-z]/g, ''); return letters.length > 0 && letters === letters.toUpperCase() && letters !== letters.toLowerCase(); }
+  function startsUpper(s) { return /^[A-Z]/.test(s); }
+
+  function replaceCasedDigraph(word, re, lower, upper) {
+    return word.replace(re, m => (m === m.toUpperCase() ? upper : lower));
+  }
+
+  function lookupDictionary(normalized) {
+    for (const entry of DICTIONARY) if (entry.variants.includes(normalized)) return entry.out;
+    return null;
+  }
+
+  function applyCasing(word, out) {
+    if (isAllCapsWord(word)) return out.toUpperCase();
+    if (startsUpper(word)) {
+      const c0 = out[0];
+      return (UPPER_MAP[c0] || c0.toUpperCase()) + out.slice(1);
+    }
+    return out;
+  }
+
+  // ---- Everyday (Tier 1) conversion: plain-Latin numeral & digraph scheme ----
+  // Unlike Tier 2 (Academic), Everyday mode never introduces Coptic/Greek/
+  // Latin-extended characters. Numerals map to plain ASCII letters/marks,
+  // and digraphs (kh, sh, gh, th, dh) are kept literally as typed, with
+  // th/dh following the Casual↔Formal toggle just like Tier 2 does.
+  function convertWordEveryday(word, formal) {
+    let w = word;
+
+    // Digraphs are kept as-is (Rule 4 does not apply in Tier 1 — digraphs
+    // are the canonical Tier 1 spelling, not something to be collapsed).
+    w = replaceCasedDigraph(w, /kh/gi, 'kh', 'Kh');
+    w = replaceCasedDigraph(w, /gh/gi, 'gh', 'Gh');
+    w = replaceCasedDigraph(w, /sh/gi, 'sh', 'Sh');
+    w = replaceCasedDigraph(w, /th/gi, formal ? 'th' : 's', formal ? 'Th' : 'S');
+    w = replaceCasedDigraph(w, /dh/gi, formal ? 'dh' : 'z', formal ? 'Dh' : 'Z');
+
+    // Numeral letters, longest combos first
+    w = w.replace(/3'/g, 'gh').replace(/6'/g, 'z').replace(/9'/g, 'd');
+    w = w.replace(/3/g, '`').replace(/7/g, 'h').replace(/6/g, 't').replace(/9/g, 's').replace(/8/g, 'gh').replace(/5/g, 'kh');
+
+    // Spelling Rule 3 (Glottal Stop): word-initial hamza/qaf (2 or ') is
+    // silent; mid/final hamza/qaf -> ' (apostrophe)
+    if (w[0] === '2' || w[0] === "'") w = w.slice(1);
+    w = w.replace(/2/g, "'");
+
+    if (isAllCapsWord(word)) {
+      w = w.toUpperCase();
+    } else if (startsUpper(word) && w.length) {
+      w = w[0].toUpperCase() + w.slice(1);
+    }
+    return w;
+  }
+
+  function convertWord(word, formal, academic) {
+    if (!academic) return convertWordEveryday(word, formal);
+
+    const normalized = word.toLowerCase();
+
+    if (academic && formal && FORMAL_OVERRIDES[normalized]) {
+      return applyCasing(word, FORMAL_OVERRIDES[normalized]);
+    }
+
+    const dictHit = lookupDictionary(normalized);
+    if (dictHit) return applyCasing(word, dictHit);
+
+    let w = word;
+    // Digraphs collapse to single Tier 2 letters (Spelling Rule 4: digraph integrity is Tier 1 only)
+    w = replaceCasedDigraph(w, /kh/gi, 'x', 'X');
+    w = replaceCasedDigraph(w, /gh/gi, 'ɣ', 'Ɣ');
+    w = replaceCasedDigraph(w, /sh/gi, 'ϣ', 'Ϣ');
+    w = replaceCasedDigraph(w, /th/gi, formal ? 'θ' : 's', formal ? 'Θ' : 'S');
+    w = replaceCasedDigraph(w, /dh/gi, formal ? 'ð' : 'z', formal ? 'Ð' : 'Z');
+
+    // Numeral letters, longest combos first
+    w = w.replace(/3'/g, 'ɣ').replace(/6'/g, 'ẓ').replace(/9'/g, 'ḍ');
+    w = w.replace(/3/g, 'Ⲵ').replace(/7/g, 'ϩ').replace(/6/g, 'ṭ').replace(/9/g, 'ṣ').replace(/8/g, 'ɣ').replace(/5/g, 'x');
+
+    // Spelling Rule 3 (Glottal Stop): word-initial hamza/qaf is silent; mid/final -> Ɐ
+    if (w[0] === '2' || w[0] === "'") w = w.slice(1);
+    w = w.replace(/2/g, 'Ɐ').replace(/'/g, 'Ɐ');
+
+    if (isAllCapsWord(word)) {
+      w = w.split('').map(ch => UPPER_MAP[ch] || ch.toUpperCase()).join('');
+    } else if (startsUpper(word) && w.length) {
+      const c0 = w[0];
+      w = (UPPER_MAP[c0] || c0.toUpperCase()) + w.slice(1);
+    }
+    return w;
+  }
+
+  const CopticSet = new Set(['ϩ', 'Ϩ', 'ϣ', 'Ϣ', 'Ⲵ']);
+  const GreekSet = new Set(['θ', 'Θ', 'ɣ', 'Ɣ']);
+  const LatinExtSet = new Set(['ð', 'Ð', 'ṣ', 'Ṣ', 'ḍ', 'Ḍ', 'ṭ', 'Ṭ', 'ẓ', 'Ẓ', 'Ɐ']);
+
+  function classify(ch) {
+    if (CopticSet.has(ch)) return 'origin-coptic';
+    if (GreekSet.has(ch)) return 'origin-greek';
+    if (LatinExtSet.has(ch)) return 'origin-latin';
+    return null;
+  }
+
+  function convertText(text, formal, academic) {
+    let pre = text;
+    for (const p of PHRASES) pre = pre.replace(p.re, p.out);
+    const tokenRe = /[A-Za-z0-9']+/g;
+    const converted = pre.replace(tokenRe, m => convertWord(m, formal, academic));
+    return capitalizeSentences(converted);
+  }
+
+  // Force the first letter of the text, and the first letter after every
+  // sentence-ending punctuation (. ! ?), to be uppercase — regardless of
+  // whether the user typed that letter in lowercase (e.g. "7oda" -> "Ϩoda").
+  function upperChar(ch) { return UPPER_MAP[ch] || ch.toUpperCase(); }
+
+  function capitalizeSentences(text) {
+    const chars = [...text];
+    let capNext = true;
+    for (let i = 0; i < chars.length; i++) {
+      const ch = chars[i];
+      if (ch === '.' || ch === '!' || ch === '?') { capNext = true; continue; }
+      if (capNext) {
+        if (/[\s"'“”‘’(\[]/.test(ch)) continue; // skip whitespace/opening quotes, keep waiting
+        chars[i] = upperChar(ch);
+        capNext = false;
+      }
+    }
+    return chars.join('');
+  }
+
+  function escapeHtml(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+
+  function renderHighlighted(text, highlight) {
+    if (!highlight) return escapeHtml(text);
+    let html = '';
+    for (const ch of text) {
+      const cls = classify(ch);
+      html += cls ? `<span class="${cls}">${escapeHtml(ch)}</span>` : escapeHtml(ch);
+    }
+    return html;
+  }
+
+  const inputBox = document.getElementById('inputBox');
+  const outputBox = document.getElementById('outputBox');
+  const formalToggle = document.getElementById('formalToggle');
+  const highlightToggle = document.getElementById('highlightToggle');
+  const copyBtn = document.getElementById('copyBtn');
+
+  let lastConverted = '';
+  let academicMode = false; // Everyday (default) vs Academic — Tier 2
+
+  function update() {
+    const text = inputBox.value;
+    const formal = formalToggle.checked;
+    lastConverted = convertText(text, formal, academicMode);
+    outputBox.innerHTML = renderHighlighted(lastConverted, highlightToggle.checked);
+  }
+
+  // ---------------------------------------------------------------------
+  // Interface language: EN (default) / EG-AR — Egyptian Arabic vernacular
+  // written in Arabic script (not Modern Standard Arabic). This only
+  // translates interface chrome; the Franco input and Masri output are
+  // language-agnostic and never change with this toggle.
+  // ---------------------------------------------------------------------
+  const TRANSLATIONS = {
+    en: {
+      github_label: "GitHub",
+      mode_everyday: "Masri — Everyday Writing",
+      mode_academic: "Masri — Academic (Tier 2)",
+      tier_badge: "Tier 2",
+      framework_teaser: "This system is built on a full 35-letter framework — click to explore.",
+      eyebrow: "أبجدية &nbsp;·&nbsp; El Abgadeyya El Maṣreyya",
+      hero_title: 'Turn Franco into <span class="flame">Masri 🔥</span>',
+      hero_sub: "You type <em>3ashan</em> and <em>7abibi</em>… Now see it in Masri — how it was meant to look 👀",
+      input_label: "Type it like you normally would",
+      input_placeholder: "Type Franco here… like 3ashan / 7abibi 😏",
+      live_tag: "👇 LIVE OUTPUT (instant)",
+      output_label: "Masri ✨",
+      copy_btn: "Copy",
+      copied_label: "Copied",
+      copy_send_btn: "🔥 Copy &amp; Send",
+      share_btn: "📲 Share with friends",
+      try_name_btn: "😏 Try your name",
+      copied_bang: "✅ Copied!",
+      copied_share: "✅ Copied to share!",
+      share_tagline: "✨ turned into Masri at masri.app",
+      name_hook_title: "See your name in Masri 👇",
+      name_placeholder: "Type your name… e.g. 3ali, 7oda, Yasmin",
+      name_reveal_label: "This is your name in Masri",
+      name_copy_btn: "🔥 Copy it &amp; send it",
+      ba_title: "Look at the difference 😳",
+      identity_line1: "This is inspired by how Egyptian writing evolved — long before keyboards.",
+      identity_line2: "You're just picking it back up.",
+      features_title: "Keep it simple",
+      feature_1: "Works with the Franco you already type",
+      feature_2: "Instant conversion",
+      feature_3: "Ready to copy &amp; share",
+      feature_4: "Shows where letters come from",
+      style_label: "Style",
+      seg_casual: "😎 Casual Egyptian",
+      seg_formal: "🧠 More formal",
+      origins_label: "👁️ Show letter origins",
+      legend_coptic: "Coptic — Ϩ ϣ Ⲵ",
+      legend_greek: "Greek — θ ɣ",
+      legend_latin: "Latin extended — ð ṣ ḍ ṭ ẓ Ɐ",
+      rules_summary: "Conversion rules applied (numeral &amp; digraph mapping)",
+      framework_summary: "Full Framework reference (loaded from the Tier 2 rules JSON)",
+      disclaimer: "Rule-based, not a language model — ambiguous cases (gemination, vowel length, formal/merger consonants) may need manual review against the Framework's standardised word list."
+    },
+    ar: {
+      github_label: "GitHub",
+      mode_everyday: "مصري — الكتابة اليومية",
+      mode_academic: "مصري — أكاديمي (Tier 2)",
+      tier_badge: "Tier 2",
+      framework_teaser: "النظام ده مبني على أبجدية كاملة من 35 حرف — دوس تستكشفها.",
+      eyebrow: "الأبجدية المصرية",
+      hero_title: 'حوّل الفرانكو لـ <span class="flame">مصري 🔥</span>',
+      hero_sub: "بتكتب <em>3ashan</em> و<em>7abibi</em>… دلوقتي شوفها بالمصري — الشكل اللي المفروض تتكتب بيه 👀",
+      input_label: "اكتب زي ما انت متعود",
+      input_placeholder: "اكتب الفرانكو هنا… زي 3ashan / 7abibi 😏",
+      live_tag: "👇 النتيجة على طول",
+      output_label: "مصري ✨",
+      copy_btn: "انسخ",
+      copied_label: "اتنسخ",
+      copy_send_btn: "🔥 انسخ وابعت",
+      share_btn: "📲 شير مع صحابك",
+      try_name_btn: "😏 جرّب اسمك",
+      copied_bang: "✅ اتنسخ!",
+      copied_share: "✅ جاهز للشير!",
+      share_tagline: "✨ اتحول لمصري على masri.app",
+      name_hook_title: "شوف اسمك بالمصري 👇",
+      name_placeholder: "اكتب اسمك… زي 3ali, 7oda, Yasmin",
+      name_reveal_label: "ده اسمك بالمصري",
+      name_copy_btn: "🔥 انسخه وابعته",
+      ba_title: "بص على الفرق 😳",
+      identity_line1: "ده مستوحى من إزاي الكتابة المصرية اتطورت — من قبل ما الكيبورد يتعمل.",
+      identity_line2: "انت بس بترجعله تاني.",
+      features_title: "بسيطة كده",
+      feature_1: "بيشتغل مع نفس الفرانكو اللي بتكتبه أصلاً",
+      feature_2: "تحويل فوري",
+      feature_3: "جاهز للنسخ والمشاركة",
+      feature_4: "بيوريك الحروف جايه منين",
+      style_label: "الأسلوب",
+      seg_casual: "😎 مصري عامي",
+      seg_formal: "🧠 أكتر رسمية",
+      origins_label: "👁️ اظهر أصل الحروف",
+      legend_coptic: "قبطي — Ϩ ϣ Ⲵ",
+      legend_greek: "يوناني — θ ɣ",
+      legend_latin: "لاتيني موسّع — ð ṣ ḍ ṭ ẓ Ɐ",
+      rules_summary: "قواعد التحويل (الأرقام والحروف المركّبة)",
+      framework_summary: "مرجع الـ Framework الكامل (تفاصيل تقنية بالإنجليزي)",
+      disclaimer: "شغال بقواعد ثابتة، مش موديل لغوي — في حالات مش واضحة (تشديد، طول الحركة، حروف رسمية) ممكن تحتاج مراجعة يدوية."
+    }
+  };
+
+  let currentLang = 'en';
+  function t(key) { return TRANSLATIONS[currentLang][key] || TRANSLATIONS.en[key] || ''; }
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    const app = document.getElementById('masri-app');
+    app.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (TRANSLATIONS[lang][key] !== undefined) el.innerHTML = TRANSLATIONS[lang][key];
+    });
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+      const key = el.getAttribute('data-i18n-ph');
+      if (TRANSLATIONS[lang][key] !== undefined) el.setAttribute('placeholder', TRANSLATIONS[lang][key]);
+    });
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+    });
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+  });
+  setLanguage('en');
+
+  inputBox.addEventListener('input', update);
+  formalToggle.addEventListener('change', update);
+  highlightToggle.addEventListener('change', update);
+
+  document.querySelectorAll('.preset-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      inputBox.value = btn.getAttribute('data-text');
+      update();
+    });
+  });
+
+  function bloomLotus(btn) {
+    const icon = btn.querySelector('.lotus-icon');
+    if (!icon) return;
+    icon.classList.remove('bloom');
+    void icon.offsetWidth; // restart animation
+    icon.classList.add('bloom');
+    setTimeout(() => icon.classList.remove('bloom'), 650);
+  }
+
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(lastConverted).then(() => {
+      copyBtn.textContent = t('copied_label');
+      copyBtn.classList.add('copied');
+      setTimeout(() => { copyBtn.textContent = t('copy_btn'); copyBtn.classList.remove('copied'); }, 1200);
+    });
+  });
+
+  inputBox.value = "3ashan keda ana 7abeit el mashroo3 da, bass el 5otta t2eela sha2wa.";
+  update();
+
+  // ---- Mode switch: Everyday (simple, viral) vs Academic — Tier 2 (full framework) ----
+  const modeButtons = document.querySelectorAll('#modeSwitch .mode-btn');
+  modeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mode = btn.getAttribute('data-mode');
+      academicMode = mode === 'academic';
+      modeButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('masri-app').classList.toggle('mode-academic', academicMode);
+
+      // Everyday defaults to the simpler, casual settings; Academic reveals
+      // the full consonant/origin controls and switches them to their
+      // fullest, most phonologically explicit state.
+      formalToggle.checked = academicMode;
+      highlightToggle.checked = academicMode;
+      segButtons.forEach(b => b.classList.toggle('active', (b.getAttribute('data-formal') === '1') === academicMode));
+
+      update();
+      updateName();
+    });
+  });
+
+  // ---- Segmented "Casual Egyptian / More formal" control drives the hidden formalToggle ----
+  const segButtons = document.querySelectorAll('#formalSegmented .seg-btn');
+  segButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      segButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      formalToggle.checked = btn.getAttribute('data-formal') === '1';
+      update();
+      updateName();
+    });
+  });
+
+  // ---- "Try your name" viral hook ----
+  const nameInputBox = document.getElementById('nameInputBox');
+  const nameOutputBox = document.getElementById('nameOutputBox');
+  const nameCopyBtn = document.getElementById('nameCopyBtn');
+  const nameCopyLabel = nameCopyBtn.querySelector('[data-i18n="name_copy_btn"]');
+  let lastName = '';
+
+  function updateName() {
+    const text = nameInputBox.value.trim();
+    lastName = text ? convertText(text, formalToggle.checked, academicMode) : 'Ⲵali';
+    nameOutputBox.innerHTML = renderHighlighted(lastName, highlightToggle.checked);
+  }
+  nameInputBox.addEventListener('input', updateName);
+  updateName();
+
+  nameCopyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(lastName).then(() => {
+      bloomLotus(nameCopyBtn);
+      const original = nameCopyLabel.textContent;
+      nameCopyLabel.textContent = t('copied_bang');
+      setTimeout(() => { nameCopyLabel.textContent = original; }, 1200);
+    });
+  });
+
+  document.getElementById('tryNameBtn').addEventListener('click', () => {
+    document.getElementById('nameSection').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    nameInputBox.focus();
+  });
+
+  // ---- Copy & Send / Share buttons for the main converter ----
+  const shareText = () => `${lastConverted}\n\n${t('share_tagline')}`;
+  const copySendBtn = document.getElementById('copySendBtn');
+  const copySendLabel = copySendBtn.querySelector('[data-i18n="copy_send_btn"]');
+
+  copySendBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(lastConverted).then(() => {
+      bloomLotus(copySendBtn);
+      const original = copySendLabel.textContent;
+      copySendLabel.textContent = t('copied_bang');
+      setTimeout(() => { copySendLabel.textContent = original; }, 1200);
+    });
+  });
+
+  document.getElementById('shareBtn').addEventListener('click', () => {
+    if (navigator.share) {
+      navigator.share({ text: shareText() }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(shareText()).then(() => {
+        const btn = document.getElementById('shareBtn');
+        const original = btn.innerHTML;
+        btn.textContent = t('copied_share');
+        setTimeout(() => { btn.innerHTML = original; }, 1400);
+      });
+    }
+  });
+
+  // ---------------------------------------------------------------------
+  // Render the Framework reference panel directly from the embedded JSON
+  // ---------------------------------------------------------------------
+  function renderFramework(rules) {
+    const el = document.getElementById('frameworkRules');
+    if (!el) return;
+    let html = '';
+
+    // Ayin rule — "the most critical rule"
+    const ay = rules.ayin_rule;
+    html += `<div class="fw-ayin">
+      <div class="fw-name">${escapeHtml(ay.title)}</div>
+      <div class="fw-text">${escapeHtml(ay.note)} Tier 1 uses <code>${escapeHtml(ay.tier1_symbol)}</code>, Tier 2 uses <code>${escapeHtml(ay.tier2_symbol)}</code>.</div>
+      <div class="fw-ex">${ay.examples.map(e => `${e.tier1} → ${e.tier2} (${e.meaning})`).join(' &nbsp;·&nbsp; ')}</div>
+    </div>`;
+
+    // Spelling rules
+    html += '<div class="fw-block"><h3>Spelling rules</h3>';
+    for (const r of rules.spelling_rules) {
+      const text = r.tier2_note ? `${r.rule} <em>${r.tier2_note}</em>` : r.rule;
+      const ex = (r.examples || []).join(' &nbsp;·&nbsp; ');
+      html += `<div class="fw-rule">
+        <div class="fw-name">${r.id}. ${escapeHtml(r.name)}</div>
+        <div class="fw-text">${escapeHtml(text)}</div>
+        ${ex ? `<div class="fw-ex">${escapeHtml(ex)}</div>` : ''}
+      </div>`;
+    }
+    html += '</div>';
+
+    // Full alphabet reference (collapsible)
+    html += `<div class="fw-block"><h3>Full Tier 2 alphabet (${rules.alphabet.length} letters)</h3>
+      <details><summary style="cursor:pointer;color:var(--ink-dim);font-size:12px;">show / hide table</summary>
+      <table class="fw-alpha-table"><thead><tr>
+        <th>#</th><th>Tier 2</th><th>Arabic</th><th>Name</th><th>IPA</th><th>Origin</th>
+      </tr></thead><tbody>`;
+    for (const l of rules.alphabet) {
+      html += `<tr>
+        <td>${l.no}</td>
+        <td>${escapeHtml(l.letter_upper)} / ${escapeHtml(l.letter_lower)}</td>
+        <td>${escapeHtml(l.arabic)}</td>
+        <td>${escapeHtml(l.name)}</td>
+        <td>${escapeHtml(l.ipa)}</td>
+        <td>${escapeHtml(l.origin)}</td>
+      </tr>`;
+    }
+    html += '</tbody></table></details></div>';
+
+    // Standardized word list actually used to build the DICTIONARY above
+    html += '<div class="fw-block"><h3>Standardised words (drives the dictionary lookup)</h3><table class="fw-alpha-table"><thead><tr><th>Arabic</th><th>Tier 1</th><th>Tier 2</th></tr></thead><tbody>';
+    for (const w of rules.standardized_word_list) {
+      html += `<tr><td>${escapeHtml(w.arabic)}</td><td>${escapeHtml(w.tier1)}</td><td>${escapeHtml(w.tier2)}</td></tr>`;
+    }
+    html += '</tbody></table></div>';
+
+    // Credit
+    const m = rules.meta;
+    html += `<div class="fw-credit">${escapeHtml(m.system)} — ${escapeHtml(m.tier)}. Author: ${escapeHtml(m.author)}, ${m.year}. License: ${escapeHtml(m.license)}. Reference dialect: ${escapeHtml(m.reference_dialect)}.</div>`;
+
+    el.innerHTML = html;
+  }
+
+  renderFramework(RULES);
+
+  // Keep the teaser's letter count in sync with the actual framework data
+  const letterCount = RULES.alphabet.length;
+  TRANSLATIONS.en.framework_teaser = `This system is built on a full ${letterCount}-letter framework — click to explore.`;
+  TRANSLATIONS.ar.framework_teaser = `النظام ده مبني على أبجدية كاملة من ${letterCount} حرف — دوس تستكشفها.`;
+  document.getElementById('frameworkTeaser').innerHTML = TRANSLATIONS[currentLang].framework_teaser;
+})();
+</script>
