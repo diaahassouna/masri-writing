@@ -1,0 +1,57 @@
+/* ===================================================================
+   Masri Writing System — shared design tokens & cross-page components
+   Used by every page. Page-specific layout lives in its own CSS file.
+   =================================================================== */
+
+.masri-page {
+  --bg: #0d1826;
+  --panel: #142338;
+  --panel-2: #0f1e30;
+  --border: #24374f;
+  --ink: #eef2f7;
+  --ink-dim: #93a5bd;
+  --gold: #c9a04a;
+  --burgundy: #8a2a3a;
+  --coptic: #4fc4b0;
+  --greek: #d9a441;
+  --latin-ext: #9a7fd1;
+  --vowel: #5aa9e6;
+  --borrowed: #e2735c;
+  --gray-era: #7c8ba3;
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  padding: 28px 24px 48px;
+  border-radius: 14px;
+  max-width: 980px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.masri-page * { box-sizing: border-box; }
+.masri-page h1, .masri-page h2, .masri-page h3 { font-family: var(--font-display); margin: 0; }
+.masri-page a { color: var(--gold); }
+.masri-page kbd { background: var(--panel-2); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-family: var(--font-mono); font-size: 12px; }
+.masri-page code { font-family: var(--font-mono); background: var(--panel-2); border-radius: 4px; padding: 1px 5px; font-size: 12.5px; }
+.masri-page[dir="rtl"] { direction: rtl; }
+
+/* Topbar: back/history links + language switcher, shared verbatim on every page */
+.topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; flex-wrap: wrap; gap: 10px; }
+.topbar-links { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.back-link { color: var(--ink-dim); text-decoration: none; font-size: 13px; }
+.back-link:hover { color: var(--gold); }
+.gh-link { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-dim); text-decoration: none; font-size: 12px; border: 1px solid var(--border); border-radius: 7px; padding: 5px 10px; transition: border-color .15s, color .15s; }
+.gh-link:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Language switcher: on each page this now links to the sibling page in the
+   other language (true separate URLs) rather than toggling in place. */
+.lang-switch { display: inline-flex; background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 3px; gap: 3px; flex-shrink: 0; }
+.lang-btn { border: none; background: transparent; color: var(--ink-dim); font-size: 11px; font-weight: 600; letter-spacing: .03em; padding: 5px 10px; border-radius: 6px; cursor: pointer; font-family: var(--font-ui); text-decoration: none; display: inline-block; }
+.lang-btn:hover { color: var(--gold); }
+.lang-btn.active { background: var(--gold); color: #241a06; }
+.lang-btn.active:hover { color: #241a06; }
+
+.page-footer { text-align: center; font-size: 11px; color: var(--ink-dim); padding-top: 4px; }

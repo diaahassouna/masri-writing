@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الأبجدية المصرية — أبجدية مصري، الصوت ولوحات المفاتيح</title>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/alphabet.css"></head>
+<body>
+<div id="masri-alpha-app" class="masri-page" dir="rtl">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"></path>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"></path>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"></path>
+      </symbol>
+      <symbol id="speaker-icon" viewBox="0 0 24 24">
+        <path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"></path>
+        <path d="M16.5 12c0-1.77-.86-3.34-2.19-4.31l-.9 1.5A3.98 3.98 0 0 1 15 12c0 1.13-.5 2.14-1.3 2.83l.9 1.5A5.99 5.99 0 0 0 16.5 12z" fill="currentColor"></path>
+        <path d="M14.6 3.6l-.9 1.5A7.98 7.98 0 0 1 19 12a7.98 7.98 0 0 1-5.3 6.9l.9 1.5A9.98 9.98 0 0 0 21 12c0-3.9-2.2-7.2-6.4-8.4z" fill="currentColor"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="topbar-links">
+      <a class="back-link nav-link" href="arabizi_to_masri_viral_ar.html">← <span>ارجع للمحول</span></a>
+      <a class="gh-link nav-link" href="masri_prior_attempts_ar.html">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm.75 4v4.4l3.5 2.1-.6 1-4.15-2.5V4h1.25Z"></path></svg>
+        <span>ليه مش الفرانكو؟</span>
+      </a>
+      <a class="gh-link nav-link" href="masri_language_history_ar.html">
+        <span>اللغة في مصر</span>
+      </a>
+      <a class="gh-link" href="https://github.com/diaahassouna/masri-writing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="lang-switch" id="langSwitch"><a class="lang-btn" href="masri_alphabet.html">EN</a></div>
+  </div>
+
+  <header class="hero">
+    <svg class="hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <div class="eyebrow">الحروف &nbsp;·&nbsp; El Ḥoroof El Maṣreyya</div>
+    <h1>كل حرف. كل صوت. <span class="flame">الـ 37 كلهم.</span></h1>
+    <p class="sub">مش جدول نطق مضاف لحروف لاتينية بعلامات — أبجدية كاملة، اتبنت من أبجديات مصر نفسها: <span class="origin-coptic">القبطية</span>، <span class="origin-greek">اليونانية</span> و<span class="origin-latin">اللاتينية الموسّعة</span>، فوق نفس الأساس اللاتيني اللي انت بتكتب بيه دلوقتي.</p>
+
+    <div class="stat-row">
+      <div class="stat-card"><div class="stat-num">35</div><div class="stat-label">حرف أساسي</div></div>
+      <div class="stat-card"><div class="stat-num">+2</div><div class="stat-label">مستعار للكلمات الأجنبية</div></div>
+      <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">أبجديات تراثية</div></div>
+      <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">رقم مُستخدم كحرف</div></div>
+    </div>
+  </header>
+
+  <nav class="section-nav">
+    <a href="#alphabet-section">الأبجدية</a>
+    <a href="#ayin-section">قاعدة العين</a>
+    <a href="#vowels-section">الحركات</a>
+    <a href="#audio-section">الصوت</a>
+    <a href="#keyboard-section">لوحات المفاتيح</a>
+  </nav>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <!-- ============================= ALPHABET ============================= -->
+  <section class="alphabet-section" id="alphabet-section">
+    <h2>الأبجدية</h2>
+    <p class="section-intro">دوس <svg class="inline-speaker" viewBox="0 0 24 24" width="13" height="13"><use href="#speaker-icon"></use></svg> على أي كارت تسمعه. فلتر حسب أصل الحرف، أو دوّر بالاسم أو الصوت أو الحرف العربي اللي بيحل محله.</p>
+
+    <div class="alpha-controls">
+      <input type="text" id="alphaSearch" class="alpha-search" placeholder="دوّر: الاسم، النطق، الحرف العربي…">
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" data-origin="all"><span>الكل</span> <span class="chip-count"></span></button>
+        <button class="chip" data-origin="ASCII">اللاتيني الأساسي</button>
+        <button class="chip" data-origin="Coptic"><span class="dot dot-coptic"></span> <span>قبطي</span></button>
+        <button class="chip" data-origin="Greek"><span class="dot dot-greek"></span> <span>يوناني</span></button>
+        <button class="chip" data-origin="Latin ext."><span class="dot dot-latin"></span> <span>لاتيني موسّع</span></button>
+        <button class="chip" data-origin="Vowel/semivowel">حركات</button>
+        <button class="chip" data-origin="Borrowed">مستعار</button>
+      </div>
+    </div>
+
+    <div class="alpha-grid" id="alphaGrid"></div>
+    <p class="empty-state" id="emptyState" hidden="">مفيش حروف مطابقة للبحث ده.</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <!-- ============================= AYIN RULE ============================= -->
+  <section class="ayin-section" id="ayin-section">
+    <div class="ayin-card">
+      <div class="ayin-badge">أهم قاعدة</div>
+      <h2>مشكلة العين</h2>
+      <p>الفرانكو بيشيل <strong>ع</strong> خالص أو بيخبيها ورا الرقم 3. مصري بيديها حرف حقيقي: <span class="ayin-glyph">Ⲵ</span> — العين القبطية القديمة، حفيدة مباشرة لهيروغليفي معناه "عين". نظام Tier1 بيسهل عليك تكتبها ` باك تيك و هي موجودة في الكيبورد الانجليزي.</p>
+      <div class="ayin-examples" id="ayinExamples"></div>
+    </div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <!-- ============================= VOWELS ============================= -->
+  <section class="vowels-section" id="vowels-section">
+    <h2>الحركات والصوتيات المزدوجة</h2>
+    <div class="vowel-grid">
+      <div class="vowel-block">
+        <h3>حركات قصيرة</h3>
+        <table class="vowel-table" id="shortVowelTable"></table>
+      </div>
+      <div class="vowel-block">
+        <h3>حركات طويلة</h3>
+        <table class="vowel-table" id="longVowelTable"></table>
+      </div>
+      <div class="vowel-block">
+        <h3>صوتيات مزدوجة</h3>
+        <table class="vowel-table" id="diphthongTable"></table>
+      </div>
+    </div>
+    <p class="vowel-rule">الحركات القصيرة اختيارية في الكتابة العادية، بس لازمة في السياقات الغامضة والمواد التعليمية.</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <!-- ============================= AUDIO ============================= -->
+  <section class="audio-section" id="audio-section">
+    <h2>استمع وتعلم</h2>
+    <p class="section-intro">كل حرف بينطق فورًا في المتصفح بتاعك — من غير أي انتظار لملفات صوت جاهزة. اختار صوت، اسمع حرف واحد، أو شغّل الأبجدية كاملة من أول لآخر.</p>
+
+    <div class="audio-panel">
+      <div class="audio-controls-row">
+        <label class="audio-field">
+          <span>الصوت</span>
+          <select id="voiceSelect"></select>
+        </label>
+        <label class="audio-field">
+          <span>السرعة</span>
+          <input type="range" id="rateSlider" min="0.5" max="1.3" step="0.1" value="0.85">
+        </label>
+        <button class="cta-btn cta-primary" id="playAllBtn"><svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg><span>▶ شغّل الأبجدية كاملة</span></button>
+        <button class="cta-btn cta-secondary" id="stopAllBtn">⏹ إيقاف</button>
+      </div>
+      <p class="audio-note" id="voiceNote"></p>
+    </div>
+
+    <div class="listen-type-box">
+      <label for="listenInput">اكتب أي حاجة — مصري، فرانكو، أو عربي — واسمعها</label>
+      <div class="listen-row">
+        <textarea id="listenInput" rows="2" placeholder="مثال: Ⲵaϣan keda ana 7abeit el mashroo3 da"></textarea>
+        <button class="cta-btn cta-primary" id="listenPlayBtn">🔊 تشغيل</button>
+      </div>
+    </div>
+
+    <div class="record-script-box">
+      <div>
+        <h3>ساعد في تسجيل صوت حقيقي بلهجة أصلية</h3>
+        <p>صوت المتصفح بديل كويس، بس مفيش زي المتحدث الأصلي. حمّل سكريبت جاهز للقراءة بيغطي الـ 37 حرف والكلمات المثال بتاعتهم — واديه لأي حد عايز يسجل الصوت الحقيقي.</p>
+      </div>
+      <button class="cta-btn cta-secondary" id="downloadScriptBtn">⬇ حمّل سكريبت التسجيل (.txt)</button>
+    </div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <!-- ============================= KEYBOARDS ============================= -->
+  <section class="keyboard-section" id="keyboard-section">
+    <h2>لوحات المفاتيح</h2>
+    <p class="section-intro">الحروف القبطية واليونانية واللاتينية الموسّعة مش موجودة على أي كيبورد فيزيائي. دي كل الطرق الحقيقية لكتابتها — من كيبورد افتراضي شغال على أي جهاز دلوقتي، لحد لوحات Compose الأصلية لكل نظام تشغيل، وكمان طريقة الإدخال المخصصة لمصري اللي لسه تحت التطوير.</p>
+
+    <div class="keypad-box">
+      <h3><span>الكيبورد الافتراضي العام</span> <span class="keypad-tag">شغال على أي جهاز، من غير تحميل</span></h3>
+      <p>دوس على الحروف عشان تبني نص تحت، بعدين انسخه فين ما محتاجه.</p>
+      <div class="keypad-grid" id="keypadGrid"></div>
+      <div class="keypad-output-row">
+        <textarea id="keypadOutput" rows="2" placeholder="دوس على الحروف فوق…"></textarea>
+        <div class="keypad-output-actions">
+          <button class="cta-btn cta-secondary" id="keypadBackspace">⌫ رجوع</button>
+          <button class="cta-btn cta-secondary" id="keypadClear">مسح</button>
+          <button class="cta-btn cta-primary" id="keypadCopy">نسخ</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="os-tabs" id="osTabs">
+      <button class="os-tab active" data-os="windows">🪟 Windows</button>
+      <button class="os-tab" data-os="mac">🍎 macOS</button>
+      <button class="os-tab" data-os="linux">🐧 Linux</button>
+      <button class="os-tab" data-os="ios">📱 iOS</button>
+      <button class="os-tab" data-os="android">🤖 Android</button>
+    </div>
+
+    <div class="os-panel active" data-os-panel="windows">
+      <h3>Windows</h3>
+      <p><strong>الأسرع، من غير تحميل:</strong> في Word أو Outlook، اكتب كود اليونيكود الست عشري وبعدين دوس <kbd>Alt</kbd>+<kbd>X</kbd> عشان يتحول للحرف. الجدول الكامل تحت.</p>
+      <p><strong>الأنسب للكتابة اليومية:</strong> نزّل <a href="https://github.com/samhocevar/wincompose" target="_blank" rel="noopener">WinCompose</a> (مجاني ومفتوح المصدر) وحمّل ملف تسلسلات مصري. بيديك مفتاح Compose — امسكه، بعدين اكتب حرفين، مثلاً Compose ← <kbd>h</kbd> <kbd>a</kbd> ← Ϩ.</p>
+      <div class="os-btn-row">
+        <button class="cta-btn cta-secondary" id="downloadWinCompose">⬇ حمّل تسلسلات WinCompose (.txt)</button>
+        <button class="cta-btn cta-custom custom-im-btn">🛠 طريقة إدخال مصري المخصصة (تحت التطوير)</button>
+      </div>
+      <div class="hex-table-wrap">
+        <table class="hex-table" id="hexTableWin"></table>
+      </div>
+    </div>
+
+    <div class="os-panel" data-os-panel="mac">
+      <h3>macOS</h3>
+      <p><strong>مدمج، من غير تحميل:</strong> روح <em>System Settings → Keyboard → Text Input → Input Sources</em>، وضيف <strong>Unicode Hex Input</strong>. بدّل ليه، امسك <kbd>Option</kbd> واكتب الكود الست عشري (4 خانات) عشان تجيب الحرف.</p>
+      <p><strong>لمفتاح Compose حقيقي</strong> (عشان حروف مصري تبقى على طبقة Option خاصة بيها، بنفس نظام التذكير اللي تحت لينكس/ويندوز)، ابني تخطيط مخصص بتطبيق <a href="https://software.sil.org/ukelele/" target="_blank" rel="noopener">Ukelele</a> المجاني. البناء يدوي لأن macOS مفيهاش صيغة Compose نصية — تقدر تطلب نموذج بداية جاهز.</p>
+      <div class="os-btn-row">
+        <button class="cta-btn cta-custom custom-im-btn">🛠 طريقة إدخال مصري المخصصة (تحت التطوير)</button>
+      </div>
+      <div class="hex-table-wrap">
+        <table class="hex-table" id="hexTableMac"></table>
+      </div>
+    </div>
+
+    <div class="os-panel" data-os-panel="linux">
+      <h3>Linux</h3>
+      <p><strong>أحسن اختيار:</strong> لينكس عنده نظام Compose نصي أصلي. حمّل الملف تحت، احفظه باسم <code>~/.XCompose</code>، بعدين ضيف <code>export GTK_IM_MODULE=xim</code> (أو أعد تشغيل الجلسة) عشان يشتغل. مفتاح Compose بتاعك هو اللي انت مربطه في إعدادات الكيبورد بتاعة سطح المكتب (غالبًا <kbd>Right Alt</kbd> أو <kbd>CapsLock</kbd>).</p>
+      <p>نفس نظام التذكير بتاع ويندوز: Compose ← <kbd>h</kbd> <kbd>a</kbd> ← Ϩ، Compose ← <kbd>a</kbd> <kbd>i</kbd> ← Ⲵ، وهكذا — القائمة الكاملة في الملف.</p>
+      <div class="os-btn-row">
+        <button class="cta-btn cta-secondary" id="downloadXCompose">⬇ حمّل ملف .XCompose</button>
+        <button class="cta-btn cta-custom custom-im-btn">🛠 طريقة إدخال مصري المخصصة (تحت التطوير)</button>
+      </div>
+      <div class="hex-table-wrap">
+        <table class="hex-table" id="hexTableLinux"></table>
+      </div>
+    </div>
+
+    <div class="os-panel" data-os-panel="ios">
+      <h3>iOS</h3>
+      <p>iOS مبيسمحش بملفات Compose مخصصة أو تخطيطات من طرف ثالث على مستوى النظام، بس <em>Text Replacement</em> بتوصلك لـ90% من الحل: <em>Settings → General → Keyboard → Text Replacement → +</em>. ضيف كل اختصار تحت مرة واحدة — بعدها، كتابة مثلاً <code>:3</code> بتتحول أوتوماتيك لـ<code>Ⲵ</code> في أي حتة في الموبايل.</p>
+      <p><strong>لأي حاجة الاختصارات مش بتغطيها</strong> (أو على جهاز مشترك)، استخدم الكيبورد الافتراضي العام فوق في Safari وانسخ-الصق — شغال فورًا، من غير إعداد.</p>
+      <div class="os-btn-row">
+        <button class="cta-btn cta-custom custom-im-btn">🛠 كيبورد مصري المخصص (تحت التطوير)</button>
+      </div>
+      <div class="hex-table-wrap">
+        <table class="hex-table" id="hexTableIOS"></table>
+      </div>
+    </div>
+
+    <div class="os-panel" data-os-panel="android">
+      <h3>Android</h3>
+      <p><strong>Gboard / أغلب الكيبوردات:</strong> <em>Settings → System → Languages &amp; input → On-screen keyboard → [الكيبورد بتاعك] → Dictionary → Personal dictionary</em>. ضيف نفس اختصارات جدول iOS — اكتب الاختصار، دوس على الاقتراح عشان تدخل حرف مصري.</p>
+      <p><strong>للمستخدمين المتقدمين:</strong> <a href="https://anysoftkeyboard.github.io/" target="_blank" rel="noopener">AnySoftKeyboard</a> (مفتوح المصدر) بيدعم إضافات تخطيط مخصصة بالكامل لو عايز حروف مصري على طبقة كيبورد مخصصة.</p>
+      <div class="os-btn-row">
+        <button class="cta-btn cta-custom custom-im-btn">🛠 كيبورد مصري المخصص (تحت التطوير)</button>
+      </div>
+      <div class="hex-table-wrap">
+        <table class="hex-table" id="hexTableAndroid"></table>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <footer class="page-footer">
+    <p>الأبجدية المصرية (نظام كتابة مصري) — المستوى الثاني، أكاديمي/ثقافي. المؤلف: ضياء حسونة، 2026. الترخيص: CC BY 4.0. اللهجة المرجعية: عامية القاهرة الحضرية.</p>
+  </footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>window.MASRI_LANG = 'ar';</script>
+<script src="assets/js/alphabet.js"></script></body></html>

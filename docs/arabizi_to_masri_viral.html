@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masri — Turn Franco into a Real Egyptian Writing System</title>
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/viral.css"></head>
+<body>
+<div id="masri-app" class="masri-page" dir="ltr">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"></path>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"></path>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="topbar-links">
+      <a class="gh-link nav-link" href="masri_prior_attempts.html">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm.75 4v4.4l3.5 2.1-.6 1-4.15-2.5V4h1.25Z"></path></svg>
+        <span>Why not Franco?</span>
+      </a>
+      <a class="gh-link nav-link" href="masri_alphabet.html">
+        <span>The Alphabet &amp; Keyboards</span>
+      </a>
+      <a class="gh-link nav-link" href="masri_language_history.html">
+        <span>Language in Egypt</span>
+      </a>
+      <a class="gh-link" href="https://github.com/diaahassouna/masri-writing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="lang-switch" id="langSwitch"><a class="lang-btn" href="arabizi_to_masri_viral_ar.html">EG-AR</a></div>
+  </div>
+
+
+  <div class="mode-switch-row">
+    <div class="mode-switch" id="modeSwitch">
+      <button type="button" class="mode-btn active" data-mode="everyday">
+        <span class="mode-emoji">✨</span> <span>Masri — Everyday Writing</span>
+      </button>
+      <button type="button" class="mode-btn" data-mode="academic">
+        <span class="mode-emoji">🎓</span> <span>Masri — Academic (Tier 2)</span>
+      </button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <svg class="hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <div class="eyebrow">الأبجدية المصرية &nbsp;·&nbsp; El Abgadeyya El Maṣreyya</div>
+    <h1>Turn Franco into <span class="flame">Masri 🔥</span></h1>
+    <p class="sub">You type <em>3ashan</em> and <em>7abibi</em>… Now see it in Masri — how it was meant to look 👀</p>
+    <p class="hero-clarify" style="font-size:0.85em;opacity:0.75;max-width:32em;margin:0.25em auto 0.75em;">Franco is the informal way many Egyptians write Arabic using Latin letters and numbers. Masri turns it into a standardized writing system.</p>
+
+    <section class="pane pane-main">
+      <div class="pane-head">
+        <label for="inputBox">Type it like you normally would</label>
+        <div class="presets">
+          <button class="preset-btn" data-text="3ashan keda ana 7abeit el mashroo3 da, bass el 5etta t2eela we shedeeda.">example 1</button>
+          <button class="preset-btn" data-text="el 3ott el adeem 3ash fel share3 3ashan mesh la2y beit, we da wa7eshny 2awy.">example 2</button>
+          <button class="preset-btn" data-text="inshallah bokra nshoof, elhamdolillah 3andena wa2t. wallahi da kalam gamed.">example 3</button>
+        </div>
+      </div>
+      <textarea id="inputBox" spellcheck="false" placeholder="Type Franco here… like 3ashan / 7abibi 😏"></textarea>
+
+      <div class="live-tag">👇 LIVE OUTPUT (instant)</div>
+      <div class="pane-head">
+        <label>Masri ✨</label>
+        <span class="tier-badge academic-only">Tier 2</span>
+        <button id="copyBtn" class="copy-btn">Copy</button>
+      </div>
+      <div id="outputBox" class="output-box" aria-live="polite"></div>
+
+      <div class="cta-row">
+        <button class="cta-btn cta-primary" id="copySendBtn"><svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg><span>🔥 Copy &amp; Send</span></button>
+        <button class="cta-btn cta-secondary" id="shareBtn">📲 Share with friends</button>
+        <button class="cta-btn cta-secondary" id="tryNameBtn">😏 Try your name</button>
+      </div>
+    </section>
+  </header>
+
+  <section class="why-switch">
+    <h2>Why switch from Franco?</h2>
+    <p class="why-intro">Because Masri keeps everything you already know—while fixing the parts everyone complains about.</p>
+    <div class="why-list">
+      <div class="why-item"><span class="why-check">✅</span><span>No more 3, 5, 7 and 8 replacing letters.</span></div>
+      <div class="why-item"><span class="why-check">✅</span><span>Cleaner and easier to read.</span></div>
+      <div class="why-item"><span class="why-check">✅</span><span>One spelling instead of five different versions.</span></div>
+      <div class="why-item"><span class="why-check">✅</span><span>Still feels like the Egyptian Arabic you already type.</span></div>
+      <div class="why-item"><span class="why-check">✅</span><span>Works for everyday texting—and can grow into books, education and culture.</span></div>
+    </div>
+    <div class="why-sub">
+      <h3>Why Masri?</h3>
+      <p><strong>Masri is a standardized writing system for Egyptian Arabic designed for everyday communication, education, and the digital world.</strong></p>
+      <p>Masri is what Franco would look like if it had been designed as a real writing system instead of an internet workaround.</p>
+    </div>
+  </section>
+
+  <section class="viral-hook" id="nameSection">
+    <h2>See your name in Masri 👇</h2>
+    <textarea id="nameInputBox" class="name-input" spellcheck="false" rows="1" placeholder="Type your name… e.g. 3ali, 7oda, Yasmin"></textarea>
+    <div class="name-reveal">
+      <div class="name-reveal-label">This is your name in Masri</div>
+      <div id="nameOutputBox" class="name-output" aria-live="polite">Ⲵali</div>
+    </div>
+    <button class="cta-btn cta-primary cta-wide" id="nameCopyBtn"><svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg><span>🔥 Copy it &amp; send it</span></button>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="before-after">
+    <h2>Look at the difference 😳</h2>
+    <div class="ba-grid">
+      <div class="ba-row">
+        <span class="ba-before">3ashan</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-mid">`ashan</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-after"><span class="origin-coptic">Ⲵ</span>a<span class="origin-coptic">ϣ</span>an</span>
+      </div>
+      <div class="ba-row">
+        <span class="ba-before">7abibi</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-mid">habibi</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-after"><span class="origin-coptic">Ϩ</span>abibi</span>
+      </div>
+      <div class="ba-row">
+        <span class="ba-before">For2o3 loz</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-mid">For'o` Loz</span>
+        <span class="ba-arrow">→</span>
+        <span class="ba-after">For<span class="origin-latin">Ɐ</span>o<span class="origin-coptic">Ⲵ</span> loz</span>
+      </div>
+    </div>
+    <p class="ba-tagline">Same words. Cleaner writing.</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="identity">
+    <p>This is inspired by how Egyptian writing evolved — long before keyboards.</p>
+    <p class="identity-sub">You're just picking it back up.</p>
+    <p class="identity-extra">Maltese is an Arabic language with its own standardized writing system.</p>
+    <p class="identity-extra">Egyptian Arabic is spoken by over 100 million people.</p>
+    <p class="identity-extra identity-question">Isn't it time it had one too?</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="features">
+    <h2>Keep it simple</h2>
+    <div class="features-grid">
+      <div class="feature-card"><span class="feature-icon">😎</span><span>Works with the Franco you already type</span></div>
+      <div class="feature-card"><span class="feature-icon">⚡</span><span>Instant conversion</span></div>
+      <div class="feature-card"><span class="feature-icon">🔥</span><span>Ready to copy &amp; share</span></div>
+      <div class="feature-card"><span class="feature-icon">👁️</span><span>Shows where letters come from</span></div>
+    </div>
+  </section>
+
+  <div class="divider academic-only"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <div class="controls academic-only">
+    <div class="toggle-group">
+      <span class="toggle-group-label">Style</span>
+      <div class="segmented" id="formalSegmented">
+        <button type="button" class="seg-btn" data-formal="0">😎 Casual Egyptian</button>
+        <button type="button" class="seg-btn active" data-formal="1">🧠 More formal</button>
+      </div>
+    </div>
+    <label class="toggle">
+      <input type="checkbox" id="highlightToggle" checked="">
+      <span>👁️ Show letter origins</span>
+    </label>
+    <input type="checkbox" id="formalToggle" checked="" hidden="">
+  </div>
+
+  <div class="legend academic-only" id="legend">
+    <span class="legend-item"><i class="dot dot-coptic"></i> <span>Coptic — Ϩ ϣ Ⲵ</span></span>
+    <span class="legend-item"><i class="dot dot-greek"></i> <span>Greek — θ ɣ</span></span>
+    <span class="legend-item"><i class="dot dot-latin"></i> <span>Latin extended — ð ṣ ḍ ṭ ẓ Ɐ</span></span>
+  </div>
+
+  <p class="framework-teaser academic-only" id="frameworkTeaser">This system is built on a full 35-letter framework — click to explore.</p>
+
+  <details class="rules academic-only">
+    <summary>Conversion rules applied (numeral &amp; digraph mapping)</summary>
+    <div class="rules-grid">
+      <div>
+        <h3>Numeral letters</h3>
+        <table>
+          <tbody><tr><td>2</td><td>ء / ق (Cairene)</td><td>Ɐ&nbsp;<span class="note">(silent word-initially — Rule 3)</span></td></tr>
+          <tr><td>3</td><td>ع</td><td>Ⲵ</td></tr>
+          <tr><td>3'</td><td>غ</td><td>ɣ</td></tr>
+          <tr><td>4</td><td>ش</td><td>ϣ</td></tr>
+          <tr><td>5</td><td>خ</td><td>x</td></tr>
+          <tr><td>6</td><td>ط</td><td>ṭ</td></tr>
+          <tr><td>6'</td><td>ظ</td><td>ẓ</td></tr>
+          <tr><td>7</td><td>ح</td><td>ϩ</td></tr>
+          <tr><td>8</td><td>غ&nbsp;<span class="note">(alt.)</span></td><td>ɣ</td></tr>
+          <tr><td>9</td><td>ص</td><td>ṣ</td></tr>
+          <tr><td>9'</td><td>ض</td><td>ḍ</td></tr>
+          <tr><td>'</td><td>ء (mid/final)</td><td>Ɐ</td></tr>
+        </tbody></table>
+      </div>
+      <div>
+        <h3>Digraphs → single Tier 2 letters</h3>
+        <table>
+          <tbody><tr><td>kh</td><td>خ</td><td>x</td></tr>
+          <tr><td>sh</td><td>ش</td><td>ϣ</td></tr>
+          <tr><td>gh</td><td>غ</td><td>ɣ</td></tr>
+          <tr><td>th</td><td>ث</td><td>θ&nbsp;<span class="note">/ s if merger on</span></td></tr>
+          <tr><td>dh</td><td>ذ</td><td>ð&nbsp;<span class="note">/ z if merger on</span></td></tr>
+        </tbody></table>
+        <p class="note"><strong>Spelling Rule 4 (Digraph Integrity)</strong> only applies to Tier 1. In Tier 2 these become single characters (ϣ, x, ɣ), so digraph integrity is superseded by direct single-character mapping — handled above.</p>
+      </div>
+    </div>
+  </details>
+
+  <details class="rules academic-only" id="frameworkDetails">
+    <summary>Full Framework reference (loaded from the Tier 2 rules JSON)</summary>
+    <div id="frameworkRules"></div>
+  </details>
+
+  <p class="disclaimer academic-only" id="disclaimerText">Rule-based, not a language model — ambiguous cases (gemination, vowel length, formal/merger consonants) may need manual review against the Framework's standardised word list.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<script>window.MASRI_LANG = 'en';</script>
+<script src="assets/js/viral.js"></script></body></html>
