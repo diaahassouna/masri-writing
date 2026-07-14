@@ -20,6 +20,8 @@ Until now.
 [![Tier 1: ASCII only](https://img.shields.io/badge/Tier%201-ASCII%20only-brightgreen.svg)](#two-tiers)
 [![Status: Active Development](https://img.shields.io/badge/Status-Active%20Development-orange.svg)](#roadmap)
 
+**[🔗 Try the live converter — diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing)**
+
 </div>
 
 ---
@@ -37,6 +39,8 @@ Online, Egyptians write their dialect in three broken ways:
 | Just... guessing | ashan / ashan / ashaan | Inconsistent, ambiguous, varies by writer |
 
 **Masri is the fix.** One symbol per sound. No numerals. Typeable on any keyboard. Built on the Latin alphabet — with a nod to the Coptic script that ancient Egyptians themselves used to write their language.
+
+**Want to see it in action first?** The live converter is at **[diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing)** — type Franco, get Masri, instantly.
 
 ---
 
@@ -73,7 +77,7 @@ Designed for texting, social media, informal writing. Uses only characters avail
 
 | Sound | Arabic | Tier 1 | Example |
 |---|---|---|---|
-| SH sound | ش | `sh` | **sh**anta (شنطة) |
+| SH sound | ش | `sh` (also accepts digit `4` as shorthand input) | **sh**anta (شنطة) |
 | KH sound | خ | `kh` | **kh**afeef (خفيف) |
 | GH sound | غ | `gh` | **gh**areeb (غريب) |
 | Ayin ع | ع | `` ` `` (backtick) | ba**\`**deen (بعدين) |
@@ -85,7 +89,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 
 | Sound | Arabic | Tier 2 | Unicode | Origin |
 |---|---|---|---|---|
-| SH sound | ش | `ϣ` | U+03E3 | Coptic Shai |
+| SH sound | ش | `ϣ` (also accepts digit `4` as shorthand input) | U+03E3 | Coptic Shai |
 | HA sound | ح | `Ϩ` | U+03E9 | Coptic Hori |
 | Ayin | ع | `Ⲵ` | U+2CB4 | Old Coptic Ain |
 | GH sound | غ | `ɣ` | U+0263 | Greek Gamma |
@@ -155,7 +159,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 Every sound maps to exactly one symbol and every symbol to exactly one sound. No ambiguity, no exceptions.
 
 **2. No numerals — ever.**
-The numeral `3` for ع and `7` for ح are not Masri. They break text search, they exclude non-Arabic readers, and they are a historical workaround, not a system.
+The numeral `3` for ع and `7` for ح are not Masri. They break text search, they exclude non-Arabic readers, and they are a historical workaround, not a system. Digits like `3`, `4`, `5`, `7`, `8`, `9` are accepted only as *input* shorthand from Franco — Masri's actual output never contains a numeral.
 
 **3. Keyboard-first.**
 Every Tier 1 symbol is typeable on any standard Latin keyboard with no special software. The backtick `` ` `` for ع is always available — it's the top-left key on your keyboard.
@@ -341,6 +345,9 @@ masri-writing/
 │
 ├── README.md                    ← You are here
 │
+├── docs/                        ← Live site: diaahassouna.github.io/masri-writing
+│   └── (converter, alphabet, history, and keyboard reference pages)
+│
 ├── framework/
 │   └── Masri_Development_Framework.pdf   ← Full bilingual specification (EN + AR)
 │
@@ -365,11 +372,11 @@ masri-writing/
 - [x] Complete numbers table (0 → 1,000,000,000)
 - [x] Standardized word list
 - [x] Bilingual development framework (EN + AR)
+- [x] Interactive web reference — [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing)
 - [ ] Windows keyboard layout (`.klc`)
 - [ ] Linux XKB layout
 - [ ] Android IME (custom keyboard app)
 - [ ] YouTube presentation / video explainer
-- [ ] Interactive web reference
 
 ---
 
@@ -388,7 +395,7 @@ No. Masri is for *spoken Egyptian Arabic* — the dialect, not the formal writte
 It is on every keyboard. It is visually distinct from the apostrophe (used for glottal stops). It never appears as a letter in any other Latin-script language. It does not require Shift. It is the single best available character for this purpose.
 
 **Q: Can I use Masri right now?**
-Yes. Tier 1 requires nothing — just your existing keyboard. Start with the standardized word list and the core spelling rules above.
+Yes. Tier 1 requires nothing — just your existing keyboard. Start with the standardized word list and the core spelling rules above, or try the live converter at [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing).
 
 ---
 
@@ -412,5 +419,7 @@ You are free to share and adapt this material for any purpose, including commerc
 <br/>
 
 Proposed by **Diaa Hassouna** · Senior Technical Office Engineer · Cairo, Egypt · 2026
+
+**Live converter: [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing)**
 
 </div>
