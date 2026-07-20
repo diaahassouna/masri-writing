@@ -21,6 +21,18 @@
       "verdict_ar": "تلات مستشرقين، تلات أبجديات مش متفقة مع بعض، ومحدش سأل المصريين رأيهم أصلاً. مصري بيقلب المعادلة — اتبنى للناس اللي بتتكلم اللهجة، مش للناس اللي بتدرسها من بعيد."
     },
     {
+      "era": "academic",
+      "year": "1889 – 1897",
+      "era_label_en": "Academic",
+      "era_label_ar": "أكاديمي",
+      "title_en": "The al-Muqtataf Models",
+      "title_ar": "نماذج المقتطف",
+      "body_en": "Cairo's leading science magazine, al-Muqtataf, published two of its own Latin-script Arabic systems in 1889 and 1897 — designed not for foreign students but as a cost-saving fix for local presses, so they could skip minting new Arabic type and settle how European loanwords should be spelled. The 1889 model bolted extra punctuation marks onto ordinary Latin letters; the 1897 version replaced missing sounds with inverted and mirrored Latin letters instead, chosen partly for sound and partly for how closely a flipped shape happened to resemble the Arabic original. Neither survived contact with readers.",
+      "body_ar": "مجلة المقتطف، أشهر مجلة علمية في القاهرة وقتها، طلعت بنفسها نظامين كتابة بالحروف اللاتينية سنة 1889 وسنة 1897 — مش عشان الأجانب اللي بيتعلموا عربي، لكن عشان توفر على المطابع المصرية تكلفة سبك حروف عربية جديدة، وعشان توحّد إزاي تتكتب الكلمات الأجنبية الداخلة على العربي. نظام 1889 كان بيضيف علامات ترقيم على الحروف اللاتينية العادية؛ نظام 1897 استبدل الأصوات الناقصة بحروف لاتينية مقلوبة أو معكوسة، واختارت المجلة الشكل أحيانًا على أساس الصوت وأحيانًا بس على أساس إن الشكل المقلوب بيشبه شكل الحرف العربي. مفيش واحد من الاتنين عاش قدام القرّاء.",
+      "verdict_en": "Sarruf and Nimr solved the printing-cost problem perfectly and lost on the one thing that actually decides adoption: a reader wrote in that an upside-down letter \"bothers the eye,\" and he was right — familiarity beats cleverness every time. Masri learned that lesson before it shipped: instead of asking every reader's eye to accept inverted Latin type, it borrows whole letterforms that already existed in Egypt's own alphabet, so nothing on the page needs to look upside-down to make sense.",
+      "verdict_ar": "سروف ونمر حلّوا مشكلة تكلفة الطباعة تمام، وخسروا في الحاجة الوحيدة اللي فعلاً بتحدد الانتشار: قاري كتب لهم إن الحرف المقلوب \"بيوجع العين\"، وكان معاه حق — الألفة بتكسب الذكاء دايمًا. مصري اتعلم من الدرس ده قبل ما يطلع: بدل ما يطلب من عين كل قاري يتقبل حروف لاتينية مقلوبة، بيستعير حروف كاملة كانت أصلاً موجودة في أبجدية مصر نفسها، فمفيش حاجة في الصفحة محتاجة تبان مقلوبة عشان تتفهم."
+    },
+    {
       "era": "formal",
       "year": "1944",
       "era_label_en": "Formal / State",
@@ -100,6 +112,15 @@
       "typable": "no",
       "reads": "partial",
       "cairene": "partial",
+      "identity": "no",
+      "adopted": "no"
+    },
+    {
+      "name_en": "al-Muqtataf models",
+      "name_ar": "نماذج المقتطف",
+      "typable": "partial",
+      "reads": "no",
+      "cairene": "no",
       "identity": "no",
       "adopted": "no"
     },
