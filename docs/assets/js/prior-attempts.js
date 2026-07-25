@@ -33,6 +33,18 @@
     partial: '<span class="score-partial">~</span>'
   };
 
+  function renderSampleComparison(sc) {
+    if (!sc) return '';
+    const note = LANG === 'ar' ? sc.note_ar : sc.note_en;
+    const eglangLabel = LANG === 'ar' ? sc.eglang_label_ar : sc.eglang_label_en;
+    const masriLabel = LANG === 'ar' ? sc.masri_label_ar : sc.masri_label_en;
+    return `<div class="ha-sample-compare">
+      <p class="sub-small">${note}</p>
+      <div class="ha-sample-row"><span class="ha-sample-tag">${eglangLabel}</span><span class="ha-sample-text">${sc.eglang_line}</span></div>
+      <div class="ha-sample-row"><span class="ha-sample-tag ha-sample-tag-masri">${masriLabel}</span><span class="ha-sample-text">${sc.masri_line_tier2}</span></div>
+    </div>`;
+  }
+
   function renderTimeline(DATA) {
     const el = document.getElementById('timelineSection');
     let html = '';
@@ -50,6 +62,7 @@
         <h3>${title}</h3>
         <p>${body}</p>
         <div class="ha-verdict"><span class="ha-verdict-label">${t('verdict_label')}</span>${verdict}</div>
+        ${renderSampleComparison(a.sample_comparison)}
       </div>`;
     }
     el.innerHTML = html;
