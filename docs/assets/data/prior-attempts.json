@@ -105,11 +105,14 @@
       "verdict_en": "The one Masri is actually racing. eg-lang solved the phonology. It never solved the keyboard, and it never gave Egyptians a reason to feel proud of the letters — just tolerant of them.",
       "verdict_ar": "ده المنافس الحقيقي اللي مصري بيتسابق معاه. eg-lang حل مشكلة الأصوات. لكنه محلش مشكلة الكيبورد، ومحديش المصريين سبب يفتخروا بالحروف — بس سبب يتقبلوها.",
       "sample_comparison": {
-        "note_en": "Full homepage text belongs to eg-lang; read it at eg-lang.com. Below: their own tagline, and the same sentiment in Masri's own words.",
-        "note_ar": "نص الصفحة الرئيسية بتاعهم ملكهم؛ اقرأه على eg-lang.com. تحت كده: شعارهم زي ما هو، وبعده نفس الإحساس بكلمات مصري.",
-        "eglang_tagline": "\"Bringing Egyptian to the World\" — eg-lang.com/en",
-        "masri_tagline_tier2": "Maṣr be tetkallem be el ϩoroof elli hiyya aṣlan betaⲴetha.",
-        "masri_tagline_en_gloss": "Egypt speaks in the letters that were always hers."
+        "note_en": "Full homepage text belongs to eg-lang; read it at eg-lang.com/en. Below: their own opening line, and the same line rendered in Masri.",
+        "note_ar": "نص الصفحة الرئيسية بتاعهم ملكهم؛ اقرأه على eg-lang.com/en. تحت كده: أول جملة عندهم زي ما هي، وبعدها نفس الجملة بحروف مصري.",
+        "eglang_label_en": "eg-lang",
+        "eglang_label_ar": "eg-lang",
+        "eglang_line": "\"Ahlan beeko fi mašroogħ ketabet elgħarabi elmaśri belħroof ellatiniia!\" — eg-lang.com/en",
+        "masri_label_en": "Masri",
+        "masri_label_ar": "مصري",
+        "masri_line_tier2": "Ahlan beeko fi maϣrooⲴ ketabet el Ⲵarabi el Maṣri bel ϩroof el Latineyya!"
       }
     }
   ],
