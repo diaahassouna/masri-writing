@@ -38,24 +38,15 @@
     const note = LANG === 'ar' ? sc.note_ar : sc.note_en;
     const eglangLabel = LANG === 'ar' ? sc.eglang_label_ar : sc.eglang_label_en;
     const masriLabel = LANG === 'ar' ? sc.masri_label_ar : sc.masri_label_en;
-
-    const wrapStyle = 'margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.12);';
-    const noteStyle = 'font-size:12.5px;opacity:0.65;line-height:1.5;margin:0 0 10px;';
-    const rowStyle = 'display:flex;align-items:flex-start;gap:12px;margin-top:8px;';
-    const tagBaseStyle = 'flex:0 0 auto;font-size:11px;font-weight:600;letter-spacing:0.02em;padding:3px 9px;border-radius:999px;line-height:1.6;white-space:nowrap;';
-    const tagEglangStyle = tagBaseStyle + 'background:rgba(255,255,255,0.08);color:inherit;opacity:0.75;';
-    const tagMasriStyle = tagBaseStyle + 'background:var(--gold,#c9a24b);color:#1a1a1a;opacity:1;';
-    const textStyle = 'flex:1 1 auto;font-style:italic;line-height:1.6;';
-
-    return `<div class="ha-sample-compare" style="${wrapStyle}">
-      <p class="sub-small" style="${noteStyle}">${note}</p>
-      <div class="ha-sample-row" style="${rowStyle}">
-        <span class="ha-sample-tag" style="${tagEglangStyle}">${eglangLabel}</span>
-        <span class="ha-sample-text" style="${textStyle}">${sc.eglang_line}</span>
+    return `<div class="ha-sample-compare">
+      <p class="sub-small ha-sample-note">${note}</p>
+      <div class="ha-sample-row">
+        <span class="ha-sample-tag">${eglangLabel}</span>
+        <span class="ha-sample-text">${sc.eglang_line}</span>
       </div>
-      <div class="ha-sample-row" style="${rowStyle}">
-        <span class="ha-sample-tag ha-sample-tag-masri" style="${tagMasriStyle}">${masriLabel}</span>
-        <span class="ha-sample-text" style="${textStyle}">${sc.masri_line_tier2}</span>
+      <div class="ha-sample-row">
+        <span class="ha-sample-tag ha-sample-tag-masri">${masriLabel}</span>
+        <span class="ha-sample-text">${sc.masri_line_tier2}</span>
       </div>
     </div>`;
   }
