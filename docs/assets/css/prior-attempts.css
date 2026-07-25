@@ -42,6 +42,33 @@
 .ha-verdict { margin-top: 12px; background: var(--panel-2); border: 1px solid var(--gold); border-radius: 8px; padding: 10px 14px; font-size: 13.5px; color: var(--ink); line-height: 1.55; }
 .ha-verdict .ha-verdict-label { display: block; font-family: var(--font-mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
 
+/* Sample comparison block — pairs a short quoted line from a prior attempt
+   with the same line rendered in Masri, inside a timeline card. */
+.ha-sample-compare { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+.ha-sample-note { text-align: left; margin: 0 0 10px; max-width: none; }
+.ha-sample-row { display: flex; align-items: flex-start; gap: 12px; }
+.ha-sample-row + .ha-sample-row { margin-top: 8px; }
+.ha-sample-tag {
+  flex: 0 0 auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  line-height: 1.7;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  background: var(--panel-2);
+  color: var(--ink-dim);
+  border: 1px solid var(--border);
+}
+.ha-sample-tag-masri { background: var(--gold); color: #241a06; border-color: var(--gold); }
+.ha-sample-text { flex: 1 1 auto; font-size: 13.5px; font-style: italic; line-height: 1.6; color: var(--ink); padding-top: 2px; }
+#masri-app[dir="rtl"] .ha-sample-note { text-align: right; }
+#masri-app[dir="rtl"] .ha-sample-row { flex-direction: row-reverse; }
+#masri-app[dir="rtl"] .ha-sample-text { text-align: right; }
+
 .ha-verdict-section { text-align: center; margin-bottom: 8px; }
 .ha-verdict-section h2 { font-family: var(--font-display); font-size: 21px; margin: 0 0 8px; color: var(--ink); }
 .ha-table-wrap { overflow-x: auto; margin-bottom: 16px; }
