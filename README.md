@@ -58,11 +58,11 @@ Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
 Arabic:   أنا عارف إنه اللغة المصرية أحسن لغة في الدنيا،
           و ده اللي خلاني أشتغل فيها كل يوم.
 
-Tier 1:   Ana `aref inno el logha el masreya ahsan logha fi el donya,
+Tier 1:   Ana `aref inno el Logha el Masreya ahsan logha fi el donya,
           we da elli khallani ashtaghal feha koll yoom.
 
-Tier 2:   Ana Ⲵaref inno el loɣa el maṣreya aϨsan loɣa fi el donya,
-          we da elli xallāni aϣtaɣal feha koll yoom.
+Tier 2:   Ana Ⲵaref inno el Loɣa el Maṣreya aϨsan loɣa fi el donya,
+          we da elli xallāni aϣtaɣal feeha koll yoom.
 ```
 
 ---
@@ -80,8 +80,8 @@ Designed for texting, social media, informal writing. Uses only characters avail
 | SH sound | ش | `sh` (also accepts digit `4` as shorthand input) | **sh**anta (شنطة) |
 | KH sound | خ | `kh` | **kh**afeef (خفيف) |
 | GH sound | غ | `gh` | **gh**areeb (غريب) |
-| Ayin ع | ع | `` ` `` (backtick) | ba**\`**deen (بعدين) |
-| Glottal stop | ء / ق | `'` | Ma**'**aam (مقام) |
+| Ayin ع | ع | `` ` `` (backtick) | ba\`deen (بعدين) |
+| Glottal stop | ء / ق | `'` | Ma'aam (مقام) |
 
 ### Tier 2 — Academic / Cultural
 
@@ -96,6 +96,8 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 | Emphatic S | ص | `ṣ` | U+1E63 | IPA diacritic |
 
 > **Why Coptic?** Because Coptic *is* the latest written stage of the indigenous Egyptian language — it's what ancient Egyptians spoke and wrote before Arabic arrived. These letters are not foreign borrowings. They are a homecoming.
+>
+> Masri isn't the first attempt at this, either. Orientalists Wilhelm Spitta (1880), Carl Vollers (1890), and John Selden Willmore (1901) each proposed Latin-based writing systems for Egyptian Arabic, and Daniel Willard Fiske helped popularize Spitta's system as *"An Egyptian Alphabet for the Egyptian People"* (2nd ed., Florence, 1904). Masri's set of emphatic consonants converges with Spitta's independently — reached without prior knowledge of his work — which suggests these aren't arbitrary choices, but a structure the dialect itself points writers toward.
 
 ---
 
@@ -184,8 +186,6 @@ In Franco/Arabizi, the ayin (ع) is either replaced by the numeral `3` or silent
 ❌  ala         →   ✅  `ala        (على — on)
 ❌  3aref       →   ✅  `aref       (never use numerals)
 ```
-
-The backtick is on every keyboard. It is visually distinct from the apostrophe used for glottal stops. It is never confused with any letter. It is mandatory.
 
 **In Masri Tier 2:** ع is written as `Ⲵ` (Old Coptic Ain, U+2CB4)
 
@@ -396,6 +396,14 @@ It is on every keyboard. It is visually distinct from the apostrophe (used for g
 
 **Q: Can I use Masri right now?**
 Yes. Tier 1 requires nothing — just your existing keyboard. Start with the standardized word list and the core spelling rules above, or try the live converter at [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing).
+
+---
+
+## Feedback & collaboration
+
+Masri borrows letterforms from Coptic and Greek — scripts with real living communities and scholarly traditions attached to them. If you study Coptic, Egyptology, or Arabic dialectology and notice something worth correcting or discussing, please [open an issue](https://github.com/diaahassouna/masri-writing/issues). The goal is a system that's both usable day-to-day and respectful of where its letters come from — and feedback from people who know this history better than I do only makes it stronger.
+
+For everyone else: try the [live converter](https://diaahassouna.github.io/masri-writing), write a sentence in Masri, and open an issue if it breaks.
 
 ---
 
