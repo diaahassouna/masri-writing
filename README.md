@@ -227,7 +227,7 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | Rule | Tier 1 |
 |---|---|
 | **Gemination** (doubled consonants) | Write doubled: حب → `Ϩobb`, جداً → `geddan` |
-| **Definite article** | Always `el` — never assimilate: الشارع → `el shaareⲴ` |
+| **Definite article** | Always `el` — never assimilate: الشارع → `el ϣaareⲴ` |
 | **Glottal stop** | Silent at word start; apostrophe mid-word: سؤال → `so'aal` |
 | **Digraphs** | `sh`, `kh`, `gh` are indivisible units — never split across syllables |
 | **Cairene ق** | Word-initial: silent (قهوة → `ahwa`). Mid-word: apostrophe |
