@@ -315,7 +315,7 @@ Arabic: وإوعى الأوضة اللي جوة البيت البيئة اللي
 **8.**
 ```
 Masri:  ForⱯoⲴlowz raⱯaṣ Ⲵa el sellem we bass keda ya sidi
-        we el meⲴallem Sardeena dafaⲴ feloos keteer lel ṣowaan we el farsha Ⲵa el ard.
+        we el meⲴallem Sardeena dafaⲴ feloos keteer lel ṣowaan we el farϣa Ⲵa el ard.
 Arabic: فورقوعلوز رقص ع السلم وبس كدة يا سيدي
         والمعلم سردينة دفع فلوس كتير للصوان والفرشة ع الأرض.
 ```
