@@ -34,7 +34,7 @@
     { "no": 32, "letter_upper": "E", "letter_lower": "e", "arabic": "ي", "name": "Ee",    "ipa": "/ʔe/, /e/",  "unicode_upper": "U+0045", "unicode_lower": "U+0065", "origin": "Vowel/semivowel", "notes": "Ya as long vowel /eː/" , "notes_ar": "الياء كحركة طويلة /eː/" },
     { "no": 33, "letter_upper": "I", "letter_lower": "i", "arabic": "ي", "name": "Ai",    "ipa": "/ʔi/, /i/",  "unicode_upper": "U+0049", "unicode_lower": "U+0069", "origin": "Vowel/semivowel", "notes": "Ya as long vowel /iː/" , "notes_ar": "الياء كحركة طويلة /iː/" },
     { "no": 34, "letter_upper": "Y", "letter_lower": "y", "arabic": "ي", "name": "Wye",   "ipa": "/ʔj/, /j/",  "unicode_upper": "U+0059", "unicode_lower": "U+0079", "origin": "Vowel/semivowel", "notes": "Ya as consonant /j/" , "notes_ar": "الياء كحرف ساكن /j/" },
-    { "no": 35, "letter_upper": "Ɐ", "letter_lower": "ɐ", "arabic": "ء", "name": "Hamza", "ipa": "/ʔ/",        "unicode_upper": "U+2C6F", "unicode_lower": "U+2C6F", "origin": "Latin ext.", "notes": "Glottal stop; mirror of Alef; silent word-initially" , "notes_ar": "همزة القطع؛ مرآة للألف؛ ساكنة في بداية الكلمة" }
+    { "no": 35, "letter_upper": "Ɐ", "letter_lower": "Ɐ", "arabic": "ء", "name": "Hamza", "ipa": "/ʔ/",        "unicode_upper": "U+2C6F", "unicode_lower": "U+2C6F", "origin": "Latin ext.", "notes": "Glottal stop; mirror of Alef; silent word-initially" , "notes_ar": "همزة القطع؛ مرآة للألف؛ ساكنة في بداية الكلمة" }
   ],
   "borrowed_orthography": [
     { "letter_upper": "C", "letter_lower": "c", "arabic": "—", "name": "See",  "ipa": "/s/, /k/", "unicode_upper": "U+0043", "unicode_lower": "U+0063", "origin": "Borrowed", "notes": "Restricted to code-switched words" , "notes_ar": "مقصورة على الكلمات المُقترضة" },
@@ -48,9 +48,9 @@
       { "arabic": "schwa", "sound": "ə (often omitted)", "sound_ar": "ə (غالبًا بتتحذف)", "tier2": "ə (often omitted)" }
     ],
     "long_vowels": [
-      { "arabic": "ا / آ", "sound": "ā (long a)", "sound_ar": "ā (طويلة)", "tier2": "ā" },
-      { "arabic": "و",     "sound": "ū (long u)", "sound_ar": "ū (طويلة)", "tier2": "ū" },
-      { "arabic": "ي",     "sound": "ī (long i)", "sound_ar": "ī (طويلة)", "tier2": "ī" }
+      { "arabic": "ا / آ", "sound": "ā (long a)", "sound_ar": "ā (طويلة)", "tier2": "aa" },
+      { "arabic": "و",     "sound": "ū (long u)", "sound_ar": "ū (طويلة)", "tier2": "oo" },
+      { "arabic": "ي",     "sound": "ī (long i)", "sound_ar": "ī (طويلة)", "tier2": "ii" }
     ],
     "diphthongs": [
       { "arabic": "ـَي", "sound": "ay/ei", "sound_ar": "ay/ei", "spelling": "ay" },
@@ -63,7 +63,7 @@
       { "arabic": "بعدين", "tier1": "ba`deen", "tier2": "baⲴdeen", "meaning": "afterwards", "meaning_ar": "بعدين" },
       { "arabic": "عشان",  "tier1": "`ashan",  "tier2": "Ⲵaϣan",   "meaning": "because/for", "meaning_ar": "عشان" },
       { "arabic": "على",   "tier1": "`ala",    "tier2": "Ⲵala",    "meaning": "on/upon", "meaning_ar": "على" },
-      { "arabic": "معاك",  "tier1": "ma`ak",   "tier2": "maⲴak",   "meaning": "with you", "meaning_ar": "معاك" }
+      { "arabic": "معاك",  "tier1": "ma`aak",   "tier2": "maⲴaak",   "meaning": "with you", "meaning_ar": "معاك" }
     ]
   }
 }
