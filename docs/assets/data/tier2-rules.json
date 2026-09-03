@@ -48,7 +48,7 @@
     { "no": 32, "letter_upper": "E", "letter_lower": "e", "arabic": "ي", "name": "Ee",    "ipa": "/ʔe/, /e/",  "unicode_upper": "U+0045", "unicode_lower": "U+0065", "origin": "Vowel/semivowel", "notes": "Ya as long vowel /eː/" },
     { "no": 33, "letter_upper": "I", "letter_lower": "i", "arabic": "ي", "name": "Ai",    "ipa": "/ʔi/, /i/",  "unicode_upper": "U+0049", "unicode_lower": "U+0069", "origin": "Vowel/semivowel", "notes": "Ya as long vowel /iː/" },
     { "no": 34, "letter_upper": "Y", "letter_lower": "y", "arabic": "ي", "name": "Wye",   "ipa": "/ʔj/, /j/",  "unicode_upper": "U+0059", "unicode_lower": "U+0079", "origin": "Vowel/semivowel", "notes": "Ya as consonant /j/ (as in 'yes')" },
-    { "no": 35, "letter_upper": "Ɐ", "letter_lower": "ɐ", "arabic": "ء", "name": "Hamza", "ipa": "/ʔ/",        "unicode_upper": "U+2C6F", "unicode_lower": "U+2C6F", "origin": "Latin ext.", "notes": "Upside-down A; glottal stop; mirror of Alef (open ↔ closed); represents ء, ق-Cairene, and all hamza forms (أ ؤ ئ) uniformly; always silent word-initially" }
+    { "no": 35, "letter_upper": "Ɐ", "letter_lower": "Ɐ", "arabic": "ء", "name": "Hamza", "ipa": "/ʔ/",        "unicode_upper": "U+2C6F", "unicode_lower": "U+2C6F", "origin": "Latin ext.", "notes": "Upside-down A; glottal stop; mirror of Alef (open ↔ closed); represents ء, ق-Cairene, and all hamza forms (أ ؤ ئ) uniformly; always silent word-initially" }
   ],
 
   "borrowed_orthography": [
@@ -64,9 +64,9 @@
       { "arabic": "schwa/unstressed", "sound": "ə (often omitted)", "tier2": "ə (often omitted)", "example": "mⲴleϣϣ vs məttəⲴ" }
     ],
     "long_vowels": [
-      { "arabic": "ا / آ", "sound": "ā (long a)", "tier2": "ā" },
-      { "arabic": "و",     "sound": "ū (long u)", "tier2": "ū" },
-      { "arabic": "ي",     "sound": "ī (long i)", "tier2": "ī" }
+      { "arabic": "ا / آ", "sound": "ā (long a)", "tier2": "aa" },
+      { "arabic": "و",     "sound": "ū (long u)", "tier2": "oo" },
+      { "arabic": "ي",     "sound": "ī (long i)", "tier2": "ii" }
     ],
     "diphthongs": [
       { "arabic": "ـَي", "sound": "ay/ei", "spelling": "ay" },
@@ -81,11 +81,11 @@
     "tier2_symbol": "Ⲵ (Coptic Old Ain, U+2CB4)",
     "note": "In Tier 2, ع is always represented by Ⲵ (uppercase = lowercase for visual consistency).",
     "examples": [
-      { "arabic": "عارف",  "wrong_vowel_only": "aref",   "tier1": "`aref",   "tier2": "Ⲵaref",   "meaning": "knowing" },
+      { "arabic": "عارف",  "wrong_vowel_only": "aref",   "tier1": "`aaref",   "tier2": "Ⲵaaref",   "meaning": "knowing" },
       { "arabic": "بعدين", "wrong_vowel_only": "badeen", "tier1": "ba`deen", "tier2": "baⲴdeen", "meaning": "afterwards" },
       { "arabic": "عشان",  "wrong_vowel_only": "ashan",  "tier1": "`ashan",  "tier2": "Ⲵaϣan",   "meaning": "because/for" },
       { "arabic": "على",   "wrong_vowel_only": "ala",    "tier1": "`ala",    "tier2": "Ⲵala",    "meaning": "on/upon" },
-      { "arabic": "معاك",  "wrong_vowel_only": "maak",   "tier1": "ma`ak",   "tier2": "maⲴak",   "meaning": "with you" }
+      { "arabic": "معاك",  "wrong_vowel_only": "maak",   "tier1": "ma`aak",   "tier2": "maⲴaak",   "meaning": "with you" }
     ]
   },
 
@@ -124,7 +124,7 @@
       "id": 6,
       "name": "The Letters P and V",
       "rule": "P and V are full, independent letters, not interchangeable with B or F. p is used mainly in loanwords/modern vocabulary; v is an original, coexisting phoneme.",
-      "examples": ["بيانو → piano (not biano)", "بنك → bank", "أوفر → over"]
+      "examples": ["بيانو → piano (Egyptianized to biano)", "بنك → bank", "أوفر → over"]
     }
   ],
 
