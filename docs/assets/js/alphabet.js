@@ -304,7 +304,7 @@
       // ---------------------------------------------------------------
       // Virtual keypad
       // ---------------------------------------------------------------
-      const KEYPAD_CHARS = ['Ⲵ', 'ⲵ', 'Ϩ', 'ϩ', 'ϣ', 'Ϣ', 'Ɣ', 'ɣ', 'Θ', 'θ', 'Ð', 'ð', 'Ṣ', 'ṣ', 'Ḍ', 'ḍ', 'Ṭ', 'ṭ', 'Ẓ', 'ẓ', 'Ɐ', 'ɐ', 'P', 'p', 'V', 'v', 'C', 'c', 'J', 'j'];
+      const KEYPAD_CHARS = ['Ⲵ', 'Ϩ', 'ϩ', 'ϣ', 'Ϣ', 'Ɣ', 'ɣ', 'Θ', 'θ', 'Ð', 'ð', 'Ṣ', 'ṣ', 'Ḍ', 'ḍ', 'Ṭ', 'ṭ', 'Ẓ', 'ẓ', 'Ɐ'];
       const keypadGrid = document.getElementById('keypadGrid');
       const keypadOutput = document.getElementById('keypadOutput');
       keypadGrid.innerHTML = KEYPAD_CHARS.map(c => `<button class="keypad-key" data-char="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('');
