@@ -1,0 +1,44 @@
+{
+  "milestones": [
+    {
+      "id": "first-sketch",
+      "date_label_en": "First sketch",
+      "date_label_ar": "أول مسودة",
+      "title_en": "A Scrap of Paper",
+      "title_ar": "ورقة واحدة",
+      "body_en": "Before there was a font, a keyboard layout, or a website, there was one handwritten page headed \u201cMasri \u2014 Egyptian Alphabet.\u201d It already lays out the rules the whole system still follows today: one phonetic sound per letter, Latin as the base script filled out with Greek and Coptic letters where Latin runs short, the target is spoken Egyptian Arabic rather than Classical Arabic \u2014 and on principle, no digit is ever allowed to stand in for an Arabic letter, a deliberate break from Arabizi's 3/7/2 numeral conventions. A column down the right side sketches sound-by-sound candidates for every Arabic letter, several of which made it into the final alphabet largely unchanged \u2014 Greek theta for the th-sound, Coptic shai for sh, Greek omega for a long o.",
+      "body_ar": "قبل ما يبقى فيه فونط، أو لوحة مفاتيح، أو موقع، كان فيه ورقة واحدة مكتوب فوقها \u201cMasri \u2014 Egyptian Alphabet\u201d. الورقة دي فيها من الأول القواعد اللي النظام لسه ماشي عليها لحد دلوقتي: كل حرف له صوت واحد بس، الأساس هو الحروف اللاتينية ويتضاف عليها حروف يونانية وقبطية لما اللاتيني ميكفيش، والهدف هو اللهجة المصرية المتكلمة مش العربي الفصحى \u2014 ومن حيث المبدأ، مفيش رقم يتحط بدل حرف عربي، وده كسر مقصود لعادة الفرانكو إن 3 و7 و2 تبقى حروف. وعلى جنب الورقة فيه عمود بيجرّب أصوات مقترحة لكل حرف عربي، وكذا واحد منها دخل في الأبجدية النهائية زي ما هو \u2014 الثيتا اليونانية لصوت الـ th، وحرف الشاي القبطي للشين، والأوميغا اليونانية للواو الطويلة.",
+      "image": {
+        "src": "assets/img/story/early-alphabet-notes.jpg",
+        "alt_en": "A handwritten page headed 'Masri \u2014 Egyptian Alphabet', listing the system's founding design rules on the left and sound-by-sound letter candidates on the right",
+        "alt_ar": "ورقة مكتوبة بخط اليد كاتب فوقها 'Masri \u2014 Egyptian Alphabet'، فيها قواعد التصميم الأساسية على الشمال ومقترحات الحروف صوت بصوت على اليمين",
+        "caption_en": "The first working draft \u2014 four rules on the left, letter-by-letter candidates on the right. Most of it survived to the final alphabet.",
+        "caption_ar": "أول مسودة شغالة \u2014 أربع قواعد على الشمال، ومقترحات الحروف واحد واحد على اليمين. غالبية الورقة دي فضلت زي ما هي لحد الأبجدية النهائية."
+      }
+    },
+    {
+      "id": "manuscript-proof",
+      "date_label_en": "27 Sep 2026",
+      "date_label_ar": "27 سبتمبر 2026",
+      "title_en": "Proof by Practice",
+      "title_ar": "إثبات بالتجربة",
+      "body_en": "The idea came together around Eid al-Adha: a letter system for writing urban Cairene colloquial Egyptian Arabic, built from a mix of Latin letters filled out with a handful of Coptic and Greek ones. The note explains itself as it goes \u2014 it's handwritten to prove the system is genuinely easy and simple, by writing the same sentence twice, once in Masri and once in Arabic underneath, blending formal and colloquial registers side by side without loading the line down with the diacritics a purely Latin transliteration would need. It closes with a pointed correction: the letter \u1a68 (Coptic hori, standing in for \u062d) is not the digit 2 \u2014 there's a clear, deliberate difference between them. Signed \u1e0aiaa\u01ae \u1a68assoona and dated 27 Sep 2026.",
+      "body_ar": "الفكرة جت وقت عيد الأضحى: نظام حروف لكتابة اللهجة المصرية القاهرية العامية الحضرية، مبني من خليط حروف لاتينية متكمّل بشوية حروف قبطية ويونانية. الورقة بتشرح نفسها وهي بتتكتب \u2014 هي مكتوبة بخط الإيد عشان تثبت إن النظام سهل وبسيط فعلاً، من خلال كتابة نفس الجملة مرتين، مرة بمصري ومرة بالعربي تحتها، وبتدمج الفصيح والعامي جنب بعض من غير ما تحمّل السطر بنقط زيادة زي ما الترجمة الصوتية اللاتينية الصرفة محتاجة. وبتقفل بتصحيح واضح: حرف \u1a68 (الهوري القبطي، اللي بيمثّل الحاء) مش هو رقم 2 \u2014 في فرق واضح ومقصود بينهم. الورقة موقعة ḌiaaꝮ Ϩassoona ومؤرخة 27 سبتمبر 2026.",
+      "sample": {
+        "note_en": "The manuscript's opening sentence, transcribed \u2014 in Masri, then in Arabic underneath, exactly as written on the page.",
+        "note_ar": "أول جملة في المخطوطة، منقولة \u2014 بمصري، وبعدها بالعربي تحتها، زي ما هي مكتوبة في الورقة بالظبط.",
+        "masri_label_en": "Masri", "masri_label_ar": "مصري",
+        "arabic_label_en": "Arabic", "arabic_label_ar": "عربي",
+        "masri_line": "Hadaani tafkeeri wa\u1ab0t \u2c75eed el A\u1e0f\u03ed li wa\u1e0f\u2c75 niz\u0327aam \u03edoroof \u2c75a\u03e3aan kataabet el lahga el Ma\u1e63reyya el Qaahereyya el \u2c75ammeyya el \u03e8a\u1e0fareyya bi estexdaam xalee\u1e6d men el \u03edoroof el Latineeya bel i\u1e0faafa ila \u03e3ewayyet \u03edoroof Qeb\u1e6deyya we Yonaaneyya.",
+        "arabic_line": "هداني تفكيري وقت عيد الأضحى لوضع نظام حروف عشان كتابة اللهجة المصرية القاهرية العامية الحضرية باستخدام خليط من الحروف اللاتينية بالإضافة إلى شوية حروف قبطية و يونانية."
+      },
+      "image": {
+        "src": "assets/img/story/manuscript-sample.jpeg",
+        "alt_en": "A handwritten, signed and dated manuscript page arguing for the Masri writing system, written once in Masri script and once in Arabic beneath it",
+        "alt_ar": "صفحة مخطوطة بخط اليد موقعة ومؤرخة بتشرح فكرة نظام الكتابة المصري، مكتوبة مرة بمصري ومرة بالعربي تحتها",
+        "caption_en": "The same page, twice: Masri on top, Arabic underneath \u2014 closing with a note that \u1a68 isn't the digit 2. Signed and dated 27 Sep 2026.",
+        "caption_ar": "نفس الصفحة، مرتين: مصري فوق، والعربي تحتها \u2014 وبتقفل بملاحظة إن حرف \u1a68 مش هو رقم 2. موقعة ومؤرخة 27 سبتمبر 2026."
+      }
+    }
+  ]
+}
