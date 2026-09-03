@@ -280,7 +280,7 @@
         });
       });
 
-      inputBox.value = "3ashan keda ana 7abeit el mashroo3 da, bass el 5otta t2eela sha2wa.";
+      inputBox.value = "3ashan keda ana 7abeit el mashroo3 da, bass el 5etta t2eela we shedeeda.";
       update();
 
       // ---- Mode switch: Everyday (simple, viral) vs Academic — Tier 2 ----
