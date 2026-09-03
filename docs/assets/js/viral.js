@@ -256,7 +256,8 @@
       formalToggle.addEventListener('change', update);
       highlightToggle.addEventListener('change', update);
 
-      document.querySelectorAll('.preset-btn').forEach(btn => {
+      const presetButtons = document.querySelectorAll('.preset-btn');
+      presetButtons.forEach(btn => {
         btn.addEventListener('click', () => {
           inputBox.value = btn.getAttribute('data-text');
           update();
@@ -280,7 +281,10 @@
         });
       });
 
-      inputBox.value = "3ashan keda ana 7abeit el mashroo3 da, bass el 5etta t2eela we shedeeda.";
+      // Default text on load is pulled straight from the "example 1" preset
+      // button (single source of truth) instead of a separate hardcoded
+      // string, so editing one place can never drift out of sync with the other.
+      inputBox.value = (presetButtons[0] && presetButtons[0].getAttribute('data-text')) || '';
       update();
 
       // ---- Mode switch: Everyday (simple, viral) vs Academic — Tier 2 ----
