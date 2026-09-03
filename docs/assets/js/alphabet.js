@@ -352,7 +352,7 @@
         { char: 'Ṭ', name: 'Tah', keys: 'T T', shortcut: ':tah.' },
         { char: 'ẓ', name: 'zah', keys: 'z z', shortcut: ':zah' },
         { char: 'Ẓ', name: 'Zah', keys: 'Z Z', shortcut: ':zah.' },
-        { char: 'ɐ', name: 'hamza', keys: "'", shortcut: ':hamza' }
+        { char: 'Ɐ', name: 'hamza', keys: "'", shortcut: ':hamza' }
       ];
 
       function letterByChar(c) {
