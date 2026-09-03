@@ -63,13 +63,13 @@
           "n": 2,
           "n_display": "2",
           "masri": "Etneen",
-          "arabic": "اتنني"
+          "arabic": "اتنين"
         },
         {
           "n": 3,
           "n_display": "3",
           "masri": "Talata",
-          "arabic": "تالتة"
+          "arabic": "تلاتة"
         },
         {
           "n": 4,
@@ -81,7 +81,7 @@
           "n": 5,
           "n_display": "5",
           "masri": "Xamsa",
-          "arabic": "مخسة"
+          "arabic": "خمسة"
         },
         {
           "n": 6,
@@ -99,7 +99,7 @@
           "n": 8,
           "n_display": "8",
           "masri": "Tamanya",
-          "arabic": "متانية"
+          "arabic": "تمانية"
         },
         {
           "n": 9,
@@ -136,7 +136,7 @@
           "n": 13,
           "n_display": "13",
           "masri": "Talattaϣar",
-          "arabic": "تالتاشر"
+          "arabic": "تلاتاشر"
         },
         {
           "n": 14,
@@ -148,7 +148,7 @@
           "n": 15,
           "n_display": "15",
           "masri": "Xamastaϣar",
-          "arabic": "مخستاشر"
+          "arabic": "خمستاشر"
         },
         {
           "n": 16,
@@ -166,7 +166,7 @@
           "n": 18,
           "n_display": "18",
           "masri": "Tamantaϣar",
-          "arabic": "متنتاشر"
+          "arabic": "تمنتاشر"
         },
         {
           "n": 19,
@@ -197,13 +197,13 @@
           "n": 22,
           "n_display": "22",
           "masri": "Etneen we Ⲵeϣreen",
-          "arabic": "اتنني وعشرين"
+          "arabic": "اتنين وعشرين"
         },
         {
           "n": 23,
           "n_display": "23",
           "masri": "Talata we Ⲵeϣreen",
-          "arabic": "تالتة وعشرين"
+          "arabic": "ثلاتة وعشرين"
         },
         {
           "n": 24,
@@ -215,7 +215,7 @@
           "n": 25,
           "n_display": "25",
           "masri": "Xamsa we Ⲵeϣreen",
-          "arabic": "مخسة وعشرين"
+          "arabic": "خمسة وعشرين"
         },
         {
           "n": 26,
@@ -233,7 +233,7 @@
           "n": 28,
           "n_display": "28",
           "masri": "Tamanya we Ⲵeϣreen",
-          "arabic": "متانية وعشرين"
+          "arabic": "تمانية وعشرين"
         },
         {
           "n": 29,
@@ -245,7 +245,7 @@
           "n": 30,
           "n_display": "30",
           "masri": "Talateen",
-          "arabic": "تالتني"
+          "arabic": "تلاتين"
         }
       ]
     },
@@ -258,61 +258,61 @@
           "n": 31,
           "n_display": "31",
           "masri": "WaϨed we Talateen",
-          "arabic": "واحد وتالتني"
+          "arabic": "واحد وتلاتين"
         },
         {
           "n": 32,
           "n_display": "32",
           "masri": "Etneen we Talateen",
-          "arabic": "اتنني وتالتني"
+          "arabic": "اتنني وتلاتين"
         },
         {
           "n": 33,
           "n_display": "33",
           "masri": "Talata we Talateen",
-          "arabic": "تالتة وتالتني"
+          "arabic": "تالتة وتلاتين"
         },
         {
           "n": 34,
           "n_display": "34",
           "masri": "ArbaⲴa we Talateen",
-          "arabic": "أربعة وتالتني"
+          "arabic": "أربعة وتلاتين"
         },
         {
           "n": 35,
           "n_display": "35",
           "masri": "Xamsa we Talateen",
-          "arabic": "مخسة وتالتني"
+          "arabic": "مخسة وتلاتين"
         },
         {
           "n": 36,
           "n_display": "36",
           "masri": "Setta we Talateen",
-          "arabic": "ستة وتالتني"
+          "arabic": "ستة وتلاتين"
         },
         {
           "n": 37,
           "n_display": "37",
           "masri": "SabⲴa we Talateen",
-          "arabic": "سبعة وتالتني"
+          "arabic": "سبعة وتلاتين"
         },
         {
           "n": 38,
           "n_display": "38",
           "masri": "Tamanya we Talateen",
-          "arabic": "متانية وتالتني"
+          "arabic": "متانية وتلاتين"
         },
         {
           "n": 39,
           "n_display": "39",
           "masri": "TesⲴa we Talateen",
-          "arabic": "تسعة وتالتني"
+          "arabic": "تسعة وتلاتين"
         },
         {
           "n": 40,
           "n_display": "40",
           "masri": "ArbⲴeen",
-          "arabic": "أربعني"
+          "arabic": "أربعين"
         }
       ]
     },
@@ -325,61 +325,61 @@
           "n": 41,
           "n_display": "41",
           "masri": "WaϨed we ArbⲴeen",
-          "arabic": "واحد وأربعني"
+          "arabic": "واحد وأربعين"
         },
         {
           "n": 42,
           "n_display": "42",
           "masri": "Etneen we ArbⲴeen",
-          "arabic": "اتنني وأربعني"
+          "arabic": "اتنين وأربعين"
         },
         {
           "n": 43,
           "n_display": "43",
           "masri": "Talata we ArbⲴeen",
-          "arabic": "تالتة وأربعني"
+          "arabic": "تلاتة وأربعين"
         },
         {
           "n": 44,
           "n_display": "44",
           "masri": "ArbaⲴa we ArbⲴeen",
-          "arabic": "أربعة وأربعني"
+          "arabic": "أربعة وأربعين"
         },
         {
           "n": 45,
           "n_display": "45",
           "masri": "Xamsa we ArbⲴeen",
-          "arabic": "مخسة وأربعني"
+          "arabic": "خمسة وأربعين"
         },
         {
           "n": 46,
           "n_display": "46",
           "masri": "Setta we ArbⲴeen",
-          "arabic": "ستة وأربعني"
+          "arabic": "ستة وأربعين"
         },
         {
           "n": 47,
           "n_display": "47",
           "masri": "SabⲴa we ArbⲴeen",
-          "arabic": "سبعة وأربعني"
+          "arabic": "سبعة وأربعين"
         },
         {
           "n": 48,
           "n_display": "48",
           "masri": "Tamanya we ArbⲴeen",
-          "arabic": "متانية وأربعني"
+          "arabic": "تمانية وأربعين"
         },
         {
           "n": 49,
           "n_display": "49",
           "masri": "TesⲴa we ArbⲴeen",
-          "arabic": "تسعة وأربعني"
+          "arabic": "تسعة وأربعين"
         },
         {
           "n": 50,
           "n_display": "50",
           "masri": "Xamseen",
-          "arabic": "مخسني"
+          "arabic": "خمسين"
         }
       ]
     },
@@ -392,61 +392,61 @@
           "n": 51,
           "n_display": "51",
           "masri": "WaϨed we Xamseen",
-          "arabic": "واحد ومخسني"
+          "arabic": "واحد وخمسين"
         },
         {
           "n": 52,
           "n_display": "52",
           "masri": "Etneen we Xamseen",
-          "arabic": "اتنني ومخسني"
+          "arabic": "اتنين وخمسين"
         },
         {
           "n": 53,
           "n_display": "53",
           "masri": "Talata we Xamseen",
-          "arabic": "تالتة ومخسني"
+          "arabic": "تلاتة وخمسين"
         },
         {
           "n": 54,
           "n_display": "54",
           "masri": "ArbaⲴa we Xamseen",
-          "arabic": "أربعة ومخسني"
+          "arabic": "أربعة وخمسين"
         },
         {
           "n": 55,
           "n_display": "55",
           "masri": "Xamsa we Xamseen",
-          "arabic": "مخسة ومخسني"
+          "arabic": "خمسة وخمسين"
         },
         {
           "n": 56,
           "n_display": "56",
           "masri": "Setta we Xamseen",
-          "arabic": "ستة ومخسني"
+          "arabic": "ستة وخمسين"
         },
         {
           "n": 57,
           "n_display": "57",
           "masri": "SabⲴa we Xamseen",
-          "arabic": "سبعة ومخسني"
+          "arabic": "سبعة وخمسين"
         },
         {
           "n": 58,
           "n_display": "58",
           "masri": "Tamanya we Xamseen",
-          "arabic": "متانية ومخسني"
+          "arabic": "متانية وخمسين"
         },
         {
           "n": 59,
           "n_display": "59",
           "masri": "TesⲴa we Xamseen",
-          "arabic": "تسعة ومخسني"
+          "arabic": "تسعة وخمسين"
         },
         {
           "n": 60,
           "n_display": "60",
           "masri": "Setteen",
-          "arabic": "ستني"
+          "arabic": "ستين"
         }
       ]
     },
@@ -459,61 +459,61 @@
           "n": 61,
           "n_display": "61",
           "masri": "WaϨed we Setteen",
-          "arabic": "واحد وستني"
+          "arabic": "واحد وستين"
         },
         {
           "n": 62,
           "n_display": "62",
           "masri": "Etneen we Setteen",
-          "arabic": "اتنني وستني"
+          "arabic": "اتنين وستين"
         },
         {
           "n": 63,
           "n_display": "63",
           "masri": "Talata we Setteen",
-          "arabic": "تالتة وستني"
+          "arabic": "تلاتة وستين"
         },
         {
           "n": 64,
           "n_display": "64",
           "masri": "ArbaⲴa we Setteen",
-          "arabic": "أربعة وستني"
+          "arabic": "أربعة وستين"
         },
         {
           "n": 65,
           "n_display": "65",
           "masri": "Xamsa we Setteen",
-          "arabic": "مخسة وستني"
+          "arabic": "خمسة وستين"
         },
         {
           "n": 66,
           "n_display": "66",
           "masri": "Setta we Setteen",
-          "arabic": "ستة وستني"
+          "arabic": "ستة وستين"
         },
         {
           "n": 67,
           "n_display": "67",
           "masri": "SabⲴa we Setteen",
-          "arabic": "سبعة وستني"
+          "arabic": "سبعة وستين"
         },
         {
           "n": 68,
           "n_display": "68",
           "masri": "Tamanya we Setteen",
-          "arabic": "متانية وستني"
+          "arabic": "تمانية وستين"
         },
         {
           "n": 69,
           "n_display": "69",
           "masri": "TesⲴa we Setteen",
-          "arabic": "تسعة وستني"
+          "arabic": "تسعة وستين"
         },
         {
           "n": 70,
           "n_display": "70",
           "masri": "SabⲴeen",
-          "arabic": "سبعني"
+          "arabic": "سبعين"
         }
       ]
     },
@@ -526,61 +526,61 @@
           "n": 71,
           "n_display": "71",
           "masri": "WaϨed we SabⲴeen",
-          "arabic": "واحد وسبعني"
+          "arabic": "واحد وسبعين"
         },
         {
           "n": 72,
           "n_display": "72",
           "masri": "Etneen we SabⲴeen",
-          "arabic": "اتنني وسبعني"
+          "arabic": "اتنين وسبعين"
         },
         {
           "n": 73,
           "n_display": "73",
           "masri": "Talata we SabⲴeen",
-          "arabic": "تالتة وسبعني"
+          "arabic": "تلاتة وسبعين"
         },
         {
           "n": 74,
           "n_display": "74",
           "masri": "ArbaⲴa we SabⲴeen",
-          "arabic": "أربعة وسبعني"
+          "arabic": "أربعة وسبعين"
         },
         {
           "n": 75,
           "n_display": "75",
           "masri": "Xamsa we SabⲴeen",
-          "arabic": "مخسة وسبعني"
+          "arabic": "خمسة وسبعين"
         },
         {
           "n": 76,
           "n_display": "76",
           "masri": "Setta we SabⲴeen",
-          "arabic": "ستة وسبعني"
+          "arabic": "ستة وسبعين"
         },
         {
           "n": 77,
           "n_display": "77",
           "masri": "SabⲴa we SabⲴeen",
-          "arabic": "سبعة وسبعني"
+          "arabic": "سبعة وسبعين"
         },
         {
           "n": 78,
           "n_display": "78",
           "masri": "Tamanya we SabⲴeen",
-          "arabic": "متانية وسبعني"
+          "arabic": "تمانية وسبعين"
         },
         {
           "n": 79,
           "n_display": "79",
           "masri": "TesⲴa we SabⲴeen",
-          "arabic": "تسعة وسبعني"
+          "arabic": "تسعة وسبعين"
         },
         {
           "n": 80,
           "n_display": "80",
           "masri": "Tamaneen",
-          "arabic": "متانني"
+          "arabic": "تمانين"
         }
       ]
     },
@@ -593,61 +593,61 @@
           "n": 81,
           "n_display": "81",
           "masri": "WaϨed we Tamaneen",
-          "arabic": "واحد ومتانني"
+          "arabic": "واحد وتمانين"
         },
         {
           "n": 82,
           "n_display": "82",
           "masri": "Etneen we Tamaneen",
-          "arabic": "اتنني ومتانني"
+          "arabic": "اتنين وتمانين"
         },
         {
           "n": 83,
           "n_display": "83",
           "masri": "Talata we Tamaneen",
-          "arabic": "تالتة ومتانني"
+          "arabic": "تلاتة وتمانين"
         },
         {
           "n": 84,
           "n_display": "84",
           "masri": "ArbaⲴa we Tamaneen",
-          "arabic": "أربعة ومتانني"
+          "arabic": "أربعة وتمانين"
         },
         {
           "n": 85,
           "n_display": "85",
           "masri": "Xamsa we Tamaneen",
-          "arabic": "مخسة ومتانني"
+          "arabic": "خمسة وتمانين"
         },
         {
           "n": 86,
           "n_display": "86",
           "masri": "Setta we Tamaneen",
-          "arabic": "ستة ومتانني"
+          "arabic": "ستة وتمانين"
         },
         {
           "n": 87,
           "n_display": "87",
           "masri": "SabⲴa we Tamaneen",
-          "arabic": "سبعة ومتانني"
+          "arabic": "سبعة وتمانين"
         },
         {
           "n": 88,
           "n_display": "88",
           "masri": "Tamanya we Tamaneen",
-          "arabic": "متانية ومتانني"
+          "arabic": "تمانية وتمانين"
         },
         {
           "n": 89,
           "n_display": "89",
           "masri": "TesⲴa we Tamaneen",
-          "arabic": "تسعة ومتانني"
+          "arabic": "تسعة وتمانين"
         },
         {
           "n": 90,
           "n_display": "90",
           "masri": "TesⲴeen",
-          "arabic": "تسعني"
+          "arabic": "تسعين"
         }
       ]
     },
@@ -660,55 +660,55 @@
           "n": 91,
           "n_display": "91",
           "masri": "WaϨed we TesⲴeen",
-          "arabic": "واحد وتسعني"
+          "arabic": "واحد وتسعين"
         },
         {
           "n": 92,
           "n_display": "92",
           "masri": "Etneen we TesⲴeen",
-          "arabic": "اتنني وتسعني"
+          "arabic": "اتنين وتسعين"
         },
         {
           "n": 93,
           "n_display": "93",
           "masri": "Talata we TesⲴeen",
-          "arabic": "تالتة وتسعني"
+          "arabic": "تلاتة وتسعين"
         },
         {
           "n": 94,
           "n_display": "94",
           "masri": "ArbaⲴa we TesⲴeen",
-          "arabic": "أربعة وتسعني"
+          "arabic": "أربعة وتسعين"
         },
         {
           "n": 95,
           "n_display": "95",
           "masri": "Xamsa we TesⲴeen",
-          "arabic": "مخسة وتسعني"
+          "arabic": "خمسة وتسعين"
         },
         {
           "n": 96,
           "n_display": "96",
           "masri": "Setta we TesⲴeen",
-          "arabic": "ستة وتسعني"
+          "arabic": "ستة وتسعين"
         },
         {
           "n": 97,
           "n_display": "97",
           "masri": "SabⲴa we TesⲴeen",
-          "arabic": "سبعة وتسعني"
+          "arabic": "سبعة وتسعين"
         },
         {
           "n": 98,
           "n_display": "98",
           "masri": "Tamanya we TesⲴeen",
-          "arabic": "متانية وتسعني"
+          "arabic": "تمانية وتسعين"
         },
         {
           "n": 99,
           "n_display": "99",
           "masri": "TesⲴa we TesⲴeen",
-          "arabic": "تسعة وتسعني"
+          "arabic": "تسعة وتسعين"
         },
         {
           "n": 100,
@@ -727,7 +727,7 @@
           "n": 200,
           "n_display": "200",
           "masri": "Miteen",
-          "arabic": "ميتني"
+          "arabic": "ميتين"
         },
         {
           "n": 300,
@@ -745,7 +745,7 @@
           "n": 500,
           "n_display": "500",
           "masri": "Xomsomiyya",
-          "arabic": "مخسميه"
+          "arabic": "خمسميه"
         },
         {
           "n": 600,
@@ -763,7 +763,7 @@
           "n": 800,
           "n_display": "800",
           "masri": "Tomnomiyya",
-          "arabic": "متنميه"
+          "arabic": "تمنميه"
         },
         {
           "n": 900,
@@ -788,49 +788,49 @@
           "n": 2000,
           "n_display": "2,000",
           "masri": "Alfeen",
-          "arabic": "الفني"
+          "arabic": "ألفين"
         },
         {
           "n": 3000,
           "n_display": "3,000",
           "masri": "Talattalaf",
-          "arabic": "تالت آالف"
+          "arabic": "تلتلاف"
         },
         {
           "n": 4000,
           "n_display": "4,000",
           "masri": "ArbaⲴtalaf",
-          "arabic": "أربع آالف"
+          "arabic": "أربعتلاف"
         },
         {
           "n": 5000,
           "n_display": "5,000",
           "masri": "Xamastalaf",
-          "arabic": "مخس آالف"
+          "arabic": "خمستلاف"
         },
         {
           "n": 6000,
           "n_display": "6,000",
           "masri": "Settalaf",
-          "arabic": "ست آالف"
+          "arabic": "ستلاف"
         },
         {
           "n": 7000,
           "n_display": "7,000",
           "masri": "SabⲴtlaf",
-          "arabic": "سبع آالف"
+          "arabic": "سبعتلاف"
         },
         {
           "n": 8000,
           "n_display": "8,000",
           "masri": "Tamantalaf",
-          "arabic": "متن آالف"
+          "arabic": "تمنتلاف"
         },
         {
           "n": 9000,
           "n_display": "9,000",
           "masri": "TesaⲴtalaf",
-          "arabic": "تسع آالف"
+          "arabic": "تسعتلاف"
         }
       ]
     },
@@ -843,7 +843,7 @@
           "n": 10000,
           "n_display": "10,000",
           "masri": "Ⲵaϣartalaf",
-          "arabic": "عشر آالف"
+          "arabic": "عشرتلاف"
         },
         {
           "n": 20000,
@@ -855,43 +855,43 @@
           "n": 30000,
           "n_display": "30,000",
           "masri": "Talateen Alf",
-          "arabic": "تالتني ألف"
+          "arabic": "تلاتين ألف"
         },
         {
           "n": 40000,
           "n_display": "40,000",
           "masri": "ArbⲴeen Alf",
-          "arabic": "أربعني ألف"
+          "arabic": "أربعين ألف"
         },
         {
           "n": 50000,
           "n_display": "50,000",
           "masri": "Xamseen Alf",
-          "arabic": "مخسني ألف"
+          "arabic": "خمسين ألف"
         },
         {
           "n": 60000,
           "n_display": "60,000",
           "masri": "Setteen Alf",
-          "arabic": "ستني ألف"
+          "arabic": "ستين ألف"
         },
         {
           "n": 70000,
           "n_display": "70,000",
           "masri": "SabⲴeen Alf",
-          "arabic": "سبعني ألف"
+          "arabic": "سبعين ألف"
         },
         {
           "n": 80000,
           "n_display": "80,000",
           "masri": "Tamaneen Alf",
-          "arabic": "متانني ألف"
+          "arabic": "تمانين ألف"
         },
         {
           "n": 90000,
           "n_display": "90,000",
           "masri": "TesⲴeen Alf",
-          "arabic": "تسعني ألف"
+          "arabic": "تسعين ألف"
         }
       ]
     },
@@ -910,7 +910,7 @@
           "n": 200000,
           "n_display": "200,000",
           "masri": "Miteen Alf",
-          "arabic": "ميتني ألف"
+          "arabic": "ميتين ألف"
         },
         {
           "n": 300000,
@@ -928,7 +928,7 @@
           "n": 500000,
           "n_display": "500,000",
           "masri": "Xomsomeet Alf",
-          "arabic": "مخسميت ألف"
+          "arabic": "خمسميت ألف"
         },
         {
           "n": 600000,
@@ -946,7 +946,7 @@
           "n": 800000,
           "n_display": "800,000",
           "masri": "Tomnomeet Alf",
-          "arabic": "متنميت ألف"
+          "arabic": "تمنميت ألف"
         },
         {
           "n": 900000,
@@ -971,7 +971,7 @@
           "n": 10000000,
           "n_display": "10,000,000",
           "masri": "Ⲵaϣar Malayeen",
-          "arabic": "عشر مليني"
+          "arabic": "عشر ملايين"
         },
         {
           "n": 1000000000,
