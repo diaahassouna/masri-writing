@@ -1,0 +1,161 @@
+{
+  "era_colors": {
+    "pharaonic": "#c9a04a",
+    "hellenistic": "#3b8bd4",
+    "coptic": "#1d9e75",
+    "islamic": "#d85a30",
+    "modern": "#7f77dd"
+  },
+  "attempts": [
+    {
+      "era": "pharaonic",
+      "era_label_en": "Old Kingdom",
+      "era_label_ar": "الدولة القديمة",
+      "year": "c. 3200–2100 BCE",
+      "title_en": "One language, every register",
+      "title_ar": "لغة واحدة لكل حاجة",
+      "body_en": "Old Egyptian was spoken, governed, and written in — no split yet between the street and the state. Hieroglyphs carried monumental and religious weight; early Hieratic handled day-to-day administration.",
+      "body_ar": "المصري القديم كان هو لغة الكلام والحكم والكتابة مع بعض — لسه معملتش الفجوة بين الشارع والدولة. الهيروغليفي كان للنقوش والدين، والهيراطيقي المبكر كان للإدارة اليومية.",
+      "verdict_en": "The starting point every writing system eventually drifts away from: a script that matches how people actually talk.",
+      "verdict_ar": "ده نقطة البداية اللي أي نظام كتابة بيبعد عنها بمرور الوقت: كتابة قريبة من الكلام الحقيقي."
+    },
+    {
+      "era": "pharaonic",
+      "era_label_en": "Middle Kingdom",
+      "era_label_ar": "الدولة الوسطى",
+      "year": "c. 2100–1700 BCE",
+      "title_en": "The first prestige/vernacular split",
+      "title_ar": "أول انقسام بين الفصحى والعامية",
+      "body_en": "Speech kept evolving, but Middle Egyptian froze into the literary and administrative standard — becoming Egypt's first \"classical\" language, outliving anyone who spoke it natively.",
+      "body_ar": "الكلام العادي كمّل يتطور، لكن المصري الأوسط اتجمد كمعيار أدبي وإداري — يبقى أول \"لغة كلاسيكية\" في مصر، وعاشت أكتر من أي حد كان بيتكلمها كلغة أم.",
+      "verdict_en": "This is the oldest ancestor of today's gap between Modern Standard Arabic and Masri — a formal register that stopped moving while speech kept going.",
+      "verdict_ar": "ده أقدم جد للفجوة الموجودة دلوقتي بين الفصحى والمصري — مستوى رسمي وقف عن التطور والكلام العادي كمّل."
+    },
+    {
+      "era": "pharaonic",
+      "era_label_en": "New Kingdom",
+      "era_label_ar": "الدولة الحديثة",
+      "year": "c. 1550–1070 BCE",
+      "title_en": "Vernacular finally gets written down",
+      "title_ar": "العامية بقت تتكتب أخيراً",
+      "body_en": "Late Egyptian — the actual vernacular — started appearing in writing for everyday administration, while Middle Egyptian stayed locked into temple and monumental use as a classical register.",
+      "body_ar": "المصري المتأخر — العامية الحقيقية — بدأ يتكتب في الإدارة اليومية، بينما المصري الأوسط فضل محبوس في المعابد والنقوش كمستوى كلاسيكي.",
+      "verdict_en": "Proof that vernacular writing isn't a modern shortcut — Egyptians have been writing down their everyday speech for over 3,000 years.",
+      "verdict_ar": "دليل إن كتابة العامية مش اختراع حديث — المصريين بيكتبوا كلامهم اليومي من أكتر من 3000 سنة."
+    },
+    {
+      "era": "hellenistic",
+      "era_label_en": "Late Period–Ptolemaic",
+      "era_label_ar": "العصر المتأخر والبطلمي",
+      "year": "c. 700–30 BCE",
+      "title_en": "A new everyday script, and a new ruling one",
+      "title_ar": "خط جديد للناس، وخط جديد للحكم",
+      "body_en": "Demotic — a fast cursive script — became the everyday popular hand. Then Ptolemaic rule brought Greek in as the language of administration and elite scholarship, while temples kept hieroglyphs alive for religion.",
+      "body_ar": "الديموطيقي — خط سريع مبسّط — بقى خط الناس العادي. وبعدين الحكم البطلمي جاب اليوناني كلغة إدارة وعلم النخبة، والمعابد فضلت شغالة بالهيروغليفي للدين.",
+      "verdict_en": "The first time in Egyptian history that the ruling language and the popular script came from entirely different sources.",
+      "verdict_ar": "أول مرة في تاريخ مصر تكون لغة الحكم وخط الناس جايين من مصدرين مختلفين تماماً."
+    },
+    {
+      "era": "hellenistic",
+      "era_label_en": "Roman Egypt",
+      "era_label_ar": "مصر الرومانية",
+      "year": "30 BCE–4th c. CE",
+      "title_en": "Coptic script is born",
+      "title_ar": "ميلاد الخط القبطي",
+      "body_en": "Greek stayed the language of administration under Rome. But spoken Egyptian, drifting from Demotic toward what we now call Coptic, started being written with the Greek alphabet plus a handful of Demotic-derived signs for sounds Greek didn't have.",
+      "body_ar": "اليوناني فضل لغة الإدارة تحت الحكم الروماني. لكن المصري المتكلم، اللي كان بيتحول من الديموطيقي لحاجة قريبة من القبطي، بدأ يتكتب بالحروف اليونانية مع كام حرف مستعار من الديموطيقي عشان أصوات مكانتش موجودة في اليوناني.",
+      "verdict_en": "The exact move Masri makes today: borrow letterforms from more than one script to represent Egyptian sounds a single alphabet can't cover.",
+      "verdict_ar": "بالظبط الخطوة اللي مصري بتعملها دلوقتي: استعارة حروف من أكتر من نظام كتابة عشان تعبّر عن أصوات مصرية مش موجودة في أبجدية واحدة."
+    },
+    {
+      "era": "coptic",
+      "era_label_en": "Byzantine / Coptic period",
+      "era_label_ar": "العصر البيزنطي والقبطي",
+      "year": "4th–7th c. CE",
+      "title_en": "A full script change, driven by identity",
+      "title_ar": "تغيير خط كامل بسبب الهوية",
+      "body_en": "Coptic became the everyday spoken and religious language of Christian Egypt, written entirely in its own alphabet. Greek remained the administrative language of the Byzantine state.",
+      "body_ar": "القبطي بقى لغة الكلام اليومي والدين عند مصر المسيحية، وبيتكتب بأبجديته الخاصة بالكامل. اليوناني فضل هو لغة إدارة الدولة البيزنطية.",
+      "verdict_en": "A clean historical precedent: Egyptians have adopted a distinct, non-inherited script before — not for convenience, but to mark who they were.",
+      "verdict_ar": "سابقة تاريخية واضحة: المصريين قبل كده اعتمدوا خط مختلف ومش موروث — مش عشان الراحة، لكن عشان يوضحوا هويتهم."
+    },
+    {
+      "era": "islamic",
+      "era_label_en": "Early Islamic Egypt",
+      "era_label_ar": "مصر الإسلامية المبكرة",
+      "year": "641–9th c. CE",
+      "title_en": "Arabic takes over administration",
+      "title_ar": "العربي بياخد الإدارة",
+      "body_en": "Coptic stayed widely spoken for generations after the conquest. Arabic gradually became the sole administrative language by the early 700s, while Classical Arabic carried religious and scholarly prestige.",
+      "body_ar": "القبطي فضل متكلم على نطاق واسع لأجيال بعد الفتح. العربي بقى تدريجياً هو لغة الإدارة الوحيدة من أوائل القرن الثامن، والفصحى كانت لها المكانة الدينية والعلمية.",
+      "verdict_en": "Script and language shifts in Egypt have always taken generations, not overnight — a useful reminder for how long real adoption takes.",
+      "verdict_ar": "تغيير اللغة والخط في مصر ماخدش أبداً وقت قصير — دايماً أجيال، مش لحظة واحدة — ودي حاجة مهمة نتعلمها عن وقت التبني الحقيقي."
+    },
+    {
+      "era": "islamic",
+      "era_label_en": "Medieval Egypt",
+      "era_label_ar": "مصر في العصور الوسطى",
+      "year": "10th–17th c.",
+      "title_en": "Egyptian Arabic emerges — unofficial from day one",
+      "title_ar": "المصري العامي ظهر — مش رسمي من أول يوم",
+      "body_en": "Egyptian Arabic developed as the spoken vernacular while Classical Arabic held every official and prestige role. Coptic finally died out as everyday speech by around the 17th century, surviving only in the church.",
+      "body_ar": "المصري العامي اتكوّن كلغة كلام بينما الفصحى كانت ليها كل المكانة الرسمية والعلمية. القبطي اختفى كلغة كلام يومي حوالي القرن السابع عشر، وفضل موجود بس في الكنيسة.",
+      "verdict_en": "From this point on, Egyptian Arabic never once holds official status — the gap Masri exists to address has been open for roughly a thousand years.",
+      "verdict_ar": "من هنا، المصري العامي محصلش أبداً على أي وضع رسمي — الفجوة اللي مصري بيحاول يسدها فاضية من حوالي ألف سنة."
+    },
+    {
+      "era": "islamic",
+      "era_label_en": "Ottoman Egypt",
+      "era_label_ar": "مصر العثمانية",
+      "year": "1517–1867",
+      "title_en": "A third layer joins the stack",
+      "title_ar": "طبقة تالتة بتنضم للمجموعة",
+      "body_en": "Egyptian Arabic stayed the spoken vernacular. Ottoman Turkish became the language of the ruling elite, and Classical Arabic kept its religious and legal prestige — both written in the Arabic script.",
+      "body_ar": "المصري العامي فضل هو لغة الكلام. التركي العثماني بقى لغة الطبقة الحاكمة، والفصحى فضلت ليها المكانة الدينية والقانونية — والاتنين بيتكتبوا بالخط العربي.",
+      "verdict_en": "Even at its most linguistically layered, Egypt never lost the Arabic script as the common thread across every official register.",
+      "verdict_ar": "حتى في أكتر عصر فيه طبقات لغوية، مصر معملتش الخط العربي فقد مكانته كخيط مشترك بين كل المستويات الرسمية."
+    },
+    {
+      "era": "modern",
+      "era_label_en": "Khedival & British era",
+      "era_label_ar": "العصر الخديوي والبريطاني",
+      "year": "19th–20th c.",
+      "title_en": "European prestige, Latin script enters",
+      "title_ar": "مكانة أوروبية، والخط اللاتيني بيدخل",
+      "body_en": "Egyptian Arabic remained the vernacular. Modern Standard Arabic emerged as the modern official register, while French carried social and administrative prestige among the educated elite, later joined by English.",
+      "body_ar": "المصري العامي فضل هو لغة الكلام. الفصحى الحديثة ظهرت كمستوى رسمي، والفرنساوي كانت ليها مكانة اجتماعية وإدارية عند الطبقة المتعلمة، وبعدين الإنجليزي بقى معاها.",
+      "verdict_en": "The first time Latin script enters Egyptian daily life at scale — decades before Franco, setting the stage for it.",
+      "verdict_ar": "أول مرة الخط اللاتيني يدخل حياة المصريين اليومية بشكل واسع — قبل الفرانكو بعشرات السنين، وده اللي مهّد ليه."
+    },
+    {
+      "era": "modern",
+      "era_label_en": "Contemporary Egypt",
+      "era_label_ar": "مصر المعاصرة",
+      "year": "today",
+      "title_en": "Franco fills the gap — Masri proposes closing it",
+      "title_ar": "الفرانكو بيسد الفجوة — ومصري بيقترح يقفلها",
+      "body_en": "Egyptian Arabic (Masri) remains unofficial and spoken, informally written as Franco online. Modern Standard Arabic holds official and formal-prestige status; English carries international/business prestige. Masri proposes a standardized script for the vernacular itself.",
+      "body_ar": "المصري العامي فضل مش رسمي وبيتكتب بشكل غير رسمي كفرانكو أونلاين. الفصحى ليها المكانة الرسمية، والإنجليزي بقى ليه مكانة دولية وفي الشغل. مصري بيقترح نظام كتابة موحّد للعامية نفسها.",
+      "verdict_en": "Every era before this one solved the popular-writing problem with something inherited from a conqueror or a neighbor. Masri is Egypt building its own answer this time.",
+      "verdict_ar": "كل عصر قبل كده حل مشكلة كتابة العامية بحاجة موروثة من غازي أو جار. مصري هي المرة اللي مصر بتبني فيها حل خاص بيها."
+    }
+  ],
+  "rows": [
+    { "era_en": "Old Kingdom", "era_ar": "الدولة القديمة", "popular_en": "Old Egyptian (spoken)", "popular_ar": "المصري القديم (كلام)", "official_en": "Old Egyptian", "official_ar": "المصري القديم", "prestige_en": "Old Egyptian", "prestige_ar": "المصري القديم", "script_en": "Hieroglyphic, early Hieratic", "script_ar": "هيروغليفي، هيراطيقي مبكر" },
+    { "era_en": "Middle Kingdom", "era_ar": "الدولة الوسطى", "popular_en": "Late Old Egyptian", "popular_ar": "المصري القديم المتأخر", "official_en": "Middle Egyptian", "official_ar": "المصري الأوسط", "prestige_en": "Middle Egyptian (classical)", "prestige_ar": "المصري الأوسط (كلاسيكي)", "script_en": "Hieroglyphic, Hieratic", "script_ar": "هيروغليفي، هيراطيقي" },
+    { "era_en": "New Kingdom", "era_ar": "الدولة الحديثة", "popular_en": "Late Egyptian", "popular_ar": "المصري المتأخر", "official_en": "Late Egyptian (admin)", "official_ar": "المصري المتأخر (إدارة)", "prestige_en": "Middle Egyptian (temples)", "prestige_ar": "المصري الأوسط (معابد)", "script_en": "Hieratic, Hieroglyphic", "script_ar": "هيراطيقي، هيروغليفي" },
+    { "era_en": "Late Period–Ptolemaic", "era_ar": "العصر المتأخر والبطلمي", "popular_en": "Demotic Egyptian", "popular_ar": "الديموطيقي", "official_en": "Demotic → Greek", "official_ar": "ديموطيقي ← يوناني", "prestige_en": "Greek; Middle Egyptian (temples)", "prestige_ar": "يوناني؛ المصري الأوسط (معابد)", "script_en": "Demotic, Greek, Hieroglyphic", "script_ar": "ديموطيقي، يوناني، هيروغليفي" },
+    { "era_en": "Roman Egypt", "era_ar": "مصر الرومانية", "popular_en": "Egyptian → Coptic", "popular_ar": "المصري ← القبطي", "official_en": "Greek, Latin (top tier)", "official_ar": "يوناني، لاتيني (القمة)", "prestige_en": "Greek", "prestige_ar": "يوناني", "script_en": "Greek alphabet; Coptic emerges", "script_ar": "أبجدية يونانية؛ ظهور القبطي" },
+    { "era_en": "Byzantine / Coptic", "era_ar": "بيزنطي وقبطي", "popular_en": "Coptic", "popular_ar": "القبطي", "official_en": "Greek", "official_ar": "يوناني", "prestige_en": "Greek (state), Coptic (church)", "prestige_ar": "يوناني (دولة)، قبطي (كنيسة)", "script_en": "Coptic alphabet, Greek alphabet", "script_ar": "أبجدية قبطية، أبجدية يونانية" },
+    { "era_en": "Early Islamic Egypt", "era_ar": "إسلامي مبكر", "popular_en": "Coptic, then Arabic", "popular_ar": "قبطي، وبعدين عربي", "official_en": "Arabic (from early 700s)", "official_ar": "عربي (من أوائل القرن 8)", "prestige_en": "Classical Arabic, Coptic (church)", "prestige_ar": "فصحى، قبطي (كنيسة)", "script_en": "Arabic script, Coptic script", "script_ar": "خط عربي، خط قبطي" },
+    { "era_en": "Medieval Egypt", "era_ar": "عصور وسطى", "popular_en": "Egyptian Arabic", "popular_ar": "المصري العامي", "official_en": "Classical Arabic", "official_ar": "الفصحى", "prestige_en": "Classical Arabic", "prestige_ar": "الفصحى", "script_en": "Arabic script dominant", "script_ar": "الخط العربي مسيطر" },
+    { "era_en": "Ottoman Egypt", "era_ar": "عثماني", "popular_en": "Egyptian Arabic", "popular_ar": "المصري العامي", "official_en": "Ottoman Turkish, Classical Arabic", "official_ar": "تركي عثماني، الفصحى", "prestige_en": "Ottoman Turkish, Classical Arabic", "prestige_ar": "تركي عثماني، الفصحى", "script_en": "Arabic script (both languages)", "script_ar": "الخط العربي (للغتين)" },
+    { "era_en": "Khedival & British era", "era_ar": "خديوي وبريطاني", "popular_en": "Egyptian Arabic", "popular_ar": "المصري العامي", "official_en": "Modern Standard Arabic, French/English (admin)", "official_ar": "الفصحى الحديثة، فرنساوي/إنجليزي (إدارة)", "prestige_en": "MSA; French (elite)", "prestige_ar": "الفصحى؛ الفرنساوي (نخبة)", "script_en": "Arabic script; Latin script (elite)", "script_ar": "الخط العربي؛ اللاتيني (نخبة)" },
+    { "era_en": "Contemporary Egypt", "era_ar": "مصر المعاصرة", "popular_en": "Egyptian Arabic (Masri)", "popular_ar": "المصري (مصري)", "official_en": "Modern Standard Arabic", "official_ar": "الفصحى الحديثة", "prestige_en": "MSA; English (international)", "prestige_ar": "الفصحى؛ الإنجليزي (دولي)", "script_en": "Arabic script; Franco; Masri (proposed)", "script_ar": "الخط العربي؛ فرانكو؛ مصري (مقترح)" }
+  ],
+  "sources": [
+    { "name": "Encyclopaedia Britannica — Egyptian language", "url": "https://www.britannica.com/topic/Egyptian-language" },
+    { "name": "UCLA Encyclopedia of Egyptology — Coptic", "url": "https://escholarship.org/uc/item/7v9603qz" },
+    { "name": "Encyclopaedia Britannica — Demotic script", "url": "https://www.britannica.com/topic/demotic-script" }
+  ]
+}
