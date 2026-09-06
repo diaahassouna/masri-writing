@@ -1,0 +1,87 @@
+/* How Masri Works — central architecture guide.
+   Layout & components specific to this page; design tokens, topbar,
+   lang switch and footer live in shared.css. Card/hero/cta patterns
+   are intentionally close to prior-attempts.css / dts.css so the page
+   feels native to the rest of the site rather than bolted on. */
+
+#masri-app {
+  padding: 28px 24px 40px;
+  max-width: 900px;
+  line-height: 1.55;
+}
+#masri-app[dir="rtl"] h1,
+#masri-app[dir="rtl"] h2,
+#masri-app[dir="rtl"] h3,
+#masri-app[dir="rtl"] .sub,
+#masri-app[dir="rtl"] .hiw-card,
+#masri-app[dir="rtl"] .hiw-toc,
+#masri-app[dir="rtl"] .cta-btn,
+#masri-app[dir="rtl"] .gh-link { font-family: var(--font-ui); }
+#masri-app[dir="rtl"] .eyebrow { direction: rtl; text-align: center; }
+#masri-app[dir="rtl"] .hiw-card { border-left: 1px solid var(--border); border-right: 3px solid var(--gold); }
+#masri-app[dir="rtl"] .hiw-pipe { direction: ltr; }
+
+.hiw-hero { position: relative; text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 26px; }
+.hero-lotus-bg { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 90px; opacity: .1; fill: var(--gold); z-index: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; color: var(--gold); margin-bottom: 10px; position: relative; z-index: 1; }
+.hiw-hero h1 { font-family: var(--font-display); font-weight: 700; font-size: 30px; line-height: 1.25; margin: 0 0 12px; color: var(--ink); position: relative; z-index: 1; }
+.sub { color: var(--ink-dim); font-size: 15px; line-height: 1.6; margin: 0 auto; max-width: 620px; position: relative; z-index: 1; }
+.status-pill { display: inline-block; margin-top: 14px; font-size: 11.5px; color: var(--ink-dim); border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px; position: relative; z-index: 1; }
+
+.hiw-toc { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 0 0 30px; padding: 0; list-style: none; }
+.hiw-toc a { font-size: 12px; color: var(--ink-dim); text-decoration: none; border: 1px solid var(--border); border-radius: 999px; padding: 5px 11px; }
+.hiw-toc a:hover { color: var(--gold); border-color: var(--gold); }
+
+.hiw-section { margin-bottom: 34px; scroll-margin-top: 16px; }
+.hiw-section h2 { font-family: var(--font-display); font-size: 21px; color: var(--ink); margin: 0 0 6px; }
+.hiw-section .hiw-lede { color: var(--ink-dim); font-size: 13.5px; margin: 0 0 16px; max-width: 680px; }
+
+/* Architecture pipeline diagram (section: Input -> Normalization -> Canonical -> Representations) */
+.hiw-pipe { display: flex; flex-direction: column; align-items: center; gap: 4px; margin: 10px 0 22px; }
+.hiw-pipe-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.hiw-box { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; font-size: 12.5px; text-align: center; color: var(--ink); min-width: 120px; }
+.hiw-box.hiw-box-accent { border-color: var(--gold); background: var(--panel-2); }
+.hiw-box-label { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-dim); margin-bottom: 3px; }
+.hiw-arrow-down { color: var(--ink-dim); font-size: 16px; line-height: 1; margin: 2px 0; }
+.hiw-fork { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+.hiw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.hiw-card { background: var(--panel); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 12px; padding: 16px 18px; }
+.hiw-card h3 { font-family: var(--font-display); font-size: 16px; margin: 0 0 8px; color: var(--ink); }
+.hiw-card p { font-size: 13px; color: var(--ink-dim); margin: 0 0 8px; line-height: 1.6; }
+.hiw-card p:last-child { margin-bottom: 0; }
+.hiw-card code { font-size: 12px; }
+
+.hiw-term-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 18px; margin: 0; padding: 0; list-style: none; }
+.hiw-term-list dt { font-weight: 700; color: var(--gold); font-size: 13px; margin: 0 0 2px; }
+.hiw-term-list dd { margin: 0 0 12px; font-size: 12.5px; color: var(--ink-dim); line-height: 1.55; }
+
+.hiw-ruletype { display: flex; align-items: baseline; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.hiw-ruletype:last-child { border-bottom: none; }
+.hiw-ruletype-name { flex: 0 0 150px; font-weight: 700; color: var(--ink); }
+.hiw-ruletype-desc { color: var(--ink-dim); font-size: 12.5px; }
+
+.hiw-edge-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.hiw-edge-table th, .hiw-edge-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.hiw-edge-table th { color: var(--gold); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .03em; }
+#masri-app[dir="rtl"] .hiw-edge-table th, #masri-app[dir="rtl"] .hiw-edge-table td { text-align: right; }
+
+.hiw-principles { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.hiw-principles li { background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--ink); }
+
+.hiw-footer { text-align: center; margin-top: 8px; }
+.hiw-footer-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.cta-btn { display: inline-flex; align-items: center; gap: 8px; border: none; border-radius: 10px; padding: 12px 20px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: var(--font-ui); text-decoration: none; transition: transform .12s, filter .12s; }
+.cta-primary, a.cta-primary { background: linear-gradient(135deg, var(--gold), #e0b95c); color: #241a06; }
+.cta-primary:hover { filter: brightness(1.05); }
+.cta-secondary, a.cta-secondary { background: var(--panel-2); color: var(--ink); border: 1px solid var(--border); }
+.cta-secondary:hover { border-color: var(--gold); color: var(--gold); }
+.lotus-icon { width: 16px; height: 16px; fill: #241a06; }
+
+.divider { text-align: center; margin: 26px 0; }
+.divider-lotus { width: 30px; height: auto; fill: var(--gold); opacity: .5; }
+
+@media (max-width: 640px) {
+  .hiw-ruletype { flex-direction: column; gap: 2px; }
+  .hiw-ruletype-name { flex: none; }
+}
