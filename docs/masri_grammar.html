@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script>(function(){try{var t=localStorage.getItem('masri-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masri Grammar Reference</title>
+<meta name="description" content="A working grammar reference for Masri: nouns, plurals, pronouns, verbs, negation, word order, and honorifics, with every example spelled in Tier 1 and Tier 2.">
+<meta property="og:title" content="Masri Grammar Reference">
+<meta property="og:description" content="A working grammar reference for Masri: nouns, plurals, pronouns, verbs, negation, word order, and honorifics, with every example spelled in Tier 1 and Tier 2.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diaahassouna.github.io/masri-writing/masri_grammar.html">
+<link rel="canonical" href="https://diaahassouna.github.io/masri-writing/masri_grammar.html">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/grammar.css"></head>
+<body>
+<div id="masri-app" dir="ltr" class="masri-page" role="main">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"></path>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"></path>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="topbar-links">
+      <div class="site-nav" id="siteNav">
+        <button class="gh-link site-nav-toggle" id="siteNavToggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M1 3h14v1.5H1V3Zm0 4.25h14v1.5H1v-1.5ZM1 11.5h14V13H1v-1.5Z"></path></svg>
+          <span>All pages</span>
+        </button>
+        <div class="site-nav-menu" id="siteNavMenu" role="menu"></div>
+      </div>
+      <button class="gh-link theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="theme-icon-sun" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1Zm0 3.5A3.5 3.5 0 1 1 8 11.5 3.5 3.5 0 0 1 8 4.5ZM3.05 3.05a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06L3.05 4.11a.75.75 0 0 1 0-1.06Zm8.83 8.83a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06ZM1 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 1 8Zm11.5 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM4.11 11.89a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Zm8.83-8.83a.75.75 0 0 1 0 1.06L11.89 5.17a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Z"></path></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M6.6.1a7 7 0 1 0 8.9 9A7.4 7.4 0 0 1 6.6.1Z"></path></svg>
+      </button>
+    </div>
+    <div class="lang-switch" id="langSwitch"><a class="lang-btn" href="masri_grammar_ar.html">EG-AR</a></div>
+  </div>
+
+  <header class="gr-hero">
+    <svg class="gr-hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <p class="gr-eyebrow">مرجع قواعد اللغة المصرية</p>
+    <h1>Masri Grammar Reference</h1>
+    <p class="sub">Nouns, plurals, pronouns, verbs, negation, word order, and honorifics — adapted from the descriptive grammar of Egyptian Arabic into Masri's Tier 1 (Everyday) and Tier 2 (Academic) orthographies. Every example runs Arabic → Tier 1 → Tier 2, so it can be checked line by line against the spelling rules on the <a href="masri_how_it_works.html">How Masri Works</a> and <a href="arabizi_to_masri_viral.html">Converter</a> pages.</p>
+  </header>
+
+  <nav class="gr-toc" aria-labelledby="gramTocHeading">
+    <h2 id="gramTocHeading">Contents</h2>
+    <ol><li><a href="#0-how-to-read-this-document">0. How to read this document</a></li><li><a href="#1-nouns-no-case-no-nunation">1. Nouns — no case, no nunation</a></li><li><a href="#2-plurals">2. Plurals</a><ol><li><a href="#21-broken-plurals">2.1 Broken plurals</a></li><li><a href="#21a-sound-feminine-plural-aat">2.1a Sound feminine plural (-aat)</a></li><li><a href="#22-color-and-physical-defect-nouns">2.2 Color and physical-defect nouns</a></li></ol></li><li><a href="#3-pronouns">3. Pronouns</a><ol><li><a href="#31-independent-subject-pronouns">3.1 Independent subject pronouns</a></li><li><a href="#32-possessive-clitics-on-nouns">3.2 Possessive clitics on nouns</a></li><li><a href="#33-object-clitics-on-verbs">3.3 Object clitics on verbs</a></li><li><a href="#34-suffixed-prepositions">3.4 Suffixed prepositions</a></li></ol></li><li><a href="#4-verbs">4. Verbs</a><ol><li><a href="#41-root-and-pattern-basics">4.1 Root-and-pattern basics</a></li><li><a href="#42-full-paradigm-katabyiktib-write-no-special-letters-control-example">4.2 Full paradigm: كتب / يكتب (katab/yiktib "write") — no special letters, control example</a></li><li><a href="#43-verb-with-habbyihibb-love">4.3 Verb with ح: حب / يحب (ḥabb/yiḥibb "love")</a></li><li><a href="#44-verb-with-irifyiraf-know">4.4 Verb with ع: عرف / يعرف (irif/yiraf "know")</a></li><li><a href="#45-hollow-and-doubled-verbs">4.5 Hollow and doubled verbs</a></li><li><a href="#46-form-overview-selected-not-exhaustive">4.6 Form overview (selected, not exhaustive)</a></li></ol></li><li><a href="#5-negation-ma-separate-verb-shi-glued">5. Negation: ma (separate) + verb-sh(i) (glued)</a><ol><li><a href="#50a-bare-ma-no-shi-oathemphatic-negation">5.0a Bare ma (no -sh(i)) — oath/emphatic negation</a></li><li><a href="#51-phonological-knock-on-effects-on-the-glued-verb-shi-portion">5.1 Phonological knock-on effects (on the glued verb-sh(i) portion)</a></li></ol></li><li><a href="#6-word-order-syntax-notes">6. Word order &amp; syntax notes</a><ol><li><a href="#61-svo-not-vso">6.1 SVO, not VSO</a></li><li><a href="#62-wh-in-situ-question-words-stay-in-place-with-flexibility">6.2 Wh-in-situ (question words stay in place — with flexibility)</a></li><li><a href="#63-dual-agreement-collapses-to-plural">6.3 Dual agreement collapses to plural</a></li></ol></li><li><a href="#7-honorifics-brief">7. Honorifics (brief)</a></li><li><a href="#8-summary-of-open-items-for-review">8. Summary of open items for review</a></li></ol>
+  </nav>
+
+  <article class="gr-content">
+<p><strong>El Abgadeyya El Masreyya — Grammar Companion</strong>
+Adapted from the descriptive grammar of Egyptian Arabic (Cairene/Masri dialect) into the Masri writing system's Tier 1 (Everyday, ASCII) and Tier 2 (Academic, Coptic/Greek/Latin-ext.) orthographies.</p>
+<blockquote>
+<p><strong>Status:</strong> first pass, drafted for review. Every example below runs Arabic → Tier 1 → Tier 2 so mistakes are easy to spot line by line. Flag anything that looks wrong — several judgment calls are marked <code>[OPEN]</code> where the existing spelling rules didn't give a clean answer.</p>
+</blockquote>
+<hr />
+<h2 id="0-how-to-read-this-document">0. How to read this document</h2>
+<p>Every example is given as:</p>
+<pre><code>Arabic script — gloss
+Tier 1 (everyday):  ...
+Tier 2 (academic):  ...
+</code></pre>
+<p>Tier 1/Tier 2 spellings follow the rules already fixed in <code>assets/data/tier2-rules.json</code> and <code>assets/data/alphabet.json</code>:</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Sound</th>
+<th>Arabic</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/ʕ/</td>
+<td>ع</td>
+<td><code>`</code> (backtick)</td>
+<td>Ⲵ</td>
+<td>"The ع Problem" — most critical rule in the system</td>
+</tr>
+<tr>
+<td>/ħ/</td>
+<td>ح</td>
+<td>h</td>
+<td>ϩ</td>
+<td>Never numeral 7 in either Masri tier</td>
+</tr>
+<tr>
+<td>/ʃ/</td>
+<td>ش</td>
+<td>sh</td>
+<td>ϣ</td>
+<td>Tier 2 is a single letter, not a digraph</td>
+</tr>
+<tr>
+<td>/θ/</td>
+<td>ث</td>
+<td>s / t</td>
+<td>θ → merges to s</td>
+<td>Cairene merger is real, not an error</td>
+</tr>
+<tr>
+<td>/ð/</td>
+<td>ذ</td>
+<td>z / d</td>
+<td>ð → merges to z</td>
+<td>Same logic as θ</td>
+</tr>
+<tr>
+<td>/sˤ dˤ tˤ ðˤ/</td>
+<td>ص ض ط ظ</td>
+<td>s, d, t, z</td>
+<td>ṣ, ḍ, ṭ, ẓ</td>
+<td>ظ merges into ḍ in most Cairene speech</td>
+</tr>
+<tr>
+<td>/ɣ/</td>
+<td>غ</td>
+<td>gh</td>
+<td>ɣ</td>
+<td>Single letter in Tier 2</td>
+</tr>
+<tr>
+<td>/ʔ/ (glottal stop)</td>
+<td>ء / colloquial ق</td>
+<td><code>'</code> (apostrophe), mid-word/final only</td>
+<td>Ɐ, mid-word/final only</td>
+<td><strong>Silent and unwritten word-initially in both tiers</strong>, regardless of etymology</td>
+</tr>
+<tr>
+<td>/q/ (formal)</td>
+<td>ق</td>
+<td>q</td>
+<td>q</td>
+<td>Reserved for MSA/formal register; colloquial ق is the glottal stop above</td>
+</tr>
+<tr>
+<td>el (definite article)</td>
+<td>ال</td>
+<td>el</td>
+<td>el</td>
+<td>Always spelled "el," always a separate word — never assimilated to sun letters, never fused to the following noun. Exception: a closed set of short prepositions/particles (li-, bi-, fi-, shortened <code>a-/Ⲵa-, topicalizing ma) fuse with el into **lel/lil, bel, fel,</code>al/Ⲵal, Mal** — but the fused word then stays separate from the following noun, same as plain el (spelling_rules id 8, §6.3)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three structural rules carry through every section below:</p>
+<ol>
+<li><strong>El is a free particle.</strong> It is written separate from the word it modifies, in every tier, regardless of how it actually assimilates in speech (el shams, not esh-shams) — except when li- or bi- precedes it (rule 3 below).</li>
+<li><strong>ma is a free particle too, but -sh(i) is bound to the verb.</strong> ma is written separately, like el; -sh(i) (and any object clitics between the verb and -sh(i)) fuses to the verb as one word — see §5.</li>
+<li><strong>A closed set of short prepositions/particles fuse with el.</strong> li-, bi-, fi-, shortened <code>a-/Ⲵa-, and topicalizing ma become lel/lil, bel, fel,</code>al/Ⲵal, Mal as one word (but `and never fuses, and negation ma never fuses with the verb — see §5) — see §6.3.</li>
+</ol>
+<hr />
+<h2 id="1-nouns-no-case-no-nunation">1. Nouns — no case, no nunation</h2>
+<p>Egyptian Arabic nouns don't inflect for case, unlike Modern Standard Arabic. This is inherited wholesale by Masri: there is nothing to represent.</p>
+<p>The one common survival is the frozen accusative in a handful of fixed expressions:</p>
+<ul>
+<li>شكراً — "thank you"
+  Tier 1: <strong>shokran</strong>
+  Tier 2: <strong>ϣokran</strong></li>
+</ul>
+<p><strong>Rule:</strong> Masri never marks i3rab (case endings). A word's Masri spelling reflects only what is actually pronounced in the colloquial, pausal form — matching how Egyptian Arabic itself treats nouns.</p>
+<hr />
+<h2 id="2-plurals">2. Plurals</h2>
+<h3 id="21-broken-plurals">2.1 Broken plurals</h3>
+<p>Broken plurals are template-based (the consonant skeleton stays, the vowel pattern changes). Because Masri's letter substitutions are consonant-level, broken-plural templates transfer automatically — you just apply the consonant table to whichever slots the template happens to land on.</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Meaning</th>
+<th>Singular (Ar.)</th>
+<th>Singular Tier 1 / Tier 2</th>
+<th>Plural (Ar.)</th>
+<th>Plural Tier 1 / Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>desk/office</td>
+<td>مكتب</td>
+<td>maktab / maktab</td>
+<td>مكاتب</td>
+<td>makatib / makatib</td>
+</tr>
+<tr>
+<td>key</td>
+<td>مفتاح</td>
+<td>muftaah / muftaaϩ</td>
+<td>مفاتيح</td>
+<td>mafatiih / mafatiiϩ</td>
+</tr>
+<tr>
+<td>lesson</td>
+<td>درس</td>
+<td>dars / dars</td>
+<td>دروس</td>
+<td>doroos / doroos</td>
+</tr>
+<tr>
+<td>drawer</td>
+<td>درج</td>
+<td>dorg / dorg</td>
+<td>ادراج</td>
+<td>adraag / adraag</td>
+</tr>
+<tr>
+<td>shoe</td>
+<td>جزمة</td>
+<td>gazma / gazma</td>
+<td>جزم</td>
+<td>gizam / gizam</td>
+</tr>
+<tr>
+<td>cigarette</td>
+<td>سيجارة</td>
+<td>sigaara / sigaara</td>
+<td>سجاير</td>
+<td>sagaayer / sagaayer</td>
+</tr>
+<tr>
+<td>newspaper</td>
+<td>جريدة</td>
+<td>gareeda / gareeda</td>
+<td>جرايد</td>
+<td>garaayed / garaayed</td>
+</tr>
+<tr>
+<td>teacher (occ.)</td>
+<td>كاتب</td>
+<td>kaatib / kaatib</td>
+<td>كتّاب</td>
+<td>kottaab / kottaab</td>
+</tr>
+<tr>
+<td>poor (adj.)</td>
+<td>فقير</td>
+<td>fa'eer / faⱯeer</td>
+<td>فقرا</td>
+<td>fo'ara / foⱯara</td>
+</tr>
+</tbody>
+</table></div>
+<p>None of the plural templates themselves need new rules; they're pure vowel-pattern spelling, already covered by the existing vowel table. The only judgment calls are per-word, same as with any singular: does this particular root contain ع/ح/ث/ذ/ش/ق?</p>
+<h3 id="21a-sound-feminine-plural-aat">2.1a Sound feminine plural (-aat)</h3>
+<p>Distinct from the broken-plural templates above: a closed class of feminine nouns pluralize by suffixing <strong>-aat</strong> (pronounced "aat," a long vowel) directly onto the singular stem, rather than reshuffling the internal vowel pattern.</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Meaning</th>
+<th>Singular</th>
+<th>Plural</th>
+<th>Tier 1 / Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wife</td>
+<td>maraat</td>
+<td>wives</td>
+<td>maraat → <strong>merataat</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the noun-side counterpart to the verb vowel-shortening rule in §5.1/spelling_rules id 7: attaching the -aat suffix shortens the stem's own long vowel (maraat → marat-) before the long -aat suffix is added — the same shortening that -ha, -na, -kom, and -hom trigger on this and other nouns (§3.2).</p>
+<h3 id="22-color-and-physical-defect-nouns">2.2 Color and physical-defect nouns</h3>
+<p>These take a special ʔaCCaC / CaCCa / CuCC pattern (masc./fem./plural):</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Meaning</th>
+<th>Masc. (Ar.)</th>
+<th>Tier 1 / Tier 2</th>
+<th>Fem.</th>
+<th>Tier 1 / Tier 2</th>
+<th>Plural</th>
+<th>Tier 1 / Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>green</td>
+<td>أخضر</td>
+<td>akhdar / axdar</td>
+<td>خضرا</td>
+<td>khadra / xadra</td>
+<td>خضر</td>
+<td>khodr / xodr</td>
+</tr>
+<tr>
+<td>blue</td>
+<td>أزرق</td>
+<td>azra' / azraⱯ</td>
+<td>زرقا</td>
+<td>zar'a / zarⱯa</td>
+<td>زرق</td>
+<td>zor' / zorⱯ</td>
+</tr>
+<tr>
+<td>black</td>
+<td>إسود</td>
+<td>eswed / eswed</td>
+<td>سودا</td>
+<td>sooda / sooda</td>
+<td>سود</td>
+<td>sood / sood</td>
+</tr>
+<tr>
+<td>white</td>
+<td>أبيض</td>
+<td>abyad / abyad</td>
+<td>بيضا</td>
+<td>beeda / beeda</td>
+<td>بيض</td>
+<td>beed / beed</td>
+</tr>
+<tr>
+<td>deaf</td>
+<td>أطرش</td>
+<td>atrash / aṭraϣ</td>
+<td>طرشا</td>
+<td>tarsha / ṭarϣa</td>
+<td>طرش</td>
+<td>tors / ṭorϣ</td>
+</tr>
+<tr>
+<td>blind</td>
+<td>أعمى</td>
+<td>a<code>ma / aⲴma | عمياء |</code>amya / Ⲵamya</td>
+<td>عمي</td>
+<td>`omy / Ⲵomy</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>one-eyed</td>
+<td>أعور</td>
+<td>a<code>war / aⲴwar | عورا |</code>oora / Ⲵoora</td>
+<td>عور</td>
+<td>`oor / Ⲵoor</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The rest of the color set (bunni "brown," ramaadi "gray," banafsigi "purple," etc.) are invariable nisba adjectives and need no special handling beyond normal Tier 1/Tier 2 letter substitution.</p>
+<hr />
+<h2 id="3-pronouns">3. Pronouns</h2>
+<h3 id="31-independent-subject-pronouns">3.1 Independent subject pronouns</h3>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Person</th>
+<th>Arabic</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>أنا</td>
+<td>ana</td>
+<td>ana</td>
+</tr>
+<tr>
+<td>you (m)</td>
+<td>إنت</td>
+<td>enta</td>
+<td>enta</td>
+</tr>
+<tr>
+<td>you (f)</td>
+<td>إنتي</td>
+<td>enti</td>
+<td>enti</td>
+</tr>
+<tr>
+<td>he</td>
+<td>هو</td>
+<td>howwa</td>
+<td>howwa</td>
+</tr>
+<tr>
+<td>she</td>
+<td>هي</td>
+<td>heyya</td>
+<td>heyya</td>
+</tr>
+<tr>
+<td>we</td>
+<td>إحنا</td>
+<td>ehna</td>
+<td>eϩna</td>
+</tr>
+<tr>
+<td>you (pl)</td>
+<td>إنتو</td>
+<td>ento</td>
+<td>ento</td>
+</tr>
+<tr>
+<td>they</td>
+<td>هما</td>
+<td>homma</td>
+<td>homma</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="32-possessive-clitics-on-nouns">3.2 Possessive clitics on nouns</h3>
+<p>Attaching to a noun that ends in a vowel vs. one or two consonants changes the suffix shape — this is pure phonology and doesn't interact with any Masri-specific rule beyond "spell what's actually said." One phonological effect does need an explicit rule, though: <strong>a medial/final long vowel in the noun shortens before the "heavier" clitic set</strong> — -ha (her), -na (our), -kom (your pl.), -hom (their) — while the "lighter" set — -i (my), -ak/-ik (your m./f.), -o (his) — leaves it intact. This is the same shortening already formalized for verbs in spelling_rules id 7 (§5.1), now generalized to nouns as spelling_rules id 9.</p>
+<p>Pronunciation note: long e (spelled <strong>ee</strong> per this doc's doubling convention) is pronounced like the English letter name "A," or like the é in café — worth keeping in mind when reading beet, betha, etc. out loud.</p>
+<p><strong>بيت (beet) "house"</strong></p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>my house</td>
+<td>beeti</td>
+<td>beeti</td>
+</tr>
+<tr>
+<td>your house (m)</td>
+<td>beetak</td>
+<td>beetak</td>
+</tr>
+<tr>
+<td>your house (f)</td>
+<td>beetik</td>
+<td>beetik</td>
+</tr>
+<tr>
+<td>his house</td>
+<td>beeto</td>
+<td>beeto</td>
+</tr>
+<tr>
+<td>her house</td>
+<td>betha</td>
+<td>betha</td>
+</tr>
+<tr>
+<td>our house</td>
+<td>betna</td>
+<td>betna</td>
+</tr>
+<tr>
+<td>your house (pl)</td>
+<td>betkom</td>
+<td>betkom</td>
+</tr>
+<tr>
+<td>their house</td>
+<td>bethom</td>
+<td>bethom</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the trigger class is: <strong>-ha, -na, -kom, -hom, and the sound plural -aat all shorten the stem; -i, -ak, -ik, -o do not.</strong> The heavier/lighter split lines up with person: 3rd fem. singular, 1st/2nd/3rd plural, and the plural marker all shorten; 1st singular, 2nd singular (both genders), and 3rd masc. singular don't. A second noun confirms the same split — زيت <em>zeet</em> "oil" and دقيق <em>di'ee'</em> (also spelled <em>d'ee'</em>, with syncope of the initial i) "flour," combined with -na:</p>
+<blockquote>
+<p>زيتنا في دقيقنا — "our oil is in our flour"
+Tier 1: <strong>Zetna fi d'e'na</strong>
+Tier 2: <strong>Zetna fi dⱯeⱯna</strong></p>
+</blockquote>
+<p>Both zeet→zetna and di'ee'/d'ee'→d'e'na shorten the long ee to a single e before -na, exactly like beet→betna — and d'e'na additionally shows the same first-syllable syncope already documented for verbs (§5.1: kiber→keber), now confirmed on a noun too.</p>
+<p><strong>مراة (miraat-) "wife" (construct form)</strong> — chosen because the root's أ needs the mid-word Ɐ rule:</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>my wife</td>
+<td>meraati</td>
+<td>meraati</td>
+</tr>
+<tr>
+<td>his wife</td>
+<td>meraato</td>
+<td>meraato</td>
+</tr>
+<tr>
+<td>her wife</td>
+<td>meratha</td>
+<td>meratha</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>أب (abu-) "father"</strong> — irregular construct base, worth flagging because it keeps the old <em>-u</em> construct ending that MSA lost in colloquial elsewhere:</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>my father</td>
+<td>abooya</td>
+<td>abooya</td>
+</tr>
+<tr>
+<td>your father (m)</td>
+<td>abook</td>
+<td>abook</td>
+</tr>
+<tr>
+<td>his father</td>
+<td>aboo(h)</td>
+<td>aboo(h)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="33-object-clitics-on-verbs">3.3 Object clitics on verbs</h3>
+<p><strong>شفت (shoft) "I saw"</strong> — per the standing rule that this root is always <em>shoft</em>, never <em>sheft</em>:</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I saw him</td>
+<td>shofto</td>
+<td>ϣofto</td>
+</tr>
+<tr>
+<td>I saw her</td>
+<td>shoftaha</td>
+<td>ϣoftaha</td>
+</tr>
+<tr>
+<td>I saw them</td>
+<td>shofto-hom</td>
+<td>ϣoftohom</td>
+</tr>
+</tbody>
+</table></div>
+<p>Stacked direct + indirect object, from the source grammar's own example (أجيبهولك):</p>
+<ul>
+<li>أجيب — <strong>agiib</strong> / <strong>agiib</strong> "I bring"</li>
+<li>أجبهولك — <strong>agib-huu-lik</strong> → Masri: <strong>agibhuulik</strong> / <strong>agibhuulik</strong> "I bring it to you"</li>
+<li>ما أجبهولكش — <strong>ma-agib-huu-lik-sh</strong> → Masri: <strong>magibholkiish</strong> / <strong>magibholkiiϣ</strong></li>
+</ul>
+<h3 id="34-suffixed-prepositions">3.4 Suffixed prepositions</h3>
+<p>A representative set (fi "in," <code>ala "on,"</code>and "to have"):</p>
+<p>| | fi "in" | <code>ala "on" |</code>and "to have" |
+|---|---|---|---|
+| Arabic base | في | على | عند |
+| ...me | feyya / feyya | <code>alayya / Ⲵalayya |</code>andi / Ⲵandi |
+| ...you (m) | feek / feek | <code>aleek / Ⲵaleek |</code>andak / Ⲵandak |
+| ...him | fee(h) / fee(h) | <code>alee(h) / Ⲵalee(h) |</code>ando / Ⲵando |
+| ...her | feeha / feeha | <code>aleeha / Ⲵaleeha |</code>andaha / Ⲵandaha |</p>
+<p><strong>Shortened form:</strong> unsuffixed <code>ala/Ⲵala ("on, about") can shorten to</code>a/Ⲵa usually before <strong>el</strong> and <strong>elli</strong> — اللي, "which/that/who," the Egyptian colloquial equivalent of MSA الذي:</p>
+<ul>
+<li>على اللي فات "about what happened/the past" → **<code>a elli faat** / **Ⲵa elli faat** (rather than the fuller</code>ala elli faat / Ⲵala elli faat)</li>
+</ul>
+<p>When the shortened <code>a/Ⲵa precedes **el** specifically, the two go on to fuse into a single word — **</code>a + el → `al<strong> / </strong>Ⲵa + el → Ⲵal** — the same pattern as li-+el→lel and bi-+el→bel (spelling_rules id 8, §6.3):</p>
+<ul>
+<li>يللا ع القهوة (= يللا على القهوة) "come on, let's go for coffee"
+  Tier 1: <strong>Yalla <code>al ahwa.** (= fuller, unfused **Yalla</code>ala el ahwa.</strong>)
+  Tier 2: <strong>Yalla Ⲵal ahwa.</strong> (= fuller, unfused <strong>Yalla Ⲵala el ahwa.</strong>)</li>
+</ul>
+<hr />
+<h2 id="4-verbs">4. Verbs</h2>
+<h3 id="41-root-and-pattern-basics">4.1 Root-and-pattern basics</h3>
+<p>Egyptian Arabic verbs are built from a 3- or 4-consonant root plus a vowel/affix pattern. Since Masri's substitution table operates at the consonant level, this system transfers cleanly: <strong>whichever slot in the pattern the root's ع/ح/ث/ذ/ش/ق lands in, apply the same substitution you'd apply anywhere else.</strong></p>
+<p>The dictionary-citation form is the 3rd person masculine singular past (Arabic has no infinitive) — e.g. كتب <em>katab</em> "he wrote," cited as katab/yiktib.</p>
+<h3 id="42-full-paradigm-katabyiktib-write-no-special-letters-control-example">4.2 Full paradigm: كتب / يكتب (katab/yiktib "write") — no special letters, control example</h3>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Singular</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Past 1st</td>
+<td>katabt</td>
+<td>katabna</td>
+</tr>
+<tr>
+<td>Past 2nd m</td>
+<td>katabt</td>
+<td>katabtu</td>
+</tr>
+<tr>
+<td>Past 2nd f</td>
+<td>katabti</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Past 3rd m</td>
+<td>katab</td>
+<td>katabu</td>
+</tr>
+<tr>
+<td>Past 3rd f</td>
+<td>katabet</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pres. subj. 1st</td>
+<td>aktib</td>
+<td>niktib</td>
+</tr>
+<tr>
+<td>Pres. subj. 2nd m</td>
+<td>tiktib</td>
+<td>tiktibu</td>
+</tr>
+<tr>
+<td>Pres. subj. 2nd f</td>
+<td>tiktibi</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pres. subj. 3rd m</td>
+<td>yiktib</td>
+<td>yiktibu</td>
+</tr>
+<tr>
+<td>Pres. subj. 3rd f</td>
+<td>tiktib</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pres. indic. (add bi-)</td>
+<td>beyektib</td>
+<td>binektib</td>
+</tr>
+<tr>
+<td>Future (add ha-)</td>
+<td>haktib</td>
+<td>hanektib</td>
+</tr>
+<tr>
+<td>Imperative</td>
+<td>iktib / iktibi</td>
+<td>iktibu</td>
+</tr>
+</tbody>
+</table></div>
+<p>3rd person present indicative always takes the fuller <strong>beye-</strong> shape (confirmed) — never the reduced <em>b-</em> form.</p>
+<h3 id="43-verb-with-habbyihibb-love">4.3 Verb with ح: حب / يحب (ḥabb/yiḥibb "love")</h3>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I loved</td>
+<td>habbeit</td>
+<td>ϩabbeet</td>
+</tr>
+<tr>
+<td>he loved</td>
+<td>habb</td>
+<td>ϩabb</td>
+</tr>
+<tr>
+<td>he loves</td>
+<td>beyehebb</td>
+<td>beyeϩebb</td>
+</tr>
+<tr>
+<td>I don't love <em>(see §6)</em></td>
+<td>mahabbetsh(i)</td>
+<td>maϩabbetϣ(i)</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="44-verb-with-irifyiraf-know">4.4 Verb with ع: عرف / يعرف (<code>irif/yi</code>raf "know")</h3>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I know</td>
+<td>ba`raf</td>
+<td>baⲴraf</td>
+</tr>
+<tr>
+<td>he knows</td>
+<td>beye`raf</td>
+<td>beyeⲴraf</td>
+</tr>
+<tr>
+<td>knowing (participle)</td>
+<td>`aaref</td>
+<td>Ⲵaaref</td>
+</tr>
+</tbody>
+</table></div>
+<p>(This is the same <code>aaref</code> used as the flagship example in the site's own ayin_rule documentation — good cross-check that the grammar doc and the alphabet doc agree.)</p>
+<h3 id="45-hollow-and-doubled-verbs">4.5 Hollow and doubled verbs</h3>
+<p>Two structurally important classes, since they behave differently from the strong-verb template above:</p>
+<p><strong>Hollow (gaab/yigiib "bring" — middle root letter و/ي):</strong></p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1/2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I brought</td>
+<td>gibt</td>
+</tr>
+<tr>
+<td>he brought</td>
+<td>gaab</td>
+</tr>
+<tr>
+<td>he brings</td>
+<td>beygiib</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Doubled (ḥabb/yiḥibb, shown above) and baṣṣ/yibuṣṣ "look":</strong></p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I looked</td>
+<td>basseit</td>
+<td>baṣṣeet</td>
+</tr>
+<tr>
+<td>he looks</td>
+<td>beyboss</td>
+<td>beyboṣṣ</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="46-form-overview-selected-not-exhaustive">4.6 Form overview (selected, not exhaustive)</h3>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Function</th>
+<th>Example (Ar.)</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>base</td>
+<td>كتب/يكتب</td>
+<td>katab/yiktib</td>
+<td>katab/yiktib</td>
+</tr>
+<tr>
+<td>II</td>
+<td>causative/intensive</td>
+<td>درّس/يدرّس "teach"</td>
+<td>darris/yidarris</td>
+<td>darris/yidarris</td>
+</tr>
+<tr>
+<td>III</td>
+<td>associative</td>
+<td>زاكر/يزاكر "study (with)"</td>
+<td>zaakir/yizaakir</td>
+<td>zaakir/yizaakir</td>
+</tr>
+<tr>
+<td>V</td>
+<td>reflexive of II</td>
+<td>اتكلم/يتكلم "speak"</td>
+<td>etkallim/yetkallim</td>
+<td>etkallim/yetkallim</td>
+</tr>
+<tr>
+<td>VII</td>
+<td>passive of I</td>
+<td>انبسط/ينبسط "enjoy oneself"</td>
+<td>enbasat/yenbisit</td>
+<td>enbasaṭ/yenbisiṭ</td>
+</tr>
+<tr>
+<td>VIII</td>
+<td>reflexive/reciprocal</td>
+<td>اشترى/يشتري "buy"</td>
+<td>eshtara/yeshteri</td>
+<td>eϣtara/yeϣteri</td>
+</tr>
+<tr>
+<td>X</td>
+<td>requestive</td>
+<td>استعمل/يستعمل "use"</td>
+<td>esta<code>mal/yesta</code>mel</td>
+<td>estaⲴmal/yestaⲴmel</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Note:</strong> Form VII انبسط/ينبسط (enbasaṭ/yenbisiṭ) has a valid variant with the VIIt shape اتبسط/يتبسط — etbasaṭ/yetbisiṭ. Both are technically the same verb; either spelling is correct.</p>
+<p>Full paradigms for every form × root-type combination (hollow, defective, doubled, assimilated) run to several dozen tables in the source grammar — worth a separate <code>masri_verb_tables.md</code> if you want the complete reference rather than this representative slice. Flag if you want that built out next.</p>
+<hr />
+<h2 id="5-negation-ma-separate-verb-shi-glued">5. Negation: ma (separate) + verb-sh(i) (glued)</h2>
+<p>This is the single highest-frequency structural pattern in the language, so it earns its own section.</p>
+<p><strong>Rule (revised):</strong> to avoid producing a very large fused cluster, <strong>ma is written as its own separate word — the same free-particle treatment as el — while -sh/-esh/-sh(i) stays glued to the verb (and any object clitics on it).</strong> This mirrors how Egyptian Arabic is actually written in Arabic script, where ما is its own word and the ـش suffix attaches to the verb. This replaces the earlier fully-fused treatment of the whole circumfix.</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Arabic</th>
+<th>Gloss</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ما كتبش</td>
+<td>he didn't write</td>
+<td>ma katabsh(i)</td>
+<td>ma katabϣ(i)</td>
+</tr>
+<tr>
+<td>ما بيكتبش</td>
+<td>he doesn't write</td>
+<td>ma beyektibsh(i)</td>
+<td>ma beyektibϣ(i)</td>
+</tr>
+<tr>
+<td>ما كتبهملیش</td>
+<td>he didn't write them to me</td>
+<td>ma katabhomliish</td>
+<td>ma katabhomliiϣ</td>
+</tr>
+<tr>
+<td>مش هيكتب</td>
+<td>he won't write <em>(future uses a separate word, not the circumfix)</em></td>
+<td>mesh hayektib</td>
+<td>miϣ hayektib</td>
+</tr>
+<tr>
+<td>مش كتب؟</td>
+<td>didn't he write? <em>(interrogative negation)</em></td>
+<td>mesh katab?</td>
+<td>miϣ katab?</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three fuller examples, showing ma separated before different word classes (a plain verb, a presentative/copula-like word, and a possession verb with object clitic):</p>
+<ul>
+<li>ماكتبش الواجب ليه؟! — "Why didn't he do the homework?!"
+  Tier 1/2: <strong>Ma katabϣ(i) el waageb leeh?!</strong></li>
+<li>ماهو الحال ده مينفعش — "Well, this situation isn't workable." (ماهو itself can fuse or stay separate — see below; the verbal negation مينفعش stays "ma" + glued verb)
+  Tier 1/2: <strong>Mahu (Ma ahu) el ϩaal da ma yenfaⲴsh(i).</strong></li>
+<li>ما احنا كل شوية معندناش من المنتج ده — "We don't have any of this product every other minute" (i.e. we keep running out)
+  Tier 1/2: <strong>Ma eϩna (Maϩna — surface pronunciation in rapid speech) koll ϣwayya ma Ⲵndinaaϣ min el montagg da(h).</strong></li>
+</ul>
+<p>Two things worth noting from these:
+1. <strong>ماهو (ma + huwa)</strong> — a presentative/topicalizing "ma," not the verbal negator — has both a fused everyday form (<strong>Mahu</strong>) and a fuller separated form (<strong>Ma ahu</strong>); both are correct, the fused one is just the faster, more contracted pronunciation.
+2. <strong>ما احنا (ma + eḥna)</strong> similarly has a careful separated form (<strong>Ma eϩna</strong>) and a fast-speech fused variant (<strong>Maϩna</strong>) — this fused variant is a <em>pronunciation</em> note, not a rewrite of the spelling rule: the standard written form keeps ma separate.</p>
+<h3 id="50a-bare-ma-no-shi-oathemphatic-negation">5.0a Bare ma (no -sh(i)) — oath/emphatic negation</h3>
+<p>A separate, valid negation pattern uses <strong>ma alone, with no -sh(i) suffix at all</strong> — most typically in oaths and emphatic swearing formulas, a more classical/literary-feeling register than the everyday ma-...-sh(i):</p>
+<ul>
+<li>عليا النعمة ما عملت حاجة! — "By the blessing upon me (I swear), I didn't do a thing!"
+  Tier 1/2: <strong>Ⲵalayya el neⲴma ma Ⲵamalt ϩaaga!</strong></li>
+</ul>
+<p>Here ma negates Ⲵamalt directly with nothing glued after it — no -sh(i), and no shortening/syncope/epenthesis effects either, since those are specifically triggered by adding -sh(i) (§5.1). This bare-ma pattern is a distinct register choice, not an abbreviation of the ma-...-sh(i) form.</p>
+<h3 id="51-phonological-knock-on-effects-on-the-glued-verb-shi-portion">5.1 Phonological knock-on effects (on the glued verb-sh(i) portion)</h3>
+<p>The source grammar documents several vowel changes triggered by adding -sh to the verb. These stay exactly as documented before — only the spacing of ma relative to the verb has changed, not the internal phonology of the verb+sh(i) unit:</p>
+<p><strong>Resolved — spelling_rules id 7</strong> (<code>tier2-rules.json</code>): these three effects (shortening, syncope, epenthesis) are a formal, explicit rule, treated the same way the θ→s and ð→z Cairene mergers are — spelled out, not left implicit:</p>
+<ul>
+<li><strong>Shortening</strong>: اختار <em>extaar</em> → ما اختارش <em>ma khtarsh(i)</em> / <strong>ma xtarϣ(i)</strong> — the long aa shortens before the single final consonant.</li>
+<li><strong>Syncope</strong>: كبر <em>keber</em> → ما كبرش <em>ma kbersh(i)</em> / <strong>ma kberϣ(i)</strong> — the short first-syllable vowel drops.</li>
+<li><strong>Epenthesis</strong>: كنت <em>kont</em> → ما كنتش <em>ma kontish(i)</em> / <strong>ma kontiϣ(i)</strong> — an i is inserted so the word doesn't end in a three-consonant cluster.</li>
+</ul>
+<p><strong>Confirmed:</strong> the elision still happens even with ma written separately — extaar "he chose" negates to <strong>ma xtarsh(i)</strong> (not ma extaarsh(i)):</p>
+<ul>
+<li>الراجل اختار شريكة حياته — "The man chose his spouse"
+  Tier 1/2: <strong>El raagel extaar shereeket hayaato.</strong></li>
+<li>الولد ما اختارش لسه الألوان — "The boy hasn't chosen the colors yet"
+  Tier 1/2: <strong>El walad ma xtarsh(i) lessa el alwaan.</strong></li>
+</ul>
+<hr />
+<h2 id="6-word-order-syntax-notes">6. Word order &amp; syntax notes</h2>
+<p>These don't change spelling, but they matter for anything downstream that generates or corrects full sentences (the meaning-aware model in particular) — flagging them here so nothing "corrects" a grammatical Masri sentence into MSA word order.</p>
+<h3 id="61-svo-not-vso">6.1 SVO, not VSO</h3>
+<p>Masri/Egyptian Arabic prefers Subject–Verb–Object, unlike Classical/MSA's Verb–Subject–Object:</p>
+<ul>
+<li>عادل قرا الكتاب — "Adel read the book"
+  Tier 1: <strong>`aadel ara el kitaab</strong>
+  Tier 2: <strong>Ⲵaadel ara el kitaab</strong></li>
+</ul>
+<h3 id="62-wh-in-situ-question-words-stay-in-place-with-flexibility">6.2 Wh-in-situ (question words stay in place — with flexibility)</h3>
+<p>This is flagged in the source grammar as a likely feature inherited from the Coptic substratum — directly relevant to the project's own legitimacy narrative, since it's an actual documented Coptic-influence claim you can cite rather than assert. That said, wh-in-situ isn't rigid: fronting the question word is also grammatical, giving two valid word orders for the same question.</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Arabic</th>
+<th>Gloss</th>
+<th>Tier 1 (in-situ)</th>
+<th>Tier 2 (in-situ)</th>
+<th>Tier 1/2 (fronted alternative)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>راح مصر امتى؟</td>
+<td>When did he go to Egypt?</td>
+<td>raah masr emta?</td>
+<td>raaϩ maṣr emta?</td>
+<td>Emta raaϩ maṣr?</td>
+</tr>
+<tr>
+<td>راح مصر ليه؟</td>
+<td>Why did he go to Egypt?</td>
+<td>raah masr leih?</td>
+<td>raaϩ maṣr leeh?</td>
+<td>Leeh raaϩ maṣr?</td>
+</tr>
+<tr>
+<td>مين اللي راح مصر؟</td>
+<td>Who went to Egypt?</td>
+<td>meen elli raah masr?</td>
+<td>meen elli raaϩ maṣr?</td>
+<td>— <em>(mein is already clause-initial here)</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>Compare to MSA, which always fronts. Masri/Egyptian Arabic allows both — worth keeping both orders in mind for anything downstream that generates or corrects full sentences, so a fronted question isn't flagged as wrong.</p>
+<h3 id="63-dual-agreement-collapses-to-plural">6.3 Dual agreement collapses to plural</h3>
+<p>Dual nouns stay grammatically dual in form but trigger <strong>plural</strong> agreement on verbs, demonstratives, and adjectives:</p>
+<ul>
+<li>الأستاذين السوريين دول بيمشوا للجامعة — "These two Syrian professors are walking to the university"
+  Tier 1: <strong>el ostazein el soreyyiin dol beyemshu lel gam`a</strong>
+  Tier 2: <strong>el ostazeen el soreyyiin dool beyemϣu lel gamⲴa</strong></li>
+</ul>
+<p><strong>Resolved — spelling_rules id 8</strong>: li- and el fuse into their own single word — <strong>lel</strong> (or <strong>lil</strong>, an accepted alternate before certain following consonants) — bi- and el fuse into <strong>bel</strong>, fi- and el fuse into <strong>fel</strong>, the shortened <code>a/Ⲵa (§3.4) fuses with el into **</code>al/Ⲵal<strong>, and the topicalizing/emphatic particle ma (§5, distinct from negation ma) fuses with el into </strong>Mal**:</p>
+<ul>
+<li>ما المهمة دي لازم تخلص يا حضرات — "This task has to get done, ladies and gentlemen"
+  Tier 1/2: <strong>Ma el mohemma di laazem texlaṣ ya ϩaḍaraat.</strong> (= fused <strong>Mal mohemma di laazem texlaṣ ya ϩaḍaraat.</strong>)</li>
+</ul>
+<p>But that resulting word then behaves exactly like plain el: it stays <strong>separate from the noun that follows it</strong>, the same free-particle treatment as el itself (§0). So the fusion is preposition/particle+el only — it doesn't extend to the following noun. Not every preposition does this: **<code>and ("to have") + el stays two separate words —</code>and el, never <code>andel** — so this is a closed list of short/light elements (li-, bi-, fi-, the shortened</code>a-, and this topicalizing ma), not a blanket rule for every preposition or particle.</p>
+<p><strong>Important distinction:</strong> this Ma+el→Mal fusion applies to the <em>topicalizing/emphatic</em> ma directly preceding el — it does <strong>not</strong> apply to the <em>negation</em> ma, which stays separate from the verb it negates regardless of what follows (spelling_rules id 10, §5). The two ma's are different words that happen to look identical; whether they fuse with a following el depends on which one it is, not on the letter sequence alone.</p>
+<ul>
+<li>للجامعة → <strong>lel gam`a</strong> / <strong>lel gamⲴa</strong> "to the university"</li>
+<li>بالكتاب → <strong>bel kitaab</strong> / <strong>bel kitaab</strong> "with/by the book"</li>
+<li>ف الصميم (= في الصميم) "right in the heart of it" → <strong>fel ṣamiim</strong> (= fuller, unfused <strong>fi el ṣamiim</strong>)</li>
+</ul>
+<hr />
+<h2 id="7-honorifics-brief">7. Honorifics (brief)</h2>
+<p>Not grammar in the strict sense, but structurally regular enough to standardize spelling for, since they appear constantly in dialogue-heavy writing (including your Fourth Alphabet fiction). No special letters needed for most of these:</p>
+<div class="gr-table-wrap"><table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Arabic</th>
+<th>Tier 1</th>
+<th>Tier 2</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bāsha</td>
+<td>باشا</td>
+<td>basha</td>
+<td>baϣa</td>
+<td>informal address, male peer</td>
+</tr>
+<tr>
+<td>hānim</td>
+<td>هانم</td>
+<td>hanem</td>
+<td>hanem</td>
+<td>address to a woman of high standing (archaic/humorous now)</td>
+</tr>
+<tr>
+<td>ustāz</td>
+<td>أستاذ</td>
+<td>ostaz</td>
+<td>ostaz</td>
+<td>teacher/expert, generic respectful address</td>
+</tr>
+<tr>
+<td>me'allim</td>
+<td>معلم</td>
+<td>me`allem</td>
+<td>meⲴallem</td>
+<td>working-class male address</td>
+</tr>
+<tr>
+<td>ra'īs</td>
+<td>رئيس</td>
+<td>ra'ees</td>
+<td>raⱯees</td>
+<td>boss, skilled laborer's title</td>
+</tr>
+<tr>
+<td>bashmohandis</td>
+<td>باش مهندس</td>
+<td>bashmohandis</td>
+<td>baϣmohandes</td>
+<td>engineer / generic middle-class male address</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="8-summary-of-open-items-for-review">8. Summary of open items for review</h2>
+<p>Resolved:</p>
+<ul>
+<li>§5 (ma vs. -sh(i) spacing) — ma is now written separately, verb+object-clitics+sh(i) stays glued — formal spelling_rules id 10; §5.1's phonological effects on the glued portion remain formal spelling_rules id 7.</li>
+<li>§6.3 (li+el/bi+el/fi+el/<code>a+el/topicalizing-ma+el → lel/bel/fel/</code>al/Mal, staying separate from the following noun; `and+el and negation-ma never fuse) — formal spelling_rules id 8.</li>
+<li>§3.2 / §2.1a (noun vowel shortening) — formal spelling_rules id 9, now confirmed across two nouns (beet, zeet/di'ee') and the full clitic set: -ha/-na/-kom/-hom/-aat shorten, -i/-ak/-ik/-o don't.</li>
+<li>§3.4 (<code>ala/Ⲵala →</code>a/Ⲵa shortening before elli) — formal spelling_rules id 11.</li>
+<li>§6.2 (wh-in-situ has a fronted alternative — both orders are grammatical).</li>
+<li>The complete Form I–X × root-type verb matrix is now a standalone companion doc: <code>masri_verb_tables.md</code>.</li>
+</ul>
+<p>All open items are resolved. §5.1's stem-initial elision (extaar → xtarsh(i)) is confirmed by example even with ma separated (§5).
+All three new rules are written into <code>assets/data/tier2-rules.json</code> directly, alongside this doc.</p>
+<hr />
+<p><em>Source: grammar content adapted from the English Wikipedia article "Egyptian Arabic" (retrieved 2026-09-06), cross-checked against this repo's <code>assets/data/alphabet.json</code> and <code>assets/data/tier2-rules.json</code> for all letter substitutions.</em></p>
+  </article>
+
+  <p style="text-align:center;"><a class="gr-back-to-top" href="#gramTocHeading">↑ Back to contents</a></p>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <footer class="gr-footer">
+    <a class="cta-btn cta-primary nav-link" href="arabizi_to_masri_viral.html">
+      <svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+      <span>Try the converter that finally sticks</span>
+    </a>
+    <p class="page-footer" style="margin-top:14px;">Source: grammar content adapted from the English Wikipedia article "Egyptian Arabic," cross-checked against this site's <code>assets/data/alphabet.json</code> and <code>assets/data/tier2-rules.json</code> for all letter substitutions.</p>
+  </footer>
+</div>
+
+<script>window.MASRI_LANG = 'en';</script>
+<script src="assets/js/site-nav.js"></script>
+<script src="assets/js/theme.js"></script></body></html>
