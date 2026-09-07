@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إزاي مصري بيشتغل — البنية، الطبقات والقواعد</title>
+<meta name="description" content="الدليل المفاهيمي لمصري: إزاي الكتابة بالعربي والفرانكو والخليط بينهم بتتحول لشكل موحّد، وإزاي Tier 1 وTier 2 وDTS مرتبطين ببعض.">
+<meta property="og:title" content="إزاي مصري بيشتغل">
+<meta property="og:description" content="الدليل المفاهيمي لمصري: توحيد المدخلات، الإملاء المعياري، وأشكال العرض الثلاثة Tier 1 / Tier 2 / DTS.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diaahassouna.github.io/masri-writing/masri_how_it_works_ar.html">
+<link rel="canonical" href="https://diaahassouna.github.io/masri-writing/masri_how_it_works_ar.html">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/how-it-works.css"></head>
+<body>
+<div id="masri-app" dir="rtl" class="masri-page" role="main">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"></path>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"></path>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="topbar-links">
+      <div class="site-nav" id="siteNav">
+        <button class="gh-link site-nav-toggle" id="siteNavToggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M1 3h14v1.5H1V3Zm0 4.25h14v1.5H1v-1.5ZM1 11.5h14V13H1v-1.5Z"></path></svg>
+          <span>كل الصفحات</span>
+        </button>
+        <div class="site-nav-menu" id="siteNavMenu" role="menu"></div>
+      </div>
+      <a class="back-link nav-link" href="arabizi_to_masri_viral_ar.html">→ <span>رجوع للمحوّل</span></a>
+      <a class="gh-link" href="https://github.com/diaahassouna/masri-writing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="lang-switch" id="langSwitch"><a class="lang-btn" href="masri_how_it_works.html">EN</a></div>
+  </div>
+
+  <header class="hiw-hero">
+    <svg class="hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <div class="eyebrow">How Masri Works &nbsp;·&nbsp; إزاي مصري بيشتغل</div>
+    <h1>إزاي مصري بيشتغل</h1>
+    <p class="sub">الدليل المفاهيمي: مصري إيه بالظبط، وإزاي بيحوّل الكتابة بالعربي والفرانكو والخليط بينهم لشكل موحّد واحد، وإزاي Tier 1 وTier 2 وDTS مرتبطين ببعض. ابدأ من هنا قبل صفحات المرجع — دي الخريطة، مش التفاصيل كلها.</p>
+    <span class="status-pill">مصري مشروع كتابة لسه بيتطوّر لعربي مصر العامية — مش معيار قومي معتمد رسميًا.</span>
+  </header>
+
+  <ul class="hiw-toc">
+    <li><a href="#what-is-masri">مصري إيه</a></li>
+    <li><a href="#architecture">البنية</a></li>
+    <li><a href="#normalization">التوحيد مقابل العرض</a></li>
+    <li><a href="#tiers">Tier 1 · Tier 2 · DTS</a></li>
+    <li><a href="#phonology-orthography">النطق مقابل الإملاء</a></li>
+    <li><a href="#terms">المصطلحات</a></li>
+    <li><a href="#rules">أنواع القواعد والقواعد الأساسية</a></li>
+    <li><a href="#sound-system">الأصوات والحركات والأرقام</a></li>
+    <li><a href="#edge-cases">الحالات الصعبة</a></li>
+    <li><a href="#comparison">مقارنة</a></li>
+    <li><a href="#principles">مبادئ التصميم</a></li>
+  </ul>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="what-is-masri">
+    <h2>مصري إيه</h2>
+    <p class="hiw-lede">مصري هو اقتراح <strong>لإملاء معياري (canonical orthography)</strong> لعربي مصر العامية — مش مجرد نظام ترجمة صوتية (transliteration). الهدف إنه ياخد الطرق الكتيرة اللي الناس بتكتب بيها المصري فعلاً (بالعربي، بالفرانكو، أو خليط بينهم) ويوحّدهم في شكل كتابي واحد ثابت، واللي بعد كده ممكن يتعرض بتلات طرق مختلفة حسب المكان اللي بتكتب فيه.</p>
+    <p class="hiw-lede">المشكلة اللي مصري بيحاول يحلها: عربي مصر العامية بيتكلمه عشرات الملايين كل يوم، بس مفيهوش طريقة كتابة موحّدة. الحروف العربية بتتستخدم بشكل غير رسمي، بس القواعد والقواميس المصرية غالبًا مكتوبة للفصحى مش للعامية. الفرانكو بيسدّ الفجوة أونلاين، بس كل واحد بيكتب الكلمة بطريقة مختلفة، ومش نظام مصمم بقدر ما هو حل مؤقت مبني على أرقام بديلة زي 3 و7 و2. مصري اقتراح إن العامية تاخد إملاء خاص بيها.</p>
+  </section>
+
+  <section class="hiw-section" id="architecture">
+    <h2>البنية</h2>
+    <p class="hiw-lede">أي حاجة بتتكتب بتعدي على خطوة توحيد قبل ما تبقى مصري معياري، واللي بعد كده ممكن يتحول لواحد من تلات أشكال عرض:</p>
+    <div class="hiw-pipe">
+      <div class="hiw-pipe-row">
+        <div class="hiw-box">كتابة بالعربي</div>
+        <div class="hiw-box">فرانكو / عربيزي</div>
+        <div class="hiw-box">خليط / كود-سويتشينج</div>
+      </div>
+      <div class="hiw-arrow-down">↓</div>
+      <div class="hiw-box hiw-box-accent"><span class="hiw-box-label">التوحيد (Normalization)</span>تحويل قائم على قواعد، كلمة كلمة</div>
+      <div class="hiw-arrow-down">↓</div>
+      <div class="hiw-box hiw-box-accent"><span class="hiw-box-label">الشكل المعياري</span>مصري (إملاء Tier 2)</div>
+      <div class="hiw-arrow-down">↓</div>
+      <div class="hiw-fork">
+        <div class="hiw-box">Tier 1<br><span class="hiw-box-label">متوافق مع ASCII</span></div>
+        <div class="hiw-box">Tier 2<br><span class="hiw-box-label">الرموز الكاملة المعيارية</span></div>
+        <div class="hiw-box">DTS<br><span class="hiw-box-label">كتابة لاتينية موسّعة</span></div>
+      </div>
+    </div>
+    <p class="hiw-lede">Tier 2 هو نقطة المرجعية: Tier 1 وDTS الاتنين شكلين عرض لـ Tier 2، مش أنظمة مستقلة. شوف <a href="#tiers">Tier 1 · Tier 2 · DTS</a> تحت.</p>
+    <p class="hiw-lede"><strong>الأداة الفعلية دلوقتي بتعمل إيه:</strong> <a href="arabizi_to_masri_viral_ar.html">المحوّل</a> بيطبّق مسار الفرانكو/العربيزي → مصري المعياري (بما فيه نص مخلوط فرانكو وإنجليزي). توحيد الكتابة بالعربي → مصري المعياري جزء من البنية المفاهيمية وهدف تصميم مصري، بس لسه مش متطبّق في المحوّل التفاعلي — لو كتبت عربي فيه دلوقتي، بيسيبه زي ما هو من غير ما يوحّده.</p>
+  </section>
+
+  <section class="hiw-section" id="normalization">
+    <h2>التوحيد مقابل العرض</h2>
+    <p class="hiw-lede">مش كل تحويل في الموقع نفس العملية، والموقع بيحاول يسمّي كل حاجة بدقة بدل ما يقول "ترجمة صوتية" على كل حاجة:</p>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <h3>التوحيد (Normalization / Canonicalization)</h3>
+        <p>تحويل الكتابة بالعربي أو الفرانكو أو الخليط لشكل معياري واحد مفضّل. مثال: <code>3ashan</code> و<code>ashan</code> الاتنين بيتحولوا لنفس الكلمة المعيارية. ده اللي القاموس والقواعد في المحوّل بيعملوه.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>الكتابة اللاتينية (Romanization / العرض)</h3>
+        <p>إعادة كتابة إملاء مصري المعياري بمجموعة حروف مختلفة لبيئة مختلفة. تحويل Tier 2 لـ DTS ده عرض، مش توحيد — الكلمة نفسها وقواعدها مبتتغيرش، بس الرموز اللي بتتكتب بيها هي اللي بتتغير.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>الترجمة الصوتية (Transliteration)</h3>
+        <p>تحويل من نظام كتابة لنظام تاني مع الحفاظ على إملاء وبنية المصدر بأقرب شكل ممكن — ده الأسلوب اللي بتستخدمه أنظمة النسخ العلمية للعربي (شوف <a href="masri_prior_attempts_ar.html">تاريخ المحاولات السابقة</a>). خطوة مصري من العربي للشكل المعياري أقرب للتوحيد، لأنها بتوحّد الإملاء بدل ما تعكس إملاء المصدر زي ما هو.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hiw-section" id="tiers">
+    <h2>Tier 1 · Tier 2 · DTS</h2>
+    <p class="hiw-lede">دول تلات أشكال عرض لإملاء واحد، مش تلات أنظمة بتتنافس مع بعض.</p>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <h3>Tier 2 — الإملاء المعياري الكامل</h3>
+        <p>الشكل المرجعي لمصري. بيستخدم أبجدية كاملة من <span data-letter-count>37</span> حرف، فيها الحروف القبطية واليونانية واللاتينية الموسّعة اللي بتديله تغطية دقيقة وواحد-لواحد غالبًا بين الصوت والرمز. ده اللي <a href="masri_alphabet.html">صفحة الأبجدية</a> بتوثقه بالتفصيل.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>Tier 1 — الشكل المتوافق مع ASCII</h3>
+        <p>نفس الكلمات، بس بحروف لاتينية عادية وحروف مركّبة (<code>sh</code>, <code>kh</code>, <code>gh</code>) بدل الحروف القبطية واليونانية واللاتينية الموسّعة، عشان الكيبورد العادي والكتابة السريعة والبيئات اللي مبتدعمش يونيكود كامل. حروف Tier 1 دي تمثيل لحروف معينة من Tier 2، مش أبجدية منفصلة — شوف جداول الأرقام والحروف المركّبة في <a href="arabizi_to_masri_viral_ar.html#frameworkDetails">لوحة قواعد المحوّل</a>.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>DTS — الكتابة اللاتينية الموسّعة</h3>
+        <p>نظام ضياء للترجمة الصوتية (Diaa Transliteration System): أبجدية Tier 2 نفسها، مع بديل لاتيني آمن على الكيبورد بس للحروف القبطية واليونانية القليلة اللي مش موجودة على أي كيبورد عادي (زي <code>Θ→Ŧ</code>، <code>Ϩ→Ħ</code>). أي حرف تاني زي Tier 2 بالظبط. الجدول الكامل في <a href="masri_dts.html">صفحة DTS</a>. <em>ملحوظة على الاسم:</em> "DTS" محتفظ باسمه الأصلي، بس حسب التعريفات في الصفحة دي وظيفته الفعلية هي الكتابة اللاتينية (romanization)، مش الترجمة الصوتية بالمعنى الدقيق تحت.</p>
+      </div>
+    </div>
+    <p class="hiw-lede">بما إن DTS بيستبدل مجموعة صغيرة وثابتة من الحروف، تحويل Tier 2 لـ DTS ميكانيكي وقابل للعكس عن طريق جدول بسيط. الاتجاه الأصعب هو الفرانكو/العربي للشكل المعياري: الخطوة دي بتعتمد على أنواع القواعد اللي جاية تحت، وفي حالات (التشديد، طول الحركة، اختيار الحرف الرسمي أو المدموج) مش ممكن استرجاعها بالكامل من كتابة كاجوال بس — الموقع مبيدعيش إن التحويل في الاتجاه ده كامل من غير فقدان معلومات.</p>
+  </section>
+
+  <section class="hiw-section" id="phonology-orthography">
+    <h2>النطق مقابل الإملاء</h2>
+    <p class="hiw-lede">أحيانًا بيتقال على مصري "صوت واحد، حرف واحد". دي شعار مفيد وهدف تصميم حقيقي، بس مش صح حرفيًا في النظام الكامل، والموقع واضح بخصوص نوعين من الاستثناءات:</p>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <h3>دمج أصوات موثّق</h3>
+        <p>في اللهجة القاهرية المرجعية، <code>θ (ث)</code> بينطق /s/ و<code>ð (ذ)</code> بينطق /z/ في الكلام العادي؛ <code>ظ</code> بتندمج غالبًا ناحية <code>ض</code> في سياقات كتير؛ والنطق القاهري لـ<code>ق</code> بيندمج مع الهمزة. مصري بيحافظ على الحروف التاريخية منفصلة في Tier 2 (فـ<code>θ/ð/ẓ</code> موجودين كرموز مستقلة) بينما وضع Tier 1 اليومي وزرار "كاجوال" ممكن يكتبوا بعض الحالات دي صوتيًا (<code>s</code>/<code>z</code>). الاختيارين موثّقين، مش بيتطبقوا من غير ما حد يعرف.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>إملاء بيحافظ على الهوية بدل النطق</h3>
+        <p>بعض تهجيات مصري مقصودها إنها ما تتبعش النطق السطحي. أوضح مثال: أل التعريف دايمًا بتتكتب <code>el</code>، حتى لو الكلام القاهري بيدمجها مع الحرف اللي بعدها (الحروف الشمسية). مصري بيفضّل تهجية واحدة ثابتة على نقل الدمج ده، بنفس الطريقة اللي كلمة "the" الإنجليزية بتتكتب بيها شكل واحد بغض النظر عن نطقها قبل صوت متحرك أو ساكن.</p>
+      </div>
+    </div>
+    <p class="hiw-lede"><strong>إزاي المصريين بينطقوا حاجة مش نفس إزاي مصري بيختار يكتبها.</strong> ده جانب قوة في اعتبار مصري إملاء مش نسخة صوتية حرفية — شوف <a href="#terms">المصطلحات</a> للألفاظ اللي الصفحة دي بتستخدمها عشان تفصل بين الحاجتين دول.</p>
+  </section>
+
+  <section class="hiw-section" id="terms">
+    <h2>المصطلحات</h2>
+    <dl class="hiw-term-list">
+      <dt>الفونيم (Phoneme)</dt><dd>فئة صوت أساسية اللغة بتعتبرها مختلفة عن غيرها — زي /ʕ/ (ع) في عربي مصر.</dd>
+      <dt>التحقق الصوتي (Phonetic realization)</dt><dd>إزاي الصوت بينطق فعلاً في سياق معين، وده ممكن يختلف حتى لو الفونيم الأساسي ما اتغيرش.</dd>
+      <dt>الغرافيم (Grapheme)</dt><dd>وحدة أو رمز مكتوب — حرف مصري، في السياق ده.</dd>
+      <dt>الإملاء (Orthography)</dt><dd>مجموعة القواعد اللي بتحدد التهجية المعيارية للغة — ده مصري نفسه.</dd>
+      <dt>الترجمة الصوتية (Transliteration)</dt><dd>تحويل بين نظامين كتابة مع الحفاظ على إملاء المصدر بأقرب شكل ممكن.</dd>
+      <dt>الكتابة اللاتينية (Romanization)</dt><dd>تمثيل لغة أو نظام كتابة بحروف لاتينية — ده اللي DTS بيعمله لـ Tier 2.</dd>
+      <dt>التوحيد (Normalization / Canonicalization)</dt><dd>تحويل مدخلات مختلفة (عربي، فرانكو، خليط) لشكل معياري مفضّل واحد.</dd>
+    </dl>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="rules">
+    <h2>أنواع القواعد</h2>
+    <p class="hiw-lede">تصنيف كل قرار تحويل حسب نوعه بيخلي النظام أسهل في المراجعة دلوقتي وأسهل في البرمجة بعدين:</p>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">قاعدة حتمية</span><span class="hiw-ruletype-desc">دايمًا بتتطبق بنفس الطريقة بغض النظر عن السياق — زي تحويل الأرقام لحروف (<code>3→Ⲵ</code>، <code>7→ϩ</code>).</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">قاعدة سياقية</span><span class="hiw-ruletype-desc">بتعتمد على الحروف المجاورة — زي إن الهمزة في أول الكلمة بتفضل ساكنة، بس بتتكتب في النص أو الآخر.</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">قاعدة معجمية</span><span class="hiw-ruletype-desc">بتعتمد على إن الكلمة معروفة وموجودة في قائمة الكلمات الموحّدة — زي <code>3ashan → Ⲵaϣān</code> بحركة طويلة المدخل ما كتبهاش.</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">تفسير تقديري (Heuristic)</span><span class="hiw-ruletype-desc">أفضل تفسير ممكن لمدخل غامض لما مفيش قاعدة أو كلمة في القاموس بتحسم الموضوع.</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">محتاج مراجعة بشرية</span><span class="hiw-ruletype-desc">مش ممكن يتحسم من المدخل بس (زي بعض حالات التشديد وطول الحركة) — بيتعلّم عليه بدل ما يتخمّن.</span></div>
+
+    <h3 style="font-family:var(--font-display);font-size:16px;margin:22px 0 6px;color:var(--ink);">قاعدة العين</h3>
+    <div id="hiwAyin" class="hiw-card"></div>
+
+    <h3 style="font-family:var(--font-display);font-size:16px;margin:22px 0 10px;color:var(--ink);">أهم قواعد الإملاء</h3>
+    <div class="hiw-grid" id="hiwRuleCards"></div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="sound-system">
+    <h2>الأصوات والحركات والأرقام</h2>
+    <p class="hiw-lede">الصفحة دي بتغطي البنية العامة؛ التفاصيل الكاملة حرف حرف وصوت صوت موجودة في صفحات مرجعية مخصوصة عشان ما تتكررش (ومتنفكش متزامنة) هنا:</p>
+    <div class="hiw-grid">
+      <div class="hiw-card"><h3>الحروف الساكنة والحركات</h3><p>الجدول الكامل بالـIPA والمقابل العربي وأشكال Tier 1/Tier 2/DTS لكل حرف — شوف <a href="masri_alphabet_ar.html">صفحة الأبجدية</a>.</p></div>
+      <div class="hiw-card"><h3>توحيد الفرانكو/العربيزي</h3><p>إزاي التهجيات غير الرسمية المبنية على أرقام وحروف مركّبة بتترجم لحروف معيارية، مع جداول الأرقام والحروف المركّبة — شوف <a href="arabizi_to_masri_viral_ar.html#frameworkDetails">لوحة قواعد المحوّل</a>.</p></div>
+      <div class="hiw-card"><h3>الأرقام</h3><p>كلمات الأرقام من صفر لمليار، كل واحدة بتهجية Tier 2 موحّدة — شوف <a href="masri_numbers_ar.html">صفحة الأرقام</a>.</p></div>
+      <div class="hiw-card"><h3>لوحات المفاتيح</h3><p>إزاي تكتب فعليًا الحروف القبطية واليونانية واللاتينية الموسّعة — كيبورد على الشاشة، تركيبات نظام التشغيل الأصلية، ومثبّت ويندوز — شوف <a href="masri_alphabet_ar.html#keyboard-section">لوحات المفاتيح</a>.</p></div>
+    </div>
+  </section>
+
+  <section class="hiw-section" id="edge-cases">
+    <h2>الحالات الصعبة</h2>
+    <p class="hiw-lede">بدل ما ندّعي إن النظام مفيهوش أي غموض، دي الحالات اللي فعلاً محتاجة قاعدة — ومكان الغموض اللي لسه موجود فيها:</p>
+    <div style="overflow-x:auto;">
+      <table class="hiw-edge-table">
+        <thead><tr><th>الحالة</th><th>قاعدة مصري</th><th>الغموض</th></tr></thead>
+        <tbody>
+          <tr><td>ع</td><td>دايمًا بتتكتب كحرف مستقل، Ⲵ في Tier 2 / باكتك (`) في Tier 1 — شوف قاعدة العين فوق.</td><td>مفيش غموض بمجرد ما تتعرف إنها عين مش همزة أو وقفة حنجرية؛ الغموض بس في المدخل نفسه (كتّاب الفرانكو غالبًا بيستخدموا <code>3</code> للعين و<code>2</code> للهمزة/القاف، فالمحوّل لازم يفرّق بينهم من السياق).</td></tr>
+          <tr><td>ق / ء (قاهري)</td><td>بيتعاملوا كفونيم وقفة حنجرية واحد، بيتكتب Ɐ في Tier 2 (قاعدة 5)؛ الـq الرسمي محفوظ للفصحى/السجل الرسمي.</td><td>تحديد إمتى الكلمة لازم تستخدم الـq الرسمي بدل الدمج القاهري قرار معجمي/سجلي، مش حاجة إملاء المدخل نفسه بيحددها.</td></tr>
+          <tr><td>الهمزة في أول الكلمة</td><td>دايمًا ساكنة في الكتابة، أيًا كان أصلها (قاعدة 3).</td><td>مفيش غموض — دي قاعدة حتمية.</td></tr>
+          <tr><td>التشديد</td><td>الحروف المشدّدة بتتكتب مضاعفة؛ الحركات الطويلة بتتكتب مضاعفة أو بعلامة مد (قاعدة 1).</td><td>الكتابة الفرانكو الكاجوال نادرًا ما بتوضح التشديد، فاسترجاعه من مدخل مش موضّح قرار معجمي/تقديري، مش تحويل حتمي.</td></tr>
+          <tr><td>طول الحركة</td><td>الحركات القصيرة اختيارية في الكتابة الطبيعية؛ الطويلة بتتضاعف أو تتكتب بعلامة مد.</td><td>زي التشديد، الطول مش دايمًا ممكن استرجاعه من مدخل فرانكو من غير قاموس.</td></tr>
+          <tr><td>دمج ث/ذ</td><td>Tier 2 بيحافظ على <code>θ</code>/<code>ð</code> كحروف تاريخية منفصلة؛ وضع Tier 1 اليومي وزرار الكاجوال ممكن يكتبوهم صوتيًا <code>s</code>/<code>z</code>.</td><td>أي تهجية "صح" لسجل معين ده قرار مشروع الموقع بيوضحه صراحة بدل ما يختاره من غير ما حد يلاحظ.</td></tr>
+          <tr><td>الكلمات الدخيلة/المفردات الرسمية</td><td>P وV بيتعاملوا كحروف مستقلة (قاعدة 6)، بيتستخدموا غالبًا للكلمات الدخيلة والكلمات اللي فيها الفونيمين دول أصلًا.</td><td>مفيش غموض بمجرد ما الكلمة تتعرف كدخيلة؛ التعرف عليها كدخيلة من الأول ده بحث معجمي، مش قاعدة عامة.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="comparison">
+    <h2>مقارنة مع الطرق التانية</h2>
+    <p class="hiw-lede">عربي مصر العامية أصلاً ليه أكتر من طريقة كتابة. كل واحدة بتحل مشكلة مختلفة، ومصري مش بيدّعي إنه بيلغي الباقي — الادعاء بتاعه أضيق من كده: <strong>الإملاء المعياري، وطريقة الإدخال، والكتابة اللاتينية تلات حاجات مختلفة</strong>، ومعظم الطرق الموجودة بتعالج واحدة بس منهم.</p>
+    <div style="overflow-x:auto;">
+      <table class="hiw-edge-table">
+        <thead><tr><th>النظام</th><th>الغرض الأساسي</th><th>بيحسّن إيه</th></tr></thead>
+        <tbody>
+          <tr><td>الحروف العربية</td><td>الكتابة اليومية العادية لعربي مصر</td><td>الألفة — الكل قادر يقراها؛ بس مفيش اصطلاح إملاء موحّد للعامية.</td></tr>
+          <tr><td>فرانكو / عربيزي</td><td>الكتابة الرقمية غير الرسمية</td><td>مفيش إعداد على أي كيبورد؛ بيحسّن سرعة الانتشار مش الثبات بين الكتّاب.</td></tr>
+          <tr><td>النسخ العلمي (زي قواعد المستشرقين)</td><td>التحليل اللغوي للمتخصصين</td><td>دقة صوتية لقارئ متدرب — شوف <a href="masri_prior_attempts_ar.html">المحاولات السابقة</a> للتاريخ الكامل.</td></tr>
+          <tr><td>EG-Lang</td><td>إملاء لعربي مصر بحروف لاتينية</td><td>حروف لاتينية قابلة للكتابة على الكيبورد مع نظام صوتي مفصّل؛ مش بيفصل بين الإملاء المعياري والكتابة اللاتينية كطبقتين مختلفتين.</td></tr>
+          <tr><td>مصري Tier 1</td><td>تمثيل مصري متوافق مع ASCII</td><td>الكتابة على أي كيبورد من غير الحاجة ليونيكود.</td></tr>
+          <tr><td>مصري Tier 2</td><td>الإملاء المعياري الكامل لمصري</td><td>تغطية دقيقة وواحد-لواحد غالبًا بين الصوت والرمز، باستخدام أبجديات مصر التاريخية نفسها.</td></tr>
+          <tr><td>DTS</td><td>الكتابة اللاتينية الموسّعة لمصري Tier 2</td><td>بديل لاتيني بحت لـ Tier 2 في البيئات اللي مبتعرضش حروف قبطية/يونانية.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="hiw-lede" style="margin-top:14px;">مفيش واحد من دول أحسن من التاني في كل حاجة — أمين مكتبة بيفهرس كتب محتاج النسخ العلمي مش مصري؛ حد بيبعت رسالة لصاحبه أصلاً معاه الفرانكو. اقتراح مصري تحديدًا لقارئ عايز تهجية معيارية ثابتة واحدة، مع اختيار بين تلات أشكال عرض (Tier 1، Tier 2، DTS) حسب مكان الكتابة.</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="principles">
+    <h2>مبادئ التصميم</h2>
+    <p class="hiw-lede">بس المبادئ اللي فعلاً موجودة في المواصفة الحالية (وهي نفس المصدر اللي لوحة قواعد المحوّل بتاخد منها):</p>
+    <ul class="hiw-principles" id="hiwPrinciples"></ul>
+  </section>
+
+  <footer class="hiw-footer">
+    <div class="hiw-footer-links">
+      <a class="cta-btn cta-primary nav-link" href="arabizi_to_masri_viral_ar.html">
+        <svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+        <span>جرّب المحوّل</span>
+      </a>
+      <a class="cta-btn cta-secondary nav-link" href="masri_alphabet_ar.html"><span>شوف الأبجدية كاملة</span></a>
+    </div>
+  </footer>
+</div>
+
+<script>window.MASRI_LANG = 'ar';</script>
+<script src="assets/js/site-nav.js"></script>
+<script src="assets/js/how-it-works.js"></script></body></html>
