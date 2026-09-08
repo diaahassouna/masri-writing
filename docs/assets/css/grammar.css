@@ -1,0 +1,73 @@
+/* Grammar Reference page — long-form article layout & components.
+   Design tokens, topbar, lang switch and footer live in shared.css. */
+
+#masri-app {
+  padding: 28px 24px 44px;
+  max-width: 880px;
+  line-height: 1.5;
+}
+
+.gr-hero { position: relative; text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 26px; margin-bottom: 28px; }
+.gr-hero-lotus-bg { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 90px; opacity: .1; fill: var(--gold); z-index: 0; }
+.gr-eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; color: var(--gold); margin-bottom: 10px; position: relative; z-index: 1; }
+.gr-hero h1 { font-family: var(--font-display); font-weight: 700; font-size: 30px; line-height: 1.25; margin: 0 0 12px; color: var(--ink); position: relative; z-index: 1; }
+.gr-hero .sub { color: var(--ink-dim); font-size: 15px; line-height: 1.6; margin: 0 auto; max-width: 620px; position: relative; z-index: 1; }
+
+.gr-status {
+  display: block; margin: 18px auto 0; max-width: 620px; text-align: left;
+  background: var(--panel-2); border: 1px solid var(--gold); border-radius: 8px;
+  padding: 10px 14px; font-size: 13px; color: var(--ink); line-height: 1.55; position: relative; z-index: 1;
+}
+.gr-status strong { color: var(--gold); }
+#masri-app[dir="rtl"] .gr-status { text-align: right; }
+
+/* Table of contents */
+.gr-toc { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin-bottom: 28px; }
+.gr-toc h2 { font-family: var(--font-display); font-size: 16px; color: var(--gold); margin: 0 0 10px; }
+.gr-toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+#masri-app[dir="rtl"] .gr-toc ol { padding-left: 0; padding-right: 20px; }
+.gr-toc li { font-size: 13px; margin-bottom: 6px; break-inside: avoid; }
+.gr-toc a { color: var(--ink-dim); text-decoration: none; }
+.gr-toc a:hover { color: var(--gold); }
+
+/* Article content, converted from the Markdown source */
+.gr-content { font-size: 14px; color: var(--ink); }
+.gr-content h2 {
+  font-family: var(--font-display); font-size: 21px; color: var(--gold);
+  margin: 40px 0 12px; padding-top: 14px; border-top: 1px solid var(--border); scroll-margin-top: 16px;
+}
+.gr-content > h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+.gr-content h3 { font-family: var(--font-display); font-size: 16.5px; color: var(--ink); margin: 22px 0 10px; scroll-margin-top: 16px; }
+.gr-content p { margin: 0 0 12px; line-height: 1.65; color: var(--ink-dim); }
+.gr-content p strong, .gr-content li strong { color: var(--ink); }
+.gr-content ul, .gr-content ol { margin: 0 0 14px; padding-left: 22px; color: var(--ink-dim); line-height: 1.6; }
+#masri-app[dir="rtl"] .gr-content ul, #masri-app[dir="rtl"] .gr-content ol { padding-left: 0; padding-right: 22px; }
+.gr-content li { margin-bottom: 5px; }
+.gr-content li p { margin: 0; }
+.gr-content hr { border: none; border-top: 1px solid var(--border); margin: 30px 0; }
+.gr-content blockquote {
+  margin: 0 0 16px; padding: 10px 16px; background: var(--panel-2);
+  border-left: 3px solid var(--gold); border-radius: 0 8px 8px 0; color: var(--ink-dim); font-size: 13.5px;
+}
+#masri-app[dir="rtl"] .gr-content blockquote { border-left: none; border-right: 3px solid var(--gold); border-radius: 8px 0 0 8px; }
+.gr-content blockquote p { margin: 0; }
+.gr-content pre {
+  background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px;
+  padding: 12px 14px; overflow-x: auto; margin: 0 0 16px; font-size: 12.5px;
+}
+.gr-content pre code { background: none; padding: 0; }
+.gr-content code { direction: ltr; unicode-bidi: embed; }
+
+.gr-table-wrap { overflow-x: auto; margin: 0 0 18px; border: 1px solid var(--border); border-radius: 10px; }
+.gr-content table { width: 100%; border-collapse: collapse; font-size: 12.5px; min-width: 480px; }
+.gr-content thead { background: var(--panel); }
+.gr-content th, .gr-content td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+#masri-app[dir="rtl"] .gr-content th, #masri-app[dir="rtl"] .gr-content td { text-align: right; }
+.gr-content th { color: var(--gold); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
+.gr-content tbody tr:last-child td { border-bottom: none; }
+.gr-content tbody tr:hover { background: rgba(201,160,74,.06); }
+
+.gr-back-to-top { display: inline-block; margin-top: 6px; font-size: 12px; color: var(--ink-dim); text-decoration: none; }
+.gr-back-to-top:hover { color: var(--gold); }
+
+.gr-footer { text-align: center; margin-top: 32px; }
