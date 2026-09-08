@@ -1,0 +1,15 @@
+{
+  "categories": [
+    { "id": "substitute", "label_en": "DRS substitute (non-keyboard letter)", "label_ar": "بديل DRS (حرف مش على الكيبورد)" },
+    { "id": "core", "label_en": "Same as Masri Tier 2", "label_ar": "زي مصري Tier 2" },
+    { "id": "borrowed", "label_en": "Borrowed (loanwords)", "label_ar": "مستعار (كلمات دخيلة)" },
+    { "id": "vowel", "label_en": "Vowel/semivowel", "label_ar": "حرف علة/شبه حركة" }
+  ],
+  "overrides": {
+    "Θ": { "drs_upper": "Ŧ", "drs_lower": "ŧ", "note_en": "Masri Tier 2 uses the Greek Θ/θ; DRS substitutes ŧ/Ŧ since Greek letters aren't on standard keyboards.", "note_ar": "مصري Tier 2 بيستخدم الحرف اليوناني Θ/θ؛ DRS بيستبدله بـ ŧ/Ŧ لأن الحروف اليونانية مش على الكيبورد العادي." },
+    "Ϩ": { "drs_upper": "Ħ", "drs_lower": "ħ", "note_en": "Masri Tier 2 uses the Coptic Ϩ/ϩ; DRS substitutes ħ/Ħ since Coptic letters aren't on standard keyboards.", "note_ar": "مصري Tier 2 بيستخدم الحرف القبطي Ϩ/ϩ؛ DRS بيستبدله بـ ħ/Ħ لأن الحروف القبطية مش على الكيبورد العادي." },
+    "Ϣ": { "drs_upper": "Ŝ", "drs_lower": "ŝ", "note_en": "Masri Tier 2 uses the Coptic Ϣ/ϣ; DRS substitutes ŝ/Ŝ since Coptic letters aren't on standard keyboards.", "note_ar": "مصري Tier 2 بيستخدم الحرف القبطي Ϣ/ϣ؛ DRS بيستبدله بـ ŝ/Ŝ لأن الحروف القبطية مش على الكيبورد العادي." },
+    "Ⲵ": { "drs_upper": "Ɛ", "drs_lower": "Ɛ", "note_en": "Masri Tier 2 uses the Coptic Ⲵ (Old Ain); DRS substitutes Ɛ, one glyph for both cases just like Ⲵ itself.", "note_ar": "مصري Tier 2 بيستخدم الحرف القبطي Ⲵ (العين القديمة)؛ DRS بيستبدله بـ Ɛ، حرف واحد للحالتين زي Ⲵ بالظبط." },
+    "Ɣ": { "drs_upper": "Ġ", "drs_lower": "ġ", "note_en": "Masri Tier 2 uses the Greek Ɣ/ɣ; DRS substitutes ġ/Ġ since Greek letters aren't on standard keyboards.", "note_ar": "مصري Tier 2 بيستخدم الحرف اليوناني Ɣ/ɣ؛ DRS بيستبدله بـ ġ/Ġ لأن الحروف اليونانية مش على الكيبورد العادي." }
+  }
+}
