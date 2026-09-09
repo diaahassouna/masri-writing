@@ -52,6 +52,8 @@ Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة ف
 Tier 1:   Ana baheb Masr. El ahwa el masreya ahsan ahwa fi el donya.
 
 Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
+
+DRS:      Ana baĦeb Maṣr. El ahwa el maṣreyya aĦsan ahwa fi el donya.
 ```
 
 ```
@@ -63,6 +65,9 @@ Tier 1:   Ana `aref inno el Logha el Masreya ahsan logha fi el donya,
 
 Tier 2:   Ana Ⲵaref inno el Loɣa el Maṣreya aϨsan loɣa fi el donya,
           we da elli xallāni aϣtaɣal feeha koll yoom.
+
+DRS:      Ana Ɛaref inno el Loġa el Maṣreya aĦsan loġa fi el donya,
+          we da elli xallāni aŝtaġal feeha koll yoom.
 ```
 
 ---
