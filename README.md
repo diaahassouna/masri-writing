@@ -66,7 +66,7 @@ Tier 1:   Ana `aref inno el Logha el Masreya ahsan logha fi el donya,
 Tier 2:   Ana Ⲵaref inno el Loɣa el Maṣreya aϨsan loɣa fi el donya,
           we da elli xallāni aϣtaɣal feeha koll yoom.
 
-DRS:      Ana Ɛaref inno el Loġa el Maṣreya aĦsan loġa fi el donya,
+DRS:      Ana Ɛaref inno el Loġa el Maṣreya aħsan loġa fi el donya,
           we da elli xallāni aŝtaġal feeha koll yoom.
 ```
 
