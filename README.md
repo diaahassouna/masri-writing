@@ -465,7 +465,7 @@ You are free to share and adapt this material for any purpose, including commerc
 
 <br/>
 
-Proposed by **Diaa Hassouna** · Senior Technical Office Engineer · Cairo, Egypt · 2026
+Proposed by **Diaa Hassouna** · Technical Office Engineer · Cairo, Egypt · 2026
 
 **Live converter: [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing)**
 
