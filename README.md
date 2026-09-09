@@ -67,6 +67,25 @@ Tier 2:   Ana Ⲵaref inno el Loɣa el Maṣreya aϨsan loɣa fi el donya,
 
 ---
 
+## Explore the site
+
+The [live site](https://diaahassouna.github.io/masri-writing) is fully bilingual (every page has an EN and AR version) and covers a lot more than the converter:
+
+| Page | What's there |
+|---|---|
+| [The Converter](https://diaahassouna.github.io/masri-writing/arabizi_to_masri_viral.html) | Type Franco or Arabic, get Masri instantly |
+| [How Masri Works](https://diaahassouna.github.io/masri-writing/masri_how_it_works.html) | The conceptual manual — how Tier 1, Tier 2, and DRS relate |
+| [Why not Franco?](https://diaahassouna.github.io/masri-writing/masri_prior_attempts.html) | Nine attempts to write Egyptian Arabic, scored and compared |
+| [The Alphabet & Keyboards](https://diaahassouna.github.io/masri-writing/masri_alphabet.html) | All 37 letters, IPA values, and how to type each one |
+| [DRS (Romanization)](https://diaahassouna.github.io/masri-writing/masri_drs.html) | The Diaa Romanization System — a Pinyin-style, standard-keyboard companion to Tier 2 |
+| [Grammar Reference](https://diaahassouna.github.io/masri-writing/masri_grammar.html) | Nouns, verbs, negation, word order — every example in DRS and Tier 2 |
+| [Loanword Policy](https://diaahassouna.github.io/masri-writing/masri_loanwords.html) | When to keep a foreign spelling, when to Egyptianize it |
+| [Language in Egypt](https://diaahassouna.github.io/masri-writing/masri_language_history.html) | A timeline of language and script in Egypt, Old Kingdom to today |
+| [Numbers](https://diaahassouna.github.io/masri-writing/masri_numbers.html) | Number words from zero to a billion |
+| [How Masri Was Made](https://diaahassouna.github.io/masri-writing/masri_development_story.html) | The personal story and manuscript behind the project |
+
+---
+
 ## Two tiers
 
 Masri has two tiers — pick the one that fits your context.
@@ -90,21 +109,21 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 | Sound | Arabic | Tier 2 | Unicode | Origin |
 |---|---|---|---|---|
 | SH sound | ش | `ϣ` (also accepts digit `4` as shorthand input) | U+03E3 | Coptic Shai |
-| HA sound | ح | `Ϩ` | U+03E9 | Coptic Hori |
+| HA sound | ح | `Ϩ` | U+03E8 | Coptic Hori |
 | Ayin | ع | `Ⲵ` | U+2CB4 | Old Coptic Ain |
-| GH sound | غ | `ɣ` | U+0263 | Greek Gamma |
+| GH sound | غ | `ɣ` | U+0263 | Latin Extended (IPA gamma) |
 | Emphatic S | ص | `ṣ` | U+1E63 | IPA diacritic |
 
 > **Why Coptic?** Because Coptic *is* the latest written stage of the indigenous Egyptian language — it's what ancient Egyptians spoke and wrote before Arabic arrived. These letters are not foreign borrowings. They are a homecoming.
 >
-> Masri isn't the first attempt at this, either. Orientalists Wilhelm Spitta (1880), Carl Vollers (1890), and John Selden Willmore (1901) each proposed Latin-based writing systems for Egyptian Arabic, and Daniel Willard Fiske helped popularize Spitta's system as *"An Egyptian Alphabet for the Egyptian People"* (2nd ed., Florence, 1904). Masri's set of emphatic consonants converges with Spitta's independently — reached without prior knowledge of his work — which suggests these aren't arbitrary choices, but a structure the dialect itself points writers toward.
+> Masri isn't the first attempt at this, either — it's the ninth. Eight previous systems tried, from Wilhelm Spitta's 1880 Orientalist grammar (popularized by Daniel Willard Fiske as *"An Egyptian Alphabet for the Egyptian People,"* 2nd ed., Florence 1904) through Abd al-Aziz Fahmi's 1944 Arabic Language Academy proposal to eg-lang, a contemporary Latin-diacritic system. See what each one got right — and where it fell short — on the [**"Why not Franco?"**](https://diaahassouna.github.io/masri-writing/masri_prior_attempts.html) page. Masri's own set of emphatic consonants converges with Spitta's independently — reached without prior knowledge of his work — which suggests these aren't arbitrary choices, but a structure the dialect itself points writers toward.
 
 ---
 
 ## The alphabet
 
 <details>
-<summary><strong>Full Masri Alphabet (35 letters) — click to expand</strong></summary>
+<summary><strong>Full Masri Alphabet (37 letters) — click to expand</strong></summary>
 
 <br/>
 
@@ -112,44 +131,43 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 |---|---|---|---|---|---|---|
 | 1 | A | a | ا | Alef | /ʔ/, /aː/ | Arrnabb أرنب |
 | 2 | B | b | ب | Beh | /b/ | Baṭṭa بطة |
-| 3 | P | p | — | Pee | /p/ | Printer برنتر |
+| 3 | P | p | پ | Pee | /p/ | Printer برنتر |
 | 4 | T | t | ت | Teh | /t/ | Temsaaϩ تمساح |
-| 5 | Θ | θ | ث | Ṯeh | /θ/ | Θania ثانية |
+| 5 | Θ | θ | ث | Ṯeh | /θ/ → /s/ | Θania ثانية |
 | 6 | G | g | ج | Geem | /g/ | GamⲴa جامعة |
-| 7 | Ϩ | ϩ | ح | Ḥa | /ħ/ | Ϩamza حمزة |
-| 8 | X | x | خ | Ḵa | /x/ | Xafeef خفيف |
-| 9 | D | d | د | Daal | /d/ | Dars درس |
-| 10 | Ð | ð | ذ | Ḏaal | /ð/ | Ðaaker ذاكر |
-| 11 | R | r | ر | Reh | /r/ | Ramz رمز |
-| 12 | Z | z | ز | Zeen | /z/ | Zambalek زمبلك |
-| 13 | S | s | س | Seen | /s/ | SomⲴa سمعة |
-| 14 | Ϣ | ϣ | ش | Sheen | /ʃ/ | Ϣahaada شهادة |
-| 15 | Ṣ | ṣ | ص | Ṣaad | /sˤ/ | Ṣafia صافية |
-| 16 | Ḍ | ḍ | ض | Ḍaad | /dˤ/ | Ḍorɣam ضرغام |
-| 17 | Ṭ | ṭ | ط | Ṭah | /tˤ/ | Ṭabour طابور |
-| 18 | Ẓ | ẓ | ظ | Ẓah | /ðˤ/ | Ẓarf ظرف |
-| 19 | Ⲵ | Ⲵ | ع | Ꜥain | /ʕ/ | Ⲵamal عمل |
-| 20 | Ɣ | ɣ | غ | Gheen | /ɣ/ | Ɣareeb غريب |
-| 21 | F | f | ف | Feh | /f/ | Fengaan فنجان |
-| 22 | V | v | ڤ | Vee | /v/ | Varanda ڤرندة |
-| 23 | Q | q | ق | Qaaf | /q/ | Qawaafel قوافل |
-| 24 | K | k | ك | Kaaf | /k/ | Kaan كان |
-| 25 | L | l | ل | Laam | /l/ | Lamba لمبة |
-| 26 | M | m | م | Meem | /m/ | MozeeⲴ مذيع |
-| 27 | N | n | ن | Noon | /n/ | Noor نور |
-| 28 | H | h | ه | Heh | /h/ | Hawa هوا |
-| 29 | O | o | و | Oh | /o/ | Ɣobaar غبار |
-| 30 | U | u | و | Ū | /u/ | Ⲵumaan عمان |
-| 31 | W | w | و | Dablew | /w/ | WalaaⱯ ولاء |
-| 32 | E | e | ي | Ee | /e/ | Estanna إستنى |
-| 33 | I | i | ي | Ai | /i/ | Waϩeϣni واحشني |
-| 34 | Y | y | ي | Wye | /j/ | Ya يا |
-| 35 | Ɐ | Ɐ | ء | Hamza | /ʔ/ | MasⱯooleya مسئولية |
+| 7 | J | j | ج | Jéh | /ʒ/ | Jaket جاكيت (Ṣaʿidi/MSA ج, distinct from Cairene G) |
+| 8 | Ϩ | ϩ | ح | Ḥa | /ħ/ | Ϩamza حمزة |
+| 9 | X | x | خ | Ḵa | /x/ | Xafeef خفيف |
+| 10 | D | d | د | Daal | /d/ | Dars درس |
+| 11 | Ð | ð | ذ | Ḏaal | /ð/ → /z/ | Ðaaker ذاكر |
+| 12 | R | r | ر | Reh | /r/ | Ramz رمز |
+| 13 | Z | z | ز | Zeen | /z/ | Zambalek زمبلك |
+| 14 | S | s | س | Seen | /s/ | SomⲴa سمعة |
+| 15 | C | c | — | See | /s/, /k/ | Cinema سينما |
+| 16 | Ϣ | ϣ | ش | Sheen | /ʃ/ | Ϣahaada شهادة |
+| 17 | Ṣ | ṣ | ص | Ṣaad | /sˤ/ | Ṣafia صافية |
+| 18 | Ḍ | ḍ | ض | Ḍaad | /dˤ/ | Ḍorɣam ضرغام |
+| 19 | Ṭ | ṭ | ط | Ṭah | /tˤ/ | Ṭabour طابور |
+| 20 | Ẓ | ẓ | ظ | Ẓah | /ðˤ/ | Ẓarf ظرف |
+| 21 | Ⲵ | Ⲵ | ع | ʿAin | /ʕ/ | Ⲵamal عمل |
+| 22 | Ɣ | ɣ | غ | Gheen | /ɣ/ | Ɣareeb غريب |
+| 23 | F | f | ف | Feh | /f/ | Fengaan فنجان |
+| 24 | V | v | ڤ | Vee | /v/ | Varanda ڤرندة |
+| 25 | Q | q | ق | Qaaf | /q/ | Qawaafel قوافل |
+| 26 | K | k | ك | Kaaf | /k/ | Kaan كان |
+| 27 | L | l | ل | Laam | /l/ | Lamba لمبة |
+| 28 | M | m | م | Meem | /m/ | MozeeⲴ مذيع |
+| 29 | N | n | ن | Noon | /n/ | Noor نور |
+| 30 | H | h | ه | Heh | /h/ | Hawa هوا |
+| 31 | O | o | و | Oh | /ʔo/, /o/ | Ɣobaar غبار |
+| 32 | U | u | و | Ū | /ʔu/, /u/ | Ⲵumaan عمان |
+| 33 | W | w | و | Dablew | /ʔw/, /w/ | WalaaⱯ ولاء |
+| 34 | E | e | ي | Ee | /ʔe/, /e/ | Estanna إستنى |
+| 35 | I | i | ي | Ai | /ʔi/, /i/ | Waϩeϣni واحشني |
+| 36 | Y | y | ي | Wye | /ʔj/, /j/ | Ya يا |
+| 37 | Ɐ | Ɐ | ء | Hamza | /ʔ/ | MasⱯooleya مسئولية |
 
-**Borrowed orthography** (code-switched words kept in original spelling):
-
-| C | c | — | See | /s/, /k/ | Cinema, Café |
-| J | j | — | Jéh | /dʒ/ | Jacket |
+C and J are full members of the inventory, not exceptions — C covers code-switched /s/ or /k/ (Cinema, Café), and J covers the Upper Egyptian (Ṣaʿidi) pronunciation of ج, the MSA/فصحى pronunciation, and the loanword letter چ, all realized as /ʒ/.
 
 </details>
 
@@ -343,24 +361,38 @@ Arabic: إحنا بنقول آخر مدينة هي مدينة السلام يا 
 ```
 masri-writing/
 │
-├── README.md                    ← You are here
+├── README.md                                   ← You are here
 │
-├── docs/                        ← Live site: diaahassouna.github.io/masri-writing
-│   └── (converter, alphabet, history, and keyboard reference pages)
+├── docs/                                        ← Live site: diaahassouna.github.io/masri-writing
+│   ├── index.html / index_ar.html                   Home
+│   ├── arabizi_to_masri_viral.html (+ _ar)           The Converter
+│   ├── masri_how_it_works.html (+ _ar)               How Masri Works
+│   ├── masri_prior_attempts.html (+ _ar)             Why not Franco?
+│   ├── masri_alphabet.html (+ _ar)                   The Alphabet & Keyboards
+│   ├── masri_drs.html (+ _ar)                        DRS (Diaa Romanization System)
+│   ├── masri_grammar.html (+ _ar)                    Grammar Reference
+│   ├── masri_loanwords.html (+ _ar)                  Loanword Policy
+│   ├── masri_language_history.html (+ _ar)           Language in Egypt
+│   ├── masri_numbers.html (+ _ar)                    Numbers
+│   ├── masri_development_story.html (+ _ar)          How Masri Was Made
+│   └── assets/                                       Shared CSS/JS + JSON data driving every page
 │
-├── framework/
-│   └── Masri_Development_Framework.pdf   ← Full bilingual specification (EN + AR)
+├── Masri_Writing_System_Framework.pdf           ← Full bilingual specification (EN + AR)
+├── Masri_Writing_System_Framework_v1.0.pdf
+├── Masri_Writing_System_Maktoob_bi_el_Masri.pdf
 │
-├── numbers/
-│   └── El_Arqaam_El_Masreyya.txt         ← Complete numbers 0 → 1,000,000,000
+├── El_Arqaam_El_Masreyya.pdf                    ← Complete numbers 0 → 1,000,000,000
+├── Masri Alphabet and its Unicode.pdf
+├── Masri Alphabet.xlsx                          ← Source spreadsheet behind assets/data/alphabet.json
+├── Letters Franco to Masri Tier 2.PNG
 │
-├── keyboard/
-│   ├── masri-windows.klc                 ← Windows keyboard layout (coming)
-│   ├── masri-linux.xkb                   ← Linux XKB layout (coming)
-│   └── masri-android/                    ← Android IME project (coming)
+├── Masri Keyboard LTR Windows/                  ← Windows keyboard installer (MSIs: amd64/i386/ia64)
 │
-└── assets/
-    └── Masri Gold logo.png
+├── Masri_Writing_System.pptx                    ← Presentation deck
+├── manuscript 1.jpeg                            ← Original handwritten manuscript (development story)
+│
+├── Masri logo.png
+└── Masri Gold logo.png
 ```
 
 ---
@@ -368,12 +400,14 @@ masri-writing/
 ## Roadmap
 
 - [x] Two-tier system designed and documented
-- [x] Full alphabet (35 letters) defined with Unicode mappings
+- [x] Full alphabet (37 letters) defined with Unicode mappings
 - [x] Complete numbers table (0 → 1,000,000,000)
 - [x] Standardized word list
 - [x] Bilingual development framework (EN + AR)
-- [x] Interactive web reference — [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing)
-- [ ] Windows keyboard layout (`.klc`)
+- [x] Interactive web reference — 11 bilingual pages at [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing), including Grammar, Loanword Policy, and Language History
+- [x] DRS — Diaa Romanization System, a Pinyin-style standard-keyboard companion to Tier 2
+- [x] Light/dark theme across the site
+- [x] Windows keyboard installer (`.msi` for amd64/i386/ia64)
 - [ ] Linux XKB layout
 - [ ] Android IME (custom keyboard app)
 - [ ] YouTube presentation / video explainer
