@@ -34,7 +34,7 @@ Online, Egyptians write their dialect in three broken ways:
 
 | Method | Example for عشان | What's wrong |
 |---|---|---|
-| Arabic script | عشان | Designed for Classical Arabic; no standard dialect spellings |
+| Arabic script | عشان | Designed for Classical Arabic; no standard dialect spellings and usually written without all vowels "Harakat/Tashkeel" |
 | Franco / Arabizi | 3shan / 3chan / shan | Numerals as letters, unsearchable, no agreement on anything |
 | Just... guessing | ashan / ashan / ashaan | Inconsistent, ambiguous, varies by writer |
 
