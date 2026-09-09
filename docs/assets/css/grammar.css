@@ -71,3 +71,12 @@
 .gr-back-to-top:hover { color: var(--gold); }
 
 .gr-footer { text-align: center; margin-top: 32px; }
+
+/* CTA button (footer "Try the converter" link) — was missing from this
+   file, so it rendered unstyled on grammar/loanwords pages. Kept in sync
+   with the same rules in prior-attempts.css / how-it-works.css. */
+.cta-btn { display: inline-flex; align-items: center; gap: 8px; border: none; border-radius: 10px; padding: 12px 20px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: var(--font-ui); text-decoration: none; transition: transform .12s, filter .12s; }
+.cta-primary, a.cta-primary { background: linear-gradient(135deg, var(--gold), #e0b95c); color: #241a06; }
+.cta-primary:hover { filter: brightness(1.05); }
+.lotus-icon { width: 16px; height: 16px; fill: #241a06; }
+#masri-app[dir="rtl"] .cta-btn { font-family: var(--font-ui); }
