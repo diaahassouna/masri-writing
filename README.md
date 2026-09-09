@@ -53,7 +53,7 @@ Tier 1:   Ana baheb Masr. El ahwa el masreya ahsan ahwa fi el donya.
 
 Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
 
-DRS:      Ana baĦeb Maṣr. El ahwa el maṣreyya aĦsan ahwa fi el donya.
+DRS:      Ana baĦeb Maṣr. El ahwa el maṣreyya aħsan ahwa fi el donya.
 ```
 
 ```
