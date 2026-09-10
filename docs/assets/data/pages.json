@@ -1,0 +1,175 @@
+{
+  "pages": [
+    {
+      "id": "home",
+      "en": {
+        "title": "Home",
+        "url": "index.html"
+      },
+      "ar": {
+        "title": "الرئيسية",
+        "url": "index_ar.html"
+      },
+      "group": null
+    },
+    {
+      "id": "converter",
+      "en": {
+        "title": "The Converter",
+        "url": "arabizi_to_masri_viral.html"
+      },
+      "ar": {
+        "title": "المحوّل",
+        "url": "arabizi_to_masri_viral_ar.html"
+      },
+      "group": "try-it"
+    },
+    {
+      "id": "how-it-works",
+      "en": {
+        "title": "How Masri Works",
+        "url": "masri_how_it_works.html"
+      },
+      "ar": {
+        "title": "إزاي مصري بيشتغل",
+        "url": "masri_how_it_works_ar.html"
+      },
+      "group": "masri"
+    },
+    {
+      "id": "prior-attempts",
+      "en": {
+        "title": "Why not Franco?",
+        "url": "masri_prior_attempts.html"
+      },
+      "ar": {
+        "title": "ليه مش الفرانكو؟",
+        "url": "masri_prior_attempts_ar.html"
+      },
+      "group": "reference"
+    },
+    {
+      "id": "alphabet",
+      "en": {
+        "title": "The Alphabet & Keyboards",
+        "url": "masri_alphabet.html"
+      },
+      "ar": {
+        "title": "الأبجدية ولوحات المفاتيح",
+        "url": "masri_alphabet_ar.html"
+      },
+      "group": "learn"
+    },
+    {
+      "id": "drs",
+      "en": {
+        "title": "DRS (Romanization)",
+        "url": "masri_drs.html"
+      },
+      "ar": {
+        "title": "DRS (بالحروف اللاتينية)",
+        "url": "masri_drs_ar.html"
+      },
+      "group": "reference"
+    },
+    {
+      "id": "representations",
+      "group": "reference",
+      "en": {
+        "title": "Representations",
+        "url": "masri_representations.html"
+      },
+      "ar": {
+        "title": "التمثيلات",
+        "url": "masri_representations_ar.html"
+      }
+    },
+    {
+      "id": "grammar",
+      "en": {
+        "title": "Grammar Reference",
+        "url": "masri_grammar.html"
+      },
+      "ar": {
+        "title": "مرجع قواعد اللغة",
+        "url": "masri_grammar_ar.html"
+      },
+      "group": "learn"
+    },
+    {
+      "id": "loanwords",
+      "en": {
+        "title": "Loanword Policy",
+        "url": "masri_loanwords.html"
+      },
+      "ar": {
+        "title": "سياسة الكلمات الدخيلة",
+        "url": "masri_loanwords_ar.html"
+      },
+      "group": "reference"
+    },
+    {
+      "id": "language-history",
+      "en": {
+        "title": "Language in Egypt",
+        "url": "masri_language_history.html"
+      },
+      "ar": {
+        "title": "اللغة في مصر",
+        "url": "masri_language_history_ar.html"
+      },
+      "group": "about"
+    },
+    {
+      "id": "numbers",
+      "en": {
+        "title": "Numbers",
+        "url": "masri_numbers.html"
+      },
+      "ar": {
+        "title": "الأرقام",
+        "url": "masri_numbers_ar.html"
+      },
+      "group": "reference"
+    },
+    {
+      "id": "development-story",
+      "en": {
+        "title": "How Masri Was Made",
+        "url": "masri_development_story.html"
+      },
+      "ar": {
+        "title": "إزاي اتعملت مصري",
+        "url": "masri_development_story_ar.html"
+      },
+      "group": "about"
+    }
+  ],
+  "groups": [
+    {
+      "id": "masri",
+      "en": "Masri",
+      "ar": "مصري"
+    },
+    {
+      "id": "learn",
+      "en": "Learn",
+      "ar": "تعلّم"
+    },
+    {
+      "id": "try-it",
+      "en": "Try it",
+      "ar": "جرّبها"
+    },
+    {
+      "id": "reference",
+      "en": "Reference",
+      "ar": "المرجع"
+    },
+    {
+      "id": "about",
+      "en": "About",
+      "ar": "عن المشروع"
+    }
+  ]
+}

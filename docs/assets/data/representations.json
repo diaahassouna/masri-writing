@@ -1,0 +1,230 @@
+{
+  "groups": [
+    {
+      "id": "canonical",
+      "en": "Canonical representations",
+      "ar": "التمثيلات المرجعية"
+    },
+    {
+      "id": "fallback",
+      "en": "Practical fallbacks",
+      "ar": "بدائل عملية"
+    }
+  ],
+  "representations": [
+    {
+      "id": "tier2",
+      "group": "canonical",
+      "role": "primary",
+      "status": "complete",
+      "name": "Tier 2",
+      "publicName": {
+        "en": "Masri Standard",
+        "ar": "مصري القياسي"
+      },
+      "script": {
+        "en": "Hybrid Origin — Latin + Coptic + Greek + Latin-extended",
+        "ar": "أصل هجين — لاتيني + قبطي + يوناني + لاتيني ممتد"
+      },
+      "descriptionShort": {
+        "en": "The main Masri form — Masri's own script.",
+        "ar": "الصيغة الأساسية لمصري — بحروفها الخاصة."
+      },
+      "descriptionLong": {
+        "en": "The primary, full canonical representation of Masri, using its own alphabet. Tier 1 and DRS are both representations of Tier 2 — not independent systems.",
+        "ar": "التمثيل المرجعي الأساسي والكامل لمصري، بأبجديتها الخاصة. الـ Tier 1 والـ DRS كلاهما تمثيلات لـ Tier 2 — مش أنظمة مستقلة."
+      },
+      "dataSource": "assets/data/alphabet.json",
+      "comparison": {
+        "canonical": {
+          "en": "Yes",
+          "ar": "أيوة"
+        },
+        "purpose": {
+          "en": "Primary Masri writing",
+          "ar": "الكتابة الأساسية لمصري"
+        },
+        "vocalization": {
+          "en": "Explicit, per Masri Tier 2 rules",
+          "ar": "صريحة، حسب قواعد Tier 2"
+        },
+        "compatibility": {
+          "en": "Extended Unicode",
+          "ar": "يونيكود ممتد"
+        }
+      }
+    },
+    {
+      "id": "drs",
+      "group": "canonical",
+      "role": "companion",
+      "status": "complete",
+      "name": "DRS",
+      "publicName": {
+        "en": "Diaa Romanization System",
+        "ar": "نظام دياء للحروف اللاتينية"
+      },
+      "script": {
+        "en": "Latin — standard keyboard",
+        "ar": "لاتيني — كيبورد عادي"
+      },
+      "descriptionShort": {
+        "en": "A Latin technical form — same letters, standard keyboard.",
+        "ar": "صيغة لاتينية تقنية — نفس الحروف، كيبورد عادي."
+      },
+      "descriptionLong": {
+        "en": "DRS is Tier 2's own alphabet with a small override applied only to the letters that aren't on a standard keyboard (the Coptic/Greek-derived letters). Every other Tier 2 letter is rendered exactly as-is, so DRS stays in sync with Tier 2 automatically.",
+        "ar": "الـ DRS هو أبجدية Tier 2 نفسها مع استبدال بسيط للحروف اللي مش موجودة على كيبورد عادي (الحروف ذات الأصل القبطي/اليوناني). كل حرف تاني في Tier 2 بيتكتب زي ما هو، فالـ DRS فاضل متزامن مع Tier 2 أوتوماتيك."
+      },
+      "dataSource": "assets/data/drs.json",
+      "comparison": {
+        "canonical": {
+          "en": "Yes",
+          "ar": "أيوة"
+        },
+        "purpose": {
+          "en": "Technical/linguistic use, standard keyboard",
+          "ar": "استخدام تقني/لغوي، كيبورد عادي"
+        },
+        "vocalization": {
+          "en": "Same explicit vowels as Tier 2, Latin-spelled",
+          "ar": "نفس حركات Tier 2 الصريحة، بس بحروف لاتينية"
+        },
+        "compatibility": {
+          "en": "Broad Latin support",
+          "ar": "دعم لاتيني واسع"
+        }
+      }
+    },
+    {
+      "id": "arabic-v",
+      "group": "canonical",
+      "role": "companion",
+      "status": "placeholder",
+      "name": "Arabic-V",
+      "publicName": {
+        "en": "Vocalized Arabic",
+        "ar": "العربي المُشكَّل"
+      },
+      "script": {
+        "en": "Arabic + full Harakat/Tashkeel",
+        "ar": "عربي + حركات وتشكيل كامل"
+      },
+      "descriptionShort": {
+        "en": "Arabic script with full vowel marks.",
+        "ar": "خط عربي بحركات كاملة."
+      },
+      "descriptionLong": {
+        "en": "Arabic-V is the canonical vocalized Arabic representation of Masri. The project's authoritative Harakat/Tashkeel derivation rules and example dataset have not yet been implemented.",
+        "ar": "الـ Arabic-V هو التمثيل المرجعي المُشكَّل بالعربي لمصري. قواعد استخراج الحركات/التشكيل المعتمدة للمشروع وقاعدة بيانات الأمثلة لسه ما اتنفذوش."
+      },
+      "dataSource": null,
+      "placeholderNote": {
+        "en": "Vocalized output is not yet implemented.",
+        "ar": "الصيغة المُشكَّلة لسه مش متوفرة."
+      },
+      "comparison": {
+        "canonical": {
+          "en": "Yes",
+          "ar": "أيوة"
+        },
+        "purpose": {
+          "en": "Full Arabic-script representation",
+          "ar": "تمثيل كامل بالخط العربي"
+        },
+        "vocalization": {
+          "en": "Pending — derivation rules not yet formalized",
+          "ar": "لسه — قواعد الاستخراج ما اتحددتش بعد"
+        },
+        "compatibility": {
+          "en": "Arabic Unicode",
+          "ar": "يونيكود عربي"
+        }
+      }
+    },
+    {
+      "id": "tier1",
+      "group": "fallback",
+      "role": "fallback",
+      "status": "complete",
+      "name": "Tier 1",
+      "publicName": {
+        "en": "Masri Basic",
+        "ar": "مصري الأساسي"
+      },
+      "script": {
+        "en": "ASCII",
+        "ar": "ASCII"
+      },
+      "descriptionShort": {
+        "en": "ASCII-friendly fallback — types on any keyboard.",
+        "ar": "بديل متوافق مع ASCII — بيتكتب على أي كيبورد."
+      },
+      "descriptionLong": {
+        "en": "An ASCII-compatible representation of Tier 2's graphemes, for typability on any keyboard without Unicode input — not a separate alphabet.",
+        "ar": "تمثيل متوافق مع ASCII لحروف Tier 2، للكتابة على أي كيبورد من غير الحاجة لإدخال يونيكود — مش أبجدية مستقلة."
+      },
+      "dataSource": "assets/data/tier2-rules.json",
+      "comparison": {
+        "canonical": {
+          "en": "Fallback",
+          "ar": "بديل"
+        },
+        "purpose": {
+          "en": "Compatibility — typable anywhere",
+          "ar": "توافقية — بتتكتب على أي حاجة"
+        },
+        "vocalization": {
+          "en": "Limited by ASCII form",
+          "ar": "محدودة بشكل ASCII"
+        },
+        "compatibility": {
+          "en": "Maximum compatibility",
+          "ar": "أقصى توافقية"
+        }
+      }
+    },
+    {
+      "id": "arabic-p",
+      "group": "fallback",
+      "role": "fallback",
+      "status": "complete",
+      "name": "Arabic-P",
+      "publicName": {
+        "en": "Plain Arabic",
+        "ar": "العربي العادي"
+      },
+      "script": {
+        "en": "Arabic, no Harakat",
+        "ar": "عربي بدون حركات"
+      },
+      "descriptionShort": {
+        "en": "Familiar everyday Arabic script.",
+        "ar": "خط عربي عادي ومألوف."
+      },
+      "descriptionLong": {
+        "en": "Ordinary Arabic script without vocalization, representing the same canonical Masri content as the other forms — the site's existing plain-Arabic example line, presented here as a named representation rather than a one-off translation.",
+        "ar": "خط عربي عادي من غير تشكيل، بيمثّل نفس المحتوى المرجعي لمصري زي باقي الصيغ — نفس سطر المثال العربي العادي الموجود بالموقع، بس معروض هنا كتمثيل مسمّى مش ترجمة عابرة."
+      },
+      "dataSource": "existing inline 'Arabic:' example strings (relabeled, not regenerated)",
+      "comparison": {
+        "canonical": {
+          "en": "Fallback",
+          "ar": "بديل"
+        },
+        "purpose": {
+          "en": "Everyday Arabic-script use",
+          "ar": "استخدام عربي يومي"
+        },
+        "vocalization": {
+          "en": "No Harakat/Tashkeel",
+          "ar": "من غير حركات/تشكيل"
+        },
+        "compatibility": {
+          "en": "Common Arabic input",
+          "ar": "إدخال عربي شائع"
+        }
+      }
+    }
+  ]
+}
