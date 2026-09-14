@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script>(function(){try{var t=localStorage.getItem('masri-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Masri Works — Architecture, Tiers &amp; Rules</title>
+<meta name="description" content="The conceptual manual for Masri: how Arabic-script, Franco and mixed input get normalized into canonical Masri, and how Tier 1, Tier 2 and DRS relate to each other.">
+<meta property="og:title" content="How Masri Works">
+<meta property="og:description" content="The conceptual manual for Masri: input normalization, canonical orthography, and the Tier 1 / Tier 2 / DRS representations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diaahassouna.github.io/masri-writing/masri_how_it_works.html">
+<link rel="canonical" href="https://diaahassouna.github.io/masri-writing/masri_how_it_works.html">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/how-it-works.css"></head>
+<body>
+<div id="masri-app" dir="ltr" class="masri-page" role="main">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"></path>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"></path>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="topbar-links">
+      <div class="site-nav" id="siteNav">
+        <button class="gh-link site-nav-toggle" id="siteNavToggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M1 3h14v1.5H1V3Zm0 4.25h14v1.5H1v-1.5ZM1 11.5h14V13H1v-1.5Z"></path></svg>
+          <span>All pages</span>
+        </button>
+        <div class="site-nav-menu" id="siteNavMenu" role="menu"></div>
+      </div>
+      <button class="gh-link theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="theme-icon-sun" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1Zm0 3.5A3.5 3.5 0 1 1 8 11.5 3.5 3.5 0 0 1 8 4.5ZM3.05 3.05a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06L3.05 4.11a.75.75 0 0 1 0-1.06Zm8.83 8.83a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06ZM1 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 1 8Zm11.5 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM4.11 11.89a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Zm8.83-8.83a.75.75 0 0 1 0 1.06L11.89 5.17a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Z"></path></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M6.6.1a7 7 0 1 0 8.9 9A7.4 7.4 0 0 1 6.6.1Z"></path></svg>
+      </button>
+      <a class="back-link nav-link" href="arabizi_to_masri_viral.html">← <span>Back to Converter</span></a>
+      <a class="gh-link" href="https://github.com/diaahassouna/masri-writing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="lang-switch" id="langSwitch"><a class="lang-btn" href="masri_how_it_works_ar.html">EG-AR</a></div>
+  </div>
+
+  <header class="hiw-hero">
+    <svg class="hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <div class="eyebrow">إزاي مصري بيشتغل &nbsp;·&nbsp; How Masri Works</div>
+    <h1>How Masri Works</h1>
+    <p class="sub">The conceptual manual: what Masri actually is, how it turns Arabic-script, Franco, and mixed writing into one canonical form, and how Tier 1, Tier 2, and DRS relate to each other. Start here before the reference pages — this is the map, not the territory.</p>
+    <span class="status-pill">Masri is a developing, proposed writing-system project for Egyptian Arabic — not an officially adopted national standard.</span>
+  </header>
+
+  <ul class="hiw-toc">
+    <li><a href="#what-is-masri">What Masri is</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#normalization">Normalization vs. representation</a></li>
+    <li><a href="#tiers">Representations</a></li>
+    <li><a href="#phonology-orthography">Phonology vs. orthography</a></li>
+    <li><a href="#terms">Terminology</a></li>
+    <li><a href="#rules">Rule types &amp; key rules</a></li>
+    <li><a href="#sound-system">Sounds, vowels &amp; numbers</a></li>
+    <li><a href="#edge-cases">Edge cases</a></li>
+    <li><a href="#comparison">Comparison</a></li>
+    <li><a href="#principles">Design principles</a></li>
+  </ul>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="what-is-masri">
+    <h2>What Masri is</h2>
+    <p class="hiw-lede">Masri is a proposed <strong>canonical orthography</strong> for Egyptian Arabic — not merely a transliteration scheme. It is designed to take the many ways people already write Egyptian Arabic (in Arabic script, in Franco/Arabizi, or in a mix of both) and normalize them into one consistent written form, which can then be represented in three different ways depending on the environment.</p>
+    <p class="hiw-lede">The problem it addresses: Egyptian Arabic is spoken by tens of millions of people every day, but has no single standard way to write it. Arabic script is used for it informally, but the language's own grammars and dictionaries are almost all written for Modern Standard Arabic, not the spoken dialect. Franco/Arabizi fills the gap online, but every writer spells the same word differently, and it isn't a designed system so much as an improvised workaround built around number-substitutes like 3, 7, and 2. Masri is a proposal to give the spoken language an orthography of its own.</p>
+  </section>
+
+  <section class="hiw-section" id="architecture">
+    <h2>Architecture</h2>
+    <p class="hiw-lede">Any input a person types is routed through a normalization step before it becomes canonical Masri, which can then be output in one of three representations:</p>
+    <div class="hiw-pipe">
+      <div class="hiw-pipe-row">
+        <div class="hiw-box">Arabic-script input</div>
+        <div class="hiw-box">Franco / Arabizi input</div>
+        <div class="hiw-box">Mixed / code-switched input</div>
+      </div>
+      <div class="hiw-arrow-down">↓</div>
+      <div class="hiw-box hiw-box-accent"><span class="hiw-box-label">Normalization</span>rule-based, word-by-word conversion</div>
+      <div class="hiw-arrow-down">↓</div>
+      <div class="hiw-box hiw-box-accent"><span class="hiw-box-label">Canonical form</span>Masri (Tier 2 orthography)</div>
+      <div class="hiw-arrow-down">↓</div>
+      <div class="hiw-fork">
+        <div class="hiw-box">Tier 1<br><span class="hiw-box-label">ASCII-compatible</span></div>
+        <div class="hiw-box">Tier 2<br><span class="hiw-box-label">full canonical glyphs</span></div>
+        <div class="hiw-box">DRS<br><span class="hiw-box-label">Latin-extended romanization</span></div>
+      </div>
+    </div>
+    <p class="hiw-lede">Tier 2 is the reference point: Tier 1 and DRS are both representations <em>of</em> Tier 2, not independent systems. See <a href="#tiers">Masri representations</a> below.</p>
+    <p class="hiw-lede"><strong>What the live tool actually does today:</strong> the <a href="arabizi_to_masri_viral.html">converter</a> implements the Franco/Arabizi → canonical Masri path (including mixed Franco+English text). Arabic-script → canonical Masri normalization is part of Masri's conceptual architecture and design goal, but isn't implemented in the interactive converter yet — typing Arabic script into it currently passes the text through unchanged rather than normalizing it.</p>
+  </section>
+
+  <section class="hiw-section" id="normalization">
+    <h2>Normalization vs. representation</h2>
+    <p class="hiw-lede">Not every conversion on this site is the same kind of operation, and the site tries to name them accurately rather than calling everything "transliteration":</p>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <h3>Normalization / canonicalization</h3>
+        <p>Converting Arabic script, Franco, or mixed input into one preferred canonical form. Example: <code>3ashan</code> and <code>ashan</code> both normalize to the same canonical word. This is what the converter's dictionary and rule set do.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>Romanization / representation</h3>
+        <p>Re-expressing the canonical Masri orthography in a different character set for a different environment. Converting Tier 2 to DRS is representation, not normalization — the underlying word and its rules don't change, only the glyphs used to write it.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>Transliteration</h3>
+        <p>Mapping from one writing system to another while preserving the source's own spelling/structure as closely as possible — the approach used by scholarly transcription systems for Arabic (see the <a href="masri_prior_attempts.html">prior-attempts history</a>). Masri's Arabic-to-canonical step is closer to normalization, because it deliberately standardizes rather than mirrors the source spelling.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hiw-section" id="tiers">
+    <h2>Masri representations</h2>
+    <p class="hiw-lede">Masri is one underlying canonical orthography — not five competing systems, and not a numbered sequence of tiers. Only two of its representations are called "tiers" (Tier 2 and Tier 1); this section covers those two plus DRS in depth, since all three are Latin-script representations with a live converter. Masri also has two Arabic-script representations, Arabic-V (vocalized) and Arabic-P (plain) — see the <a href="masri_representations.html">full Representations guide</a> for all five side by side.</p>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <h3>Tier 2 / Masri Standard — the full canonical orthography</h3>
+        <p>The reference form of Masri. Uses the full <span data-letter-count>37</span>-letter inventory, including the Coptic, Greek, and Latin-extended letters that give the system precise, mostly one-to-one grapheme coverage. This is what the <a href="masri_alphabet.html">Alphabet page</a> documents in full.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>Tier 1 / Masri Basic — the ASCII-compatible form</h3>
+        <p>The same words, spelled with plain Latin letters and digraphs (<code>sh</code>, <code>kh</code>, <code>gh</code>) in place of the Coptic/Greek/Latin-extended letters, for ordinary keyboards, casual typing, and environments with limited Unicode support. Tier 1 letters are representations of specific Tier 2 graphemes, not a separate alphabet — see the digraph and numeral mapping tables on the <a href="arabizi_to_masri_viral.html">converter page</a>.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>DRS — the Latin-extended romanization</h3>
+        <p>Diaa Romanization System: Tier 2's own alphabet, with a keyboard-safe Latin substitute swapped in only for the handful of Coptic/Greek glyphs that aren't on a standard keyboard (e.g. <code>Θ→Ŧ</code>, <code>Ϩ→Ħ</code>). Every other letter is identical to Tier 2. Full table on the <a href="masri_drs.html">DRS page</a>.</p>
+      </div>
+    </div>
+    <p class="hiw-lede">Because DRS substitutes a small, fixed set of characters, converting Tier 2 → DRS is mechanical and reversible by table lookup. The harder direction is Franco/Arabic-script → canonical Masri: that step depends on the rule types described below, and some cases (gemination, vowel length, formal/merger consonant choices) aren't fully recoverable from casual input alone — the site does not claim that conversion is lossless in that direction.</p>
+  </section>
+
+  <section class="hiw-section" id="phonology-orthography">
+    <h2>Phonology vs. orthography</h2>
+    <p class="hiw-lede">Masri is sometimes summarized as "one sound, one letter." That is a useful slogan and a real design goal, but it isn't literally true of the finished system, and the site is explicit about the two kinds of exception:</p>
+    <div class="hiw-grid">
+      <div class="hiw-card">
+        <h3>Documented sound mergers</h3>
+        <p>In the Cairene reference dialect, <code>θ (ث)</code> is pronounced /s/ and <code>ð (ذ)</code> is pronounced /z/ in ordinary speech; <code>ظ</code> commonly merges toward <code>ض</code> in many contexts; and the Cairene realization of <code>ق</code> merges with the glottal stop <code>ء</code>. Masri keeps the historical letters distinct in Tier 2 (so <code>θ/ð/ẓ</code> exist as their own graphemes) while Tier 1's everyday mode and the "casual" toggle can spell some of these phonetically (<code>s</code>/<code>z</code>) instead. Both choices are documented, not silently applied.</p>
+      </div>
+      <div class="hiw-card">
+        <h3>Orthography that preserves identity over pronunciation</h3>
+        <p>Some Masri spellings deliberately don't track surface pronunciation. The clearest example: the definite article is always spelled <code>el</code>, even where Cairene speech assimilates it to the following consonant (sun letters). Masri prioritizes one consistent spelling over transcribing that assimilation, the same way English "the" is spelled one way regardless of how it's actually pronounced before a vowel or consonant.</p>
+      </div>
+    </div>
+    <p class="hiw-lede"><strong>How Egyptians pronounce something is not automatically identical to how Masri chooses to spell it.</strong> That's a strength of treating Masri as an orthography rather than a phonetic transcript — see <a href="#terms">Terminology</a> for the vocabulary this page uses to keep those two things separate.</p>
+  </section>
+
+  <section class="hiw-section" id="terms">
+    <h2>Terminology</h2>
+    <dl class="hiw-term-list">
+      <dt>Phoneme</dt><dd>An underlying sound category a language treats as distinct — e.g. Egyptian Arabic /ʕ/ (ع).</dd>
+      <dt>Phonetic realization</dt><dd>How a sound is actually pronounced in a specific context, which can vary even when the underlying phoneme doesn't.</dd>
+      <dt>Grapheme</dt><dd>A written unit or symbol — a Masri letter, in this context.</dd>
+      <dt>Orthography</dt><dd>The set of rules that determine the canonical spelling of a language — what Masri itself is.</dd>
+      <dt>Transliteration</dt><dd>Mapping between writing systems while preserving the source's own spelling as closely as possible.</dd>
+      <dt>Romanization</dt><dd>Representing a language or script using Latin characters — what DRS does to Tier 2.</dd>
+      <dt>Normalization / canonicalization</dt><dd>Converting multiple possible inputs (Arabic script, Franco, mixed) into one preferred canonical representation.</dd>
+    </dl>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="rules">
+    <h2>Rule types</h2>
+    <p class="hiw-lede">Framing every conversion decision by type makes the system easier to audit today and easier to implement in software later:</p>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">Deterministic</span><span class="hiw-ruletype-desc">Always applies the same way, regardless of context — e.g. the numeral→letter substitutions (<code>3→Ⲵ</code>, <code>7→ϩ</code>).</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">Contextual</span><span class="hiw-ruletype-desc">Depends on neighboring characters — e.g. word-initial glottal stop being silent, but written mid-word or finally.</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">Lexical</span><span class="hiw-ruletype-desc">Depends on a known word being present in the standardized word list — e.g. <code>3ashan → Ⲵaϣān</code> with a long vowel the input didn't spell out.</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">Heuristic</span><span class="hiw-ruletype-desc">A best-effort interpretation of ambiguous input where no rule or dictionary entry resolves it outright.</span></div>
+    <div class="hiw-ruletype"><span class="hiw-ruletype-name">Human review</span><span class="hiw-ruletype-desc">Cannot be reliably resolved from the input alone (e.g. some gemination and vowel-length cases) — flagged rather than guessed.</span></div>
+
+    <h3 style="font-family:var(--font-display);font-size:16px;margin:22px 0 6px;color:var(--ink);">The ع rule</h3>
+    <div id="hiwAyin" class="hiw-card"></div>
+
+    <h3 style="font-family:var(--font-display);font-size:16px;margin:22px 0 10px;color:var(--ink);">Key spelling rules</h3>
+    <div class="hiw-grid" id="hiwRuleCards"></div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="sound-system">
+    <h2>Sounds, vowels &amp; numbers</h2>
+    <p class="hiw-lede">This page covers the architecture; the full letter-by-letter, sound-by-sound detail lives on dedicated reference pages so it isn't duplicated (and can't drift out of sync) here:</p>
+    <div class="hiw-grid">
+      <div class="hiw-card"><h3>Consonants &amp; vowels</h3><p>Full inventory with IPA values, Arabic equivalents, and Tier 1/Tier 2/DRS forms for every letter — see the <a href="masri_alphabet.html">Alphabet page</a>.</p></div>
+      <div class="hiw-card"><h3>Franco/Arabizi normalization</h3><p>How informal numeral- and digraph-based spellings map onto canonical letters, with the numeral and digraph tables — see the <a href="arabizi_to_masri_viral.html#frameworkDetails">converter's rules panel</a>.</p></div>
+      <div class="hiw-card"><h3>Numbers</h3><p>Number words from zero to a billion, each with one standardized Tier 2 spelling — see the <a href="masri_numbers.html">Numbers page</a>.</p></div>
+      <div class="hiw-card"><h3>Keyboards</h3><p>How to actually type the Coptic/Greek/Latin-extended letters — on-screen keypad, native OS compose layouts, and the Windows installer — see <a href="masri_alphabet.html#keyboard-section">Keyboards &amp; Keypads</a>.</p></div>
+    </div>
+  </section>
+
+  <section class="hiw-section" id="edge-cases">
+    <h2>Edge cases</h2>
+    <p class="hiw-lede">Rather than claim the system has no ambiguity, here are the cases that genuinely require a rule — and where that rule still leaves room for judgment:</p>
+    <div class="hiw-edge-table-wrap" style="overflow-x:auto;">
+      <table class="hiw-edge-table">
+        <thead><tr><th>Case</th><th>Masri's rule</th><th>Ambiguity</th></tr></thead>
+        <tbody>
+          <tr><td>ع (ʿayn)</td><td>Always written as its own letter, Ⲵ in Tier 2 / backtick in Tier 1 — see the ع rule above.</td><td>None once recognized as ع rather than glottal stop or hamza; the ambiguity is purely on the input side (Franco writers often use <code>3</code> for it and <code>2</code> for hamza/ق, so the converter has to tell them apart from context).</td></tr>
+          <tr><td>ق / ء (Cairene)</td><td>Treated as one glottal-stop phoneme, written Ɐ in Tier 2 (Rule 5); formal <code>q</code> is reserved for MSA/formal registers.</td><td>Deciding when a given word should use the formal <code>q</code> instead of the Cairene glottal merger is a lexical/register choice, not something the spelling of the input alone determines.</td></tr>
+          <tr><td>Word-initial glottal stop</td><td>Always silent in spelling, whatever its etymology (Rule 3).</td><td>None — this is a deterministic rule.</td></tr>
+          <tr><td>Gemination</td><td>Doubled consonants are written doubled; long vowels are written doubled or with a macron (Rule 1).</td><td>Casual Franco input rarely marks gemination explicitly, so recovering it from unmarked input is a lexical/heuristic judgment, not a deterministic conversion.</td></tr>
+          <tr><td>Vowel length</td><td>Short vowels are optional in fluent writing; long vowels use doubling/macrons.</td><td>Same as gemination — length isn't always recoverable from Franco input without a dictionary hit.</td></tr>
+          <tr><td>θ/ð mergers (ث/ذ)</td><td>Tier 2 keeps <code>θ</code>/<code>ð</code> as distinct historical letters; Tier 1 everyday mode and the casual toggle can spell them phonetically as <code>s</code>/<code>z</code>.</td><td>Which spelling is "correct" for a given register is a project decision the site states explicitly rather than picking silently.</td></tr>
+          <tr><td>Loanwords / formal vocabulary</td><td>P and V are treated as independent letters (Rule 6), used mainly for loanwords and words with those original phonemes.</td><td>None once a word is recognized as a loanword; recognizing it as one in the first place is a lexical lookup, not a general rule.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="comparison">
+    <h2>How this compares to other approaches</h2>
+    <p class="hiw-lede">Egyptian Arabic already has several ways of being written down. They solve different problems, and Masri doesn't claim to make the others obsolete — its distinct claim is narrower: <strong>canonical orthography, input method, and romanization are three different things</strong>, and most existing approaches only address one of them.</p>
+    <div style="overflow-x:auto;">
+      <table class="hiw-edge-table">
+        <thead><tr><th>System</th><th>Primary purpose</th><th>What it optimizes for</th></tr></thead>
+        <tbody>
+          <tr><td>Arabic script</td><td>Mainstream everyday Egyptian Arabic writing</td><td>Familiarity — everyone already reads it; no standard dialectal spelling convention, though.</td></tr>
+          <tr><td>Franco / Arabizi</td><td>Informal digital writing</td><td>Zero setup on any keyboard; optimizes for speed of adoption, not consistency between writers.</td></tr>
+          <tr><td>Scholarly transcription (e.g. the Orientalist grammars)</td><td>Linguistic analysis for specialists</td><td>Phonetic precision for trained readers — see <a href="masri_prior_attempts.html">Prior Attempts</a> for the history.</td></tr>
+          <tr><td>EG-Lang</td><td>Latin-based Egyptian Arabic orthography</td><td>Keyboard-typable Latin letters with a phonological system worked out in detail; doesn't distinguish canonical spelling from romanization as separate layers.</td></tr>
+          <tr><td>Masri Tier 1</td><td>ASCII-compatible representation of Masri</td><td>Typability on any keyboard, no Unicode input needed.</td></tr>
+          <tr><td>Masri Tier 2</td><td>Full canonical Masri orthography</td><td>Precise, mostly one-to-one grapheme coverage using Egypt's own historical scripts.</td></tr>
+          <tr><td>DRS</td><td>Latin-extended romanization of Masri Tier 2</td><td>A Latin-only stand-in for Tier 2 in environments that can't render Coptic/Greek glyphs.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="hiw-lede" style="margin-top:14px;">None of these is objectively better in every respect — a librarian cataloguing books needs scholarly transcription, not Masri; someone texting a friend already has Franco. Masri's proposal is specifically for readers who want one consistent canonical spelling that Franco doesn't provide, with the choice of three representations (Tier 1, Tier 2, DRS) depending on where they're writing.</p>
+  </section>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <section class="hiw-section" id="principles">
+    <h2>Design principles</h2>
+    <p class="hiw-lede">Only principles genuinely reflected in the current specification (also the source of truth used by the converter's own rules panel):</p>
+    <ul class="hiw-principles" id="hiwPrinciples"></ul>
+  </section>
+
+  <footer class="hiw-footer">
+    <div class="hiw-footer-links">
+      <a class="cta-btn cta-primary nav-link" href="arabizi_to_masri_viral.html">
+        <svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+        <span>Try the converter</span>
+      </a>
+      <a class="cta-btn cta-secondary nav-link" href="masri_alphabet.html"><span>See the full alphabet</span></a>
+    </div>
+  </footer>
+</div>
+
+<script>window.MASRI_LANG = 'en';</script>
+<script src="assets/js/site-nav.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/how-it-works.js"></script></body></html>
