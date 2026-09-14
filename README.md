@@ -83,6 +83,8 @@ The [live site](https://diaahassouna.github.io/masri-writing) is fully bilingual
 | [Why not Franco?](https://diaahassouna.github.io/masri-writing/masri_prior_attempts.html) | Nine attempts to write Egyptian Arabic, scored and compared |
 | [The Alphabet & Keyboards](https://diaahassouna.github.io/masri-writing/masri_alphabet.html) | All 37 letters, IPA values, and how to type each one |
 | [DRS (Romanization)](https://diaahassouna.github.io/masri-writing/masri_drs.html) | The Diaa Romanization System — a Pinyin-style, standard-keyboard companion to Tier 2 |
+| [Representations](https://diaahassouna.github.io/masri-writing/masri_representations.html) | Side-by-side comparison of all five Masri representations — Standard, DRS, Arabic-V, Basic, and Arabic-P |
+| [Arabic-V (Vocalized Arabic)](https://diaahassouna.github.io/masri-writing/masri_arabic_v.html) | The canonical vocalized Arabic-script representation — full Harakat, mandatory sukūn, shadda-based doubling, and dedicated Egyptian realization markers |
 | [Grammar Reference](https://diaahassouna.github.io/masri-writing/masri_grammar.html) | Nouns, verbs, negation, word order — every example in DRS and Tier 2 |
 | [Loanword Policy](https://diaahassouna.github.io/masri-writing/masri_loanwords.html) | When to keep a foreign spelling, when to Egyptianize it |
 | [Language in Egypt](https://diaahassouna.github.io/masri-writing/masri_language_history.html) | A timeline of language and script in Egypt, Old Kingdom to today |
@@ -375,6 +377,8 @@ masri-writing/
 │   ├── masri_prior_attempts.html (+ _ar)             Why not Franco?
 │   ├── masri_alphabet.html (+ _ar)                   The Alphabet & Keyboards
 │   ├── masri_drs.html (+ _ar)                        DRS (Diaa Romanization System)
+│   ├── masri_representations.html (+ _ar)            Representations (all five, side by side)
+│   ├── masri_arabic_v.html (+ _ar)                   Arabic-V (Vocalized Arabic)
 │   ├── masri_grammar.html (+ _ar)                    Grammar Reference
 │   ├── masri_loanwords.html (+ _ar)                  Loanword Policy
 │   ├── masri_language_history.html (+ _ar)           Language in Egypt
@@ -409,8 +413,9 @@ masri-writing/
 - [x] Complete numbers table (0 → 1,000,000,000)
 - [x] Standardized word list
 - [x] Bilingual development framework (EN + AR)
-- [x] Interactive web reference — 11 bilingual pages at [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing), including Grammar, Loanword Policy, and Language History
+- [x] Interactive web reference — 13 bilingual pages at [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing), including Grammar, Loanword Policy, and Language History
 - [x] DRS — Diaa Romanization System, a Pinyin-style standard-keyboard companion to Tier 2
+- [x] Arabic-V — the canonical vocalized Arabic-script representation, with a dedicated Representations page comparing it against Standard, DRS, Basic, and Arabic-P
 - [x] Light/dark theme across the site
 - [x] Windows keyboard installer (`.msi` for amd64/i386/ia64)
 - [ ] Linux XKB layout
