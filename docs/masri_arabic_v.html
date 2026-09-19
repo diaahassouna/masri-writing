@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script>(function(){try{var t=localStorage.getItem('masri-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arabic-V — The Vocalized Arabic Representation of Masri</title>
+<meta name="description" content="Arabic-V is the canonical vocalized Arabic-script representation of Masri: Harakat, mandatory sukūn, shadda-based doubling, and dedicated Egyptian realization markers. Full rule set, Unicode code points, and worked examples.">
+<meta property="og:title" content="Arabic-V — The Vocalized Arabic Representation of Masri">
+<meta property="og:description" content="Arabic-V is the canonical vocalized Arabic-script representation of Masri: Harakat, mandatory sukūn, shadda-based doubling, and dedicated Egyptian realization markers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diaahassouna.github.io/masri-writing/masri_arabic_v.html">
+<link rel="canonical" href="https://diaahassouna.github.io/masri-writing/masri_arabic_v.html">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/shared.css">
+<link rel="stylesheet" href="assets/css/grammar.css"></head>
+<body>
+<div id="masri-app" dir="ltr" class="masri-page" role="main">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="lotus-motif" viewBox="0 0 100 60">
+        <path d="M50 60 C50 60 50 34 50 20 C50 8 42 2 42 2 C42 2 46 14 46 24 C46 34 50 42 50 42 C50 42 54 34 54 24 C54 14 58 2 58 2 C58 2 50 8 50 20 Z"></path>
+        <path d="M50 42 C50 42 33 40 22 30 C13 22 10 8 10 8 C10 8 20 12 28 22 C36 32 46 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 67 40 78 30 C87 22 90 8 90 8 C90 8 80 12 72 22 C64 32 54 40 50 42 Z"></path>
+        <path d="M50 42 C50 42 38 46 26 44 C16 42 6 34 6 34 C6 34 16 32 26 34 C38 37 48 41 50 42 Z"></path>
+        <path d="M50 42 C50 42 62 46 74 44 C84 42 94 34 94 34 C94 34 84 32 74 34 C62 37 52 41 50 42 Z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="topbar">
+    <div class="topbar-links">
+      <div class="site-nav" id="siteNav">
+        <button class="gh-link site-nav-toggle" id="siteNavToggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M1 3h14v1.5H1V3Zm0 4.25h14v1.5H1v-1.5ZM1 11.5h14V13H1v-1.5Z"></path></svg>
+          <span>All pages</span>
+        </button>
+        <div class="site-nav-menu" id="siteNavMenu" role="menu"></div>
+      </div>
+      <button class="gh-link theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="theme-icon-sun" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 1a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 1Zm0 3.5A3.5 3.5 0 1 1 8 11.5 3.5 3.5 0 0 1 8 4.5ZM3.05 3.05a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06L3.05 4.11a.75.75 0 0 1 0-1.06Zm8.83 8.83a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06ZM1 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5A.75.75 0 0 1 1 8Zm11.5 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75ZM4.11 11.89a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Zm8.83-8.83a.75.75 0 0 1 0 1.06L11.89 5.17a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0Z"></path></svg>
+        <svg class="theme-icon-moon" viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M6.6.1a7 7 0 1 0 8.9 9A7.4 7.4 0 0 1 6.6.1Z"></path></svg>
+      </button>
+      <a class="back-link nav-link" href="converter.html">← <span>Back to Converter</span></a>
+      <a class="gh-link" href="https://github.com/diaahassouna/masri-writing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <div class="lang-switch" id="langSwitch"><a class="lang-btn" href="masri_arabic_v_ar.html">EG-AR</a></div>
+  </div>
+
+  <header class="gr-hero">
+    <svg class="gr-hero-lotus-bg" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+    <p class="gr-eyebrow">Arabic-V — العربي المُشكَّل، التمثيل المرجعي لمصري</p>
+    <h1>Arabic-V — The Vocalized Arabic Representation of Masri</h1>
+    <p class="sub">Arabic-V is the canonical, vocalized, Egyptian-oriented Arabic-script representation of Masri — Harakat/Tashkeel, mandatory sukūn, shadda-based doubling, and dedicated Egyptian realization markers, all Unicode-defined. It is not a separate tier or a competing orthography; it is one of the five <a href="masri_representations.html">Masri representations</a> of the single canonical system, alongside Masri Standard, DRS, Masri Basic, and Arabic-P.</p>
+    <div class="gr-status">
+      <strong>Status:</strong> Arabic-V is canonical and established. This page documents its rule set — Rule IDs prefixed <code>AV-</code> — plus the Unicode code points and worked examples an implementation needs. Areas still open for formal specification are listed in §29.
+    </div>
+  </header>
+
+  <nav class="gr-toc" aria-labelledby="avTocHeading">
+    <h2 id="avTocHeading">Contents</h2>
+    <ol>
+      <li><a href="#1-masri-and-its-representations">1. Masri and its representations</a></li>
+      <li><a href="#2-what-arabic-v-is-for">2. What Arabic-V is for</a></li>
+      <li><a href="#3-arabic-p-versus-arabic-v">3. Arabic-P versus Arabic-V</a></li>
+      <li><a href="#4-the-fundamental-arabic-v-principle">4. The fundamental Arabic-V principle</a></li>
+      <li><a href="#5-harakat">5. Harakat</a></li>
+      <li><a href="#6-mandatory-sukun">6. Mandatory sukūn</a></li>
+      <li><a href="#7-shadda-means-doubling">7. Shadda means doubling</a></li>
+      <li><a href="#8-long-and-doubled-vowels">8. Long and doubled vowels</a></li>
+      <li><a href="#9-the-ee-convention">9. The ee convention</a></li>
+      <li><a href="#10-the-aa-convention">10. The aa convention</a></li>
+      <li><a href="#11-the-egyptian-e-vowel">11. The Egyptian /ɛ/ vowel</a></li>
+      <li><a href="#12-final-alif-maqsurah">12. Final alif maqṣūrah</a></li>
+      <li><a href="#13-cairene-qaf-hamza">13. Cairene Qāf → Hamza</a></li>
+      <li><a href="#14-cairene-tha-s">14. Cairene ث → /s/</a></li>
+      <li><a href="#15-cairene-dhal-z">15. Cairene ذ → /z/</a></li>
+      <li><a href="#16-underlying-preserving-versus-fully-merged-spelling">16. Underlying-preserving versus fully merged spelling</a></li>
+      <li><a href="#17-masri-j">17. Masri J</a></li>
+      <li><a href="#18-foreign-c">18. Foreign C/c</a></li>
+      <li><a href="#19-foreign-x">19. Foreign X/x</a></li>
+      <li><a href="#20-canonicalization-architecture">20. Canonicalization architecture</a></li>
+      <li><a href="#21-practical-example">21. Practical example</a></li>
+      <li><a href="#22-core-arabic-v-conversion-table">22. Core Arabic-V conversion table</a></li>
+      <li><a href="#23-consonant-doubling-table">23. Consonant doubling table</a></li>
+      <li><a href="#24-core-special-marker-table">24. Core special-marker table</a></li>
+      <li><a href="#25-information-preservation-principle">25. Information-preservation principle</a></li>
+      <li><a href="#26-unicode-authority">26. Unicode authority</a></li>
+      <li><a href="#27-arabic-v-versus-phonetic-transcription">27. Arabic-V versus phonetic transcription</a></li>
+      <li><a href="#28-rule-development-standard">28. Rule-development standard</a></li>
+      <li><a href="#29-areas-requiring-formal-specification">29. Areas requiring formal specification</a></li>
+      <li><a href="#30-beginner-explanation">30. Beginner explanation</a></li>
+      <li><a href="#31-final-definition">31. Final definition</a></li>
+    </ol>
+  </nav>
+
+  <article class="gr-content">
+
+<h2 id="1-masri-and-its-representations">1. Masri and its representations</h2>
+<p>Masri is one underlying canonical orthographic system with multiple representations.</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Representation</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><strong>Masri Standard</strong></td><td>Primary public Latin representation</td></tr>
+<tr><td><strong>DRS — Diaa Romanization System</strong></td><td>Technical Latin representation</td></tr>
+<tr><td><strong>Arabic-V</strong></td><td>Canonical vocalized Arabic-script representation</td></tr>
+<tr><td><strong>Masri Basic</strong></td><td>ASCII-compatible practical fallback</td></tr>
+<tr><td><strong>Arabic-P</strong></td><td>Plain Arabic-script practical fallback</td></tr>
+</tbody>
+</table></div>
+<p>Only <strong>Masri Basic / Tier 1</strong> and <strong>Masri Standard / Tier 2</strong> are called tiers. The relationship is one canonical Masri system, shown as Masri Standard, DRS, Arabic-V, Masri Basic, and Arabic-P in turn. Arabic-V therefore represents the canonical Masri system in Arabic script; it does not create a different orthography. See the <a href="masri_representations.html">Representations</a> page for how all five relate.</p>
+
+<h2 id="2-what-arabic-v-is-for">2. What Arabic-V is for</h2>
+<p>Arabic-V provides an explicit Arabic-script representation for situations where ordinary unvocalized Arabic does not provide enough information. Its purposes include:</p>
+<ul>
+<li>representing Egyptian pronunciation explicitly</li>
+<li>showing vowels that Arabic-P leaves implicit</li>
+<li>showing final consonants with no following vowel</li>
+<li>representing consonant and vowel doubling</li>
+<li>preserving underlying letters where useful</li>
+<li>representing Cairene pronunciation mergers</li>
+<li>representing Egyptian-specific vowels</li>
+<li>representing foreign vocabulary according to pronunciation</li>
+<li>providing an Arabic-script counterpart to Masri Standard</li>
+<li>supporting linguistic and computational analysis</li>
+</ul>
+<p>Arabic-V is therefore <strong>not simply Arabic-P + Tashkeel</strong>. It is a dedicated Masri representation.</p>
+
+<h2 id="3-arabic-p-versus-arabic-v">3. Arabic-P versus Arabic-V</h2>
+<p><strong>Arabic-P — Plain Arabic</strong> is ordinary Arabic script without explicit vocalization, e.g. <strong>أسانسير</strong>. It is familiar, fast, and practical, but pronunciation information may remain implicit.</p>
+<p><strong>Arabic-V — Vocalized Arabic</strong> explicitly represents the Masri pronunciation. Conceptually, Masri Standard maps to Arabic-V the way it maps to any other representation — rather than asking the reader to infer missing vowels, Arabic-V writes them.</p>
+<p>The distinction is <strong>Arabic-P → practical and familiar</strong> versus <strong>Arabic-V → explicit and informative</strong>. Arabic-P is not wrong, and Arabic-V is not simply "better Arabic". They serve different purposes.</p>
+
+<h2 id="4-the-fundamental-arabic-v-principle">4. The fundamental Arabic-V principle</h2>
+<p>Arabic-V follows one central principle:</p>
+<blockquote><p><strong>Write the canonical Masri sequence explicitly.</strong></p></blockquote>
+<p>This means that Arabic-V represents:</p>
+<ol>
+<li>the consonant</li>
+<li>its vowel, where applicable</li>
+<li>doubling, where applicable</li>
+<li>absence of a following vowel through sukūn</li>
+<li>Egyptian-specific realization information where required</li>
+</ol>
+<p>This makes Arabic-V structurally different from ordinary Arabic spelling.</p>
+
+<h2 id="5-harakat">5. Harakat</h2>
+<p>Arabic-V uses standard Arabic vocalization marks where applicable.</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Mark</th><th>Name</th><th>Function</th></tr></thead>
+<tbody>
+<tr><td>َ</td><td>Fatḥa</td><td>a-type vowel</td></tr>
+<tr><td>ِ</td><td>Kasra</td><td>i/e-type vowel according to the canonical Masri environment</td></tr>
+<tr><td>ُ</td><td>Ḍamma</td><td>u/o-type vowel according to the canonical Masri environment</td></tr>
+<tr><td>ْ</td><td>Sukūn</td><td>explicitly indicates that no vowel follows the consonant</td></tr>
+<tr><td>ّ</td><td>Shadda</td><td>doubling</td></tr>
+</tbody>
+</table></div>
+<p>Arabic-V is not restricted to the three traditional Arabic vowel categories. It also has Masri-specific conventions, covered in §9–§12.</p>
+
+<h2 id="6-mandatory-sukun">6. Mandatory sukūn</h2>
+<p><strong>Rule AV-S01 — Mandatory Sukūn.</strong> When a consonant has no vowel after it, Arabic-V writes sukūn on that consonant. This is a fundamental difference from ordinary Arabic-P.</p>
+<p>For example, <strong>Katab</strong> is <strong>كَتَبْ</strong> rather than simply <strong>كتب</strong>:</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Masri Standard</th><th>Arabic-V</th></tr></thead>
+<tbody>
+<tr><td>k</td><td>كَ</td></tr>
+<tr><td>a</td><td>َ</td></tr>
+<tr><td>t</td><td>تَ</td></tr>
+<tr><td>a</td><td>َ</td></tr>
+<tr><td>b</td><td>بْ</td></tr>
+</tbody>
+</table></div>
+<p>Thus <strong>K a t a b → كَتَبْ</strong>. The final <strong>بْ</strong> explicitly tells the reader that no vowel follows /b/. Sukūn is therefore not merely optional decoration. In fully specified Arabic-V, it is required whenever the consonant is not followed by a vowel.</p>
+
+<h2 id="7-shadda-means-doubling">7. Shadda means doubling</h2>
+<p><strong>Rule AV-S02 — Shadda as Doubling.</strong> Shadda represents doubling. The element being doubled depends on what the shadda belongs to.</p>
+<h3>7.1 Consonant doubling</h3>
+<p>For consonants, <strong>Cّ = CC</strong>. Example: <strong>دّ = dd</strong>, so <strong>dd → دّ</strong>. In <strong>ywaddi → يْوَدّْي</strong>, the <strong>دّ</strong> represents the doubled consonant <strong>d + d</strong>.</p>
+<h3>7.2 Vowel doubling</h3>
+<p>For vowel carriers, shadda represents a doubled vowel: <strong>Vّ = VV</strong>. For example, <strong>ee → يّ</strong>.</p>
+<p>The principle is <strong>consonant + shadda → doubled consonant</strong>, <strong>vowel carrier + shadda → doubled vowel</strong>. Shadda is therefore best understood as a <strong>doubling operator</strong>, not merely as a "gemination mark".</p>
+
+<h2 id="8-long-and-doubled-vowels">8. Long and doubled vowels</h2>
+<p>Arabic-V distinguishes ordinary vowels from doubled vowels. The Roman Masri representation uses doubled vowel letters:</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Masri Standard</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>a</td><td>one a</td></tr>
+<tr><td>aa</td><td>doubled/long a</td></tr>
+<tr><td>e</td><td>one e</td></tr>
+<tr><td>ee</td><td>doubled/long e</td></tr>
+<tr><td>i</td><td>one i</td></tr>
+<tr><td>ii</td><td>doubled/long i</td></tr>
+<tr><td>o</td><td>one o</td></tr>
+<tr><td>oo</td><td>doubled/long o</td></tr>
+<tr><td>u</td><td>one u</td></tr>
+<tr><td>uu</td><td>doubled/long u</td></tr>
+</tbody>
+</table></div>
+<p>The Arabic-V representation uses the appropriate Arabic vowel structure and shadda where the vowel is doubled.</p>
+
+<h2 id="9-the-ee-convention">9. The ee convention</h2>
+<p><strong>Rule AV-V01 — Doubled E.</strong> The Masri sequence <strong>ee</strong> is represented through the <strong>ي</strong> vowel carrier with shadda: <strong>ee → يّ</strong>. Example: <strong>tafkeer</strong> is represented <strong>تَفْكْيّرْ</strong> — the doubled e-vowel is represented by <strong>يّ</strong>. This is not the ordinary Arabic consonantal interpretation of ي. In Arabic-V, its interpretation follows the canonical Masri vowel sequence.</p>
+
+<h2 id="10-the-aa-convention">10. The aa convention</h2>
+<p><strong>Rule AV-V02 — Doubled A.</strong> The Masri sequence <strong>aa</strong> is represented by the appropriate Arabic long-a structure. Depending on the underlying canonical Masri form, this may be <strong>آ</strong>, or, where the final underlying letter is <strong>ى</strong>, by preserving that underlying letter while representing the doubled vowel: <strong>ىّٰ</strong>.</p>
+<p>The second form consists conceptually of <strong>ى + ّ + ٰ</strong>, where <strong>ى</strong> preserves the underlying alif maqṣūrah, <strong>ّ</strong> represents doubling, and <strong>ٰ</strong> makes the long-a value explicit. Therefore Arabic-V preserves the distinction between ordinary long <strong>aa</strong> and a final <strong>aa</strong> whose underlying orthographic identity is <strong>ى</strong>.</p>
+
+<h2 id="11-the-egyptian-e-vowel">11. The Egyptian /ɛ/ vowel</h2>
+<p><strong>Rule AV-V03 — Yāʾ Maftūḥa.</strong> Arabic-V uses <strong>يَ</strong> to represent the Egyptian vowel <strong>/ɛ/</strong>. Its Latin correspondence is <strong>é = /ɛ/</strong>. Thus <strong>يَ = é = /ɛ/</strong>. This is a dedicated Masri vowel convention and is not to be confused with an ordinary sequence of consonantal <strong>y + a</strong>.</p>
+<p>Example: <strong>asanséér</strong> contains the Egyptian /ɛ/ represented by <strong>يَ</strong>. The convention remains distinct from final alif maqṣūrah (§12).</p>
+
+<h2 id="12-final-alif-maqsurah">12. Final alif maqṣūrah</h2>
+<p><strong>Rule AV-V04 — Final ى.</strong> Arabic-V preserves <strong>ى</strong> where the canonical Masri representation uses final alif maqṣūrah. When its long-a value needs to be made explicit, the dagger alif may be placed above it: <strong>ى + ٰ</strong>. Where the doubled-vowel rule applies, the full representation may contain <strong>ى + ّ + ٰ</strong>.</p>
+<p>The distinction is fundamental: <strong>ى</strong> = underlying final alif maqṣūrah; <strong>يَ</strong> = Egyptian /ɛ/. They are not interchangeable.</p>
+
+<h2 id="13-cairene-qaf-hamza">13. Cairene Qāf → Hamza</h2>
+<p><strong>Rule AV-C01 — Cairene Qāf Marker.</strong> Arabic-V distinguishes between <strong>ق = /q/</strong> and <strong>قٔ = Cairene /ʔ/</strong>. The marked form retains the underlying <strong>ق</strong> while explicitly indicating its Cairene realization as a glottal stop. The marker is <strong>U+0654 — ARABIC HAMZA ABOVE</strong>.</p>
+<p>Therefore <strong>ق + U+0654</strong> means: underlying ق, realized as /ʔ/ in Cairene. This is information-preserving and is different from simply replacing <strong>ق</strong> with <strong>ء</strong>.</p>
+
+<h2 id="14-cairene-tha-s">14. Cairene ث → /s/</h2>
+<p><strong>Rule AV-C02 — Cairene Thāʾ Marker.</strong> Arabic-V may preserve underlying <strong>ث</strong> while explicitly marking its Cairene realization as <strong>/s/</strong>. The marker is <strong>U+06DC — ARABIC SMALL HIGH SEEN</strong>. Thus <strong>ث + U+06DC</strong> means: underlying ث, realized as Egyptian /s/. The base letter remains visible.</p>
+
+<h2 id="15-cairene-dhal-z">15. Cairene ذ → /z/</h2>
+<p><strong>Rule AV-C03 — Cairene Dhāl Marker.</strong> Likewise, <strong>ذ + U+06DC</strong> means: underlying ذ, realized as Egyptian /z/.</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Base</th><th>Marker</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>ث</td><td>U+06DC</td><td>underlying ث → /s/</td></tr>
+<tr><td>ذ</td><td>U+06DC</td><td>underlying ذ → /z/</td></tr>
+</tbody>
+</table></div>
+<p>The marker itself does not represent a phoneme independently. Its meaning comes from the combination <strong>base letter + realization marker</strong>.</p>
+
+<h2 id="16-underlying-preserving-versus-fully-merged-spelling">16. Underlying-preserving versus fully merged spelling</h2>
+<p>Arabic-V allows an important distinction. An Egyptian /z/ that historically corresponds to <strong>ذ</strong> may be represented either as <strong>ذ + merger marker</strong>, or, where permitted by the canonical rules, as <strong>ز</strong>. The first preserves the underlying identity; the second is the simpler fully merged representation.</p>
+<p>Therefore the system can provide both an <strong>information-preserving representation</strong> and a <strong>simplified Egyptian representation</strong>, without treating either approach as inherently "wrong". The final normative rules should specify which form is preferred in each context.</p>
+
+<h2 id="17-masri-j">17. Masri J</h2>
+<p><strong>Rule AV-C04 — Masri J.</strong> Arabic-V uses <strong>چ</strong> for the Masri letter <strong>J</strong>. Its sound value is <strong>/ʒ/</strong>. Therefore <strong>J → چ → /ʒ/</strong>. Example: <strong>Rooj → روچ</strong>. This provides an Arabic-script representation that maintains the distinction represented by Masri J.</p>
+
+<h2 id="18-foreign-c">18. Foreign C/c</h2>
+<p><strong>Rule AV-F01 — Pronunciation-based C.</strong> The Latin letter <strong>C/c</strong> does not have one fixed Masri value in foreign words. Its Arabic-V representation follows its actual pronunciation.</p>
+<p><strong>C = /k/:</strong> <strong>Caterpillar → كاترپيلر</strong>, since the relevant sound is /k/, so C → ك.<br>
+<strong>C = /s/:</strong> <strong>center → سنتر</strong>, since the relevant sound is /s/, so C → س.</p>
+<p>Therefore <strong>C + /k/ → ك</strong> and <strong>C + /s/ → س</strong>. C must never be converted solely from its spelling.</p>
+
+<h2 id="19-foreign-x">19. Foreign X/x</h2>
+<p><strong>Rule AV-F02 — Pronunciation-based X.</strong> Arabic-V distinguishes <strong>canonical Masri X/x</strong> from <strong>foreign Latin x/X</strong>. The canonical Masri letter is <strong>X → خ → /x/</strong>. But a foreign <strong>x/X</strong> is interpreted according to its pronunciation.</p>
+<p><strong>X = /ks/:</strong> <strong>Taxi → تاكسي</strong>, where x → ك + س because the foreign letter represents /ks/.<br>
+<strong>X = /z/:</strong> <strong>Xenophon → زينوفون</strong>, where X → ز because it is pronounced /z/.</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Context</th><th>Arabic-V</th></tr></thead>
+<tbody>
+<tr><td>Masri X/x</td><td>خ</td></tr>
+<tr><td>foreign x = /ks/</td><td>كس</td></tr>
+<tr><td>foreign X = /z/</td><td>ز</td></tr>
+</tbody>
+</table></div>
+<p>The converter must never use a universal <strong>X → خ</strong> substitution.</p>
+
+<h2 id="20-canonicalization-architecture">20. Canonicalization architecture</h2>
+<p>Arabic-V should normally be generated from the canonical Masri representation. The preferred pipeline is:</p>
+<pre><code>Egyptian input
+  ↓
+Canonical Masri
+  ↓
+Masri Standard / DRS / Arabic-V / Masri Basic / Arabic-P
+</code></pre>
+<p>This prevents Arabic-V from becoming an independent spelling-normalization system. The canonical Masri representation determines consonants, vowels, doubled vowels, consonant gemination, sukūn, final forms, Cairene realization, and foreign-word pronunciation. Arabic-V then expresses those decisions in Arabic script.</p>
+
+<h2 id="21-practical-example">21. Practical example</h2>
+<p><strong>Masri Standard:</strong> Sayyed katab el dars.<br>
+<strong>Arabic-V:</strong> سَيِّد كَتَبْ اِلْدَرْسْ</p>
+<p>The representation is pronunciation-oriented and is intended to reflect <strong>Egyptian pronunciation, not MSA pronunciation</strong>.</p>
+<h3>Word 1 — Sayyed</h3>
+<p><strong>سَيِّد</strong> explicitly shows its vowels and the doubled consonant: <strong>يّ → yy</strong>.</p>
+<h3>Word 2 — Katab</h3>
+<p><strong>كَتَبْ</strong> is the sequence ك + َ + ت + َ + ب + ْ, i.e. <strong>K a t a b → ك َ ت َ ب ْ</strong>. The final <strong>بْ</strong> has mandatory sukūn because there is no vowel after /b/.</p>
+<h3>Word 3 — el dars</h3>
+<p><strong>اِلْدَرْسْ</strong> — the relevant consonants and vowels are explicitly represented, including sukūn where no vowel follows the consonant.</p>
+<p>The complete sentence is therefore:</p>
+<blockquote><p><strong>سَيِّد كَتَبْ اِلْدَرْسْ</strong></p></blockquote>
+<p>This is a practical demonstration of what makes Arabic-V different from ordinary Arabic-P.</p>
+
+<h2 id="22-core-arabic-v-conversion-table">22. Core Arabic-V conversion table</h2>
+<h3>Vowels and doubling</h3>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Masri Standard</th><th>Arabic-V principle</th><th>Arabic-V representation</th></tr></thead>
+<tbody>
+<tr><td><strong>a</strong></td><td>a vowel</td><td>َ</td></tr>
+<tr><td><strong>aa</strong></td><td>doubled/long a</td><td><strong>آ</strong> or appropriate final form</td></tr>
+<tr><td><strong>e</strong></td><td>e-type vowel</td><td>corresponding Masri vowel structure</td></tr>
+<tr><td><strong>ee</strong></td><td>doubled e</td><td><strong>يّ</strong></td></tr>
+<tr><td><strong>i</strong></td><td>i-type vowel</td><td>corresponding Masri vowel structure</td></tr>
+<tr><td><strong>ii</strong></td><td>doubled i</td><td>doubled vowel-carrier structure</td></tr>
+<tr><td><strong>o</strong></td><td>o-type vowel</td><td>corresponding Masri vowel structure</td></tr>
+<tr><td><strong>oo</strong></td><td>doubled o</td><td>doubled vowel-carrier structure</td></tr>
+<tr><td><strong>u</strong></td><td>u-type vowel</td><td>corresponding Masri vowel structure</td></tr>
+<tr><td><strong>uu</strong></td><td>doubled u</td><td>doubled vowel-carrier structure</td></tr>
+<tr><td><strong>é</strong></td><td>Egyptian /ɛ/</td><td><strong>يَ</strong></td></tr>
+<tr><td>final <strong>aa</strong> with underlying ى</td><td>final long a preserving ى</td><td><strong>ىّٰ</strong> where doubled-vowel marking is required</td></tr>
+</tbody>
+</table></div>
+<p><strong>Important:</strong> Arabic-V treats <strong>shadda as doubling</strong>, not as a synonym for "long vowel".</p>
+
+<h2 id="23-consonant-doubling-table">23. Consonant doubling table</h2>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Masri Standard</th><th>Arabic-V</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>dd</td><td><strong>دّ</strong></td><td>doubled د</td></tr>
+<tr><td>bb</td><td><strong>بّ</strong></td><td>doubled ب</td></tr>
+<tr><td>mm</td><td><strong>مّ</strong></td><td>doubled م</td></tr>
+<tr><td>ss</td><td><strong>سّ</strong></td><td>doubled س</td></tr>
+<tr><td>ll</td><td><strong>لّ</strong></td><td>doubled ل</td></tr>
+<tr><td>etc.</td><td>base letter + <strong>ّ</strong></td><td>consonant doubling</td></tr>
+</tbody>
+</table></div>
+<p>Thus <strong>dd → دّ</strong>. The same principle applies to every consonant capable of carrying shadda.</p>
+
+<h2 id="24-core-special-marker-table">24. Core special-marker table</h2>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Masri value / structure</th><th>Arabic-V</th><th>Unicode</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>/ʔ/ from underlying ق</td><td><strong>قٔ</strong></td><td>U+0654</td><td>Cairene realization of ق</td></tr>
+<tr><td>/s/ from underlying ث</td><td><strong>ثۜ</strong></td><td>U+06DC</td><td>Cairene realization of ث</td></tr>
+<tr><td>/z/ from underlying ذ</td><td><strong>ذۜ</strong></td><td>U+06DC</td><td>Cairene realization of ذ</td></tr>
+<tr><td>/ʒ/</td><td><strong>چ</strong></td><td>U+0686</td><td>Masri J</td></tr>
+<tr><td>/ɛ/</td><td><strong>يَ</strong></td><td>ي + U+064E</td><td>Egyptian vowel</td></tr>
+<tr><td>final alif maqṣūrah</td><td><strong>ى</strong></td><td>U+0649</td><td>underlying final ى</td></tr>
+<tr><td>final long/doubled a with ى</td><td><strong>ىّٰ</strong></td><td>ى + U+0651 + U+0670</td><td>preserved ى + doubled a</td></tr>
+<tr><td>consonant with no following vowel</td><td><strong>Cْ</strong></td><td>C + U+0652</td><td>mandatory sukūn</td></tr>
+<tr><td>consonant doubling</td><td><strong>Cّ</strong></td><td>C + U+0651</td><td>CC</td></tr>
+<tr><td>doubled e</td><td><strong>يّ</strong></td><td>ي + U+0651</td><td>ee</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="25-information-preservation-principle">25. Information-preservation principle</h2>
+<p>Arabic-V should not discard information unnecessarily. For example, <strong>قٔ</strong> contains more information than <strong>ء</strong>, because it communicates both the underlying ق and its Cairene /ʔ/ realization. Likewise <strong>ثۜ</strong> contains more information than <strong>س</strong> when the underlying <strong>ث</strong> matters, and <strong>ذۜ</strong> contains more information than <strong>ز</strong> when the underlying <strong>ذ</strong> matters.</p>
+<p>This makes Arabic-V useful not only for reading, but also for normalization, linguistic analysis, machine learning, conversion between representations, and pronunciation-aware processing.</p>
+
+<h2 id="26-unicode-authority">26. Unicode authority</h2>
+<p>The actual Unicode sequence is authoritative. A visually similar glyph is not necessarily equivalent to the required Arabic-V representation. Important code points include:</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Character/mark</th><th>Unicode</th></tr></thead>
+<tbody>
+<tr><td>Hamza Above</td><td><strong>U+0654</strong></td></tr>
+<tr><td>Shadda</td><td><strong>U+0651</strong></td></tr>
+<tr><td>Sukūn</td><td><strong>U+0652</strong></td></tr>
+<tr><td>Dagger Alif</td><td><strong>U+0670</strong></td></tr>
+<tr><td>Alif Maqṣūrah</td><td><strong>U+0649</strong></td></tr>
+<tr><td>Small High Seen</td><td><strong>U+06DC</strong></td></tr>
+<tr><td>Masri J چ</td><td><strong>U+0686</strong></td></tr>
+</tbody>
+</table></div>
+<p>Arabic-V implementations must preserve the actual base character and combining marks. Unicode normalization, canonical ordering, and rendering behavior must therefore be tested as part of the implementation.</p>
+
+<h2 id="27-arabic-v-versus-phonetic-transcription">27. Arabic-V versus phonetic transcription</h2>
+<p>Arabic-V is <strong>not unrestricted IPA written in Arabic letters</strong>. It remains an orthographic representation of canonical Masri.</p>
+<p>For example, <strong>قٔ</strong> does not merely mean "write the sound /ʔ/". It means: <strong>the canonical underlying letter is ق, and its Cairene realization is /ʔ/.</strong> Similarly, <strong>ثۜ</strong> means: <strong>the canonical underlying letter is ث, realized as /s/.</strong> This is why Arabic-V is an orthography rather than a simple pronunciation transcription.</p>
+
+<h2 id="28-rule-development-standard">28. Rule-development standard</h2>
+<p>Every new Arabic-V rule should be documented using the following structure:</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Field</th><th>Requirement</th></tr></thead>
+<tbody>
+<tr><td>Rule ID</td><td>e.g. AV-11</td></tr>
+<tr><td>Name</td><td>descriptive rule name</td></tr>
+<tr><td>Input</td><td>canonical Masri element</td></tr>
+<tr><td>Arabic-V output</td><td>exact Arabic representation</td></tr>
+<tr><td>Meaning</td><td>what the representation signifies</td></tr>
+<tr><td>Unicode</td><td>code point and Unicode name</td></tr>
+<tr><td>Examples</td><td>real Masri examples</td></tr>
+<tr><td>Alternatives</td><td>whether merged forms are permitted</td></tr>
+<tr><td>Edge cases</td><td>interactions with other marks</td></tr>
+<tr><td>Status</td><td>proposed / established / complete / deprecated</td></tr>
+</tbody>
+</table></div>
+<p>This prevents individual examples from accidentally becoming undocumented rules.</p>
+
+<h2 id="29-areas-requiring-formal-specification">29. Areas requiring formal specification</h2>
+<p>The Arabic-V framework is established, but the complete technical standard should continue formalizing:</p>
+<ul>
+<li>complete vowel mapping</li>
+<li>all long/doubled-vowel patterns</li>
+<li>grammatical Tanween</li>
+<li>final-vowel behavior</li>
+<li>shadda ordering and interpretation</li>
+<li>sukūn behavior</li>
+<li>hamza/alif behavior</li>
+<li>definite article behavior</li>
+<li>grammatical endings</li>
+<li>loanword rules</li>
+<li>proper names</li>
+<li>additional Egyptian mergers</li>
+<li>additional foreign sounds</li>
+<li>Unicode combining-mark order</li>
+<li>Unicode normalization</li>
+<li>renderer requirements</li>
+</ul>
+<p>No rule should be inferred merely from conventional MSA spelling.</p>
+
+<h2 id="30-beginner-explanation">30. Beginner explanation</h2>
+<p>For ordinary users:</p>
+<blockquote><p><strong>Arabic-V is Masri written in Arabic script with explicit vowel marks, mandatory sukūn where no vowel follows, shadda for doubling, and special signs that make Egyptian pronunciation and underlying letter distinctions explicit.</strong></p></blockquote>
+<p>The most important concepts are:</p>
+<div class="gr-table-wrap"><table>
+<thead><tr><th>Notation</th><th>Means</th></tr></thead>
+<tbody>
+<tr><td><strong>Arabic-P</strong></td><td>everyday plain Arabic</td></tr>
+<tr><td><strong>Arabic-V</strong></td><td>explicit vocalized Masri</td></tr>
+<tr><td><strong>Cّ</strong></td><td>doubled consonant</td></tr>
+<tr><td><strong>يّ</strong></td><td>doubled e-vowel</td></tr>
+<tr><td><strong>يَ</strong></td><td>Egyptian /ɛ/</td></tr>
+<tr><td><strong>Cْ</strong></td><td>consonant with no following vowel</td></tr>
+<tr><td><strong>قٔ</strong></td><td>underlying ق pronounced Cairene /ʔ/</td></tr>
+<tr><td><strong>ثۜ</strong></td><td>underlying ث pronounced /s/</td></tr>
+<tr><td><strong>ذۜ</strong></td><td>underlying ذ pronounced /z/</td></tr>
+<tr><td><strong>چ</strong></td><td>/ʒ/</td></tr>
+<tr><td><strong>ى</strong></td><td>final alif maqṣūrah</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="31-final-definition">31. Final definition</h2>
+<blockquote><p><strong>Arabic-V is Masri's canonical vocalized Arabic-script representation: a dedicated Egyptian-oriented orthography that combines Arabic letters, Harakat, mandatory sukūn where required, shadda-based doubling, Tanween where required, and defined Masri-specific letters, vowel conventions, and realization markers.</strong></p></blockquote>
+<p>Its fundamental principle is:</p>
+<blockquote><p><strong>One canonical Masri system, multiple controlled representations.</strong></p></blockquote>
+<p>Arabic-V therefore provides an Arabic-script representation that is <strong>recognizable, Egyptian-oriented, explicitly vocalized, information-preserving, pronunciation-aware, computationally useful, and extensible</strong>.</p>
+<hr />
+<p><em>Source: this page documents the project's Arabic-V specification in full. The condensed marks and markers are also indexed as data in <code>assets/data/arabic-v.json</code> for lookup/tooling use; see the <a href="masri_representations.html">Representations</a> page for how Arabic-V relates to Masri Standard, DRS, Masri Basic, and Arabic-P.</em></p>
+
+  </article>
+
+  <p style="text-align:center;"><a class="gr-back-to-top" href="#avTocHeading">↑ Back to contents</a></p>
+
+  <div class="divider"><svg class="divider-lotus" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg></div>
+
+  <footer class="gr-footer">
+    <a class="cta-btn cta-primary nav-link" href="converter.html">
+      <svg class="lotus-icon" viewBox="0 0 100 60" aria-hidden="true"><use href="#lotus-motif"></use></svg>
+      <span>Try the converter that finally sticks</span>
+    </a>
+    <p class="page-footer" style="margin-top:14px;">Arabic-V — the canonical vocalized Arabic-script representation of Masri. Author: Diaa Hassouna, 2026. License: CC BY 4.0.</p>
+  </footer>
+</div>
+
+<script>window.MASRI_LANG = 'en';</script>
+<script src="assets/js/site-nav.js"></script>
+<script src="assets/js/theme.js"></script></body></html>
