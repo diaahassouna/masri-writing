@@ -1,0 +1,581 @@
+{
+  "principle": {
+    "en": "Write the canonical Masri sequence explicitly.",
+    "ar": "اكتب متتابعة مصري المرجعية بشكل صريح."
+  },
+  "harakat": [
+    {
+      "mark": "\u064E",
+      "name_en": "Fatḥa",
+      "name_ar": "فتحة",
+      "function_en": "a; together with damma or kasra on one consonant it is the fatha indicator (AV-R06a)",
+      "function_ar": "a؛ ومع الضمة أو الكسرة على نفس الحرف هي مؤش\u0651ر الفتحة (AV-R06a)"
+    },
+    {
+      "mark": "\u0650",
+      "name_en": "Kasra",
+      "name_ar": "كسرة",
+      "function_en": "e",
+      "function_ar": "e"
+    },
+    {
+      "mark": "\u064F",
+      "name_en": "Ḍamma",
+      "name_ar": "ضمة",
+      "function_en": "o",
+      "function_ar": "o"
+    },
+    {
+      "mark": "\u0652",
+      "name_en": "Sukūn",
+      "name_ar": "سكون",
+      "function_en": "no vowel follows the letter (consonants and carriers alike, AV-R03)",
+      "function_ar": "مفيش حركة بعد الحرف (للحروف الصامتة وللحوامل، AV-R03)"
+    },
+    {
+      "mark": "\u0651",
+      "name_en": "Shadda",
+      "name_ar": "شدة",
+      "function_en": "doubling: consonant gemination, or a long vowel on a carrier letter",
+      "function_ar": "تضعيف: تضعيف حرف صامت، أو حركة طويلة على حرف حامل"
+    }
+  ],
+  "carriers": {
+    "letters": [
+      "ا",
+      "و",
+      "ي"
+    ],
+    "note_en": "Vowel carrier letters. A carrier is preceded by a consonant with sukūn or by an initial hamza-alif (AV-R07).",
+    "note_ar": "حروف حامل الحركة. الحامل بييجي بعد حرف صامت عليه سكون أو بعد همزة ألف في أول الكلمة (AV-R07)."
+  },
+  "specialMarkers": [
+    {
+      "id": "AV-C01",
+      "value": "ق\u0654",
+      "unicode": "U+0654 ARABIC HAMZA ABOVE",
+      "meaning_en": "underlying ق, Cairene realization /ʔ/",
+      "meaning_ar": "أصلها ق، بتتنطق قاهراوي\u064Bا همزة /ʔ/"
+    },
+    {
+      "id": "AV-C02",
+      "value": "ث\u06DC",
+      "unicode": "U+06DC ARABIC SMALL HIGH SEEN",
+      "meaning_en": "underlying ث, realized as Egyptian /s/",
+      "meaning_ar": "أصلها ث، بتتنطق /s/ في المصري"
+    },
+    {
+      "id": "AV-C03",
+      "value": "ذ\u06DC",
+      "unicode": "U+06DC ARABIC SMALL HIGH SEEN",
+      "meaning_en": "underlying ذ, realized as Egyptian /z/",
+      "meaning_ar": "أصلها ذ، بتتنطق /z/ في المصري"
+    },
+    {
+      "id": "AV-C04",
+      "value": "چ",
+      "unicode": "U+0686 ARABIC LETTER TCHEH (Masri J)",
+      "meaning_en": "/ʒ/, the Masri letter J",
+      "meaning_ar": "/ʒ/، حرف J في مصري"
+    },
+    {
+      "id": "AV-R05",
+      "value": "و\u064E\u06DC",
+      "unicode": "و + U+064E + U+06DC",
+      "meaning_en": "wa: consonant w + a; the small high seen separates consonant from vowel (ya is ي\u064E\u06DC)",
+      "meaning_ar": "wa: حرف صامت w + a؛ السين العلوية الصغيرة بتفصل الحرف عن الحركة (وya هي ي\u064E\u06DC)"
+    },
+    {
+      "id": "AV-R06",
+      "value": "ي\u064E",
+      "unicode": "ي + U+064E",
+      "meaning_en": "long éé, the Egyptian long /ɛː/ (carrier + fatha indicator)",
+      "meaning_ar": "éé الطويلة، /ɛː/ المصرية الطويلة (حامل + مؤش\u0651ر الفتحة)"
+    },
+    {
+      "id": "AV-R06",
+      "value": "و\u064E",
+      "unicode": "و + U+064E",
+      "meaning_en": "long uu, the long [o] (outside Cairo)",
+      "meaning_ar": "uu الطويلة، [o] الطويلة (بر\u0651ه القاهرة)"
+    },
+    {
+      "id": "AV-R06a",
+      "value": "\u25CC\u064E\u0650",
+      "unicode": "U+064E + U+0650",
+      "meaning_en": "short é: fatha indicator on kasra",
+      "meaning_ar": "é القصيرة: مؤش\u0651ر الفتحة على الكسرة"
+    },
+    {
+      "id": "AV-R06a",
+      "value": "\u25CC\u064E\u064F",
+      "unicode": "U+064E + U+064F",
+      "meaning_en": "short ou: fatha indicator on damma",
+      "meaning_ar": "ou القصيرة: مؤش\u0651ر الفتحة على الضمة"
+    },
+    {
+      "id": "AV-R01",
+      "value": "\u25CC\u064E + ا\u0651\u0652",
+      "unicode": "ا + U+0651 + U+0652",
+      "meaning_en": "long aa: fatha on the consonant, then carrier + shadda + sukūn",
+      "meaning_ar": "aa الطويلة: فتحة على الحرف الصامت، وبعدها حامل + شدة + سكون"
+    },
+    {
+      "id": "AV-R01",
+      "value": "\u25CC\u0650 + ي\u0651\u0652",
+      "unicode": "ي + U+0651 + U+0652",
+      "meaning_en": "long ee: kasra on the consonant, then carrier + shadda + sukūn",
+      "meaning_ar": "ee الطويلة: كسرة على الحرف الصامت، وبعدها حامل + شدة + سكون"
+    },
+    {
+      "id": "AV-R01",
+      "value": "\u25CC\u064F + و\u0651\u0652",
+      "unicode": "و + U+0651 + U+0652",
+      "meaning_en": "long oo: damma on the consonant, then carrier + shadda + sukūn",
+      "meaning_ar": "oo الطويلة: ضمة على الحرف الصامت، وبعدها حامل + شدة + سكون"
+    },
+    {
+      "id": "AV-R02",
+      "value": "ي\u0652",
+      "unicode": "ي + U+0652",
+      "meaning_en": "word-final i (after a consonant with sukūn); never e",
+      "meaning_ar": "i في آخر الكلمة (بعد حرف صامت عليه سكون)؛ مش e أبد\u064Bا"
+    },
+    {
+      "id": "AV-R02",
+      "value": "ا\u0652",
+      "unicode": "ا + U+0652",
+      "meaning_en": "word-final short a",
+      "meaning_ar": "a قصيرة في آخر الكلمة"
+    },
+    {
+      "id": "AV-R02",
+      "value": "و\u0652",
+      "unicode": "و + U+0652",
+      "meaning_en": "word-final short o",
+      "meaning_ar": "o قصيرة في آخر الكلمة"
+    },
+    {
+      "id": "AV-R02a",
+      "value": "ى",
+      "unicode": "U+0649 ARABIC LETTER ALEF MAKSURA",
+      "meaning_en": "input only: accepted as input, written as ا (never output)",
+      "meaning_ar": "للإدخال بس: بتتقبل كمدخل وبتتكتب ا (مبتظهرش في المخرجات)"
+    },
+    {
+      "id": "AV-R01",
+      "value": "آ",
+      "unicode": "U+0622 ARABIC LETTER ALEF WITH MADDA ABOVE",
+      "meaning_en": "input only: read as hamza + aa, normalized to أ\u064Eا\u0651\u0652 word-initially",
+      "meaning_ar": "للإدخال بس: بتتقرا همزة + aa، وبتتحو\u0651ل لـ أ\u064Eا\u0651\u0652 في أول الكلمة"
+    },
+    {
+      "id": "AV-R04a",
+      "value": "ن\u0651\u0652",
+      "unicode": "ن + U+0651 + U+0652",
+      "meaning_en": "tanween is written as the letter ن, doubled, with sukūn (e.g. ج\u0650د\u064E\u0651ن\u0651\u0652)",
+      "meaning_ar": "التنوين بيتكتب بالحرف ن مضع\u0651ف وعليه سكون (مثل\u064Bا ج\u0650د\u064E\u0651ن\u0651\u0652)"
+    },
+    {
+      "id": "AV-S01",
+      "value": "C\u0652",
+      "unicode": "consonant + U+0652",
+      "meaning_en": "mandatory sukūn: no vowel follows this consonant",
+      "meaning_ar": "سكون إلزامي: مفيش حركة بعد الحرف ده"
+    },
+    {
+      "id": "AV-S02",
+      "value": "C\u0651",
+      "unicode": "consonant + U+0651",
+      "meaning_en": "doubled consonant (CC), also word-finally (AV-R04)",
+      "meaning_ar": "حرف مضع\u0651ف (CC)، وكمان في آخر الكلمة (AV-R04)"
+    }
+  ],
+  "vowelTable": [
+    {
+      "masriStandard": "a, á",
+      "arabicV": "\u25CC\u064E",
+      "ipa": "[ɑ]",
+      "meaning_en": "short a",
+      "meaning_ar": "a قصيرة"
+    },
+    {
+      "masriStandard": "aa",
+      "arabicV": "\u25CC\u064E + ا\u0651\u0652",
+      "ipa": "[ɛə]",
+      "meaning_en": "long a (the Egyptian long a)",
+      "meaning_ar": "a طويلة (الألف الطويلة المصرية)"
+    },
+    {
+      "masriStandard": "e",
+      "arabicV": "\u25CC\u0650",
+      "ipa": "[e]",
+      "meaning_en": "short e",
+      "meaning_ar": "e قصيرة"
+    },
+    {
+      "masriStandard": "ee",
+      "arabicV": "\u25CC\u0650 + ي\u0651\u0652",
+      "ipa": "[eː]",
+      "meaning_en": "long e",
+      "meaning_ar": "e طويلة"
+    },
+    {
+      "masriStandard": "ii (word-final only)",
+      "arabicV": "\u25CC\u0650 + ي\u0651\u0652",
+      "ipa": "[iː]",
+      "meaning_en": "long i, word-final only by Latin convention; everywhere else ii is written ee. Same Arabic-V form as ee",
+      "meaning_ar": "i طويلة، في آخر الكلمة بس حسب الع\u064Fرف اللاتيني؛ وفي أي مكان تاني الـ ii بتتكتب ee. نفس شكل Arabic-V بتاع ee",
+      "example": "katabhomlii ك\u064Eت\u064Eب\u0652ه\u064Fم\u0652ل\u0650ي\u0651\u0652 → katabhomleeϣ ك\u064Eت\u064Eب\u0652ه\u064Fم\u0652ل\u0650ي\u0651\u0652ش\u0652"
+    },
+    {
+      "masriStandard": "é",
+      "arabicV": "\u25CC\u064E\u0650",
+      "ipa": "[ɛ]",
+      "meaning_en": "short é (fatha indicator on kasra)",
+      "meaning_ar": "é قصيرة (مؤش\u0651ر الفتحة على الكسرة)",
+      "example": "kaféhaat ك\u064Eف\u064E\u0650ه\u064Eا\u0651\u0652ت\u0652"
+    },
+    {
+      "masriStandard": "éé",
+      "arabicV": "ي\u064E",
+      "ipa": "[ɛː]",
+      "meaning_en": "long é (carrier + fatha indicator)",
+      "meaning_ar": "é طويلة (حامل + مؤش\u0651ر الفتحة)"
+    },
+    {
+      "masriStandard": "i",
+      "arabicV": "ي\u0652 (final) · إ\u0650 (initial)",
+      "ipa": "[i]",
+      "meaning_en": "word-final or word-initial only; medial short i is e (AV-R09)",
+      "meaning_ar": "في آخر الكلمة أو أولها بس؛ والـ i القصيرة في النص هي e (AV-R09)",
+      "example": "Roodi ر\u064Fو\u0651\u0652د\u0652ي\u0652"
+    },
+    {
+      "masriStandard": "o",
+      "arabicV": "\u25CC\u064F",
+      "ipa": "[u]",
+      "meaning_en": "short o (close back rounded)",
+      "meaning_ar": "o قصيرة ([u] المقفولة)",
+      "example": "borr ب\u064Fر\u0651\u0652 · (final) kebro ك\u0650ب\u0652ر\u0652و\u0652, kallemo ك\u064Eل\u0650\u0651م\u0652و\u0652, Leedo ل\u0650ي\u0651\u0652د\u0652و\u0652"
+    },
+    {
+      "masriStandard": "oo",
+      "arabicV": "\u25CC\u064F + و\u0651\u0652",
+      "ipa": "[uː]",
+      "meaning_en": "long oo",
+      "meaning_ar": "oo طويلة"
+    },
+    {
+      "masriStandard": "ou",
+      "arabicV": "\u25CC\u064E\u064F",
+      "ipa": "[o] / [ɔ]",
+      "meaning_en": "short ou (fatha indicator on damma)",
+      "meaning_ar": "ou قصيرة (مؤش\u0651ر الفتحة على الضمة)"
+    },
+    {
+      "masriStandard": "uu",
+      "arabicV": "و\u064E",
+      "ipa": "[oː]",
+      "meaning_en": "long uu (outside Cairo)",
+      "meaning_ar": "uu طويلة (بر\u0651ه القاهرة)"
+    },
+    {
+      "masriStandard": "u",
+      "arabicV": "ي\u064F",
+      "ipa": "[ʌ]",
+      "meaning_en": "the fast 'you' (yw), foreign words only",
+      "meaning_ar": "الـ 'you' السريعة (yw)، في الكلمات الأجنبية بس"
+    },
+    {
+      "masriStandard": "wa, ya",
+      "arabicV": "و\u064E\u06DC · ي\u064E\u06DC",
+      "ipa": "[wa] · [ja]",
+      "meaning_en": "consonant + a, marked by the small high seen",
+      "meaning_ar": "حرف صامت + a، معل\u0651مة بالسين العلوية الصغيرة"
+    }
+  ],
+  "consonantDoublingExamples": [
+    {
+      "masriStandard": "dd",
+      "arabicV": "د\u0651",
+      "meaning_en": "doubled د",
+      "meaning_ar": "د مضع\u0651فة"
+    },
+    {
+      "masriStandard": "bb",
+      "arabicV": "ب\u0651",
+      "meaning_en": "doubled ب",
+      "meaning_ar": "ب مضع\u0651فة"
+    },
+    {
+      "masriStandard": "mm",
+      "arabicV": "م\u0651",
+      "meaning_en": "doubled م",
+      "meaning_ar": "م مضع\u0651فة"
+    },
+    {
+      "masriStandard": "ss",
+      "arabicV": "س\u0651",
+      "meaning_en": "doubled س",
+      "meaning_ar": "س مضع\u0651فة"
+    },
+    {
+      "masriStandard": "ll",
+      "arabicV": "ل\u0651",
+      "meaning_en": "doubled ل",
+      "meaning_ar": "ل مضع\u0651فة"
+    }
+  ],
+  "unicodeCodepoints": [
+    {
+      "char": "Alif",
+      "codepoint": "U+0627"
+    },
+    {
+      "char": "Alif with Madda Above (input only)",
+      "codepoint": "U+0622"
+    },
+    {
+      "char": "Alif Maqṣūrah (input only)",
+      "codepoint": "U+0649"
+    },
+    {
+      "char": "Yeh",
+      "codepoint": "U+064A"
+    },
+    {
+      "char": "Waw",
+      "codepoint": "U+0648"
+    },
+    {
+      "char": "Noon",
+      "codepoint": "U+0646"
+    },
+    {
+      "char": "Teh",
+      "codepoint": "U+062A"
+    },
+    {
+      "char": "Teh Marbuta",
+      "codepoint": "U+0629"
+    },
+    {
+      "char": "Masri J چ",
+      "codepoint": "U+0686"
+    },
+    {
+      "char": "Fatha",
+      "codepoint": "U+064E"
+    },
+    {
+      "char": "Damma",
+      "codepoint": "U+064F"
+    },
+    {
+      "char": "Kasra",
+      "codepoint": "U+0650"
+    },
+    {
+      "char": "Shadda",
+      "codepoint": "U+0651"
+    },
+    {
+      "char": "Sukūn",
+      "codepoint": "U+0652"
+    },
+    {
+      "char": "Hamza Above",
+      "codepoint": "U+0654"
+    },
+    {
+      "char": "Dagger Alif (no longer part of canonical output)",
+      "codepoint": "U+0670"
+    },
+    {
+      "char": "Small High Seen",
+      "codepoint": "U+06DC"
+    }
+  ],
+  "markOrder": {
+    "en": "haraka (fatha, then damma or kasra), shadda, sukūn, small high seen (the canonical Unicode order)",
+    "ar": "حركة (فتحة، وبعدها ضمة أو كسرة)، شدة، سكون، سين علوية صغيرة (الترتيب المرجعي في يونيكود)"
+  },
+  "practicalExample": {
+    "masriStandard": "Sayyed katab el dars.",
+    "arabicV": "س\u064Eي\u0651\u0650د\u0652 ك\u064Eت\u064Eب\u0652 ا\u0650ل\u0652د\u064Eر\u0652س\u0652"
+  },
+  "rules": [
+    {
+      "id": "AV-S01",
+      "name_en": "Mandatory sukūn",
+      "name_ar": "السكون الإلزامي",
+      "status": "established",
+      "note_en": "extended to carriers by AV-R03"
+    },
+    {
+      "id": "AV-S02",
+      "name_en": "Shadda as doubling",
+      "name_ar": "الشدة كتضعيف",
+      "status": "established",
+      "note_en": "refined by AV-R04"
+    },
+    {
+      "id": "AV-V01",
+      "name_en": "Doubled E",
+      "name_ar": "الـ E المضاعفة",
+      "status": "deprecated",
+      "supersededBy": "AV-R01"
+    },
+    {
+      "id": "AV-V02",
+      "name_en": "Doubled A",
+      "name_ar": "الـ A المضاعفة",
+      "status": "deprecated",
+      "supersededBy": "AV-R01, AV-R02a"
+    },
+    {
+      "id": "AV-V03",
+      "name_en": "Yāʾ Maftūḥa",
+      "name_ar": "الياء المفتوحة",
+      "status": "deprecated",
+      "supersededBy": "AV-R06"
+    },
+    {
+      "id": "AV-V04",
+      "name_en": "Final ى",
+      "name_ar": "ى النهائية",
+      "status": "deprecated",
+      "supersededBy": "AV-R02a"
+    },
+    {
+      "id": "AV-C01",
+      "name_en": "Cairene Qāf marker",
+      "name_ar": "علامة القاف القاهراوية",
+      "status": "established"
+    },
+    {
+      "id": "AV-C02",
+      "name_en": "Cairene Thāʾ marker",
+      "name_ar": "علامة الثاء القاهراوية",
+      "status": "established"
+    },
+    {
+      "id": "AV-C03",
+      "name_en": "Cairene Dhāl marker",
+      "name_ar": "علامة الذال القاهراوية",
+      "status": "established"
+    },
+    {
+      "id": "AV-C04",
+      "name_en": "Masri J",
+      "name_ar": "حرف J المصري",
+      "status": "established"
+    },
+    {
+      "id": "AV-F01",
+      "name_en": "Pronunciation-based C",
+      "name_ar": "C حسب النطق",
+      "status": "established"
+    },
+    {
+      "id": "AV-F02",
+      "name_en": "Pronunciation-based X",
+      "name_ar": "X حسب النطق",
+      "status": "established"
+    },
+    {
+      "id": "AV-R01",
+      "name_en": "Carriers and harakat",
+      "name_ar": "الحوامل والحركات",
+      "status": "established"
+    },
+    {
+      "id": "AV-R02",
+      "name_en": "Word-final vowels",
+      "name_ar": "الحركات في آخر الكلمة",
+      "status": "established"
+    },
+    {
+      "id": "AV-R02a",
+      "name_en": "ى is input only",
+      "name_ar": "ى للإدخال بس",
+      "status": "established"
+    },
+    {
+      "id": "AV-R03",
+      "name_en": "Sukūn",
+      "name_ar": "السكون",
+      "status": "established"
+    },
+    {
+      "id": "AV-R04",
+      "name_en": "Gemination is universal",
+      "name_ar": "التضعيف عام على كل الحروف",
+      "status": "established"
+    },
+    {
+      "id": "AV-R04a",
+      "name_en": "Tanween becomes ن + shadda",
+      "name_ar": "التنوين بيبقى ن + شدة",
+      "status": "established"
+    },
+    {
+      "id": "AV-R05",
+      "name_en": "W and Y are consonants; two-level harakat",
+      "name_ar": "W وY حروف صامتة؛ حركات على مستويين",
+      "status": "established"
+    },
+    {
+      "id": "AV-R06",
+      "name_en": "The vowels o, ou, uu, u, é, éé",
+      "name_ar": "الحركات o وou وuu وu وé وéé",
+      "status": "established"
+    },
+    {
+      "id": "AV-R06a",
+      "name_en": "The fatha indicator",
+      "name_ar": "مؤش\u0651ر الفتحة",
+      "status": "established"
+    },
+    {
+      "id": "AV-R07",
+      "name_en": "Carrier versus consonant",
+      "name_ar": "الحامل مقابل الحرف الصامت",
+      "status": "established"
+    },
+    {
+      "id": "AV-R08",
+      "name_en": "Feminine ending ة / ت\u0652",
+      "name_ar": "تاء التأنيث ة / ت\u0652",
+      "status": "established"
+    },
+    {
+      "id": "AV-R09",
+      "name_en": "No medial i; ii is written ee (except word-final ii)",
+      "name_ar": "مفيش i في النص؛ والـ ii بتتكتب ee (إلا ii في آخر الكلمة)",
+      "status": "established"
+    },
+    {
+      "id": "AV-R10",
+      "name_en": "Initial vowel letter",
+      "name_ar": "حرف الحركة في أول الكلمة",
+      "status": "established"
+    },
+    {
+      "id": "AV-R11",
+      "name_en": "Initial I versus E",
+      "name_ar": "I مقابل E في الأول",
+      "status": "established"
+    },
+    {
+      "id": "AV-R12",
+      "name_en": "Consonant letters",
+      "name_ar": "الحروف الصامتة",
+      "status": "established"
+    }
+  ],
+  "source": "Derived from Arabic-V — The Vocalized Arabic Representation of Masri (project specification). See masri_arabic_v.html for the full rule set, rationale, and worked examples.",
+  "note_en": "This file is a structured index of Arabic-V's marks, markers and short tables for lookup/tooling use. The authoritative explanation, rule numbering (AV-*), and full worked examples live on the Arabic-V reference page, not here.",
+  "note_ar": "الملف ده فهرس منظم لعلامات وحركات Arabic-V والجداول المختصرة لأغراض البحث/الأدوات. الشرح المرجعي وترقيم القواعد (AV-*) والأمثلة الكاملة موجودين في صفحة Arabic-V، مش هنا."
+}

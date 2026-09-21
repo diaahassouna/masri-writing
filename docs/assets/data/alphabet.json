@@ -1,0 +1,654 @@
+{
+  "alphabet": [
+    {
+      "no": 1,
+      "letter_upper": "A",
+      "letter_lower": "a",
+      "arabic": "ا",
+      "name": "Alef",
+      "ipa": "/ʔ/, /ɑ/, /ɛə/",
+      "unicode_upper": "U+0041",
+      "unicode_lower": "U+0061",
+      "origin": "ASCII",
+      "notes": "Open vowel: a, á = /ɑ/ as in 'father'; aa = /ɛə/, the Egyptian long a (ketaab)",
+      "notes_ar": "حركة مفتوحة: a وá = /ɑ/ زي 'father'؛ وaa = /ɛə/، الألف الطويلة المصرية (ketaab)"
+    },
+    {
+      "no": 2,
+      "letter_upper": "B",
+      "letter_lower": "b",
+      "arabic": "ب",
+      "name": "Beh",
+      "ipa": "/b/",
+      "unicode_upper": "U+0042",
+      "unicode_lower": "U+0062",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 3,
+      "letter_upper": "P",
+      "letter_lower": "p",
+      "arabic": "پ",
+      "name": "Pee",
+      "ipa": "/p/",
+      "unicode_upper": "U+0050",
+      "unicode_lower": "U+0070",
+      "origin": "ASCII",
+      "notes": "Foreign loanwords only; p ≠ b",
+      "notes_ar": "بس للكلمات الأجنبية؛ p مش زي b"
+    },
+    {
+      "no": 4,
+      "letter_upper": "T",
+      "letter_lower": "t",
+      "arabic": "ت",
+      "name": "Teh",
+      "ipa": "/t/",
+      "unicode_upper": "U+0054",
+      "unicode_lower": "U+0074",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 5,
+      "letter_upper": "Θ",
+      "letter_lower": "θ",
+      "arabic": "ث",
+      "name": "Ṯeh",
+      "ipa": "/θ/ → /s/",
+      "unicode_upper": "U+0398",
+      "unicode_lower": "U+03B8",
+      "origin": "Greek",
+      "notes": "Greek theta; Cairene merger → /s/ (Tier 1: th, or s in casual spelling)",
+      "notes_ar": "الثيتا اليونانية؛ في القاهرة بتتحول لـ /s/ (في Tier 1: th، أو s في الكتابة الكاجوال)"
+    },
+    {
+      "no": 6,
+      "letter_upper": "G",
+      "letter_lower": "g",
+      "arabic": "ج",
+      "name": "Geem",
+      "ipa": "/g/",
+      "unicode_upper": "U+0047",
+      "unicode_lower": "U+0067",
+      "origin": "ASCII",
+      "notes": "Hard G; never /ʒ/ in Cairo",
+      "notes_ar": "جيم قوي؛ مبتبقاش /ʒ/ في القاهرة أبدًا"
+    },
+    {
+      "no": 7,
+      "letter_upper": "J",
+      "letter_lower": "j",
+      "arabic": "چ",
+      "name": "Jéh",
+      "ipa": "/ʒ/",
+      "unicode_upper": "U+004A",
+      "unicode_lower": "U+006A",
+      "origin": "Extra",
+      "notes": "Always written چ in Arabic script — Masri's standard, just like P → پ and V → ڤ. Covers Upper Egyptian (Ṣaʿidi) ج — ج صعيدي — the MSA/فصحى pronunciation of ج, and the loanword /ʒ/; all realized as /ʒ/, contrasting with Cairene ج (see G, hard /g/)",
+      "notes_ar": "بتتكتب دايمًا چ بالخط العربي — ده المعيار في مصري، زي P ← پ وV ← ڤ. بتغطي ج صعيدي (مصر العليا) وج فصحى (الفصحى/MSA) وحرف /ʒ/ في الكلمات الدخيلة — كلهم بيتنطقوا /ʒ/، بعكس ج القاهرية (شوف G، جيم قوي /g/)"
+    },
+    {
+      "no": 8,
+      "letter_upper": "Ϩ",
+      "letter_lower": "ϩ",
+      "arabic": "ح",
+      "name": "Ḥa",
+      "ipa": "/ħ/",
+      "unicode_upper": "U+03E8",
+      "unicode_lower": "U+03E9",
+      "origin": "Coptic",
+      "notes": "Coptic Hori; mirrors ح; never numeral 7 (Tier 1: h^, the emphatic h — plain h stays ه)",
+      "notes_ar": "الهوري القبطي؛ مرآة لحرف ح؛ مش الرقم 7 خالص (في Tier 1: h^ — الـh المفخّمة؛ أما h العادية فبتفضل ه)"
+    },
+    {
+      "no": 9,
+      "letter_upper": "X",
+      "letter_lower": "x",
+      "arabic": "خ",
+      "name": "Ḵa",
+      "ipa": "/x/",
+      "unicode_upper": "U+0058",
+      "unicode_lower": "U+0078",
+      "origin": "ASCII",
+      "notes": "Pan-European /x/",
+      "notes_ar": "الصوت الأوروبي /x/"
+    },
+    {
+      "no": 10,
+      "letter_upper": "D",
+      "letter_lower": "d",
+      "arabic": "د",
+      "name": "Daal",
+      "ipa": "/d/",
+      "unicode_upper": "U+0044",
+      "unicode_lower": "U+0064",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 11,
+      "letter_upper": "Ð",
+      "letter_lower": "ð",
+      "arabic": "ذ",
+      "name": "Ḏaal",
+      "ipa": "/ð/ → /z/",
+      "unicode_upper": "U+00D0",
+      "unicode_lower": "U+00F0",
+      "origin": "Latin ext.",
+      "notes": "Eth; Cairene merger /ð/→/z/",
+      "notes_ar": "حرف إيث؛ في القاهرة بيتحول لـ /z/"
+    },
+    {
+      "no": 12,
+      "letter_upper": "R",
+      "letter_lower": "r",
+      "arabic": "ر",
+      "name": "Reh",
+      "ipa": "/r/",
+      "unicode_upper": "U+0052",
+      "unicode_lower": "U+0072",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 13,
+      "letter_upper": "Z",
+      "letter_lower": "z",
+      "arabic": "ز",
+      "name": "Zeen",
+      "ipa": "/z/",
+      "unicode_upper": "U+005A",
+      "unicode_lower": "U+007A",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 14,
+      "letter_upper": "S",
+      "letter_lower": "s",
+      "arabic": "س",
+      "name": "Seen",
+      "ipa": "/s/",
+      "unicode_upper": "U+0053",
+      "unicode_lower": "U+0073",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 15,
+      "letter_upper": "C",
+      "letter_lower": "c",
+      "arabic": "—",
+      "name": "See",
+      "ipa": "/s/, /k/",
+      "unicode_upper": "U+0043",
+      "unicode_lower": "U+0063",
+      "origin": "Extra",
+      "notes": "Restricted to code-switched words",
+      "notes_ar": "مقصورة على الكلمات المُقترضة"
+    },
+    {
+      "no": 16,
+      "letter_upper": "Ϣ",
+      "letter_lower": "ϣ",
+      "arabic": "ش",
+      "name": "Sheen",
+      "ipa": "/ʃ/",
+      "unicode_upper": "U+03E2",
+      "unicode_lower": "U+03E3",
+      "origin": "Coptic",
+      "notes": "Coptic Shai; replaces sh digraph",
+      "notes_ar": "شاي القبطي؛ بديل عن sh"
+    },
+    {
+      "no": 17,
+      "letter_upper": "Ṣ",
+      "letter_lower": "ṣ",
+      "arabic": "ص",
+      "name": "Ṣaad",
+      "ipa": "/sˤ/",
+      "unicode_upper": "U+1E62",
+      "unicode_lower": "U+1E63",
+      "origin": "Latin ext.",
+      "notes": "Emphatic S (Tier 1: s^)",
+      "notes_ar": "صاد مفخمة (في Tier 1: s^)"
+    },
+    {
+      "no": 18,
+      "letter_upper": "Ḍ",
+      "letter_lower": "ḍ",
+      "arabic": "ض",
+      "name": "Ḍaad",
+      "ipa": "/dˤ/",
+      "unicode_upper": "U+1E0C",
+      "unicode_lower": "U+1E0D",
+      "origin": "Latin ext.",
+      "notes": "Emphatic D (Tier 1: d^)",
+      "notes_ar": "ضاد مفخمة (في Tier 1: d^)"
+    },
+    {
+      "no": 19,
+      "letter_upper": "Ṭ",
+      "letter_lower": "ṭ",
+      "arabic": "ط",
+      "name": "Ṭah",
+      "ipa": "/tˤ/",
+      "unicode_upper": "U+1E6C",
+      "unicode_lower": "U+1E6D",
+      "origin": "Latin ext.",
+      "notes": "Emphatic T (Tier 1: t^)",
+      "notes_ar": "طاء مفخمة (في Tier 1: t^)"
+    },
+    {
+      "no": 20,
+      "letter_upper": "Ẓ",
+      "letter_lower": "ẓ",
+      "arabic": "ظ",
+      "name": "Ẓah",
+      "ipa": "/ðˤ/",
+      "unicode_upper": "U+1E92",
+      "unicode_lower": "U+1E93",
+      "origin": "Latin ext.",
+      "notes": "Merges with Ḍ in most Cairene contexts (Tier 1: z^)",
+      "notes_ar": "بتندمج مع ḍ في أغلب سياقات القاهرة (في Tier 1: z^)"
+    },
+    {
+      "no": 21,
+      "letter_upper": "Ⲵ",
+      "letter_lower": "Ⲵ",
+      "arabic": "ع",
+      "name": "ʿAin",
+      "ipa": "/ʕ/",
+      "unicode_upper": "U+2CB4",
+      "unicode_lower": "U+2CB4",
+      "origin": "Coptic",
+      "notes": "Coptic Old Ain; descends from hieroglyph for 'eye' (Tier 1: backtick `)",
+      "notes_ar": "عين قبطي قديم؛ أصله من هيروغليفي معناه 'عين' (في Tier 1: الباك تيك `)"
+    },
+    {
+      "no": 22,
+      "letter_upper": "Ɣ",
+      "letter_lower": "ɣ",
+      "arabic": "غ",
+      "name": "Gheen",
+      "ipa": "/ɣ/",
+      "unicode_upper": "U+0194",
+      "unicode_lower": "U+0263",
+      "origin": "Latin ext.",
+      "notes": "IPA voiced velar fricative; Extended Latin letter (LATIN LETTER GAMMA, used in the IPA) visually derived from the Greek gamma (Γ/γ), not the Greek Unicode block itself",
+      "notes_ar": "الصوت الاحتكاكي الطبقي المجهور؛ حرف لاتيني موسّع (يُستخدم في الأبجدية الصوتية الدولية IPA) شكله متأثر بالجاما اليونانية (Γ/γ)، لكنه مش من كتلة يونيكود اليونانية نفسها"
+    },
+    {
+      "no": 23,
+      "letter_upper": "F",
+      "letter_lower": "f",
+      "arabic": "ف",
+      "name": "Feh",
+      "ipa": "/f/",
+      "unicode_upper": "U+0046",
+      "unicode_lower": "U+0066",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 24,
+      "letter_upper": "V",
+      "letter_lower": "v",
+      "arabic": "ڤ",
+      "name": "Vee",
+      "ipa": "/v/",
+      "unicode_upper": "U+0056",
+      "unicode_lower": "U+0076",
+      "origin": "ASCII",
+      "notes": "Foreign loanwords only; v ≠ f",
+      "notes_ar": "بس للكلمات الأجنبية؛ v مش زي f"
+    },
+    {
+      "no": 25,
+      "letter_upper": "Q",
+      "letter_lower": "q",
+      "arabic": "ق",
+      "name": "Qaaf",
+      "ipa": "/q/",
+      "unicode_upper": "U+0051",
+      "unicode_lower": "U+0071",
+      "origin": "ASCII",
+      "notes": "Formal/MSA; colloquial Cairene → glottal Ɐ",
+      "notes_ar": "فصحى/رسمي؛ في لهجة القاهرة بتبقى همزة"
+    },
+    {
+      "no": 26,
+      "letter_upper": "K",
+      "letter_lower": "k",
+      "arabic": "ك",
+      "name": "Kaaf",
+      "ipa": "/k/",
+      "unicode_upper": "U+004B",
+      "unicode_lower": "U+006B",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 27,
+      "letter_upper": "L",
+      "letter_lower": "l",
+      "arabic": "ل",
+      "name": "Laam",
+      "ipa": "/l/",
+      "unicode_upper": "U+004C",
+      "unicode_lower": "U+006C",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 28,
+      "letter_upper": "M",
+      "letter_lower": "m",
+      "arabic": "م",
+      "name": "Meem",
+      "ipa": "/m/",
+      "unicode_upper": "U+004D",
+      "unicode_lower": "U+006D",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 29,
+      "letter_upper": "N",
+      "letter_lower": "n",
+      "arabic": "ن",
+      "name": "Noon",
+      "ipa": "/n/",
+      "unicode_upper": "U+004E",
+      "unicode_lower": "U+006E",
+      "origin": "ASCII",
+      "notes": "Identical in all systems",
+      "notes_ar": "زي بعضه في كل الأنظمة"
+    },
+    {
+      "no": 30,
+      "letter_upper": "H",
+      "letter_lower": "h",
+      "arabic": "ه",
+      "name": "Heh",
+      "ipa": "/h/",
+      "unicode_upper": "U+0048",
+      "unicode_lower": "U+0068",
+      "origin": "ASCII",
+      "notes": "Soft H; distinct from pharyngeal Ϩ",
+      "notes_ar": "الهاء الخفيفة؛ مختلفة عن ϩ الحلقية"
+    },
+    {
+      "no": 31,
+      "letter_upper": "O",
+      "letter_lower": "o",
+      "arabic": "و",
+      "name": "Oh",
+      "ipa": "/u/, /uː/",
+      "unicode_upper": "U+004F",
+      "unicode_lower": "U+006F",
+      "origin": "Vowel/semivowel",
+      "notes": "Close back rounded /u/ as in 'boot': o short, oo long. The /o/ of 'go' is ou (short) or uu (long, outside Cairo)",
+      "notes_ar": "حركة مقفولة خلفية مستديرة /u/ زي 'boot': o قصيرة وoo طويلة. أما /o/ اللي في 'go' فهي ou (قصيرة) أو uu (طويلة، برّه القاهرة)"
+    },
+    {
+      "no": 32,
+      "letter_upper": "U",
+      "letter_lower": "u",
+      "arabic": "و",
+      "name": "Ū",
+      "ipa": "/ʌ/",
+      "unicode_upper": "U+0055",
+      "unicode_lower": "U+0075",
+      "origin": "Vowel/semivowel",
+      "notes": "Foreign words only: /ʌ/, the fast 'you' (yw), as in menu. Also the second letter of ou and uu, which mark the close-mid /o/",
+      "notes_ar": "في الكلمات الأجنبية بس: /ʌ/، الـ 'you' السريعة (yw)، زي menu. وكمان هي الحرف التاني في ou وuu اللي بتعلّم /o/ النص مقفولة"
+    },
+    {
+      "no": 33,
+      "letter_upper": "W",
+      "letter_lower": "w",
+      "arabic": "و",
+      "name": "Dablew",
+      "ipa": "/ʔw/, /w/",
+      "unicode_upper": "U+0057",
+      "unicode_lower": "U+0077",
+      "origin": "Vowel/semivowel",
+      "notes": "Waw as consonant /w/",
+      "notes_ar": "الواو كحرف ساكن /w/"
+    },
+    {
+      "no": 34,
+      "letter_upper": "E",
+      "letter_lower": "e",
+      "arabic": "ي",
+      "name": "Ee",
+      "ipa": "/e/, /eː/, /ɛ/, /ɛː/",
+      "unicode_upper": "U+0045",
+      "unicode_lower": "U+0065",
+      "origin": "Vowel/semivowel",
+      "notes": "Front vowel: e short, ee long; é and éé are the Egyptian /ɛ/ (short and long)",
+      "notes_ar": "حركة أمامية: e قصيرة وee طويلة؛ وé وéé هما /ɛ/ المصرية (قصيرة وطويلة)"
+    },
+    {
+      "no": 35,
+      "letter_upper": "I",
+      "letter_lower": "i",
+      "arabic": "ي",
+      "name": "Ai",
+      "ipa": "/i/",
+      "unicode_upper": "U+0049",
+      "unicode_lower": "U+0069",
+      "origin": "Vowel/semivowel",
+      "notes": "Word-initial and word-final only, never medial (a medial short front vowel is e, a long one ee). ii is always written ee, except a word-final ii",
+      "notes_ar": "في أول الكلمة وآخرها بس، مش في النص أبدًا (الحركة الأمامية القصيرة في النص هي e والطويلة ee). والـ ii بتتكتب ee دايمًا، إلا الـ ii في آخر الكلمة"
+    },
+    {
+      "no": 36,
+      "letter_upper": "Y",
+      "letter_lower": "y",
+      "arabic": "ي",
+      "name": "Wye",
+      "ipa": "/ʔj/, /j/",
+      "unicode_upper": "U+0059",
+      "unicode_lower": "U+0079",
+      "origin": "Vowel/semivowel",
+      "notes": "Ya as consonant /j/",
+      "notes_ar": "الياء كحرف ساكن /j/"
+    },
+    {
+      "no": 37,
+      "letter_upper": "Ɐ",
+      "letter_lower": "Ɐ",
+      "arabic": "ء",
+      "name": "Hamza",
+      "ipa": "/ʔ/",
+      "unicode_upper": "U+2C6F",
+      "unicode_lower": "U+2C6F",
+      "origin": "Latin ext.",
+      "notes": "Glottal stop; mirror of Alef; silent word-initially (Tier 1: ', mid-word/final only)",
+      "notes_ar": "همزة القطع؛ مرآة للألف؛ ساكنة في بداية الكلمة (في Tier 1: '، في نص الكلمة أو آخرها بس)"
+    }
+  ],
+  "extra_letters": [],
+  "vowel_system": {
+    "short_vowels": [
+      {
+        "arabic": "◌َ",
+        "sound": "[ɑ] open back, as in 'father'",
+        "sound_ar": "[ɑ] مفتوحة خلفية، زي 'father'",
+        "tier2": "a, á",
+        "example": "Katab كَتَبْ"
+      },
+      {
+        "arabic": "◌ِ",
+        "sound": "[e] front vowel",
+        "sound_ar": "[e] حركة أمامية",
+        "tier2": "e",
+        "example": "We وِ"
+      },
+      {
+        "arabic": "◌ُ",
+        "sound": "[u] close back rounded, as in 'boot'",
+        "sound_ar": "[u] مقفولة خلفية مستديرة، زي 'boot'",
+        "tier2": "o",
+        "example": "borr بُرّْ"
+      },
+      {
+        "arabic": "◌َُ",
+        "sound": "[o] close-mid back rounded, as in 'go' (or [ɔ], as in 'law')",
+        "sound_ar": "[o] نص مقفولة خلفية مستديرة، زي 'go' (أو [ɔ] زي 'law')",
+        "tier2": "ou",
+        "example": "louṣt لَُصْتْ · Kours كَُرْسْ"
+      },
+      {
+        "arabic": "◌َِ",
+        "sound": "[ɛ] the Egyptian short é",
+        "sound_ar": "[ɛ] الـ é المصرية القصيرة",
+        "tier2": "é",
+        "example": "kaféhaat كَفَِهَاّْتْ"
+      },
+      {
+        "arabic": "يُ",
+        "sound": "[ʌ] the fast 'you' (yw), foreign words only",
+        "sound_ar": "[ʌ] الـ 'you' السريعة (yw)، في الكلمات الأجنبية بس",
+        "tier2": "u",
+        "example": "menu مِنْيُ"
+      },
+      {
+        "arabic": "يْ · إِ",
+        "sound": "[i] word-final or word-initial only, never medial",
+        "sound_ar": "[i] في آخر الكلمة أو أولها بس، مش في النص أبدًا",
+        "tier2": "i",
+        "example": "Soori سُوّْرْيْ · Roodi رُوّْدْيْ"
+      },
+      {
+        "arabic": "اْ",
+        "sound": "final short a",
+        "sound_ar": "a قصيرة في آخر الكلمة",
+        "tier2": "a (final)",
+        "example": "Huda هُدْاْ"
+      },
+      {
+        "arabic": "وْ",
+        "sound": "final short o",
+        "sound_ar": "o قصيرة في آخر الكلمة",
+        "tier2": "o (final)",
+        "example": "kebro كِبْرْوْ · kallemo كَلِّمْوْ · Leedo لِيّْدْوْ"
+      }
+    ],
+    "long_vowels": [
+      {
+        "arabic": "◌َ + اّْ",
+        "sound": "[ɛə] the Egyptian long a",
+        "sound_ar": "[ɛə] الألف الطويلة المصرية",
+        "tier2": "aa",
+        "example": "Ketaab كِتَاّْبْ"
+      },
+      {
+        "arabic": "◌ِ + يّْ",
+        "sound": "[eː] long e",
+        "sound_ar": "[eː] e طويلة",
+        "tier2": "ee",
+        "example": "saⲴeed سَعِيّْدْ"
+      },
+      {
+        "arabic": "◌ِ + يّْ",
+        "sound": "[iː] long i, word-final only (elsewhere ee)",
+        "sound_ar": "[iː] i طويلة، في آخر الكلمة بس (غير كده ee)",
+        "tier2": "ii (final)",
+        "example": "katabhomlii كَتَبْهُمْلِيّْ"
+      },
+      {
+        "arabic": "◌ُ + وّْ",
+        "sound": "[uː] long close back rounded",
+        "sound_ar": "[uː] مقفولة خلفية مستديرة طويلة",
+        "tier2": "oo",
+        "example": "boor بُوّْرْ"
+      },
+      {
+        "arabic": "يَ",
+        "sound": "[ɛː] the Egyptian long é",
+        "sound_ar": "[ɛː] الـ éé المصرية الطويلة",
+        "tier2": "éé",
+        "example": "asanséér أَسَنْسْيَرْ"
+      },
+      {
+        "arabic": "وَ",
+        "sound": "[oː] long close-mid, outside Cairo (Canal dialects, Damietta)",
+        "sound_ar": "[oː] نص مقفولة طويلة، برّه القاهرة (لهجات القنال ودمياط)",
+        "tier2": "uu",
+        "example": "buur بْوَرْ"
+      }
+    ],
+    "diphthongs": [
+      {
+        "arabic": "◌َ + يْ",
+        "sound": "a + y (y is a consonant after a vowel)",
+        "sound_ar": "a + y (الـ y حرف صامت بعد الحركة)",
+        "spelling": "ay",
+        "example": "Ray رَيْ · Kay كَيْ"
+      },
+      {
+        "arabic": "◌َ + وْ",
+        "sound": "a + w (w is a consonant after a vowel)",
+        "sound_ar": "a + w (الـ w حرف صامت بعد الحركة)",
+        "spelling": "aw",
+        "example": "law لَوْ"
+      }
+    ],
+    "rule": "Every vowel has one Masri letter and one Arabic-V form. In Arabic-V a haraka on the consonant writes a short vowel and a carrier letter (ا و ي) with shadda and sukūn writes a long one; w and y after a vowel are consonants. ii is always written ee; the one exception is a word-final ii, which stays ii by Latin convention. i occurs only at the start or end of a word. Full rules: masri_arabic_v.html.",
+    "rule_ar": "كل حركة ليها حرف مصري واحد وشكل Arabic-V واحد. في Arabic-V الحركة (فتحة/كسرة/ضمة) على الحرف الصامت بتكتب حركة قصيرة، وحرف الحامل (ا و ي) مع شدة وسكون بيكتب الحركة الطويلة؛ وw وy بعد الحركة حروف صامتة. الـ ii بتتكتب ee دايمًا، إلا الـ ii اللي في آخر الكلمة فبتفضل ii حسب العُرف اللاتيني. والـ i بتيجي في أول الكلمة أو آخرها بس. القواعد الكاملة: masri_arabic_v_ar.html."
+  },
+  "ayin_rule": {
+    "examples": [
+      {
+        "arabic": "عارف",
+        "tier1": "`aref",
+        "tier2": "Ⲵaref",
+        "meaning": "knowing",
+        "meaning_ar": "عارف"
+      },
+      {
+        "arabic": "بعدين",
+        "tier1": "ba`deen",
+        "tier2": "baⲴdeen",
+        "meaning": "afterwards",
+        "meaning_ar": "بعدين"
+      },
+      {
+        "arabic": "عشان",
+        "tier1": "`ashan",
+        "tier2": "Ⲵaϣan",
+        "meaning": "because/for",
+        "meaning_ar": "عشان"
+      },
+      {
+        "arabic": "على",
+        "tier1": "`ala",
+        "tier2": "Ⲵala",
+        "meaning": "on/upon",
+        "meaning_ar": "على"
+      },
+      {
+        "arabic": "معاك",
+        "tier1": "ma`aak",
+        "tier2": "maⲴaak",
+        "meaning": "with you",
+        "meaning_ar": "معاك"
+      }
+    ]
+  }
+}
