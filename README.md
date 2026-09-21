@@ -47,27 +47,30 @@ Online, Egyptians write their dialect in three broken ways:
 ## What Masri looks like
 
 ```
-Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا.
+Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا. كدة مش رأي. دة حقيقة.
 
-Tier 1:   Ana bahebb Masr. El ahwa el masreya ahsan ahwa fi el donya.
+Tier 1:   Ana bah^eb Mas^r. El ahwa el mas^reya ah^esan ahwa fi el donya.
+          Keda mesh ra'y, dah h^a'e'a (h^aqeqa).
 
-Tier 2:   Ana baϨebb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
+Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
+          Keda meϣ ra'y, dah ϨaⱯeⱯa.
 
-DRS:      Ana baħebb Maṣr. El ahwa el maṣreyya aħsan ahwa fi el donya.
+DRS:      Ana baħeb Maṣr. El ahwa el maṣreyya aħsan ahwa fi el donya.
+          Keda meŝ ra'y, dah ħaⱯeⱯa.
 ```
 
 ```
 Arabic:   أنا عارف إنه اللغة المصرية أحسن لغة في الدنيا،
           و ده اللي خلاني أشتغل فيها كل يوم.
 
-Tier 1:   Ana `aref inno el Logha el Masreya ahsan logha fi el donya,
-          we da elli khallani ashtaghal feha koll yoom.
+Tier 1:   Ana `aref inno el Logha el Mas^reya ah^esan logha fi el donya,
+          we da elli khallani ashtaghal feeha koll yoom.
 
 Tier 2:   Ana Ⲵaref inno el Loɣa el Maṣreya aϨsan loɣa fi el donya,
-          we da elli xallāni aϣtaɣal feeha koll yoom.
+          we da elli xallaani aϣtaɣal feeha koll yoom.
 
 DRS:      Ana Ɛaref inno el Loġa el Maṣreya aħsan loġa fi el donya,
-          we da elli xallāni aŝtaġal feeha koll yoom.
+          we da elli xallaani aŝtaġal feeha koll yoom.
 ```
 
 ---
@@ -78,18 +81,34 @@ The [live site](https://diaahassouna.github.io/masri-writing) is fully bilingual
 
 | Page | What's there |
 |---|---|
-| [The Converter](https://diaahassouna.github.io/masri-writing/arabizi_to_masri_viral.html) | Type Franco or Arabic, get Masri instantly |
+| [The Converter](https://diaahassouna.github.io/masri-writing/converter.html) | Type Franco or Arabic, get Masri instantly |
 | [How Masri Works](https://diaahassouna.github.io/masri-writing/masri_how_it_works.html) | The conceptual manual — how Tier 1, Tier 2, and DRS relate |
 | [Why not Franco?](https://diaahassouna.github.io/masri-writing/masri_prior_attempts.html) | Nine attempts to write Egyptian Arabic, scored and compared |
-| [The Alphabet & Keyboards](https://diaahassouna.github.io/masri-writing/masri_alphabet.html) | All 37 letters, IPA values, and how to type each one |
+| [The Alphabet & Keyboards](https://diaahassouna.github.io/masri-writing/masri_alphabet.html) | All 37 letters, IPA values, the full vowel and diphthong system with each vowel's Arabic-V form, and how to type each one |
 | [DRS (Romanization)](https://diaahassouna.github.io/masri-writing/masri_drs.html) | The Diaa Romanization System — a Pinyin-style, standard-keyboard companion to Tier 2 |
 | [Representations](https://diaahassouna.github.io/masri-writing/masri_representations.html) | Side-by-side comparison of all five Masri representations — Standard, DRS, Arabic-V, Basic, and Arabic-P |
-| [Arabic-V (Vocalized Arabic)](https://diaahassouna.github.io/masri-writing/masri_arabic_v.html) | The canonical vocalized Arabic-script representation — full Harakat, mandatory sukūn, shadda-based doubling, and dedicated Egyptian realization markers |
+| [Arabic-V (Vocalized Arabic)](https://diaahassouna.github.io/masri-writing/masri_arabic_v.html) | The canonical vocalized Arabic-script representation — one Arabic-V form for every vowel (haraka on the consonant = short, carrier letter = long), mandatory sukūn, shadda-based doubling, tanween written as ن, dedicated Egyptian realization markers, and a full `AV-*` rule index |
 | [Grammar Reference](https://diaahassouna.github.io/masri-writing/masri_grammar.html) | Nouns, verbs, negation, word order — every example in DRS and Tier 2 |
 | [Loanword Policy](https://diaahassouna.github.io/masri-writing/masri_loanwords.html) | When to keep a foreign spelling, when to Egyptianize it |
 | [Language in Egypt](https://diaahassouna.github.io/masri-writing/masri_language_history.html) | A timeline of language and script in Egypt, Old Kingdom to today |
 | [Numbers](https://diaahassouna.github.io/masri-writing/masri_numbers.html) | Number words from zero to a billion |
 | [How Masri Was Made](https://diaahassouna.github.io/masri-writing/masri_development_story.html) | The personal story and manuscript behind the project |
+
+---
+
+## One system, five representations
+
+Masri is **one canonical orthographic system** with several controlled representations. Only Masri Basic (Tier 1) and Masri Standard (Tier 2) are called *tiers*; the other representations express the same canonical spelling in a different script or notation.
+
+| Representation | Purpose | Example (عشان) |
+|---|---|---|
+| **Masri Standard** (Tier 2) | Primary public Latin representation | `Ⲵaϣaan` |
+| **DRS** — Diaa Romanization System | Technical Latin representation, standard keyboard | `Ɛaŝaan` |
+| **Arabic-V** | Canonical vocalized Arabic-script representation | `عَشَاّْنْ` |
+| **Masri Basic** (Tier 1) | ASCII-compatible practical fallback | `` `ashan `` |
+| **Arabic-P** | Plain Arabic-script practical fallback | `عشان` |
+
+Arabic-V is generated forward from canonical Masri, never the other way round, so it can't drift into a competing orthography. See the [Representations](https://diaahassouna.github.io/masri-writing/masri_representations.html) and [Arabic-V](https://diaahassouna.github.io/masri-writing/masri_arabic_v.html) pages.
 
 ---
 
@@ -99,7 +118,7 @@ Masri has two tiers — pick the one that fits your context.
 
 ### Tier 1 — Everyday (ASCII)
 
-Designed for texting, social media, informal writing. Uses only characters available on any standard Latin keyboard. Digraphs handle complex sounds:
+Designed for texting, social media, informal writing. Uses only characters available on any standard Latin keyboard. Digraphs handle complex sounds, and a caret marks the emphatics. If two letters that look like a digraph must be pronounced separately, a hyphen goes between them: Mashhoor (مشهور) vs. Mas-h^oor (مسحور).
 
 | Sound | Arabic | Tier 1 | Example |
 |---|---|---|---|
@@ -107,7 +126,9 @@ Designed for texting, social media, informal writing. Uses only characters avail
 | KH sound | خ | `kh` | **kh**afeef (خفيف) |
 | GH sound | غ | `gh` | **gh**areeb (غريب) |
 | Ayin ع | ع | `` ` `` (backtick) | ba\`deen (بعدين) |
-| Glottal stop | ء / ق | `'` | Ma'aam (مقام) |
+| TH / DH | ث / ذ | `th` / `dh` (formal); `s` / `z` (casual) | **th**ania (ثانية) |
+| Emphatics and ح | ص ض ط ظ ح | plain letter + caret: `s^` `d^` `t^` `z^` `h^` (plain `h` stays ه) | Mas^r (مصر), **h^**amza (حمزة) |
+| Glottal stop | ء / ق | `'` (mid-word and word-final only, never at the start) | Ma'aam (مقام) |
 
 ### Tier 2 — Academic / Cultural
 
@@ -136,7 +157,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 
 | # | Upper | Lower | Arabic | Name | Sound | Example |
 |---|---|---|---|---|---|---|
-| 1 | A | a | ا | Alef | /ʔ/, /aː/ | Arrnabb أرنب |
+| 1 | A | a | ا | Alef | /ʔ/, /ɑ/, /ɛə/ | Arrnabb أرنب |
 | 2 | B | b | ب | Beh | /b/ | Baṭṭa بطة |
 | 3 | P | p | پ | Pee | /p/ | Printer برنتر |
 | 4 | T | t | ت | Teh | /t/ | Temsaaϩ تمساح |
@@ -166,17 +187,58 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 | 28 | M | m | م | Meem | /m/ | MozeeⲴ مذيع |
 | 29 | N | n | ن | Noon | /n/ | Noor نور |
 | 30 | H | h | ه | Heh | /h/ | Hawa هوا |
-| 31 | O | o | و | Oh | /ʔo/, /o/ | Ɣobaar غبار |
-| 32 | U | u | و | Ū | /ʔu/, /u/ | Ⲵumaan عمان |
+| 31 | O | o | و | Oh | /u/, /uː/ | Ɣobaar غبار |
+| 32 | U | u | و | Ū | /ʌ/ (foreign words) | Menu منيو |
 | 33 | W | w | و | Dablew | /ʔw/, /w/ | WalaaⱯ ولاء |
-| 34 | E | e | ي | Ee | /ʔe/, /e/ | Estanna إستنى |
-| 35 | I | i | ي | Ai | /ʔi/, /i/ | Waϩeϣni واحشني |
+| 34 | E | e | ي | Ee | /e/, /eː/, /ɛ/, /ɛː/ | Estanna إستنى |
+| 35 | I | i | ي | Ai | /i/ (word-initial and word-final only) | Waϩeϣni واحشني |
 | 36 | Y | y | ي | Wye | /ʔj/, /j/ | Ya يا |
 | 37 | Ɐ | Ɐ | ء | Hamza | /ʔ/ | MasⱯooleya مسئولية |
 
 C and J are full members of the inventory, not exceptions — C covers code-switched /s/ or /k/ (Cinema, Café), and J covers the Upper Egyptian (Ṣaʿidi) pronunciation of ج, the MSA/فصحى pronunciation, and the loanword letter چ, all realized as /ʒ/.
 
 </details>
+
+### Vowels and diphthongs
+
+Every vowel has **one Masri letter and one Arabic-V form**. Vowels are defined by their sound first (IPA), then spelled: in Arabic-V a *haraka on the consonant* writes a short vowel, and a *carrier letter* (ا و ي) with shadda and sukūn writes a long one. `◌` marks where the consonant goes.
+
+**Short vowels**
+
+| Masri | Arabic-V | Sound | Example |
+|---|---|---|---|
+| `a, á` | ◌َ | [ɑ] open back, as in 'father' | Katab كَتَبْ |
+| `e` | ◌ِ | [e] front vowel | We وِ |
+| `o` | ◌ُ | [u] close back rounded, as in 'boot' | borr بُرّْ |
+| `ou` | ◌َُ | [o] close-mid back rounded, as in 'go' (or [ɔ], as in 'law') | louṣt لَُصْتْ · Kours كَُرْسْ |
+| `é` | ◌َِ | [ɛ] the Egyptian short é | kaféhaat كَفَِهَاّْتْ |
+| `u` | يُ | [ʌ] the fast 'you' (yw), foreign words only | menu مِنْيُ |
+| `i` | يْ · إِ | [i] word-final or word-initial only, never medial | Soori سُوّْرْيْ · Roodi رُوّْدْيْ |
+| `a (final)` | اْ | final short a | Huda هُدْاْ |
+| `o (final)` | وْ | final short o | kebro كِبْرْوْ · kallemo كَلِّمْوْ · Leedo لِيّْدْوْ |
+
+**Long vowels**
+
+| Masri | Arabic-V | Sound | Example |
+|---|---|---|---|
+| `aa` | ◌َ + اّْ | [ɛə] the Egyptian long a | Ketaab كِتَاّْبْ |
+| `ee` | ◌ِ + يّْ | [eː] long e | saⲴeed سَعِيّْدْ |
+| `ii (final)` | ◌ِ + يّْ | [iː] long i, word-final only (elsewhere ee) | katabhomlii كَتَبْهُمْلِيّْ |
+| `oo` | ◌ُ + وّْ | [uː] long close back rounded | boor بُوّْرْ |
+| `éé` | يَ | [ɛː] the Egyptian long é | asanséér أَسَنْسْيَرْ |
+| `uu` | وَ | [oː] long close-mid, outside Cairo (Canal dialects, Damietta) | buur بْوَرْ |
+
+**Diphthongs** — `w` and `y` are always consonants, so a vowel followed by `w` or `y` is a diphthong.
+
+| Masri | Arabic-V | Sound | Example |
+|---|---|---|---|
+| `ay` | ◌َ + يْ | a + y (y is a consonant after a vowel) | Ray رَيْ · Kay كَيْ |
+| `aw` | ◌َ + وْ | a + w (w is a consonant after a vowel) | law لَوْ |
+
+- **`ii` is always written `ee`**; the one exception is a word-final `ii`, which stays `ii` by Latin convention (its Arabic-V form is the same as `ee`).
+- **No medial `i`:** in Egyptianized words `i` occurs only at the start or end of a word; a medial short front vowel is `e`, a long one `ee`. Loanword citation forms keep their usual spelling (*printer*, *parking*).
+- Long `uu` is normal outside Cairo (Canal dialects, Damietta). `u` is reserved for foreign words (the fast *you*, as in *menu*).
+- Full rules, rationale and worked examples: the [Arabic-V page](https://diaahassouna.github.io/masri-writing/masri_arabic_v.html).
 
 ---
 
@@ -237,8 +299,8 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | 5 | خمسة | Xamsa |
 | 10 | عشرة | Ⲵaϣara |
 | 20 | عشرين | Ⲵeϣreen |
-| 100 | مية | Miyya |
-| 200 | ميتين | Miteen |
+| 100 | مية | Meyya |
+| 200 | ميتين | Meteen |
 | 1,000 | ألف | Alf |
 | 1,000,000 | مليون | Melyoon |
 | 1,000,000,000 | مليار | Melyar |
@@ -256,7 +318,9 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 | **Glottal stop** | Silent at word start; apostrophe mid-word: سؤال → `so'aal` |
 | **Digraphs** | `sh`, `kh`, `gh` are indivisible units — never split across syllables (in Tier 1 only) |
 | **Cairene ق** | Word-initial: silent (قهوة → `ahwa`). Mid-word: apostrophe |
-| **P vs B** | `p ≠ b` — both exist as distinct phonemes. بيتزا → `pizza`, not `bizza` |
+| **Long vowels** | Written doubled: كتاب → `ketaab`, حبيبي → `Ϩabeebi`. `ii` is always `ee`, except a word-final `ii` |
+| **Medial i** | Never: a medial short front vowel is `e` (يكتب → `yekteb`), a long one is `ee`; `i` only starts or ends a word |
+| **P vs B** | `p ≠ b` — both exist as distinct phonemes. بيتزا → `bitza` (or `pitza`), not `bizza` |
 
 ---
 
@@ -264,15 +328,20 @@ A sample from the complete numbers table (0 to 1,000,000,000):
 
 | Arabic | Tier 1 | Tier 2 |
 |---|---|---|
-| إن شاء الله | inshala / insha'allah | inϣāⱯallāh |
+| إن شاء الله | inshala / insha'allah | inϣaaⱯallaah |
 | قهوة | ahwa | ahwa |
-| أيوه | aywa | aywa |
-| مش | mesh | miϣ |
-| يعني | ya`ni | yaⲴni |
-| عشان | `ashan | Ⲵaϣan |
+| أيوة | aywa | aywa |
+| مش | mesh | meϣ |
+| يعني | ya`ni / yaani | yaⲴni |
+| كده / كدة | keda | keda |
+| عشان | `ashan / ashan | Ⲵaϣan |
 | بس | bass | bass |
-| الحمد لله | elhamdolilla | elϨamdolillāh |
-| ماشاء الله | mashalla | māϣāⱯallāh |
+| زي | zay | zay |
+| والله | walla / wallahi | wallaah / wallaahi |
+| الحمدلله | elh^amdolella / h^amdella | elϨamdolellaah |
+| بسم الله | besmella | besmellaah |
+| ماشاء الله | mashalla / masha'alla | maaϣaaⱯallaah |
+| يارب | ya rab | yaa rabb |
 
 ---
 
@@ -288,7 +357,7 @@ These ten sentences were written to push Masri to its limits — emphatic conson
 **1.**
 ```
 Masri:  Ana Ⲵarif inno el loɣa el maṣreya aϨsan loɣa fi el donya,
-        we da elli xallāni aϣtaɣal feha koll yoom.
+        we da elli xallaani aϣtaɣal feha koll yoom.
 Arabic: أنا عارف إنه اللغة المصرية أحسن لغة في الدنيا،
         و ده اللي خلاني أشتغل فيها كل يوم.
 ```
@@ -296,7 +365,7 @@ Arabic: أنا عارف إنه اللغة المصرية أحسن لغة في ا
 **2.**
 ```
 Masri:  El ott el adeem baⲴdeen ge el beet we Ϩabbeto geddan —
-        howa el waϨeed elli miϣ meⲴaⱯadni.
+        howa el waϨeed elli meϣ meⲴaⱯadni.
 Arabic: القط القديم بعدين جه البيت وحبيته جداً —
         هو الوحيد اللي مش معقدني.
 ```
@@ -304,7 +373,7 @@ Arabic: القط القديم بعدين جه البيت وحبيته جداً �
 **3.**
 ```
 Masri:  Bass lamma Ϩawwelt aṭbaⲴ el awraaⱯ el mohemma kanet
-        el printer miϣ ϣaɣɣala lel asaf Ⲵaϣan el power cable miϣ mawgood.
+        el printer meϣ ϣaɣɣala lel asaf Ⲵaϣan el power cable meϣ mawgood.
 Arabic: بس لما حاولت اطبع الأوراق المهمة كانت البرنتر مش
         شغالة للأسف عشان الباور كابل مش موجود.
 ```
@@ -317,14 +386,14 @@ Arabic: الضبع ده ظهر طبعاً والموضوع ده اتعقد خل�
 
 **5.**
 ```
-Masri:  Inϣāllāh bokra nϣūf, elϨamdillāh Ⲵandena waⱯt.
+Masri:  Inϣaallaah bokra nϣoof, elϨamdellaah Ⲵandena waⱯt.
 Arabic: إن شاء الله بكرة نشوف، الحمد لله عندنا وقت.
 ```
 
 **6.**
 ```
-Masri:  El moϣkela en el ϣaɣɣāla el xeϣna el ɣaϣeema el over
-        ɣalaṭatha ziyāda fe el θamarāt.
+Masri:  El moϣkela en el ϣaɣɣaala el xeϣna el ɣaϣeema el over
+        ɣalaṭatha zeyaada fe el θamaraat.
 Arabic: المشكلة إن الشغالة الخشنة الغشيمة الأوڤر
         غلطاتها زيادة في الثمرات.
 ```
@@ -339,7 +408,7 @@ Arabic: وإوعى الأوضة اللي جوة البيت البيئة اللي
 
 **8.**
 ```
-Masri:  ForⱯoⲴlowz raⱯaṣ Ⲵa el sellem we bass keda ya sidi
+Masri:  ForⱯoⲴlowz raⱯaṣ Ⲵa el sellem we bass keda ya sedi
         we el meⲴallem Sardeena dafaⲴ feloos keteer lel ṣowaan we el farϣa Ⲵa el ard.
 Arabic: فورقوعلوز رقص ع السلم وبس كدة يا سيدي
         والمعلم سردينة دفع فلوس كتير للصوان والفرشة ع الأرض.
@@ -354,7 +423,7 @@ Arabic: قوم أوقف وانت بتكلمني، قوم أوقف بص لي وف
 **10.**
 ```
 Masri:  EϨna benⱯool aaxer madena heyya madenet el Salaam ya abo el Ⲵorréf,
-        matlaɣweϣϣi Ⲵalayya we balaaϣ avwora ya over enta.
+        matlaɣweϣϣi Ⲵalayya we balaaϣ avwara ya over enta.
 Arabic: إحنا بنقول آخر مدينة هي مدينة السلام يا ابو العُرِّيف،
         متلغوشي عليا وبلاش أڤورة يا أوڤر انت.
 ```
@@ -372,7 +441,7 @@ masri-writing/
 │
 ├── docs/                                        ← Live site: diaahassouna.github.io/masri-writing
 │   ├── index.html / index_ar.html                   Home
-│   ├── arabizi_to_masri_viral.html (+ _ar)           The Converter
+│   ├── converter.html (+ _ar)                        The Converter
 │   ├── masri_how_it_works.html (+ _ar)               How Masri Works
 │   ├── masri_prior_attempts.html (+ _ar)             Why not Franco?
 │   ├── masri_alphabet.html (+ _ar)                   The Alphabet & Keyboards
@@ -416,6 +485,8 @@ masri-writing/
 - [x] Interactive web reference — 13 bilingual pages at [diaahassouna.github.io/masri-writing](https://diaahassouna.github.io/masri-writing), including Grammar, Loanword Policy, and Language History
 - [x] DRS — Diaa Romanization System, a Pinyin-style standard-keyboard companion to Tier 2
 - [x] Arabic-V — the canonical vocalized Arabic-script representation, with a dedicated Representations page comparing it against Standard, DRS, Basic, and Arabic-P
+- [x] Unified vowel system — every vowel defined by IPA quality with one Masri letter and one Arabic-V form (`AV-R01`–`AV-R12`); `ii` → `ee`, no medial `i`, tanween written as ن, ى and آ accepted as input only
+- [x] Vowels and diphthongs on the Alphabet page (and the DRS page) generated from the same data as Arabic-V
 - [x] Light/dark theme across the site
 - [x] Windows keyboard installer (`.msi` for amd64/i386/ia64)
 - [ ] Linux XKB layout
@@ -430,7 +501,7 @@ masri-writing/
 IPA is for phoneticians, not people. Masri is designed for ordinary writers texting their friends, not transcribing speech acts in a linguistics paper.
 
 **Q: Why not just improve Arabic orthography for the dialect?**
-Arabic script is right-to-left and lacks short vowels by default — two properties that create immediate problems for a Latin-reader audience and for text interoperability. Masri's Latin base enables global readability while Tier 2 preserves phonetic precision.
+Plain Arabic script is right-to-left and lacks short vowels by default — two properties that create immediate problems for a Latin-reader audience and for text interoperability. Masri's Latin base enables global readability while Tier 2 preserves phonetic precision. For readers who want Arabic script, Arabic-V writes every vowel explicitly, so nothing has to be guessed.
 
 **Q: Is Masri trying to replace Arabic?**
 No. Masri is for *spoken Egyptian Arabic* — the dialect, not the formal written language. Classical Arabic and Modern Standard Arabic are fully separate registers with their own roles. Masri doesn't compete with them.
