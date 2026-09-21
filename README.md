@@ -105,7 +105,7 @@ Masri is **one canonical orthographic system** with several controlled represent
 | **Masri Standard** (Tier 2) | Primary public Latin representation | `Ⲵaϣaan` |
 | **DRS** — Diaa Romanization System | Technical Latin representation, standard keyboard | `Ɛaŝaan` |
 | **Arabic-V** | Canonical vocalized Arabic-script representation | `عَشَاّْنْ` |
-| **Masri Basic** (Tier 1) | ASCII-compatible practical fallback | `` `ashan `` |
+| **Masri Basic** (Tier 1) | ASCII-compatible practical fallback | `` `ashaan `` |
 | **Arabic-P** | Plain Arabic-script practical fallback | `عشان` |
 
 Arabic-V is generated forward from canonical Masri, never the other way round, so it can't drift into a competing orthography. See the [Representations](https://diaahassouna.github.io/masri-writing/masri_representations.html) and [Arabic-V](https://diaahassouna.github.io/masri-writing/masri_arabic_v.html) pages.
@@ -122,7 +122,7 @@ Designed for texting, social media, informal writing. Uses only characters avail
 
 | Sound | Arabic | Tier 1 | Example |
 |---|---|---|---|
-| SH sound | ش | `sh` (also accepts digit `4` as shorthand input) | **sh**anta (شنطة) |
+| SH sound | ش | `sh` | **sh**anta (شنطة) |
 | KH sound | خ | `kh` | **kh**afeef (خفيف) |
 | GH sound | غ | `gh` | **gh**areeb (غريب) |
 | Ayin ع | ع | `` ` `` (backtick) | ba\`deen (بعدين) |
@@ -136,7 +136,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 
 | Sound | Arabic | Tier 2 | Unicode | Origin |
 |---|---|---|---|---|
-| SH sound | ش | `ϣ` (also accepts digit `4` as shorthand input) | U+03E3 | Coptic Shai |
+| SH sound | ش | `ϣ` | U+03E3 | Coptic Shai |
 | HA sound | ح | `Ϩ` | U+03E8 | Coptic Hori |
 | Ayin | ع | `Ⲵ` | U+2CB4 | Old Coptic Ain |
 | GH sound | غ | `ɣ` | U+0263 | Latin Extended (IPA gamma) |
@@ -163,7 +163,7 @@ For linguistic study, formal documentation, and precision. Employs Greek and Cop
 | 4 | T | t | ت | Teh | /t/ | Temsaaϩ تمساح |
 | 5 | Θ | θ | ث | Ṯeh | /θ/ → /s/ | Θania ثانية |
 | 6 | G | g | ج | Geem | /g/ | GamⲴa جامعة |
-| 7 | J | j | ج | Jéh | /ʒ/ | Jaket جاكيت (Ṣaʿidi/MSA ج, distinct from Cairene G) |
+| 7 | J | j | چ | Jéh | /ʒ/ | Jaket جاكيت (Ṣaʿidi/MSA ج, distinct from Cairene G) |
 | 8 | Ϩ | ϩ | ح | Ḥa | /ħ/ | Ϩamza حمزة |
 | 9 | X | x | خ | Ḵa | /x/ | Xafeef خفيف |
 | 10 | D | d | د | Daal | /d/ | Dars درس |
