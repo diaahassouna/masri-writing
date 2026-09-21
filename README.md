@@ -50,7 +50,7 @@ Online, Egyptians write their dialect in three broken ways:
 Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا. كدة مش رأيي. دة حقيقة.
 
 Tier 1:   Ana bah^eb Mas^r. El ahwa el mas^reya ah^esan ahwa fi el donya.
-          Keda mesh ra'ii, dah h^a'ee'a (h^aqeqa).
+          Keda mesh ra'ii, dah h^a'ee'a (h^aqeeqa).
 
 Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
           Keda meϣ ra'ii, dah ϨaⱯeeⱯa.
