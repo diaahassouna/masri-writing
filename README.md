@@ -47,16 +47,16 @@ Online, Egyptians write their dialect in three broken ways:
 ## What Masri looks like
 
 ```
-Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا. كدة مش رأي. دة حقيقة.
+Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا. كدة مش رأيي. دة حقيقة.
 
 Tier 1:   Ana bah^eb Mas^r. El ahwa el mas^reya ah^esan ahwa fi el donya.
-          Keda mesh ra'y, dah h^a'ee'a (h^aqeqa).
+          Keda mesh ra'ii, dah h^a'ee'a (h^aqeqa).
 
 Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
-          Keda meϣ ra'y, dah ϨaⱯeeⱯa.
+          Keda meϣ ra'ii, dah ϨaⱯeeⱯa.
 
 DRS:      Ana baħeb Maṣr. El ahwa el maṣreyya aħsan ahwa fi el donya.
-          Keda meŝ ra'y, dah ħaⱯeeⱯa.
+          Keda meŝ ra'ii, dah ħaⱯeeⱯa.
 ```
 
 ```
