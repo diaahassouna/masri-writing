@@ -50,13 +50,13 @@ Online, Egyptians write their dialect in three broken ways:
 Arabic:   أنا بحب مصر. القهوة المصرية أحسن قهوة في الدنيا. كدة مش رأي. دة حقيقة.
 
 Tier 1:   Ana bah^eb Mas^r. El ahwa el mas^reya ah^esan ahwa fi el donya.
-          Keda mesh ra'y, dah h^a'e'a (h^aqeqa).
+          Keda mesh ra'y, dah h^a'ee'a (h^aqeqa).
 
 Tier 2:   Ana baϨeb Maṣr. El ahwa el maṣreyya aϨsan ahwa fi el donya.
-          Keda meϣ ra'y, dah ϨaⱯeⱯa.
+          Keda meϣ ra'y, dah ϨaⱯeeⱯa.
 
 DRS:      Ana baħeb Maṣr. El ahwa el maṣreyya aħsan ahwa fi el donya.
-          Keda meŝ ra'y, dah ħaⱯeⱯa.
+          Keda meŝ ra'y, dah ħaⱯeeⱯa.
 ```
 
 ```
@@ -268,19 +268,19 @@ In Franco/Arabizi, the ayin (ع) is either replaced by the numeral `3` or silent
 **In Masri Tier 1:** ع is always written as a backtick `` ` ``
 
 ```
-❌  aref        →   ✅  `aref       (عارف — knowing)
-❌  ashan       →   ✅  `ashan      (عشان — because)
+❌  aref        →   ✅  `aaref       (عارف — knowing)
+❌  ashan       →   ✅  `ashaan      (عشان — because)
 ❌  ala         →   ✅  `ala        (على — on)
-❌  3aref       →   ✅  `aref       (never use numerals)
+❌  3aref       →   ✅  `aaref       (never use numerals)
 ```
 
 **In Masri Tier 2:** ع is written as `Ⲵ` (Old Coptic Ain, U+2CB4)
 
 ```
-❌  aref        →   ✅  Ⲵaref       (عارف — knowing)
-❌  ashan       →   ✅  Ⲵaϣan       (عشان — because)
+❌  aref        →   ✅  Ⲵaaref       (عارف — knowing)
+❌  ashan       →   ✅  Ⲵaϣaan       (عشان — because)
 ❌  ala         →   ✅  Ⲵala         (على — on)
-❌  3aref       →   ✅  Ⲵaref       (never use numerals)
+❌  3aref       →   ✅  Ⲵaaref       (never use numerals)
 ```
 
 ---
@@ -356,7 +356,7 @@ These ten sentences were written to push Masri to its limits — emphatic conson
 
 **1.**
 ```
-Masri:  Ana Ⲵarif inno el loɣa el maṣreya aϨsan loɣa fi el donya,
+Masri:  Ana Ⲵaref inno el loɣa el maṣreya aϨsan loɣa fi el donya,
         we da elli xallaani aϣtaɣal feha koll yoom.
 Arabic: أنا عارف إنه اللغة المصرية أحسن لغة في الدنيا،
         و ده اللي خلاني أشتغل فيها كل يوم.
@@ -373,14 +373,14 @@ Arabic: القط القديم بعدين جه البيت وحبيته جداً �
 **3.**
 ```
 Masri:  Bass lamma Ϩawwelt aṭbaⲴ el awraaⱯ el mohemma kanet
-        el printer meϣ ϣaɣɣala lel asaf Ⲵaϣan el power cable meϣ mawgood.
+        el printer meϣ ϣaɣɣala lel asaf Ⲵaϣaan cabl rl bawar meϣ mawgood.
 Arabic: بس لما حاولت اطبع الأوراق المهمة كانت البرنتر مش
-        شغالة للأسف عشان الباور كابل مش موجود.
+        شغالة للأسف عشان كابل الباور مش موجود.
 ```
 
 **4.**
 ```
-Masri:  El ḍabⲴ da ẓahar ṭabⲴan we el mawḍooⲴ da etⲴaⱯad xalaaṣ.
+Masri:  El ḍabⲴ da ẓahar ṭabⲴan we el mawḍooⲴ da etⲴaⱯⱯad xalaaṣ.
 Arabic: الضبع ده ظهر طبعاً والموضوع ده اتعقد خلاص.
 ```
 
@@ -408,7 +408,7 @@ Arabic: وإوعى الأوضة اللي جوة البيت البيئة اللي
 
 **8.**
 ```
-Masri:  ForⱯoⲴlowz raⱯaṣ Ⲵa el sellem we bass keda ya sedi
+Masri:  ForⱯoⲴlowz raⱯaṣ Ⲵal sellem we bass keda ya sedi
         we el meⲴallem Sardeena dafaⲴ feloos keteer lel ṣowaan we el farϣa Ⲵa el ard.
 Arabic: فورقوعلوز رقص ع السلم وبس كدة يا سيدي
         والمعلم سردينة دفع فلوس كتير للصوان والفرشة ع الأرض.
